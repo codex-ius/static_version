@@ -1,0 +1,829 @@
+/* =========================================
+   CODEX_IUS: UNIVERSAL_TERMINAL_CORE (V6.1 - Neo-Brutalist Edition)
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;600;800&family=Montserrat:wght@400;700;900&display=swap');
+
+:root {
+    /* TEMA LIGHT (Neo-Brutalist Matizado) */
+    --bg: #f4f4f4;
+    --surface: #ffffff;
+    --surface-contrast: #1a1a1a;:root {
+    /* STACK MONOESPACIADO DE ALTA PRECISIÓN */
+    --font-mono: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', 'Roboto Mono', 'Source Code Pro', monospace;
+     
+}
+    
+    --text-main: #1a1a1a;
+    --text-muted: #4a4a4a;
+    --text-contrast: #f4f4f4;
+    
+    --accent-red: #9b111e;
+    --border: #1a1a1a; /* Borde sólido negro característico */
+    
+    /* Grid y Trama con colores ajustados */
+    --grid-line: rgba(26, 26, 26, 0.05);
+    --grid-dot: rgba(26, 26, 26, 0.08);
+    --theme-label: "[ MODE: NEO-LIGHT ]";
+    
+    /* Scanlines sutiles */
+    --scanline-color: rgba(0, 0, 0, 0.03);
+    --scanline-spacing: 4px;
+    --scanline-size: 2px;
+    
+    --scanline-pattern: repeating-linear-gradient(
+        0deg,
+        var(--scanline-color) 0px,
+        var(--scanline-color) var(--scanline-size),
+        transparent var(--scanline-size),
+        transparent var(--scanline-spacing)
+    );
+}
+
+[data-theme="dark"] {
+    /* TEMA DARK (Contraste para descanso visual) */
+    --bg: #121212;
+    --surface: #1e1e1e;
+    --surface-contrast: #e0e0e0;
+    
+    --text-main: #e0e0e0;
+    --text-muted: #8b949e;
+    --text-contrast: #121212;
+    
+    --accent-red: #ff4d4d;
+    --border: #e0e0e0;
+    
+    --grid-line: rgba(224, 224, 224, 0.05);
+    --grid-dot: rgba(224, 224, 224, 0.08);
+    --theme-label: "[ MODE: NEO-DARK ]";
+    
+    --scanline-color: rgba(255, 255, 255, 0.05);
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* =========================================
+   ESTRUCTURA Y FONDO TÉCNICO
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background 0.3s ease, border-color 0.3s ease;
+    font-weight: normal;
+    /* OPTIMIZACIÓN DE RENDERIZADO (Añade esto para que se vea más nítida) */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg);
+    /* Trama de puntos sutil */
+    background-image: radial-gradient(var(--grid-dot) 1px, transparent 1px);
+    background-size: 30px 30px; 
+    color: var(--text-main);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================
+   LAYOUT PRINCIPAL: HEADER & NAVIGATION
+   ========================================= */
+
+header {
+    padding: 1rem 2rem; /* Más aire vertical para impacto visual */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;        
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem; /* Aumentamos tamaño según la imagen */
+    font-weight: bold;
+    text-transform: uppercase;    
+    color: var(--text-main);    
+}
+
+/* Mantenemos tu animación Blink intacta */
+header h1::after {
+    content: "_"; 
+    margin-left: 4px;
+    color: var(--accent-red);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    animation: blink 1s step-end infinite;
+}
+
+
+
+/* =========================================
+   MINI-TERMINAL: SIBYL_CORE_ANIMATION
+   ========================================= */
+
+.mini-terminal {
+    background: #000;
+    padding: 1.2rem;
+    border: 1px solid #222;    
+    box-shadow: 0 0 20px rgba(0,0,0,0.5), inset 0 0 10px #000;    
+    color: #888; /* Independiente del tema global */
+}
+
+.bios-loader {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    
+}
+
+.bios-loader .line { color: #eee; margin-bottom: 0.4rem; }
+
+/* Secuencia de Estados: LOADING -> OK */
+@keyframes status-sequence {
+    0%   { content: ""; opacity: 0; }
+    5%   { content: " [ LOADING ]"; opacity: 1; color: #888; }
+    80%  { content: " [ LOADING ]"; opacity: 1; color: #888; }
+    100% { content: " [  OK  ]"; opacity: 1; color: #4AF626; }
+}
+
+.step .status::before { content: ""; font-weight: bold; }
+
+/* Tiempos de Ejecución Secuencial */
+.step:nth-child(2) .status::before { animation: status-sequence 1.5s forwards 1s; }
+.step:nth-child(3) .status::before { animation: status-sequence 1.5s forwards 3s; }
+.step:nth-child(4) .status::before { animation: status-sequence 1.5s forwards 5s; }
+
+@keyframes label-glow { to { color: #aaa; } }
+.step:nth-child(2) { animation: label-glow 0.1s forwards 2.5s; }
+.step:nth-child(3) { animation: label-glow 0.1s forwards 4.5s; }
+.step:nth-child(4) { animation: label-glow 0.1s forwards 6.5s; }
+
+.status-final {
+    opacity: 0;
+    color: #4AF626;;
+    border-top: 1px solid #1a1a1a;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    animation: step-appear 0.1s forwards 7.2s;
+}
+
+@keyframes step-appear { to { opacity: 1; } }
+.cursor { animation: blink 0.8s step-end infinite; }
+
+/* =========================================
+   USER_STATES: IDENTITY_MANAGEMENT
+   ========================================= */
+
+.user-info {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    margin-top: 10px;
+    min-height: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-top: 1px solid #1a1a1a;
+    padding-top: 8px;
+}
+
+#usuario[data-state="guest"] {
+    color: #666;
+    font-style: italic;
+}
+
+#usuario[data-state="user"] {
+    color: #4AF626 !important; 
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px rgba(74, 246, 38, 0.5);
+    transition: all 0.4s ease;
+}
+
+.loading-state {
+    color: var(--accent-red) !important;
+    font-style: italic;
+    
+    animation: fast-blink 0.2s infinite;
+    text-shadow: 0 0 5px var(--accent-red);
+}
+
+@keyframes fast-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+/*************/
+/* =========================================
+   SISTEMA DE NAVEGACIÓN (STICKY-TOP)
+   ========================================= */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 9999; /* Prioridad máxima sobre cualquier otro elemento */
+    
+    height: auto; /* Cambiado a auto para soportar flex-wrap si hay muchos links */
+    min-height: 60px;
+    padding: 0.8rem 1.5rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+
+    background: var(--surface);
+    border-bottom: var(--border); /* 2px solid #1a1a1a */
+    /* Sombra rígida para dar sensación de elevación física */
+    box-shadow: 0 4px 0px rgba(0,0,0,0.1); 
+}
+
+/* =========================================
+   CONTENEDOR PRINCIPAL (LAYOUT FLUJO)
+   ========================================= */
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px; /* Limite opcional para no estirar demasiado en monitores pro */
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Un poco más de aire entre módulos */
+    
+    /* Asegura que el contenido respete el scroll */
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+/* =========================================
+   COMPONENTES: CARDS (NB-ARTICLES)
+   ========================================= */
+
+article {
+    background: var(--surface);
+    border: var(--border); /* Borde de 2px uniforme */
+    box-shadow: 4px 4px 0px #000; /* Sombra rígida neo-brutalista */
+    padding: 1.5rem;
+    margin-bottom: 2rem; /* Más espacio para que luzcan las sombras */
+    position: relative;
+    transition: transform 0.1s;
+}
+
+/* Efecto Hover sutil: se eleva un poco más */
+article:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px var(--accent-red);
+}
+
+/* Evitamos que el article genérico herede los pseudo-elementos de .card-term */
+article:not(.card-term)::before,
+article:not(.card-term)::after {
+    display: none;
+}
+
+/* =========================================
+   CARD_TERM: EL MÓDULO DE SISTEMA
+   ========================================= */
+
+article.card-term {
+    padding: 3rem 1.5rem 1.5rem; /* Más padding superior para la etiqueta */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Etiqueta de ruta: Estilo "Tab" Físico */
+article.card-term::before {
+    content: "> /root/bin/" attr(data-type);
+    position: absolute;
+    top: -2px; /* Alineado con el borde superior */
+    left: -2px; /* Alineado con el borde izquierdo */
+    background: var(--text-main);
+    color: var(--bg);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.4rem 1rem;
+    border: var(--border);
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+/* Estilo para tarjetas restringidas o alertas */
+article[data-type="restricted"] {
+    border-color: var(--accent-red);
+    box-shadow: 4px 4px 0px var(--accent-red);
+}
+
+article[data-type="restricted"]::before {
+    background: var(--accent-red);
+    border-color: var(--accent-red);
+}
+
+/* =========================================
+   BOTÓN NEO-BRUTALISTA (V4 - COMPATIBLE)
+   ========================================= */
+
+button,
+a {
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    
+    /* Tipografía y Color */
+    font-family: 'Montserrat', sans-serif; /* Cambio a Montserrat para el estilo de la imagen */
+    
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    
+    /* Colores del Root */
+    background: var(--accent-red);
+    color: #ffffff;
+    
+    /* Estética Neo-Brutalista: Borde grueso y Sombra rígida */
+    border: var(--border); /* Usa el 2px solid definido en el root */
+    box-shadow: 4px 4px 0px #000000; /* Sombra negra sólida sin desenfoque */
+    
+    cursor: pointer;
+    transition: 0.1s; /* Transición rápida para el efecto "click" */
+}
+
+
+
+/* Efecto de Interacción (Presión física) */
+button:active,
+a:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0px #000000;
+}
+
+/* Hover sutil sin romper la estética */
+button:hover,
+a:hover {
+    filter: brightness(1.1);
+}
+
+
+/* Estilo para tarjetas restringidas */
+article[data-type="restricted"] {
+    border-top-color: var(--accent-red);
+}
+
+/* =========================================
+   SISTEMA DE FLUJO DINÁMICO (NO-GRID)
+   ========================================= */
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap; /* Los elementos bajan solos si no caben */
+    gap: 20px;
+    width: 100%;
+}
+
+/* Los elementos hijos ahora se gestionan con flex-grow */
+.grid-container > * {
+    flex: 1 1 300px; /* Crece, se achica y su base es 300px */
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================================
+   RECURSOS DE DESTACADO (ESTILO NB)
+   ========================================= */
+
+/* 1. Destacado por Elevación: Úsalo para lo más importante */
+.highlight-up {
+    transform: translate(-4px, -4px);
+    box-shadow: 8px 8px 0px var(--text-main) !important;
+    border-width: 3px !important;
+}
+
+/* 2. Destacado por Color Sólido (Invertido) */
+.highlight-alt {
+    background: var(--text-main) !important;
+    color: var(--bg) !important;
+}
+
+.highlight-alt p, 
+.highlight-alt h2, 
+.highlight-alt h3 {
+    color: var(--bg) !important;
+}
+
+/* 3. Destacado de Advertencia (Rojo Sólido) */
+.highlight-alert {
+    background: var(--accent-red) !important;
+    color: white !important;
+    border-color: #000 !important;
+}
+
+.highlight-alert p, 
+.highlight-alert h2, 
+.highlight-alert b {
+    color: white !important;
+}
+
+/* Limpieza de elementos residuales */
+.brand {
+    font-size: clamp(1rem, 5vw, 1.5rem); /* Se ajusta solo sin media queries */
+}
+
+body::after {
+    display: none; /* Eliminamos elementos decorativos que estorben */
+}
+/* =========================================
+   TIPOGRAFÍA Y ELEMENTOS DE TEXTO (NB-CORE)
+   ========================================= */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;    
+    font-weight: bold;     /* Peso máximo para impacto visual */
+    color: var(--text-main);    
+    margin-bottom: 1rem;
+}
+
+.prompt {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent-red);
+    font-weight: bold;
+    background: rgba(0,0,0,0.05);
+    padding: 0 5px;
+}
+
+.status-bar {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background: var(--text-main);
+    color: var(--bg); /* Texto claro sobre fondo oscuro */
+    border: var(--border);
+}
+
+/* =========================================
+   SISTEMA DE ESTILOS UNIVERSALES (NB-RESET)
+   ========================================= */
+
+/* --- BLOQUES DE TEXTO --- */
+p {
+    margin-bottom: 1.2rem;
+    font-weight: 500; /* Un poco más de cuerpo que el 300 anterior */
+    color: var(--text-main); /* Mayor legibilidad */
+}
+
+/* Enfatizado Técnico */
+b, strong {   
+    font-weight: bold;
+}
+
+i, em {
+    color: var(--accent-red);
+    font-style: italic;
+    font-weight: bold;
+}
+
+mark {
+    background: #ffea00; /* Amarillo vibrante Neo-Brutalista */
+    color: #000;
+    padding: 2px 6px;
+    font-family: var(--font-mono);
+    font-weight: bold;
+    border: 1px solid #000; /* Borde sólido en lugar de clip-path */
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+/* --- LISTAS (Estilo Directorio) --- */
+ul, ol {
+    margin-left: 1.2rem;
+    margin-bottom: 1.5rem;
+    list-style: none; /* Quitamos los puntos estándar */
+}
+
+li {
+    margin-bottom: 0.6rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+/* Viñeta cuadrada personalizada */
+li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.4rem;
+    width: 8px;
+    height: 8px;
+    background: var(--accent-red);
+    border: 1px solid #000;
+}
+
+/* Listas de Definición (Glosarios) */
+dl {
+    border: var(--border);
+    background: var(--surface);
+    box-shadow: var(--shdw-sm);
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+dt {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    color: var(--accent-red);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+dd {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 0.5rem;
+}
+
+dd:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* =========================================
+   SISTEMA DE ENTRADA DE DATOS (NB-INPUTS)
+   ========================================= */
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px 15px;
+    background: var(--surface);
+    
+    /* Borde Neo-Brutalista: Uniforme y marcado */
+    border: var(--border); /* 2px solid #1a1a1a */
+    box-shadow: 2px 2px 0px #000; /* Sombra rígida pequeña */
+    
+    color: var(--text-main);
+    font-family: 'JetBrains Mono', monospace; /* Mantenemos el toque técnico para los datos */
+    font-size: 1rem;
+    outline: none;
+    border-radius: 0; /* Aseguramos esquinas totalmente rectas */
+    transition: transform 0.1s, box-shadow 0.1s;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+    background: #fffdf0; /* Un matiz crema muy suave para el foco */
+    transform: translate(-1px, -1px); /* Elevación sutil al escribir */
+    box-shadow: 4px 4px 0px var(--accent-red); /* La sombra cambia al color de acento */
+    border-color: var(--text-main);
+}
+
+/* Placeholder: Más legible pero manteniendo el estilo terminal */
+input::placeholder {
+    color: var(--text-muted);
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    
+}
+
+/* Ajuste específico para Select (Neo-Brutalismo puro) */
+select {
+    cursor: pointer;
+    appearance: none; /* Quitamos la flecha nativa para un look más limpio */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='square' stroke-linejoin='arcs'%3E%3Cpath d='M6 9l6 6 6-6'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1rem;
+}
+
+/* =========================================
+   CONTENEDORES COLAPSABLES (NB-DETAILS)
+   ========================================= */
+
+details {
+    background: var(--surface);
+    border: var(--border);
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 0px #000;
+    transition: box-shadow 0.1s;
+}
+
+details[open] {
+    box-shadow: 4px 4px 0px #000;
+    padding-bottom: 1rem;
+}
+
+summary {
+    padding: 1rem;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid transparent;
+    transition: background 0.1s;
+}
+
+/* Indicador de estado Neo-Brutalista */
+summary::before {
+    content: "+";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    background: #fff;
+    color: #000;
+    margin-right: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.2rem;
+    
+}
+
+details[open] summary {
+    background: var(--accent-red);
+    color: #fff;
+    border-bottom: var(--border);
+    margin-bottom: 1rem;
+}
+
+details[open] summary::before {
+    content: "-";
+    background: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+/* Contenido Interno (Details Article) */
+details article {
+    background: var(--bg); /* Un tono ligeramente distinto al surface */
+    border: var(--border);
+    margin: 0 1rem;
+    padding: 1.5rem;
+    box-shadow: 2px 2px 0px #000;
+}
+
+/* Reset de elementos internos en modo colapsable */
+details article p, 
+details article h1, 
+details article h2, 
+details article h3 {
+    color: var(--text-main); /* Volvemos al texto principal para legibilidad */
+}
+
+/* Ajuste de Botones e Inputs dentro de Details */
+details article button,
+details article a.btn {
+    box-shadow: 2px 2px 0px #000;
+}
+
+details article input,
+details article textarea {
+    background: var(--surface);
+    border: var(--border);
+    box-shadow: none; /* Simplificamos dentro de detalles para no saturar */
+}
+
+details article input:focus {
+    background: #fff;
+    box-shadow: 2px 2px 0px var(--accent-red);
+}
+
+/* Eliminación de pseudo-elementos anteriores */
+details article button::after,
+details article a::after {
+    display: none;
+}
+
+/* =========================================
+   TABLAS TÉCNICAS (NB-TABLES)
+   ========================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    border: var(--border); /* Borde perimetral grueso */
+    background: var(--surface);
+    box-shadow: 4px 4px 0px #000; /* Sombra característica */
+}
+
+th {
+    text-align: left;
+    background: var(--text-main);
+    color: var(--bg);
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: var(--border);
+    
+}
+
+td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1); /* Separación interna sutil */
+    color: var(--text-main);
+    background: white;
+}
+
+[data-theme="dark"] td {
+    background: var(--surface);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Fila de Hover Neo-Brutalista */
+tr:hover td {
+    background: #fffdf0; /* Color crema para resaltar la fila */
+    color: var(--accent-red);
+    font-weight: bold;
+}
+
+[data-theme="dark"] tr:hover td {
+    background: #2a2a2a;
+}
+
+/* =========================================
+   SEPARADORES Y UTILIDADES (NB-UI)
+   ========================================= */
+/* =========================================
+   SEPARADOR: TERMINAL_BUFFER_BREAK
+   ========================================= */
+
+hr {
+    border: none;
+    height: 1px;
+    /* Trama de guiones tipo terminal */
+    background-image: linear-gradient(to right, var(--accent-red) 50%, transparent 50%);
+    background-size: 15px 1px;
+    background-repeat: repeat-x;
+    margin: 3rem 0;
+    position: relative;
+    overflow: visible;
+}
+
+/* Etiqueta técnica en el centro del separador */
+hr::before {
+    content: "[ BREAK_SEQUENCE ]";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--surface-contrast);
+    color: var(--accent-red);
+    padding: 0 15px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid var(--accent-red);
+    box-shadow: 2px 2px 0px #000;
+}
+
+
+
+#theme-toggle {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 9998;
+    
+    /* Reutilizamos el estilo de botón NB */
+    background: var(--text-main);
+    color: var(--bg);
+    border: var(--border);
+    padding: 0.6rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px var(--accent-red);
+    transition: 0.1s;
+}
+
+#theme-toggle:active {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+}
