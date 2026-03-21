@@ -42,7 +42,7 @@ f) CELERIDAD Y CONCENTRACIÓN. Los actos procesales deberán realizarse sin demo
 
 g) CONTRADICCIÓN. Es deber de los jueces velar por el efectivo contradictorio y asegurar a las partes la igualdad de tratamiento en relación al ejercicio de los derechos y facultades procesales, a los medios de defensa, a los deberes y a la aplicación de sanciones procesales.
 
-h) BUENA FE. Las partes, sus representantes o asistentes y, en general, todos los partícipes del proceso, ajustarán su conducta a la dignidad de la justicia, al respeto que se deben los litigantes y a la lealtad y buena fe conforme lo establecido en el Art. 22 de este Código. El Tribunal deberá impedir el fraude procesal y cualquier otra conducta ilícita o manifiestamente dilatoria.
+h) BUENA FE. Las partes, sus representantes o asistentes y, en general, todos los partícipes del proceso, ajustarán su conducta a la dignidad de la justicia, al respeto que se deben los litigantes y a la lealtad y buena fe conforme lo establecido en el artículo 22 de este Código. El Tribunal deberá impedir el fraude procesal y cualquier otra conducta ilícita o manifiestamente dilatoria.
 
 i) IGUALDAD Y DE COOPERACIÓN. El Tribunal debe velar por la igualdad de los litigantes y por preservar las garantías del debido proceso. Todos los sujetos del proceso deben cooperar entre sí para que se obtenga, en tiempo razonable, la decisión de mérito efectiva.
 
@@ -118,7 +118,7 @@ A) Serán competentes los Jueces Civiles y Comerciales de la Provincia para ente
 
 3\) Acciones derivadas de contratos civiles y comerciales, a excepción de las previstas en el inciso 1\) de este apartado, sin importar su monto;
 
-4\) Controversias sobre contratos de consumo que excedan del monto establecido en el Art. 7;
+4\) Controversias sobre contratos de consumo que excedan del monto establecido en el artículo 7;
 
 5\) Sucesiones;
 
@@ -134,9 +134,9 @@ B) Serán competentes los Jueces de Paz Letrados de la Provincia, para entender 
 
 3\) Cuestiones cuya resolución deba tramitarse por proceso de estructura monitoria y procesos de ejecución de resoluciones dictadas en las causas de su competencia, de laudos locales y extranjeros y de sentencias extranjeras que versaren sobre alguna de las materias previstas en este apartado;
 
-4\) Cuestiones derivadas de la responsabilidad civil hasta el monto fijado en el Art. 7\. Cuando el reclamo resarcitorio se acumule a acciones que sean de competencia exclusiva de los Jueces de Paz Letrado, la causa tramitará ante ellos sin importar el monto del resarcimiento reclamado;
+4\) Cuestiones derivadas de la responsabilidad civil hasta el monto fijado en el artículo 7\. Cuando el reclamo resarcitorio se acumule a acciones que sean de competencia exclusiva de los Jueces de Paz Letrado, la causa tramitará ante ellos sin importar el monto del resarcimiento reclamado;
 
-5\) Controversias sobre contratos de consumo hasta el monto fijado en el Art. 7;
+5\) Controversias sobre contratos de consumo hasta el monto fijado en el artículo 7;
 
 6\) Sobre conflictos entre vecinos que tramiten por el procedimiento de pequeñas causas.
 
@@ -184,7 +184,7 @@ I. UNIDAD DE MEDIDA: Créase como unidad de medida el JUS que será equivalente 
 
 Al solo efecto de la regulación de honorarios profesionales de abogados, procuradores y auxiliares de justicia, la Suprema Corte de Justicia deberá calcular y comunicar el valor actualizado de la unidad de medida JUS en forma simultánea a la variación salarial correspondiente a la asignación básica de Juez de primera instancia.
 
-Lo previsto en el párrafo precedente será aplicable al anticipo de honorarios contemplados en el Art. 180 inc. V de la presente ley."
+Lo previsto en el párrafo precedente será aplicable al anticipo de honorarios contemplados en el artículo 180 inc. V de la presente ley."
 
 Art. 8º RADICACIÓN DEFINITIVA DE LA COMPETENCIA.
 
@@ -220,9 +220,9 @@ IV. En caso de conflicto negativo y cuando procediendo de oficio dos o más Trib
 
 Art. 12º EXCUSACIÓN.
 
-I. Mediando algunas de las causales legales enumeradas en el Art. 14 inc. I, que afecten la garantía de imparcialidad de los jueces, deberán éstos excusarse de intervenir. También cuando existan otras causas que le impongan abstenerse de conocer en el juicio, fundada en motivos graves. Las partes no podrán oponerse a la excusación ni dispensar las causales invocadas.
+I. Mediando algunas de las causales legales enumeradas en el artículo 14 inc. I, que afecten la garantía de imparcialidad de los jueces, deberán éstos excusarse de intervenir. También cuando existan otras causas que le impongan abstenerse de conocer en el juicio, fundada en motivos graves. Las partes no podrán oponerse a la excusación ni dispensar las causales invocadas.
 
-II. En el caso de mediar alguna de las causales de sospecha enumeradas en el art. 14 inc. II, el Juez deberá hacerla conocer a las partes mediante cédula, para que ejerzan la facultad de recusarlos.
+II. En el caso de mediar alguna de las causales de sospecha enumeradas en el artículo 14 inc. II, el Juez deberá hacerla conocer a las partes mediante cédula, para que ejerzan la facultad de recusarlos.
 
 III. Si se trata de Juez de Tribunal Unipersonal o de Gestión Asociada, en el mismo auto en el cual se excusó, dispondrá la remisión a la Mesa de Entradas Civil para un nuevo sorteo de la causa o al subrogante legal, según corresponda. Este principio será también aplicado a los casos de recusación. Si se tratara de Tribunal Colegiado, el Juez que se excusare lo hará conocer al cuerpo para que éste disponga su integración.
 
@@ -320,9 +320,9 @@ I. Toda persona designada para cumplir o realizar un acto dentro del proceso, es
 
 II. Debe aceptar el cargo por escrito, bajo juramento de proceder con arreglo a derecho, dentro de los cinco (5) días de notificado. Ante la falta de aceptación dentro del plazo señalado, quedará sin efecto su designación, a petición de parte. Si se dejase sin efecto la designación por tal causa, el perito será suspendido de la lista respectiva por el término de un (1) mes para la primera falta, de tres (3) meses para la segunda y suspendido por todo el resto del año para la tercera falta. Estas sanciones no serán acumulables de año en año, recomenzando con la sanción mínima al entrar en vigencia las nuevas listas de profesionales. Tampoco será aplicable la sanción a todas las listas, en el caso que el Perito esté inscripto en más de una, sino solo en la que se produjo el incumplimiento.
 
-III. Debe constituir domicilio procesal electrónico conforme lo establezcan las acordadas y cumplir su cometido en el plazo que se le fije, que podrá ser ampliado una sola vez. En caso de incumplimiento, ante petición de parte, cesará en su desempeño sin derecho a remuneración y con las demás consecuencias previstas en el art. 193 de este Código. En caso de haber sido designado por sorteo de una lista de peritos, la falta de cumplimiento de la labor, además provocará la exclusión de la lista respectiva por el término de dos (2) meses para la primera falta, de cuatro (4) meses para la segunda y suspendido por todo el resto del año para la tercera, computables en la misma forma que la prevista en el inciso anterior.
+III. Debe constituir domicilio procesal electrónico conforme lo establezcan las acordadas y cumplir su cometido en el plazo que se le fije, que podrá ser ampliado una sola vez. En caso de incumplimiento, ante petición de parte, cesará en su desempeño sin derecho a remuneración y con las demás consecuencias previstas en el artículo 193 de este Código. En caso de haber sido designado por sorteo de una lista de peritos, la falta de cumplimiento de la labor, además provocará la exclusión de la lista respectiva por el término de dos (2) meses para la primera falta, de cuatro (4) meses para la segunda y suspendido por todo el resto del año para la tercera, computables en la misma forma que la prevista en el inciso anterior.
 
-IV. Los peritos y expertos pueden ser recusados en los casos previstos por el Art. 14\. La recusación será resuelta mediante auto, por el Juez o Tribunal, previa vista por tres (3) días al recusado.
+IV. Los peritos y expertos pueden ser recusados en los casos previstos por el artículo 14\. La recusación será resuelta mediante auto, por el Juez o Tribunal, previa vista por tres (3) días al recusado.
 
 V. Tratándose de profesiones u oficios reglamentados o de los cuales se expidan títulos o certificados habilitantes en el país, el Tribunal que ejerza la superintendencia en cada circunscripción judicial, llevará registros anuales, de los cuales enviará copia a cada Tribunal. Un reglamento establecerá las condiciones para inscribirse, distribución por Tribunales, otras causas por las cuales pueda eliminarse a los inscriptos y demás previsiones necesarias. Los listados electrónicos de profesionales inscriptos podrán ser consultados y serán exhibidos en la forma y lugar que establezcan las acordadas.
 
@@ -356,7 +356,7 @@ I. Los litigantes y quienes los representen y patrocinen, tienen el deber de den
 
 II. Si así no lo hicieren se los notificará y practicarán las diligencias que deban cumplirse en esos domicilios en los estrados del Tribunal, sin trámite o declaración previa alguna.
 
-III. Estos domicilios subsistirán a todos los efectos legales, mientras no sean expresamente cambiados, salvo lo previsto en el art. 31 última parte, para los casos de renuncia a la representación o al patrocinio letrado.
+III. Estos domicilios subsistirán a todos los efectos legales, mientras no sean expresamente cambiados, salvo lo previsto en el artículo 31 última parte, para los casos de renuncia a la representación o al patrocinio letrado.
 
 IV. Los jueces podrán atenuar el rigor de esta regla, cuando se tratare de expedientes paralizados por tiempo mayor de dos (2) años.
 
@@ -416,7 +416,7 @@ IV.- Iguales reglas se aplicarán si se trata de terceros llamados al proceso po
 
 Art. 27º RESPONDE FACULTADES Y CARGAS.
 
-I.- Vencido el plazo de la citación o citaciones sucesivas, conforme al Art. 26, sin que el citado asuma el carácter de litigante, automáticamente seguirá corriendo el plazo concedido al citante.
+I.- Vencido el plazo de la citación o citaciones sucesivas, conforme al artículo 26, sin que el citado asuma el carácter de litigante, automáticamente seguirá corriendo el plazo concedido al citante.
 
 II.- Los citados que comparezcan tendrán las facultades y cargas procesales que les correspondan, según sustituyan al citante o coadyuven con él, pero aún en el primer caso, éste continuará en el proceso a los fines de reconocimiento de firmas.
 
@@ -436,7 +436,7 @@ Art. 28º I.- ACCIÓN SUBROGATORIA:
 
 4.- El auto que acepta la acción por subrogación es inapelable, sin perjuicio de la oposición del subrogado; el que la deniega es apelable.
 
-5.- Si la demanda estuviere ya iniciada o contestada, el sustituido continuará actuando como coadyuvante de su sustituto; de lo contrario, se le citará al proceso en la forma y plazo y con los derechos señalados en el Art. 26, primer apartado.
+5.- Si la demanda estuviere ya iniciada o contestada, el sustituido continuará actuando como coadyuvante de su sustituto; de lo contrario, se le citará al proceso en la forma y plazo y con los derechos señalados en el artículo 26, primer apartado.
 
 6.- Compareciendo el subrogado a defender sus derechos en el proceso, el subrogatario actuará como tercerista coadyuvante. En todo caso el sustituído tiene la carga procesal de reconocer documentos.
 
@@ -470,9 +470,9 @@ e) el deudor se libera frente a su acreedor en la medida en que corresponda en f
 
 Art. 29º JUSTIFICACIÓN DE LA PERSONERÍA. RATIFICACIÓN.
 
-I.- Cuando los litigantes actúen por medio de representantes conforme al Art. 20, éstos deberán acreditar la personería en su primera presentación, con el documento pertinente; no se dará curso a ésta en caso contrario. Cuando se invoque un poder general o especial para varios actos, se lo acreditará con la agregación de una copia íntegra firmada por el letrado patrocinante o por el apoderado. De oficio o a petición de parte podrá intimarse la presentación del testimonio original. Si éste no fuere presentado o resultare insuficiente la representación invocada, se tendrá por nulo todo lo actuado con dicha invocación, sin perjuicio de las acciones que correspondan contra el profesional, conforme al Art. 47\.
+I.- Cuando los litigantes actúen por medio de representantes conforme al artículo 20, éstos deberán acreditar la personería en su primera presentación, con el documento pertinente; no se dará curso a ésta en caso contrario. Cuando se invoque un poder general o especial para varios actos, se lo acreditará con la agregación de una copia íntegra firmada por el letrado patrocinante o por el apoderado. De oficio o a petición de parte podrá intimarse la presentación del testimonio original. Si éste no fuere presentado o resultare insuficiente la representación invocada, se tendrá por nulo todo lo actuado con dicha invocación, sin perjuicio de las acciones que correspondan contra el profesional, conforme al artículo 47\.
 
-II.- Sin embargo, mediando urgencia y bajo la responsabilidad propia si fuere procurador de la matrícula y de un letrado en caso contrario, podrá autorizarse a que intervengan a quienes invocan una representación, la que deberán acreditar en el término de quince (15) días de hecha la presentación, bajo apercibimiento de desglose de la misma del expediente y su devolución, como también del pago de las costas y daños y perjuicios. En casos especiales el Juez podrá acordar un mayor plazo para justificar la personería. El plazo establecido en este Art. concluirá en el momento en que la contraria solicite el desglose. En ningún caso los jueces admitirán presentaciones que no acrediten debidamente la urgencia invocada, salvo que ésta sea notoria, sin perjuicio de lo dispuesto por el Art. 34 respecto de las facultades de los patrocinantes.
+II.- Sin embargo, mediando urgencia y bajo la responsabilidad propia si fuere procurador de la matrícula y de un letrado en caso contrario, podrá autorizarse a que intervengan a quienes invocan una representación, la que deberán acreditar en el término de quince (15) días de hecha la presentación, bajo apercibimiento de desglose de la misma del expediente y su devolución, como también del pago de las costas y daños y perjuicios. En casos especiales el Juez podrá acordar un mayor plazo para justificar la personería. El plazo establecido en este artículo concluirá en el momento en que la contraria solicite el desglose. En ningún caso los jueces admitirán presentaciones que no acrediten debidamente la urgencia invocada, salvo que ésta sea notoria, sin perjuicio de lo dispuesto por el artículo 34 respecto de las facultades de los patrocinantes.
 
 III.- Los padres que comparezcan en representación de sus hijos, no tendrán obligación de presentar las partidas pertinentes, salvo que el Juez, a petición de interesado o de oficio, los emplazara a presentarlas. En este caso es aplicable el segundo párrafo del apartado precedente.
 
@@ -480,7 +480,7 @@ IV.- La ratificación expresa del litigante o de sus representantes legales, com
 
 Art. 30º DEBERES Y FACULTADES DEL REPRESENTANTE.
 
-\- El representante tiene los mismos deberes y facultades procesales de su representado, si no hubieren sido disminuidos legal o convencionalmente, pero no responde por las costas, daños y perjuicios, salvo el caso del Art. 36\.
+\- El representante tiene los mismos deberes y facultades procesales de su representado, si no hubieren sido disminuidos legal o convencionalmente, pero no responde por las costas, daños y perjuicios, salvo el caso del artículo 36\.
 
 \- Debe continuar el trámite del proceso en todas sus etapas, incluso incidentes y recursos, y deberán entenderse con él las actuaciones judiciales, excepto las citaciones para cumplir actos personales.
 
@@ -522,7 +522,7 @@ Art. 34º DEBERES Y FACULTADES DE LOS ABOGADOS. DIGNIDAD.
 
 En el desempeño de su profesión, los abogados serán asimilados a los magistrados en cuanto al respeto y consideración que deben guardárseles.
 
-Además de los deberes y facultades genéricos establecidos en las leyes y en el Art. 22 de este Código, los abogados se ajustarán a las siguientes normas:
+Además de los deberes y facultades genéricos establecidos en las leyes y en el artículo 22 de este Código, los abogados se ajustarán a las siguientes normas:
 
 1\) La asistencia a su cliente es sin perjuicio de su colaboración con los jueces para la justa y pronta solución de los litigios.
 
@@ -534,9 +534,9 @@ Además de los deberes y facultades genéricos establecidos en las leyes y en el
 
 5\) Podrán solicitar al Tribunal el dictado de actos de mero trámite en los procesos en los que intervengan como patrocinantes y que tengan como fin hacer avanzar el proceso.
 
-6\) Podrá el abogado renunciar al patrocinio, en cuyo caso se procederá conforme lo dispuesto en el Art. 31 última parte.
+6\) Podrá el abogado renunciar al patrocinio, en cuyo caso se procederá conforme lo dispuesto en el artículo 31 última parte.
 
-7\) Es facultad de los abogados en el ejercicio de sus funciones, recabar directamente de las oficinas públicas, organismos oficiales y prestadores de servicios públicos, informes y antecedentes y solicitar certificados sobre hechos concretos atinentes a las causas en que intervengan. Estos pedidos deben ser evacuados dentro del plazo de diez (10) días. El requerimiento deberá formularse por escrito, con el nombre y domicilio del profesional, y la firma del abogado que irá seguida de su sello, en el que conste el número de matrícula. Si hubiere un proceso judicial en trámite, vinculado a los hechos o circunstancias que se investigan por el profesional, deberá consignarse en el requerimiento la carátula, el Juzgado y la Secretaría. Las contestaciones serán entregadas personalmente al abogado o remitidas a su domicilio, cuando así se lo solicite en el requerimiento. En el supuesto de que el requerimiento no fuera informado, el profesional, acreditando tal circunstancia, podrá solicitar su reiteración por vía judicial ante el juez competente, en cuyo caso se hará bajo apercibimiento de aplicar las sanciones conminatorias previstas en el Art. 47 inc. V de este Código.
+7\) Es facultad de los abogados en el ejercicio de sus funciones, recabar directamente de las oficinas públicas, organismos oficiales y prestadores de servicios públicos, informes y antecedentes y solicitar certificados sobre hechos concretos atinentes a las causas en que intervengan. Estos pedidos deben ser evacuados dentro del plazo de diez (10) días. El requerimiento deberá formularse por escrito, con el nombre y domicilio del profesional, y la firma del abogado que irá seguida de su sello, en el que conste el número de matrícula. Si hubiere un proceso judicial en trámite, vinculado a los hechos o circunstancias que se investigan por el profesional, deberá consignarse en el requerimiento la carátula, el Juzgado y la Secretaría. Las contestaciones serán entregadas personalmente al abogado o remitidas a su domicilio, cuando así se lo solicite en el requerimiento. En el supuesto de que el requerimiento no fuera informado, el profesional, acreditando tal circunstancia, podrá solicitar su reiteración por vía judicial ante el juez competente, en cuyo caso se hará bajo apercibimiento de aplicar las sanciones conminatorias previstas en el artículo 47 inc. V de este Código.
 
 8\) Si los abogados o procuradores hicieren fracasar de manera injustificada audiencias más de tres (3) veces en un mismo proceso, el Juez o Tribunal deberá remitir informe al Colegio de Abogados y Procuradores en el que el profesional estuviere matriculado.
 
@@ -584,7 +584,7 @@ Art. 38º DERECHOS A LAS COSTAS.
 
 I.- En el caso de condena en costas, los profesionales y demás auxiliares que tengan honorarios o gastos incluidos en dicha condena, tendrán opción a cobrarlos del condenado en costas o del litigante a quien representaron o patrocinaron o que motivó la actuación, el servicio o el gasto. En este último caso, el vencedor puede repetir lo pagado e incluirlo en la condena, del obligado por ella conforme al artículo precedente.
 
-II.- En los supuestos en que el juez limitase la responsabilidad del condenado en costas en el pago de los conceptos comprendidos en las mismas de conformidad con lo previsto en el inc. V del Art. 37 de este Código o ello correspondiere de acuerdo a lo previsto en la legislación de fondo, los profesionales y demás auxiliares beneficiarios podrán reclamar la parte no satisfecha al no condenado en costas que resulte obligado a su pago, conforme lo previsto en el párrafo precedente.
+II.- En los supuestos en que el juez limitase la responsabilidad del condenado en costas en el pago de los conceptos comprendidos en las mismas de conformidad con lo previsto en el inc. V del artículo 37 de este Código o ello correspondiere de acuerdo a lo previsto en la legislación de fondo, los profesionales y demás auxiliares beneficiarios podrán reclamar la parte no satisfecha al no condenado en costas que resulte obligado a su pago, conforme lo previsto en el párrafo precedente.
 
 Art. 39º REGULACIÓN DE HONORARIOS.
 
@@ -624,7 +624,7 @@ La acumulación subjetiva, que puede ser inicial o producirse en el curso del li
 
 Art. 44º ACUMULACIÓN SUBJETIVA VOLUNTARIA.
 
-Pueden acumularse las acciones de varios en contra de varios o en ambas formas, cuando exista comunidad o conexidad de causas o de objetos, en los supuestos previstos en el Art. 42 y siempre que se obtenga mediante la acumulación, economía procesal. Si así no fuere, el Juez desechará la acumulación, sin más trámite, disponiendo que las acciones se ejerciten separadamente. Esta forma de acumulación subjetiva sólo puede ser inicial, sin perjuicio de la acumulación de procesos. Puede escindirse por desistimiento, allanamiento o transacción de alguno o algunos de los litisconsortes.
+Pueden acumularse las acciones de varios en contra de varios o en ambas formas, cuando exista comunidad o conexidad de causas o de objetos, en los supuestos previstos en el artículo 42 y siempre que se obtenga mediante la acumulación, economía procesal. Si así no fuere, el Juez desechará la acumulación, sin más trámite, disponiendo que las acciones se ejerciten separadamente. Esta forma de acumulación subjetiva sólo puede ser inicial, sin perjuicio de la acumulación de procesos. Puede escindirse por desistimiento, allanamiento o transacción de alguno o algunos de los litisconsortes.
 
 Art. 45º ACUMULACIÓN SUBJETIVA NECESARIA.
 
@@ -668,7 +668,7 @@ En el transcurso de ellas podrán proponer a las partes fórmulas para simplific
 
 La Suprema Corte de Justicia deberá velar por la aplicación de este artículo a fin de que el exceso de causas con audiencias orales no entorpezca la rapidez y celeridad con que deben concluirse los procesos. Por Acordada se deberá disponer la forma en que se redistribuirán las causas en exceso y mientras dure el mismo.
 
-15\) Las providencias que los Jueces pueden dictar de acuerdo a este Art. son inapelables, salvo las previstas en los incisos 2\) y 7\) contra las cuales procederá el recurso de apelación abreviada.
+15\) Las providencias que los Jueces pueden dictar de acuerdo a este artículo son inapelables, salvo las previstas en los incisos 2\) y 7\) contra las cuales procederá el recurso de apelación abreviada.
 
 II.- AMIGO DEL TRIBUNAL.- 1\) Cualquier persona humana o jurídica de acreditada especialización y conocimientos en la materia de que se trate, puede presentarse o ser llamada en calidad de Amigo del Tribunal, a fin de expresar opinión fundada sobre la cuestión traída a resolver.
 
@@ -734,7 +734,7 @@ Sin perjuicio de los deberes y facultades que en otras disposiciones de este Có
 
 Art. 49º I.- IDIOMA.
 
-En toda actuación procesal deberá emplearse el idioma español. Cuando se presentaren documentos escritos en otros idiomas, se acompañarán con una versión en español, efectuada y firmada por traductor público de la matrícula. Cuando debiere declarar un testigo que no supiere expresarse en español, se designará previamente y por sorteo, un traductor público de la matrícula. En este último caso, en el supuesto de no poder designarse un traductor público matriculado, se recurrirá a la asistencia de una persona con suficiente dominio del idioma, lengua o lenguaje en el que se exprese el declarante, que sea de reconocida solvencia moral, quien deberá prestar juramento sobre la inexistencia de interés personal en el pleito y la exactitud de su traducción. En caso de probarse la falsedad de la traducción, será pasible de multa de hasta diez (10) JUS sin perjuicio de su obligación de resarcir los daños y perjuicios que provocare. Los litigantes podrán oponerse a su designación por las causales previstas en el Art. 14 de este Código.
+En toda actuación procesal deberá emplearse el idioma español. Cuando se presentaren documentos escritos en otros idiomas, se acompañarán con una versión en español, efectuada y firmada por traductor público de la matrícula. Cuando debiere declarar un testigo que no supiere expresarse en español, se designará previamente y por sorteo, un traductor público de la matrícula. En este último caso, en el supuesto de no poder designarse un traductor público matriculado, se recurrirá a la asistencia de una persona con suficiente dominio del idioma, lengua o lenguaje en el que se exprese el declarante, que sea de reconocida solvencia moral, quien deberá prestar juramento sobre la inexistencia de interés personal en el pleito y la exactitud de su traducción. En caso de probarse la falsedad de la traducción, será pasible de multa de hasta diez (10) JUS sin perjuicio de su obligación de resarcir los daños y perjuicios que provocare. Los litigantes podrán oponerse a su designación por las causales previstas en el artículo 14 de este Código.
 
 II.- ACTOS DE PERSONAS CON CAPACIDAD RESTRINGIDA.
 
@@ -748,7 +748,7 @@ Art. 50º A) FORMA DE LOS ESCRITOS.
 
 I.- Los escritos deberán llevar, en la parte superior, un breve resumen de su contenido; ser encabezados por el nombre y apellido del peticionante y de su representado, en su caso; número y carátula del expediente y estar escritos a máquina o a mano en forma fácilmente legible e indeleble.
 
-II.- Para la presentación de escritos, regirán las disposiciones que se dicten por la Suprema Corte de Justicia, conforme lo previsto por el Art. 1\.
+II.- Para la presentación de escritos, regirán las disposiciones que se dicten por la Suprema Corte de Justicia, conforme lo previsto por el artículo 1\.
 
 III.- En lo fundamental de su contenido, no se emplearán abreviaturas, ni números; no se dejarán renglones en blanco, sin inutilizar, ni se escribirá en los márgenes laterales superior o inferior. Podrá utilizarse la firma digital o electrónica o cualquiera que las sustituya, teniendo en cuenta la ley de fondo y las normas de gobierno electrónico. Por acordada se reglamentará la forma de uso de la firma digital, así como los medios físicos y tecnológicos para plasmarla en los actos procesales tanto para el Juez, las partes, auxiliares u otros intervinientes que se establezcan por resolución del Tribunal.
 
@@ -768,7 +768,7 @@ En los restantes casos, la información genérica de las actuaciones referida a 
 
 Art. 51º A) FORMA DE LAS ACTAS.
 
-I.- En las actas de las audiencias se aplicarán las mismas disposiciones contenidas en el Art. 50, salvo el resumen, y serán encabezadas con el lugar y fecha completa, funcionarios, litigantes y auxiliares que comparecen, quienes debieron hacerlo y no lo hicieron y el objeto de la audiencia.
+I.- En las actas de las audiencias se aplicarán las mismas disposiciones contenidas en el artículo 50, salvo el resumen, y serán encabezadas con el lugar y fecha completa, funcionarios, litigantes y auxiliares que comparecen, quienes debieron hacerlo y no lo hicieron y el objeto de la audiencia.
 
 II.- Se asentarán las exposiciones, salvo los alegatos, con la mayor fidelidad, en cuanto sea pertinente y las disposiciones y resoluciones tomadas en el acto por el Juez o Tribunal.
 
@@ -776,7 +776,7 @@ III.- Serán firmadas por el Juez o por el Mediador o funcionario conciliador, y
 
 IV.- Las audiencias serán documentadas y quedarán registradas por medio de soporte papel o tecnológico disponible según lo que establezca la reglamentación. El método utilizado deberá permitir extraer copia para el caso que las partes lo soliciten o para su consulta en otros procesos.
 
-V.- Los Tribunales de Alzada tendrán a su disposición los elementos donde conste la reproducción de la documentación, videoconferencias o de las audiencias inicial y final dentro del plazo previsto en el inc. I del Art. 135 de este Código. Podrá disponerse por acordada otras formas de integración y/o remisión de actos procesales recibidos oralmente que permita igual finalidad.
+V.- Los Tribunales de Alzada tendrán a su disposición los elementos donde conste la reproducción de la documentación, videoconferencias o de las audiencias inicial y final dentro del plazo previsto en el inc. I del artículo 135 de este Código. Podrá disponerse por acordada otras formas de integración y/o remisión de actos procesales recibidos oralmente que permita igual finalidad.
 
 B) AUDIENCIAS.
 
@@ -798,7 +798,7 @@ Son aquellas que no requieran ser fundamentadas, podrán hacerse en forma verbal
 
 Art. 53º COPIAS.
 
-De todo escrito en soporte de papel que debe darse traslado o vista y de los escritos en el referido formato en que se conteste el traslado o la vista, como así de los documentos que se presenten, se acompañará copia fiel, perfectamente legible y firmada para cada uno de los interesados. En caso de incumplimiento, se emplazará al presentante a cumplir con ello, dentro del plazo de dos (2) días de ser notificado, bajo apercibimiento de aplicación de las sanciones previstas en el Art. 47 inc. V.
+De todo escrito en soporte de papel que debe darse traslado o vista y de los escritos en el referido formato en que se conteste el traslado o la vista, como así de los documentos que se presenten, se acompañará copia fiel, perfectamente legible y firmada para cada uno de los interesados. En caso de incumplimiento, se emplazará al presentante a cumplir con ello, dentro del plazo de dos (2) días de ser notificado, bajo apercibimiento de aplicación de las sanciones previstas en el artículo 47 inc. V.
 
 Si el traslado no estuviere prescripto por este Código, las copias se presentarán dentro de dos (2) días del decreto que lo ordene, bajo igual apercibimiento.
 
@@ -808,7 +808,7 @@ Art. 54º INOBSERVANCIA DE RECAUDOS LEGALES.
 
 Si no se cumplieren los recaudos establecidos en los Arts. 49 y 50, el escrito en el soporte establecido no será admitido en el expediente, debiendo el Jefe de Mesa de Entradas señalar al interesado las deficiencias para que sean subsanadas y dejar constancia en el expediente de la presentación del escrito, de su objeto y de la causa del rechazo.
 
-El escrito rechazado se devolverá al interesado en la misma forma en que hubiese sido introducido, o según sea el soporte de papel o electrónico, quedará en una carpeta o documento adjunto del mismo tipo, debidamente identificado. La omisión de las formalidades establecidas en el Art. 51, hará pasible al Secretario de una multa de hasta un (1) JUS, sin perjuicio de la nulidad del acta, salvo que estuviere suscripta por el Juez.
+El escrito rechazado se devolverá al interesado en la misma forma en que hubiese sido introducido, o según sea el soporte de papel o electrónico, quedará en una carpeta o documento adjunto del mismo tipo, debidamente identificado. La omisión de las formalidades establecidas en el artículo 51, hará pasible al Secretario de una multa de hasta un (1) JUS, sin perjuicio de la nulidad del acta, salvo que estuviere suscripta por el Juez.
 
 ### CAPÍTULO II EXPEDIENTES
 
@@ -836,7 +836,7 @@ IV- ACTUACIONES EN SOPORTE PAPEL. Los expedientes en soporte papel podrán ser f
 
 V.- VENCIMIENTO. SANCIONES. Vencido el plazo del préstamo sin que el expediente en soporte papel haya sido devuelto sin causa justificada, el prestatario, a quien no se le facilitará el expediente en lo sucesivo, será condenado al pago de una multa de hasta un veinteavo (1/20) de JUS por día, sin perjuicio de las sanciones penales correspondientes y se librará orden al Oficial de Justicia, para que, con allanamiento de domicilio y uso de la fuerza pública, retire el expediente.
 
-VI- Para el caso de actuaciones electrónicas o digitales quienes intenten cualquier forma indebida de alteración, supresión o agregación contra las mismas será pasible de las sanciones previstas en el Art. 47 sin posibilidad de intervención nuevamente en la causa, con pérdida de honorarios y denuncia del caso con elevación a la justicia del crimen y al Colegio de profesionales pertinente, si correspondiere.
+VI- Para el caso de actuaciones electrónicas o digitales quienes intenten cualquier forma indebida de alteración, supresión o agregación contra las mismas será pasible de las sanciones previstas en el artículo 47 sin posibilidad de intervención nuevamente en la causa, con pérdida de honorarios y denuncia del caso con elevación a la justicia del crimen y al Colegio de profesionales pertinente, si correspondiere.
 
 Art. 57º TESTIMONIOS, CERTIFICADOS Y RECIBOS.
 
@@ -852,9 +852,9 @@ Mientras tanto, las partes mantendrán las constancias de sus presentaciones en 
 
 Art. 59º PARALIZACIÓN Y ARCHIVO DE EXPEDIENTES.
 
-I.- PARALIZACIÓN. PLAZO. A fin de propender a la mayor celeridad en la conclusión de los procesos, deberán arbitrarse los medios idóneos para detectar aquellos expedientes en los que no se hayan producido movimiento alguno en un plazo mayor a seis (6) meses. En tal supuesto, el juzgado deberá ordenar los actos necesarios para la continuación del trámite, conforme a lo previsto en el inciso d) del Art. 2° de este Código. En caso de que el impulso del proceso por parte del Juzgado fuera imposible, ordenará, mediante decreto, la remisión del expediente al archivo en carácter de paralizado. Tanto el decreto que ordena el impulso de la causa como el que declare su paralización, deberán ser notificados por cédula al domicilio procesal electrónico de las partes.
+I.- PARALIZACIÓN. PLAZO. A fin de propender a la mayor celeridad en la conclusión de los procesos, deberán arbitrarse los medios idóneos para detectar aquellos expedientes en los que no se hayan producido movimiento alguno en un plazo mayor a seis (6) meses. En tal supuesto, el juzgado deberá ordenar los actos necesarios para la continuación del trámite, conforme a lo previsto en el inciso d) del artículo 2° de este Código. En caso de que el impulso del proceso por parte del Juzgado fuera imposible, ordenará, mediante decreto, la remisión del expediente al archivo en carácter de paralizado. Tanto el decreto que ordena el impulso de la causa como el que declare su paralización, deberán ser notificados por cédula al domicilio procesal electrónico de las partes.
 
-II.- ARCHIVO. Terminado un proceso por cualquiera de los medios que este Código prevé, se dispondrá el archivo del expediente, dejándose constancia de la fecha de su envío y los datos necesarios para su búsqueda. En el archivo podrán ser examinados los expedientes, conforme a lo dispuesto por la primera sección del Art. 56\. Sólo podrán ser retirados por mandato judicial para ser agregados a otro expediente y con cargo de oportuna devolución.
+II.- ARCHIVO. Terminado un proceso por cualquiera de los medios que este Código prevé, se dispondrá el archivo del expediente, dejándose constancia de la fecha de su envío y los datos necesarios para su búsqueda. En el archivo podrán ser examinados los expedientes, conforme a lo dispuesto por la primera sección del artículo 56\. Sólo podrán ser retirados por mandato judicial para ser agregados a otro expediente y con cargo de oportuna devolución.
 
 III.- ARCHIVO EXPEDIENTE DIGITAL. Por acordada se reglamentará el archivo de expedientes electrónicos o digitales o en cualquier otro soporte tecnológicamente apto para ese fin, de forma tal que se asegure en el tiempo la posibilidad de recobrar los datos contenidos en el mismo. Se preverá el periodo de tiempo de guarda el que no será inferior a diez (10) años, salvo en el caso de procesos sucesorios los que deberán guardarse por tiempo indeterminado.
 
@@ -972,7 +972,7 @@ g) Toda resolución que fije audiencia y autos dictados de oficio.
 
 h) Toda providencia que ordene regir un término suspendido.
 
-i) La primera providencia que recaiga luego de que el expediente haya sido paralizado a los términos del Art. 59 inc. I de este Código.
+i) La primera providencia que recaiga luego de que el expediente haya sido paralizado a los términos del artículo 59 inc. I de este Código.
 
 Art. 69º NOTIFICACIÓN A PERSONAS INCIERTAS O DE IGNORADO DOMICILIO.
 
@@ -998,9 +998,9 @@ IV.- En el supuesto de que no se encontrara ninguna persona con quien diligencia
 
 B) NOTIFICACIÓN ELECTRÓNICA.
 
-Las notificaciones por cédula previstas en el Art. 68 de este Código, que deban practicarse en domicilio electrónico de las partes o en el domicilio procesal, podrán ser realizadas por medios electrónicos o informáticos, a través de documentos firmados digitalmente, conforme la reglamentación que dicte al efecto la Suprema Corte de Justicia, la que deberá respetar las siguientes pautas:
+Las notificaciones por cédula previstas en el artículo 68 de este Código, que deban practicarse en domicilio electrónico de las partes o en el domicilio procesal, podrán ser realizadas por medios electrónicos o informáticos, a través de documentos firmados digitalmente, conforme la reglamentación que dicte al efecto la Suprema Corte de Justicia, la que deberá respetar las siguientes pautas:
 
-I.- La comunicación deberá contener los requisitos previstos en el Art. 70 para las cédulas, especialmente la individualización clara y precisa de la persona a notificar; del número y carátula del expediente en que se dictó el acto; del Tribunal en el que radica, de la naturaleza del domicilio y del acto procesal a comunicar.
+I.- La comunicación deberá contener los requisitos previstos en el artículo 70 para las cédulas, especialmente la individualización clara y precisa de la persona a notificar; del número y carátula del expediente en que se dictó el acto; del Tribunal en el que radica, de la naturaleza del domicilio y del acto procesal a comunicar.
 
 II.- Aseguramiento de la inviolabilidad de la comunicación desde su emisión hasta su recepción.
 
@@ -1014,7 +1014,7 @@ VI.- El sistema debe ser auditable.
 
 Art. 71º FORMA DE LAS NOTIFICACIONES POSTAL, TELEGRÁFICA Y NOTARIAL.
 
-Toda notificación que por disposición del Código se establezca podrá ser reemplazada, por autorización del Tribunal a pedido del interesado, por telegrama colacionado, carta documento o acta notarial. La Suprema Corte de Justicia se encuentra facultada para celebrar convenios con empresas de servicios públicos o privados de correos a los fines de este Art. conforme a los sistemas de selección y adjudicación previstos en las leyes.
+Toda notificación que por disposición del Código se establezca podrá ser reemplazada, por autorización del Tribunal a pedido del interesado, por telegrama colacionado, carta documento o acta notarial. La Suprema Corte de Justicia se encuentra facultada para celebrar convenios con empresas de servicios públicos o privados de correos a los fines de este artículo conforme a los sistemas de selección y adjudicación previstos en las leyes.
 
 Art. 72º DE LA FORMA POR EDICTOS Y DE SU NOTIFICACIÓN.
 
@@ -1024,7 +1024,7 @@ II.- La notificación por edictos se practicará mediante publicaciones en el Bo
 
 III.- Podrá disponerse también que se propale por radiofonía, prensa, televisión o cualquier otro medio idóneo cuando el Tribunal lo considere necesario o lo solicitare el interesado.
 
-IV.- El número de publicaciones será el que en cada caso determine este Código. En el caso del emplazamiento para estar a derecho del Art. 68, se publicará el edicto tres (3) veces, con dos (2) días de intervalo y la sentencia, una (1) sola vez.
+IV.- El número de publicaciones será el que en cada caso determine este Código. En el caso del emplazamiento para estar a derecho del artículo 68, se publicará el edicto tres (3) veces, con dos (2) días de intervalo y la sentencia, una (1) sola vez.
 
 V.- Se agregará al expediente el texto impreso del edicto, que contenga la fecha de la publicación y el texto difundido. Además, podrá acompañarse el recibo correspondiente con indicación de la fecha de las publicaciones o de la fecha y hora de las transmisiones.
 
@@ -1042,9 +1042,9 @@ Sin embargo, si del expediente resultara que la persona a quien se notificó o d
 
 Art. 74º CUANDO PROCEDE LA REBELDÍA.
 
-Los litigantes originarios y sus sucesores procesales serán declarados rebeldes cuando no comparezcan ni constituyan domicilio procesal en el plazo señalado para hacerlo, conforme el Art. 21 de este Código.
+Los litigantes originarios y sus sucesores procesales serán declarados rebeldes cuando no comparezcan ni constituyan domicilio procesal en el plazo señalado para hacerlo, conforme el artículo 21 de este Código.
 
-También lo serán los terceros citados a comparecer a pedido de interesados o por disposición judicial, en el caso del Art. 45\.
+También lo serán los terceros citados a comparecer a pedido de interesados o por disposición judicial, en el caso del artículo 45\.
 
 En caso de reconvención y con respecto a ella, será declarado rebelde el reconvenido que no la contestare dentro del plazo concedido para hacerlo.
 
@@ -1052,9 +1052,9 @@ Art. 75º PROCEDIMIENTO Y EFECTOS DE LA REBELDÍA.
 
 I.- Vencido el plazo señalado para comparecer o para contestar en el caso de reconvención, se declarará rebelde al incompareciente, notificándose el decreto de rebeldía y la sentencia en la misma forma y en igual domicilio en el que se le había notificado el emplazamiento.
 
-II.- Las demás actuaciones judiciales se tendrán por notificadas conforme a lo dispuesto por el Art. 66\. Cuando la notificación se hubiera practicado en el domicilio real o procesal, la rebeldía constituye presunción de la verdad de los hechos afirmados por la contraria; presunción cuya eficacia será apreciada por el Tribunal, quien podrá decretar las medidas de prueba que creyere convenientes.
+II.- Las demás actuaciones judiciales se tendrán por notificadas conforme a lo dispuesto por el artículo 66\. Cuando la notificación se hubiera practicado en el domicilio real o procesal, la rebeldía constituye presunción de la verdad de los hechos afirmados por la contraria; presunción cuya eficacia será apreciada por el Tribunal, quien podrá decretar las medidas de prueba que creyere convenientes.
 
-III.- En este caso, a pedido de interesado podrá decretarse una medida precautoria suficiente para cubrir el resultado económico del proceso. Cuando la notificación se hubiera practicado a las personas y en la forma prevista en el Art. 69, el incompareciente será representado por el Ministerio Público de la Defensa y Pupilar, quien podrá responder sin admitir ni negar los hechos expuestos y el proceso seguirá el trámite que corresponda, en todas sus etapas.
+III.- En este caso, a pedido de interesado podrá decretarse una medida precautoria suficiente para cubrir el resultado económico del proceso. Cuando la notificación se hubiera practicado a las personas y en la forma prevista en el artículo 69, el incompareciente será representado por el Ministerio Público de la Defensa y Pupilar, quien podrá responder sin admitir ni negar los hechos expuestos y el proceso seguirá el trámite que corresponda, en todas sus etapas.
 
 Art. 76º COMPARECENCIA DEL REBELDE.
 
@@ -1062,9 +1062,9 @@ El litigante que fue declarado rebelde, podrá comparecer en cualquier estado de
 
 Art. 77º RESCISIÓN.
 
-En los casos en los cuales procede el incidente de nulidad conforme al Art. 94 o cuando se invoque y pruebe la imposibilidad de haber conocido el emplazamiento o de comparecer o hacerse representar, por fuerza mayor insuperable, podrá dejarse sin efecto la rebeldía, rescindirse lo actuado con posterioridad a ella, siempre que el interesado comparezca y lo solicite dentro del plazo de diez (10) días de haber tenido conocimiento del emplazamiento o de haber cesado la fuerza mayor. La solicitud de rescisión se sustanciará y resolverá de acuerdo al trámite señalado para los incidentes en el Art. 93, siendo apelable el auto resolutorio.
+En los casos en los cuales procede el incidente de nulidad conforme al artículo 94 o cuando se invoque y pruebe la imposibilidad de haber conocido el emplazamiento o de comparecer o hacerse representar, por fuerza mayor insuperable, podrá dejarse sin efecto la rebeldía, rescindirse lo actuado con posterioridad a ella, siempre que el interesado comparezca y lo solicite dentro del plazo de diez (10) días de haber tenido conocimiento del emplazamiento o de haber cesado la fuerza mayor. La solicitud de rescisión se sustanciará y resolverá de acuerdo al trámite señalado para los incidentes en el artículo 93, siendo apelable el auto resolutorio.
 
-En caso de que el Juez declare improcedente la rescisión y si resultare maliciosa la actitud del peticionante, violando el deber de probidad y lealtad que establece el Art. 22, el Juez podrá aplicar las sanciones que autorizan los incisos 2, 3 y 4 del Art. 47\.
+En caso de que el Juez declare improcedente la rescisión y si resultare maliciosa la actitud del peticionante, violando el deber de probidad y lealtad que establece el artículo 22, el Juez podrá aplicar las sanciones que autorizan los incisos 2, 3 y 4 del artículo 47\.
 
 ### CAPITULO VII CADUCIDAD DE INSTANCIA
 
@@ -1084,7 +1084,7 @@ III.- La caducidad no puede ser renunciada, ni prolongados expresamente sus plaz
 
 IV.- La perención debe ser declarada a pedido de parte. En primera o única instancia, por el demandado, salvo en los procesos de estructura monitoria, en los que podrá solicitarla únicamente el actor contra la oposición que se haya deducido, salvo que la caducidad la acuse el ejecutado antes de la notificación de la sentencia monitoria. En los incidentes, por el contrario del que los hubiere promovido.
 
-V.- La petición deberá formularse en el plazo de cinco (5) días de haber conocido el solicitante cualquier actuación que tenga por finalidad impulsar el procedimiento después del plazo del Art. 78, y se sustanciará con un traslado a la contraria.
+V.- La petición deberá formularse en el plazo de cinco (5) días de haber conocido el solicitante cualquier actuación que tenga por finalidad impulsar el procedimiento después del plazo del artículo 78, y se sustanciará con un traslado a la contraria.
 
 Art. 80º EFECTOS DE LA CADUCIDAD.
 
@@ -1116,7 +1116,7 @@ II.- En el primer caso no se requiere conformidad de la contraria y se extingue 
 
 III.- En el segundo caso, no puede declararse sin conformidad expresa de la contraria, si hubiera sido notificada.
 
-IV.- En ambos casos es aplicable lo dispuesto por el último apartado del Art. precedente.
+IV.- En ambos casos es aplicable lo dispuesto por el último apartado del artículo precedente.
 
 Art. 83º INTENTO OBLIGATORIO DE CONCILIACIÓN.
 
@@ -1146,7 +1146,7 @@ Art. 86º RESOLUCIONES JUDICIALES.
 
 I.- Tres (3) clases de resoluciones judiciales podrán dictarse en los procesos: decretos, autos y sentencias.
 
-II.- Los decretos proveen, sin sustanciación, al desarrollo del proceso y deben ser pronunciados dentro de los dos (2) días a contar desde la fecha del cargo, de la petición actuada o del vencimiento del plazo conforme al tercer apartado del Art. 62\.
+II.- Los decretos proveen, sin sustanciación, al desarrollo del proceso y deben ser pronunciados dentro de los dos (2) días a contar desde la fecha del cargo, de la petición actuada o del vencimiento del plazo conforme al tercer apartado del artículo 62\.
 
 III.- Los autos deciden todas las cuestiones que se planteen dentro del proceso que no deban ser resueltas en la sentencia definitiva y deben ser pronunciados en los plazos fijados por este Código y, a falta de aquéllos, dentro de los diez (10) días de quedar en estado.
 
@@ -1198,7 +1198,7 @@ Las sentencias contendrán:
 
 Art. 91º REMEDIO CONTRA LA MOROSIDAD EN LAS RESOLUCIONES JUDICIALES.
 
-Cuando no se dictaren las resoluciones judiciales en los plazos previstos en el Art. 86 o en los especiales que este Código fija, salvo caso de fuerza mayor, los litigantes y los representantes del Ministerio Público, deben denunciar el atraso por escrito en el expediente y se dejará constancia de la omisión en la foja de servicios del funcionario o magistrado responsable.
+Cuando no se dictaren las resoluciones judiciales en los plazos previstos en el artículo 86 o en los especiales que este Código fija, salvo caso de fuerza mayor, los litigantes y los representantes del Ministerio Público, deben denunciar el atraso por escrito en el expediente y se dejará constancia de la omisión en la foja de servicios del funcionario o magistrado responsable.
 
 Si se trata de auto o de sentencia, el juzgador perderá automáticamente competencia en el proceso, debiendo el Secretario pasarlo de inmediato al Tribunal Subrogante. Éste comunicará el hecho al Tribunal que ejerza la superintendencia y pronunciará la resolución en el plazo que corresponda, a contar desde la ejecutoria del respectivo llamamiento de autos.
 
@@ -1250,7 +1250,7 @@ Art. 95º BENEFICIARIOS.
 
 I.- El Estado Nacional, la Provincia, las municipalidades, las reparticiones autárquicas y las personas jurídicas dedicadas exclusivamente a prestar servicios públicos gratuitos, litigarán sin pagar gastos.
 
-II.- También gozan del beneficio las personas menores de edad, con capacidad restringida o incapacidad que se presenten con patrocinio propio, según los supuestos previstos en el Art. 20 inc. V de este Código.
+II.- También gozan del beneficio las personas menores de edad, con capacidad restringida o incapacidad que se presenten con patrocinio propio, según los supuestos previstos en el artículo 20 inc. V de este Código.
 
 III.- Las personas que por su situación económica no puedan abonar los gastos iniciales del litigio, podrán también obtener el beneficio, conforme a las disposiciones de este Capítulo.
 
@@ -1320,11 +1320,11 @@ Art. 99º TRÁMITE DE LA ACUMULACIÓN.
 
 I.- La acumulación de procesos podrá disponerse de oficio o a petición de interesados. Corresponde disponerla al Tribunal competente que interviene en el proceso iniciado primero.
 
-II.- Podrá decretarse de oficio para integrar la litis en el caso del Art. 45\. El Tribunal solicitará los demás expedientes, oirá a los litigantes y al Ministerio Público Fiscal y resolverá mediante auto.
+II.- Podrá decretarse de oficio para integrar la litis en el caso del artículo 45\. El Tribunal solicitará los demás expedientes, oirá a los litigantes y al Ministerio Público Fiscal y resolverá mediante auto.
 
 III.- Solicitada la acumulación, se pedirán los demás expedientes, se dará vista a los otros litigantes y al Ministerio Público Fiscal y se dictará el auto resolutorio que corresponda.
 
-IV.- Cuando se disponga la acumulación se hará saber a los Tribunales donde tramitaban los demás procesos. Cualquiera de ellos, si no lo considera procedente, podrá plantear la cuestión, siguiéndose el trámite señalado para la inhibitoria por el Art. 11, Sección III.
+IV.- Cuando se disponga la acumulación se hará saber a los Tribunales donde tramitaban los demás procesos. Cualquiera de ellos, si no lo considera procedente, podrá plantear la cuestión, siguiéndose el trámite señalado para la inhibitoria por el artículo 11, Sección III.
 
 V.- Desde que se inicie o comunique el incidente, se suspenderá el trámite de todos los procesos, salvo las medidas urgentes.
 
@@ -1340,7 +1340,7 @@ Los procesos acumulados se sustanciarán y fallarán conjuntamente, pero si el t
 
 Art. 101º NORMAS GENERALES RESPECTO A OFICIOS Y EXHORTOS.
 
-I.- Excepto lo previsto en el Art. 34 inc. 7, toda comunicación o pedido de informes a la administración pública o a particulares, ordenada judicialmente, que no sea citación para comparecer, se hará mediante oficio, que firmará el Secretario.
+I.- Excepto lo previsto en el artículo 34 inc. 7, toda comunicación o pedido de informes a la administración pública o a particulares, ordenada judicialmente, que no sea citación para comparecer, se hará mediante oficio, que firmará el Secretario.
 
 II.- Cuando se dirija a autoridad judicial, al Gobernador, Vicegobernador, Ministros y Presidentes de las Cámaras Legislativas se hará mediante exhorto u oficio, que firmará el Juez o el presidente del Tribunal. Se utilizará el oficio dentro del territorio nacional y el exhorto fuera del mismo.
 
@@ -1352,7 +1352,7 @@ IV.- Según el supuesto correspondiente, podrá entregarse al interesado, bajo r
 
 V.- Se dejará copia fiel en el expediente de todo oficio o exhorto que se libre.
 
-VI.- Los oficios podrán ser firmados digitalmente y diligenciados por vía electrónica, cumpliendo con los recaudos exigidos en los apartados anteriores, según la reglamentación que a tales efectos dicte la Suprema Corte de Justicia, adecuándose a las pautas establecidas en los incisos II a VI del Art. 70 inc. B).
+VI.- Los oficios podrán ser firmados digitalmente y diligenciados por vía electrónica, cumpliendo con los recaudos exigidos en los apartados anteriores, según la reglamentación que a tales efectos dicte la Suprema Corte de Justicia, adecuándose a las pautas establecidas en los incisos II a VI del artículo 70 inc. B).
 
 VII.- En los casos que existan leyes, convenios o tratados que rijan las comunicaciones interjurisdiccionales entre Tribunales y autoridades nacionales o extranjeras, se deberán cumplir los requisitos que fijen las normas respectivas.
 
@@ -1360,9 +1360,9 @@ Art. 102º DILIGENCIAMIENTO DE EXHORTOS.
 
 I.- Cuando se recibiere un exhorto de autoridad judicial del país, se dispondrá su cumplimiento, previa vista al Ministerio Público Fiscal y siempre que no se invadiere la competencia del Tribunal exhortado.
 
-II.- Cuando se denegare el diligenciamiento de exhortos de Tribunales del país, por invadir la competencia del Juez exhortado, se procederá como lo dispone el Art. 11 para la inhibitoria.
+II.- Cuando se denegare el diligenciamiento de exhortos de Tribunales del país, por invadir la competencia del Juez exhortado, se procederá como lo dispone el artículo 11 para la inhibitoria.
 
-III.- Tratándose de exhortos de autoridades judiciales extranjeras o para autoridades judiciales extranjeras, se procederá conforme lo dispongan los tratados y acuerdos internacionales y conforme lo establece el Art. 2612 del Código Civil y Comercial de la Nación.
+III.- Tratándose de exhortos de autoridades judiciales extranjeras o para autoridades judiciales extranjeras, se procederá conforme lo dispongan los tratados y acuerdos internacionales y conforme lo establece el artículo 2612 del Código Civil y Comercial de la Nación.
 
 IV.-En este último caso deberá darse intervención necesaria al Organismo Especializado que la Suprema Corte de Justicia disponga al efecto, por el término de cinco (5) días.
 
@@ -1426,9 +1426,9 @@ Sea que se tramite la tercería en la misma pieza o por separado, actor, demanda
 
 Art. 109º INTERVENCIÓN VOLUNTARIA DEL TERCERISTA.
 
-El tercerista que por un interés propio originario o por defender un interés ajeno, que por convención o disposición legal pueda incidir en el suyo, quiera intervenir como coadyuvante o sustituyendo a uno de los sujetos del proceso, deberá ajustarse a lo dispuesto por el Art. 105, pero los plazos que estuvieren corriendo se computarán desde la notificación del litigante al cual adhiere y sin perjuicio de lo dispuesto en los Arts. 23 a 28 para los casos de intervención en ellos previstos.
+El tercerista que por un interés propio originario o por defender un interés ajeno, que por convención o disposición legal pueda incidir en el suyo, quiera intervenir como coadyuvante o sustituyendo a uno de los sujetos del proceso, deberá ajustarse a lo dispuesto por el artículo 105, pero los plazos que estuvieren corriendo se computarán desde la notificación del litigante al cual adhiere y sin perjuicio de lo dispuesto en los Arts. 23 a 28 para los casos de intervención en ellos previstos.
 
-La admisión o rechazo del pedido de intervención se ajustará a lo establecido por el primer apartado del Art. 106\.
+La admisión o rechazo del pedido de intervención se ajustará a lo establecido por el primer apartado del artículo 106\.
 
 Art. 110º INTERVENCIÓN COACTIVA DEL LITIGANTE.
 
@@ -1516,7 +1516,7 @@ Para el aseguramiento anticipado de la ejecución forzosa, o de los bienes motiv
 
 Art. 117º EMBARGO PREVENTIVO.
 
-Procede el embargo preventivo cuando se justifiquen los recaudos establecidos por el Art. 112 y siguiendo el procedimiento allí señalado.
+Procede el embargo preventivo cuando se justifiquen los recaudos establecidos por el artículo 112 y siguiendo el procedimiento allí señalado.
 
 Procede también cuando exista rebeldía, allanamiento, confesión o sentencia favorable al solicitante, sin más recaudo.
 
@@ -1524,7 +1524,7 @@ Se cumplirá en la forma dispuesta para el embargo en el proceso monitorio.
 
 Art. 118º SECUESTRO.
 
-I.- Procede el secuestro de los bienes muebles o semovientes, motivo del litigio, cuando el embargo preventivo no bastare para asegurar el derecho invocado por el solicitante, siempre que se cumplieren los recaudos establecidos por el Art. 112 y siguiendo el procedimiento allí señalado.
+I.- Procede el secuestro de los bienes muebles o semovientes, motivo del litigio, cuando el embargo preventivo no bastare para asegurar el derecho invocado por el solicitante, siempre que se cumplieren los recaudos establecidos por el artículo 112 y siguiendo el procedimiento allí señalado.
 
 II.- El Tribunal, al ordenar el secuestro, individualizará claramente los bienes objeto de la medida y designará depositario a un establecimiento público o a una institución o particular de suficiente responsabilidad, fijando su remuneración y los actos que debe cumplir respecto a los bienes secuestrados.
 
@@ -1534,7 +1534,7 @@ Art. 119º INTERVENCIÓN JUDICIAL.
 
 Podrá ordenarse la intervención judicial la que se ajustará a las siguientes disposiciones comunes:
 
-1\) El Juez apreciará su procedencia en la forma establecida por el Art. 112 y la ordenará a falta de otra medida eficaz. La contracautela se fijará teniendo en consideración la clase de intervención, los perjuicios que pudiere irrogar y las costas.
+1\) El Juez apreciará su procedencia en la forma establecida por el artículo 112 y la ordenará a falta de otra medida eficaz. La contracautela se fijará teniendo en consideración la clase de intervención, los perjuicios que pudiere irrogar y las costas.
 
 2\) La designación del interventor recaerá en persona que posea los conocimientos necesarios para desempeñarse en función de la naturaleza de los bienes o actividades en que intervendrá, no pudiendo ser ninguno de los interesados.
 
@@ -1582,15 +1582,15 @@ Serán de aplicación a la administración judicial las disposiciones establecid
 
 Art. 124º PROHIBICIÓN DE CONTRATAR.
 
-Cuando por ley o por contrato, o para asegurar la ejecución forzosa, o los bienes motivo de la litis, proceda la prohibición de contratar sobre determinados bienes, el Tribunal, previa comprobación de los recaudos correspondientes según el caso, y ajustándose en los demás al Art. 112, ordenará la medida, individualizará lo que sea motivo de la prohibición, disponiendo se inscriba en los registros correspondientes y se notifique a los interesados y a los terceros que señale el solicitante.
+Cuando por ley o por contrato, o para asegurar la ejecución forzosa, o los bienes motivo de la litis, proceda la prohibición de contratar sobre determinados bienes, el Tribunal, previa comprobación de los recaudos correspondientes según el caso, y ajustándose en los demás al artículo 112, ordenará la medida, individualizará lo que sea motivo de la prohibición, disponiendo se inscriba en los registros correspondientes y se notifique a los interesados y a los terceros que señale el solicitante.
 
 Art. 125º PROHIBICIÓN DE INNOVAR. MEDIDA INNOVATIVA.
 
-En cualquier estado de un proceso, anterior a la sentencia definitiva, y cuando a juicio del Tribunal la medida sea necesaria, podrá ordenarse la prohibición de innovar o una medida innovativa, en lo que sea materia del pleito, debiendo acreditarse los recaudos establecidos en el Art. 112\. Estas medidas procederán en tal caso aún cuando materialmente se identifiquen con la pretensión principal. En este supuesto, transcurridos tres (3) meses desde su concesión, el afectado podrá pedir su levantamiento, lo que se resolverá con vista a la contraria.
+En cualquier estado de un proceso, anterior a la sentencia definitiva, y cuando a juicio del Tribunal la medida sea necesaria, podrá ordenarse la prohibición de innovar o una medida innovativa, en lo que sea materia del pleito, debiendo acreditarse los recaudos establecidos en el artículo 112\. Estas medidas procederán en tal caso aún cuando materialmente se identifiquen con la pretensión principal. En este supuesto, transcurridos tres (3) meses desde su concesión, el afectado podrá pedir su levantamiento, lo que se resolverá con vista a la contraria.
 
 Art. 126º ANOTACIÓN DE LITIS.
 
-Cuando se promoviera demanda sobre el dominio de bienes registrables o sobre constitución, declaración, modificación o extinción de cualquier derecho real o se ejercieren acciones vinculadas a tales bienes y la sentencia haya de ser opuesta a terceros, podrá solicitarse y ordenarse la anotación de la litis, debiendo acreditarse los recaudos establecidos en el Art.112, excepto el previsto por el inciso II.
+Cuando se promoviera demanda sobre el dominio de bienes registrables o sobre constitución, declaración, modificación o extinción de cualquier derecho real o se ejercieren acciones vinculadas a tales bienes y la sentencia haya de ser opuesta a terceros, podrá solicitarse y ordenarse la anotación de la litis, debiendo acreditarse los recaudos establecidos en el artículo112, excepto el previsto por el inciso II.
 
 Art. 127º INHIBICIÓN.
 
@@ -1626,7 +1626,7 @@ Art. 130º DEPÓSITO DE COSAS.
 
 Fuera de los casos de embargo preventivo y de secuestro, podrá disponerse, a pedido de quien los tiene en su poder, el depósito de bienes muebles o semovientes, cuando las leyes lo autoricen o lo disponga el Tribunal por las circunstancias especiales del caso.
 
-El depósito se ajustará en lo pertinente, a lo dispuesto por el segundo apartado del Art. 118, debiendo dejarse constancia de las cosas que se depositan, de su calidad y estado y se hará conocer a los interesados que denunciare el solicitante.
+El depósito se ajustará en lo pertinente, a lo dispuesto por el segundo apartado del artículo 118, debiendo dejarse constancia de las cosas que se depositan, de su calidad y estado y se hará conocer a los interesados que denunciare el solicitante.
 
 La medida se tomará a costa y riesgo del solicitante, sin perjuicio de que repita los gastos de quien procediere y en el proceso que corresponda.
 
@@ -1656,7 +1656,7 @@ III.- Mientras no hayan sido notificados, el Tribunal, de oficio, puede corregir
 
 IV.- El recurso será resuelto en el plazo de dos (2) o cuatro (4) días, según se trate de auto o sentencia y se notificará de la misma forma que la resolución aclarada.
 
-V.- Si la resolución cuya aclaratoria se pide fuera recurrible, el plazo para ello empezará a contarse desde el día siguiente a la notificación del auto que admite la aclaratoria, salvo lo dispuesto para los recursos extraordinarios en el Art. 146\.
+V.- Si la resolución cuya aclaratoria se pide fuera recurrible, el plazo para ello empezará a contarse desde el día siguiente a la notificación del auto que admite la aclaratoria, salvo lo dispuesto para los recursos extraordinarios en el artículo 146\.
 
 **SECCIÓN SEGUNDA RECURSO DE APELACIÓN**
 
@@ -1670,7 +1670,7 @@ II.- El recurso se interpondrá, sin fundarse, ante el Tribunal que dictó la re
 
 En los supuestos en los que la resolución que se pretende recurrir por esta vía haya sido dictada en audiencia en la que el interesado se encuentre presente, la apelación deberá ser interpuesta verbalmente en el mismo acto.
 
-Cuando proceda el recurso en forma abreviada, la interposición y fundamentación se regirá por lo previsto en el Art. 142\.
+Cuando proceda el recurso en forma abreviada, la interposición y fundamentación se regirá por lo previsto en el artículo 142\.
 
 III.- El recurso se concederá por decreto en el plazo de dos (2) días de ser interpuesto. En el mismo plazo y mediante auto, podrá ser denegado. Si el recurso fuera interpuesto en audiencia, deberá concederse o denegarse en el mismo acto, fundadamente en el último caso.
 
@@ -1700,7 +1700,7 @@ Art. 136º ATRIBUCIONES DE LA CÁMARA DE APELACIONES:
 
 I.- Recibido el expediente o compulsa por la Cámara de Apelaciones, antes de sustanciarlo y de oficio, controlará el cumplimiento de los recaudos formales de admisión del recurso. Puede modificar la forma de concesión o denegarlo, si hubiera sido mal concedido.
 
-II.- Podrá también, en su oportunidad, sin sustanciación y mediante auto fundado, declarar desierto el recurso por defecto en la expresión de agravios o fundamentación a los términos del Art. 137 de este Código.
+II.- Podrá también, en su oportunidad, sin sustanciación y mediante auto fundado, declarar desierto el recurso por defecto en la expresión de agravios o fundamentación a los términos del artículo 137 de este Código.
 
 III.- El Tribunal de Alzada podrá denegar el recurso por estar mal concedido o declararlo desierto por las razones referidas previamente, en cualquier estado del trámite y no obstante haberse sustanciado el recurso, hasta el momento previo a analizar el fondo de la causa.
 
@@ -1712,13 +1712,13 @@ VI.- En todo momento, la Cámara podrá, a pedido de parte o de oficio, fijar un
 
 Art. 137º APELACIÓN LIBRE.
 
-I.- Efectuado el control previsto en el Art. 136, se decretará que el apelante exprese agravios en el plazo de cinco (5) días de notificado.
+I.- Efectuado el control previsto en el artículo 136, se decretará que el apelante exprese agravios en el plazo de cinco (5) días de notificado.
 
 II.- De la expresión de agravios se dará traslado por igual plazo al apelado, notificándole a domicilio.
 
 III.- La expresión de agravios deberá ser clara, crítica, precisa y concreta, puntualizando las causales de nulidad, si las hubiere, y los errores en la apreciación de las pruebas o en el derecho aplicado en la sentencia, refiriéndose a los considerandos impugnados, a los medios de prueba analizados y a las normas legales cuya aplicación se discute, siendo obligatorio el patrocinio letrado.
 
-IV.- Si en el plazo señalado no se expresaran agravios o el escrito no reuniera los recaudos exigidos en este Art., el Tribunal, sin sustanciación, declarará desierto el recurso, disponiendo se devuelva el expediente a primera instancia, siendo las costas de la alzada a cargo del apelante.
+IV.- Si en el plazo señalado no se expresaran agravios o el escrito no reuniera los recaudos exigidos en este artículo, el Tribunal, sin sustanciación, declarará desierto el recurso, disponiendo se devuelva el expediente a primera instancia, siendo las costas de la alzada a cargo del apelante.
 
 Art. 138º PRUEBA EN LA ALZADA.
 
@@ -1746,7 +1746,7 @@ Cuando por cualquier causa no llegue a abrirse la instancia para el primer apela
 
 Art. 140º PLAZOS PARA DICTAR SENTENCIA.
 
-Contestada la expresión de agravios o vencido el plazo para hacerlo y finalizada la recepción de la prueba en su caso, se llamará autos para sentencia fijando el orden de los votos, la que será dictada en el plazo señalado por el Art. 86, el que empezará a correr al día siguiente de la notificación del referido decreto.
+Contestada la expresión de agravios o vencido el plazo para hacerlo y finalizada la recepción de la prueba en su caso, se llamará autos para sentencia fijando el orden de los votos, la que será dictada en el plazo señalado por el artículo 86, el que empezará a correr al día siguiente de la notificación del referido decreto.
 
 El Secretario entregará el expediente al Juez de Cámara que deba votar en primer lugar, dejando constancia de la fecha, bajo firma de quien lo recibe y la suya, en un libro destinado a tal fin.
 
@@ -1770,13 +1770,13 @@ VI.- Si se hubiera apelado un auto, se resolverá también mediante auto en el p
 
 Art. 142º APELACIÓN ABREVIADA.
 
-Cuando el recurso de apelación se hubiera concedido en forma abreviada, se aplicará en lo pertinente lo previsto en el art. 137 de este Código, con las siguientes excepciones:
+Cuando el recurso de apelación se hubiera concedido en forma abreviada, se aplicará en lo pertinente lo previsto en el artículo 137 de este Código, con las siguientes excepciones:
 
 I.- El plazo para fundar el recurso y contestar el traslado del mismo, será de tres (3) días;
 
 II.- No procederá la apelación adhesiva al recurso ni ofrecimiento ni producción de prueba.
 
-III.- Si se tratare de sentencia se procederá como lo dispone el segundo apartado del Art. 140 y el Art. 141\. Si se tratare de auto, se resolverá, sin voto individual, con sujeción a lo dispuesto por el Art. 89\. En ambos casos la resolución deberá dictarse en los plazos previstos por el Art. 86 de este Código.
+III.- Si se tratare de sentencia se procederá como lo dispone el segundo apartado del artículo 140 y el artículo 141\. Si se tratare de auto, se resolverá, sin voto individual, con sujeción a lo dispuesto por el artículo 89\. En ambos casos la resolución deberá dictarse en los plazos previstos por el artículo 86 de este Código.
 
 **SECCIÓN TERCERA RECURSO DIRECTO Y DE QUEJA.**
 
@@ -1794,9 +1794,9 @@ V.- Si dispusiera conceder el recurso, lo comunicará al Tribunal apelado y se s
 
 Art. 144º RECURSO DE QUEJA.
 
-Vencidos los plazos para dictar resoluciones conforme el Art. 86 o los especiales que este Código fija los litigantes deberán solicitar por escrito, pronunciamiento, haciendo conocer al Tribunal que ejerza la superintendencia su presentación.
+Vencidos los plazos para dictar resoluciones conforme el artículo 86 o los especiales que este Código fija los litigantes deberán solicitar por escrito, pronunciamiento, haciendo conocer al Tribunal que ejerza la superintendencia su presentación.
 
-Si no obstante lo solicitado no se dictara pronunciamiento y vencidos los plazos señalados por el Art. 91, los litigantes deberán presentarse en queja ante el Tribunal que ejerza la superintendencia, pidiendo la aplicación de los remedios previstos por dicho Art., sin perjuicio de lo que allá se disponga.
+Si no obstante lo solicitado no se dictara pronunciamiento y vencidos los plazos señalados por el artículo 91, los litigantes deberán presentarse en queja ante el Tribunal que ejerza la superintendencia, pidiendo la aplicación de los remedios previstos por dicho artículo, sin perjuicio de lo que allá se disponga.
 
 En caso de trámites judiciales con plazos para cumplirlos, vencidos éstos sin que se cumplan, deberá solicitarse por escrito su cumplimiento, procediéndose como lo dispone este artículo. El magistrado, funcionario o empleado culpable de la demora, será apercibido la primera vez y luego, en caso de una nueva falta, se le aplicará una multa no menor a un décimo (1/10) de JUS y de hasta cinco (5) JUS, sin perjuicio de otras sanciones que pudieren corresponder según la gravedad del caso.
 
@@ -1852,7 +1852,7 @@ IV.- En la misma resolución puede ordenar la suspensión del juicio principal.
 
 V.- Excepcionalmente, el Tribunal puede suspender provisoriamente la causa principal, antes de la admisión formal, cuando se acrediten en debida forma circunstancias graves que impidan esperar la recepción del proceso principal.
 
-VI.- Desestimado formalmente el recurso no podrá ser interpuesto nuevamente y el depósito tendrá el destino previsto en el Art. 47\.
+VI.- Desestimado formalmente el recurso no podrá ser interpuesto nuevamente y el depósito tendrá el destino previsto en el artículo 47\.
 
 VII.- Contra el auto que desestima formalmente el recurso sólo procede el recurso de reposición, en el supuesto de existencia de un error grosero.
 
@@ -1868,9 +1868,9 @@ III.- Contestada la vista o vencido el plazo se procederá conforme lo disponen 
 
 Art. 150º SENTENCIA. CONTENIDO. RECURSOS.
 
-I.- Cuando la Corte revoque o anule la resolución en recurso y se tratare de cualquiera de los casos previstos en los incisos a) y b) del Art. 147, deberá avocarse al conocimiento del litigio, decidiéndolo como corresponde.
+I.- Cuando la Corte revoque o anule la resolución en recurso y se tratare de cualquiera de los casos previstos en los incisos a) y b) del artículo 147, deberá avocarse al conocimiento del litigio, decidiéndolo como corresponde.
 
-II.- En los casos de los incisos c) y d) del Art. 147, si declara nula la resolución recurrida, procederá conforme a lo dispuesto en el párrafo precedente; si estimara que no puede cumplirse en contra de quien no fue citado como litigante en el proceso en el cual se dictó la resolución recurrida, así lo declarará; si anulara procedimiento sustancial, remitirá el proceso al tribunal que deba reemplazar el que intervenía y allí proseguirá la sustanciación.
+II.- En los casos de los incisos c) y d) del artículo 147, si declara nula la resolución recurrida, procederá conforme a lo dispuesto en el párrafo precedente; si estimara que no puede cumplirse en contra de quien no fue citado como litigante en el proceso en el cual se dictó la resolución recurrida, así lo declarará; si anulara procedimiento sustancial, remitirá el proceso al tribunal que deba reemplazar el que intervenía y allí proseguirá la sustanciación.
 
 III.- Cuando la Corte estimare que la resolución recurrida ha aplicado una ley o norma expresa, conforme a los [Arts. 148 y 149 de la Constitución de la Provincia](https://www.saij.gob.ar/9001-local-mendoza-codigo-procesal-civil-comercial-tributario-provincia-mendoza-lpm0009001-2017-08-30/123456789-0abc-defg-100-9000mvorpyel#CT000), que no correspondía o ha dejado de aplicar la que correspondía, obstando de ese modo al reconocimiento de las pretensiones del recurrente, así lo declarará, expresando cuál es la ley o norma aplicable al caso.
 
@@ -1902,7 +1902,7 @@ II.- Si se produjera oposición la misma se sustanciará y resolverá en la form
 
 III.- Finalizada la diligencia así será declarado por Secretaría dejándose la constancia respectiva.
 
-IV.- Si no se dedujera la demanda en el término de tres (3) meses de practicadas las diligencias, se procederá al archivo de las actuaciones a los términos del Art. 59\.
+IV.- Si no se dedujera la demanda en el término de tres (3) meses de practicadas las diligencias, se procederá al archivo de las actuaciones a los términos del artículo 59\.
 
 Art. 153º PRUEBA ANTICIPADA.
 
@@ -1948,7 +1948,7 @@ Art. 155º PROCESOS DE CONOCIMIENTO. ÁMBITO.
 
 I.- Todas las contiendas judiciales que no tengan una tramitación especial serán sustanciadas y decididas en proceso de conocimiento.
 
-II.- Cuando las leyes especiales remitan al juicio o proceso sumario o sumarísimo, se entenderá que el litigio tramitará conforme al procedimiento del juicio de conocimiento, sin perjuicio de la concentración de actos conforme lo previsto en el Art. 2 inc. f) de este Código.
+II.- Cuando las leyes especiales remitan al juicio o proceso sumario o sumarísimo, se entenderá que el litigio tramitará conforme al procedimiento del juicio de conocimiento, sin perjuicio de la concentración de actos conforme lo previsto en el artículo 2 inc. f) de este Código.
 
 Art. 156º REQUISITOS.
 
@@ -2000,7 +2000,7 @@ En caso de no cumplirse estos recaudos, el Tribunal podrá rechazar el planteo d
 
 Art. 157º SUBSANACIÓN DE DEFECTOS.
 
-El Tribunal verificará si se han cumplido los requisitos exigidos por el Art. precedente y los que se establecen en forma especial para el tipo de pretensión deducida.
+El Tribunal verificará si se han cumplido los requisitos exigidos por el artículo precedente y los que se establecen en forma especial para el tipo de pretensión deducida.
 
 Si así no fuera, resolverá, por auto que se cumpla, subsanándose los defectos u omisiones en el plazo de tres (3) días. Si así no lo hiciere, la presentación será desestimada sin más sustanciación. En este caso se procederá al archivo de las actuaciones, con devolución al interesado de la documentación original, en su caso.
 
@@ -2018,9 +2018,9 @@ En caso de que exista prejudicialidad o de no haberse agotado la instancia previ
 
 Art. 160º TRASLADO DE LA DEMANDA.
 
-Presentada la demanda en la forma prescripta por el Art. 156 o subsanadas las deficiencias conforme el Art. 157, se correrá traslado de ella al demandado, con citación y emplazamiento de veinte (20) días para que comparezca y responda.
+Presentada la demanda en la forma prescripta por el artículo 156 o subsanadas las deficiencias conforme el artículo 157, se correrá traslado de ella al demandado, con citación y emplazamiento de veinte (20) días para que comparezca y responda.
 
-Si fueren dos o más los demandados el plazo será común y si procediera la suspensión o ampliación conforme al Art. 64 respecto a uno, se suspenderá o ampliará respecto a todos.
+Si fueren dos o más los demandados el plazo será común y si procediera la suspensión o ampliación conforme al artículo 64 respecto a uno, se suspenderá o ampliará respecto a todos.
 
 Si el demandado residiere fuera de la República, el Juez fijará el plazo en que haya de comparecer, atendiendo a las distancias y a la mayor o menor facilidad de las comunicaciones, el que no podrá exceder de tres (3) meses.
 
@@ -2052,9 +2052,9 @@ Sin embargo, si en el curso del proceso se probare que esa ignorancia era simula
 
 Art. 162º RECONVENCIÓN.
 
-Juntamente con la contestación de la demanda podrá el demandado reconvenir ajustándose a lo prescripto por el Art.156.
+Juntamente con la contestación de la demanda podrá el demandado reconvenir ajustándose a lo prescripto por el artículo156.
 
-De la reconvención se dará traslado a la actora quien deberá contestar en el plazo señalado en el Art. 165 de este Código.
+De la reconvención se dará traslado a la actora quien deberá contestar en el plazo señalado en el artículo 165 de este Código.
 
 Art. 163º El demandado podrá reconvenir aún cuando la demanda reconvencional debiera tramitarse por la vía monitoria. En estos supuestos, la deducción de la reconvención importará la renuncia a la vía monitoria, tramitando la reconvención por el procedimiento de conocimiento.
 
@@ -2070,7 +2070,7 @@ Del escrito de contestación de la demanda se dará traslado al actor o reconvin
 
 También podrá deducir la falta de presupuestos procesales del demandado.
 
-En el mismo plazo y oportunidad deberá el actor expedirse conforme lo establece el Art. 161 respecto de los documentos que se le atribuyan y a la recepción de cartas, telegramas o comunicaciones informáticas o electrónicas.
+En el mismo plazo y oportunidad deberá el actor expedirse conforme lo establece el artículo 161 respecto de los documentos que se le atribuyan y a la recepción de cartas, telegramas o comunicaciones informáticas o electrónicas.
 
 Art. 166º CARGA PROBATORIA DINÁMICA.
 
@@ -2078,13 +2078,13 @@ Una vez trabada la litis, de acuerdo a la naturaleza del proceso, las cuestiones
 
 Art. 167º NUEVAS PRUEBAS. NUEVOS HECHOS.
 
-I.- NUEVAS PRUEBAS. Fuera de las oportunidades establecidas en los Art.s precedentes, no se admitirá ninguna clase de pruebas. Excepcionalmente, podrán admitirse documentos de fecha posterior o anterior siempre que se preste juramento de no haberlos conocido antes.
+I.- NUEVAS PRUEBAS. Fuera de las oportunidades establecidas en los artículos precedentes, no se admitirá ninguna clase de pruebas. Excepcionalmente, podrán admitirse documentos de fecha posterior o anterior siempre que se preste juramento de no haberlos conocido antes.
 
 Esta facultad podrá ejercerse mientras no se haya fijado la fecha para la audiencia final.
 
 II.- HECHOS NUEVOS Y SU PRUEBA. Dentro del mismo plazo podrán alegarse hechos nuevos y ofrecerse prueba sobre ellos.
 
-III.- INCIDENTE- TRÁMITE. Se sustanciará con un traslado a la contraria por cinco (5) días. Al contestar el traslado el litigante deberá ajustarse a lo dispuesto por el Art. 161 inc. 1\. Tendrá derecho a ofrecer contraprueba para desvirtuar el hecho nuevo o las nuevas pruebas alegadas y su naturaleza.
+III.- INCIDENTE- TRÁMITE. Se sustanciará con un traslado a la contraria por cinco (5) días. Al contestar el traslado el litigante deberá ajustarse a lo dispuesto por el artículo 161 inc. 1\. Tendrá derecho a ofrecer contraprueba para desvirtuar el hecho nuevo o las nuevas pruebas alegadas y su naturaleza.
 
 Si el incidente se sustanciara hasta cinco (5) días antes de la fecha fijada para la realización de la audiencia inicial, el Tribunal se pronunciará sobre la admisión o el rechazo de la nueva prueba o nuevo hecho en ésta. Si fuera posterior, emitirá pronunciamiento mediante auto.
 
@@ -2094,7 +2094,7 @@ Art. 168º EXCEPCIONES DE PREVIO Y ESPECIAL PRONUNCIAMIENTO.
 
 I.- Conjuntamente con la contestación podrá el demandado o reconvenido oponer excepciones de pronunciamiento previo en forma conjunta y subsidiaria, así como la prueba de que quisiese valerse.
 
-II.- El actor podrá denunciar la falta de presupuestos procesales del demandado al contestar el traslado de la contestación de demanda del Art.165 de la misma forma indicada en el párrafo anterior. El demandado podrá contestar dentro de los cinco (5) días posteriores a la notificación simple del decreto que provee dicha petición.
+II.- El actor podrá denunciar la falta de presupuestos procesales del demandado al contestar el traslado de la contestación de demanda del artículo165 de la misma forma indicada en el párrafo anterior. El demandado podrá contestar dentro de los cinco (5) días posteriores a la notificación simple del decreto que provee dicha petición.
 
 III.- Todas las excepciones previas serán resueltas en la audiencia inicial, dejándose constancia.
 
@@ -2122,11 +2122,11 @@ Las excepciones enumeradas en el artículo precedente, no podrán ser deducidas 
 
 Art. 170º SUSTANCIACIÓN.
 
-En caso de haberse ofrecido prueba que deba producirse, contestado por el actor en el traslado del Art. 165, se suspenderá el proceso y se procederá a su sustanciación, pronunciándose sobre la admisión de la prueba de las excepciones y ordenando su producción en un plazo de diez (10) días. Producida la prueba se dará vista al Ministerio Público Fiscal. Evacuada la vista o vencido el plazo para ello, se reanudará el proceso.
+En caso de haberse ofrecido prueba que deba producirse, contestado por el actor en el traslado del artículo 165, se suspenderá el proceso y se procederá a su sustanciación, pronunciándose sobre la admisión de la prueba de las excepciones y ordenando su producción en un plazo de diez (10) días. Producida la prueba se dará vista al Ministerio Público Fiscal. Evacuada la vista o vencido el plazo para ello, se reanudará el proceso.
 
 Art. 171º EFECTOS DEL AUTO QUE ACOGE EXCEPCIONES PREVIAS.
 
-I.- Al pronunciarse sobre las excepciones previas, en la oportunidad prevista en el Art. 173 inc. c) de este Código, primero deberá hacerlo sobre la competencia, la cosa juzgada y la litispendencia. En caso de declararse competente, resolverá al mismo tiempo sobre las demás excepciones previas.
+I.- Al pronunciarse sobre las excepciones previas, en la oportunidad prevista en el artículo 173 inc. c) de este Código, primero deberá hacerlo sobre la competencia, la cosa juzgada y la litispendencia. En caso de declararse competente, resolverá al mismo tiempo sobre las demás excepciones previas.
 
 II.- Si se acogieren definitivamente excepciones previas se procederá:
 
@@ -2136,7 +2136,7 @@ b) Si se tratare de litispendencia, cosa juzgada o prescripción liberatoria, se
 
 c) Si se tratare de litispendencia por conexidad, se remitirá al Tribunal donde tramita el otro proceso. Si ambos procesos fueran idénticos, se procederá al archivo.
 
-d) En caso de defecto legal o falta de capacidad procesal o de personería, falta de cumplimiento de obligaciones derivadas de proceso anterior, emplazará a que se subsanen los defectos en el plazo previsto en el Art. 157\. Vencido sin que el litigante cumpla lo resuelto, se lo tendrá por desistido de su pretensión, con costas a su cargo.
+d) En caso de defecto legal o falta de capacidad procesal o de personería, falta de cumplimiento de obligaciones derivadas de proceso anterior, emplazará a que se subsanen los defectos en el plazo previsto en el artículo 157\. Vencido sin que el litigante cumpla lo resuelto, se lo tendrá por desistido de su pretensión, con costas a su cargo.
 
 III.- La resolución sobre excepciones de previo y especial pronunciamiento será apelable, con efecto suspensivo.
 
@@ -2152,7 +2152,7 @@ II.- En caso contrario y existiendo hechos conducentes acerca de los cuales no h
 
 Esta audiencia deberá notificarse por cédula a domicilio real, a la dirección electrónica de los litigantes y al domicilio procesal electrónico.
 
-III.- COMPARECENCIA. Como regla general, las partes deberán comparecer a la audiencia inicial en forma personal. Excepcionalmente, cuando por previsión legal u orden judicial no sea posible la presencia personal simultánea de ambos litigantes o ello sea inconveniente por razones fundadas, sólo se admitirá la comparecencia de los litigantes por medio de apoderado. En los demás supuestos, mediando petición de parte por motivos fundados, a juicio del Tribunal, se autorizará que se presente por medio de representantes, quienes deberán concurrir con instrucciones suficientes para el normal desarrollo de la audiencia. La falta o insuficiencia de instrucciones no podrá ser invocada para la suspensión de la audiencia, salvo lo previsto en el Art. 48 inc. 4 de este Código.
+III.- COMPARECENCIA. Como regla general, las partes deberán comparecer a la audiencia inicial en forma personal. Excepcionalmente, cuando por previsión legal u orden judicial no sea posible la presencia personal simultánea de ambos litigantes o ello sea inconveniente por razones fundadas, sólo se admitirá la comparecencia de los litigantes por medio de apoderado. En los demás supuestos, mediando petición de parte por motivos fundados, a juicio del Tribunal, se autorizará que se presente por medio de representantes, quienes deberán concurrir con instrucciones suficientes para el normal desarrollo de la audiencia. La falta o insuficiencia de instrucciones no podrá ser invocada para la suspensión de la audiencia, salvo lo previsto en el artículo 48 inc. 4 de este Código.
 
 Los incapaces y las personas jurídicas los harán por medio de su representante o asesor letrado con instrucciones específicas sobre la posible conciliación. Las personas con capacidad restringida deberán concurrir acompañadas por su apoyo.
 
@@ -2166,7 +2166,7 @@ La audiencia inicial deberá ser dirigida en forma indelegable y bajo pena de nu
 
 En su desarrollo se cumplirán las siguientes actividades:
 
-a) Se invitará a las partes a una conciliación, conforme al Art. 83 y siguientes, u otra forma de solución de conflictos que acordarán en la audiencia. Debe procurarse un avenimiento parcial o total del litigio.
+a) Se invitará a las partes a una conciliación, conforme al artículo 83 y siguientes, u otra forma de solución de conflictos que acordarán en la audiencia. Debe procurarse un avenimiento parcial o total del litigio.
 
 b) Las partes pueden rectificar errores materiales en que hubieren incurrido en sus escritos iníciales.
 
@@ -2178,7 +2178,7 @@ e) El Tribunal se pronunciará sobre la admisibilidad de las pruebas ofrecidas p
 
 Si se tratare de prueba pericial, la designación de los peritos, en la forma prevista en este Código, deberá realizarse en la misma audiencia.
 
-f) El Tribunal podrá ordenar prueba de oficio, conforme el Art. 46 inc. 5, para una mejor búsqueda de la verdad.
+f) El Tribunal podrá ordenar prueba de oficio, conforme el artículo 46 inc. 5, para una mejor búsqueda de la verdad.
 
 g) Fijar el plazo dentro del cual deberá producirse toda la prueba que no deba rendirse en la audiencia final. Este plazo podrá ser ampliado prudencialmente por el juzgado a petición de parte, por única vez.
 
@@ -2204,7 +2204,7 @@ En particular, corresponde la prueba de los hechos constitutivos a quien los inv
 
 II.- Es carga procesal de cada litigante producir las medidas de prueba que hubiese ofrecido, en cuanto dependa de su actividad. Podrá ser producida también por los demás litigantes.
 
-III.- Salvo la prueba que deba producirse en la audiencia final, la admitida que no se encontrará producida dentro del plazo fijado a los términos del Art. 173 inc. g), caducará automáticamente.
+III.- Salvo la prueba que deba producirse en la audiencia final, la admitida que no se encontrará producida dentro del plazo fijado a los términos del artículo 173 inc. g), caducará automáticamente.
 
 Art. 176º MEDIOS DE PRUEBA.
 
@@ -2216,7 +2216,7 @@ Art. 177º PRUEBA INSTRUMENTAL.
 
 Los instrumentos públicos, privados y particulares no firmados ofrecidos como prueba, que no fueran observados oportunamente, se tendrán como auténticos, lo que se decidirá en la audiencia inicial.
 
-Cuando se hubieran acompañado copias simples o referencias de instrumentos conforme al Art. 156 inc. 6 se procederá en la siguiente forma:
+Cuando se hubieran acompañado copias simples o referencias de instrumentos conforme al artículo 156 inc. 6 se procederá en la siguiente forma:
 
 1\) Si se tratare de actuaciones judiciales o administrativas, se solicitará su remisión y si no fuere legal o materialmente posible, el envío de testimonio del mismo o de sus partes pertinentes.
 
@@ -2226,11 +2226,11 @@ Cuando se hubieran acompañado copias simples o referencias de instrumentos conf
 
 Art. 178º IMPUGNACIÓN DE INSTRUMENTOS.
 
-I.- Cuando se impugne un instrumento público o privado, total o parcialmente, o se declare ignorar la autenticidad de un instrumento privado o particular no firmado, en caso del Art. 161 inc. II.1.b, conjuntamente, se darán los fundamentos de esa actitud, y si se tratare de impugnación, se solicitarán las medidas necesarias para comprobarla. Si el impugnante fuera el actor se dará vista al demandado. En el caso del segundo párrafo del inciso II), quien ofreció el instrumento debe probar su autenticidad.
+I.- Cuando se impugne un instrumento público o privado, total o parcialmente, o se declare ignorar la autenticidad de un instrumento privado o particular no firmado, en caso del artículo 161 inc. II.1.b, conjuntamente, se darán los fundamentos de esa actitud, y si se tratare de impugnación, se solicitarán las medidas necesarias para comprobarla. Si el impugnante fuera el actor se dará vista al demandado. En el caso del segundo párrafo del inciso II), quien ofreció el instrumento debe probar su autenticidad.
 
 El cotejo de letras y dictamen de calígrafos, son medios de prueba que deberán siempre decretarse en estos casos.
 
-II.- Cuando se impugnare instrumentos privados o particulares no firmados atribuidos a terceros, deberán ser reconocidos ante el Tribunal dentro del plazo previsto en el Art. 175 inciso III. A tal fin, a petición del oferente, el tercero podrá ser emplazado a comparecer dentro del plazo que se le fije, bajo apercibimiento de sanciones conminatorias.
+II.- Cuando se impugnare instrumentos privados o particulares no firmados atribuidos a terceros, deberán ser reconocidos ante el Tribunal dentro del plazo previsto en el artículo 175 inciso III. A tal fin, a petición del oferente, el tercero podrá ser emplazado a comparecer dentro del plazo que se le fije, bajo apercibimiento de sanciones conminatorias.
 
 III.-En la sentencia se resolverá lo que corresponda sobre la impugnación o desconocimiento, pudiendo disponerse hacer conocer el hecho al Tribunal en materia penal que correspondiere, por si la conducta de algunos de los litigantes configurara un delito.
 
@@ -2250,9 +2250,9 @@ III.- Idoneidad: Si la profesión estuviese reglamentada, el perito deberá tene
 
 IV.- Forma de designación. En caso de ser tres, cada parte propondrá uno y el Juez el tercero. Si fuere uno, el Juez invitará a las partes a designarlo de común acuerdo. Si hubiere discrepancia, se efectuará un sorteo de la lista correspondiente. Si no se hubiera conformado lista de la especialidad requerida, el Juez lo nombrará directamente.
 
-V.- Si la pericia hubiera sido ofrecida por alguno de los litigantes, admitida la misma, el oferente que no goce del beneficio de litigar sin gastos, deberá acreditar en el plazo de cinco días, el depósito de un importe equivalente al monto mínimo de honorarios previsto en el Art. 184\. El incumplimiento de esta carga importará el desistimiento de la prueba sin necesidad de declaración alguna. Este importe será librado a favor del perito, a cuenta de honorarios, una vez presentado el informe o dictamen.
+V.- Si la pericia hubiera sido ofrecida por alguno de los litigantes, admitida la misma, el oferente que no goce del beneficio de litigar sin gastos, deberá acreditar en el plazo de cinco días, el depósito de un importe equivalente al monto mínimo de honorarios previsto en el artículo 184\. El incumplimiento de esta carga importará el desistimiento de la prueba sin necesidad de declaración alguna. Este importe será librado a favor del perito, a cuenta de honorarios, una vez presentado el informe o dictamen.
 
-VI.- El o los peritos designados, deberán aceptar el cargo en la forma, plazo y bajo el apercibimiento previstos en el Art. 19\. En caso de dejarse sin efecto la designación por falta de aceptación, se procederá de oficio a designar por sorteo un nuevo perito.
+VI.- El o los peritos designados, deberán aceptar el cargo en la forma, plazo y bajo el apercibimiento previstos en el artículo 19\. En caso de dejarse sin efecto la designación por falta de aceptación, se procederá de oficio a designar por sorteo un nuevo perito.
 
 Art. 181º CONSULTOR TÉCNICO.
 
@@ -2262,7 +2262,7 @@ Art. 182º RECONOCIMIENTO O EXAMEN PREVIOS. ANTICIPO DE GASTOS.
 
 I.- El perito deberá comunicar al Tribunal fecha y hora para el reconocimiento o examen, si correspondiere, el que se llevará a cabo dentro de un plazo no mayor a diez (10) días desde la aceptación del cargo. En este caso se les notificará a las partes a domicilio, quienes podrán asistir a la diligencia acompañados de sus consultores técnicos en su caso y hacer las observaciones que creyeren necesarias. El Juez, de oficio o a pedido de parte, podrá limitar esta facultad de los litigantes, según el tipo de pericia de que se trate, en la medida que la misma puedan resultar afectados derechos personalísimos.
 
-II.- Previo a la elaboración del dictamen los peritos podrán solicitar el adelanto de los gastos necesarios para la labor, en forma fundada y presentando el presupuesto correspondiente. De estimarlo total o parcialmente procedente, el Juez emplazará al oferente de la prueba a depositar el importe correspondiente en el plazo de cinco (5) días, bajo igual apercibimiento del previsto en el inciso IV del Art. 180\. En el caso de que la pericia hubiera sido ofrecida en forma directa o por adhesión, por ambas partes, el adelanto deberá ser aportado en forma conjunta. En el caso de que los oferentes de la pericia gocen del beneficio de litigar sin gastos, no les será exigible este adelanto, sin perjuicio de que los gastos deban ser soportados, oportunamente, por quien resulte condenado en costas. De igual forma se procederá cuando la pericia hubiera sido dispuesta de oficio. Conjuntamente con la presentación del informe, el perito deberá rendir cuenta documentada de la utilización de tales fondos que le hubieran sido adelantados y depositar, en su caso, el remanente.
+II.- Previo a la elaboración del dictamen los peritos podrán solicitar el adelanto de los gastos necesarios para la labor, en forma fundada y presentando el presupuesto correspondiente. De estimarlo total o parcialmente procedente, el Juez emplazará al oferente de la prueba a depositar el importe correspondiente en el plazo de cinco (5) días, bajo igual apercibimiento del previsto en el inciso IV del artículo 180\. En el caso de que la pericia hubiera sido ofrecida en forma directa o por adhesión, por ambas partes, el adelanto deberá ser aportado en forma conjunta. En el caso de que los oferentes de la pericia gocen del beneficio de litigar sin gastos, no les será exigible este adelanto, sin perjuicio de que los gastos deban ser soportados, oportunamente, por quien resulte condenado en costas. De igual forma se procederá cuando la pericia hubiera sido dispuesta de oficio. Conjuntamente con la presentación del informe, el perito deberá rendir cuenta documentada de la utilización de tales fondos que le hubieran sido adelantados y depositar, en su caso, el remanente.
 
 III.- Para los supuestos previstos en el inciso anterior en los que no les sea exigible al oferente de la pericia el adelanto de gastos o la medida de prueba haya sido dispuesta de oficio, el perito podrá excusarse de realizar la pericia, sin que ello lo haga pasible de sanción alguna.
 
@@ -2274,7 +2274,7 @@ II.- En el caso de la remoción previsto en el inciso anterior, el Juez proceder
 
 III.- El dictamen deberá ser imparcial y detallar los principios científicos o prácticos, las operaciones experimentales o técnicas en las cuales se funde y las conclusiones, respecto a cada punto sometido.
 
-IV.- Si el informe o dictamen no comprendiera todos los puntos propuestos por los litigantes o señalados por el juzgador o no se ajustare a lo dispuesto por los dos artículos precedentes o adoleciera de otras deficiencias que pudieran restarle eficacia, de oficio o a pedido de cualquiera de los litigantes, se dispondrá que, en el plazo de cinco (5) días, sean subsanadas las omisiones y deficiencias. Los litigantes podrán ejercer esa facultad dentro de los cinco (5) días de la notificación por cédula del decreto que dispone su agregación. La falta de cumplimiento de la orden judicial hará perder a los peritos el derecho a honorarios sin perjuicio de lo dispuesto por el Art. 19 de este Código. En este caso, deberá reintegrar las sumas recibidas a cuenta de honorarios y/o como adelanto de gastos conforme lo previsto en los dos Art.s precedentes.
+IV.- Si el informe o dictamen no comprendiera todos los puntos propuestos por los litigantes o señalados por el juzgador o no se ajustare a lo dispuesto por los dos artículos precedentes o adoleciera de otras deficiencias que pudieran restarle eficacia, de oficio o a pedido de cualquiera de los litigantes, se dispondrá que, en el plazo de cinco (5) días, sean subsanadas las omisiones y deficiencias. Los litigantes podrán ejercer esa facultad dentro de los cinco (5) días de la notificación por cédula del decreto que dispone su agregación. La falta de cumplimiento de la orden judicial hará perder a los peritos el derecho a honorarios sin perjuicio de lo dispuesto por el artículo 19 de este Código. En este caso, deberá reintegrar las sumas recibidas a cuenta de honorarios y/o como adelanto de gastos conforme lo previsto en los dos artículos precedentes.
 
 V.- A petición de parte o de oficio, en caso de ser necesario, se podrá citar a los peritos a comparecer a la audiencia final, donde podrán solicitárseles aclaraciones sobre los puntos que les fueron sometidos. Al efecto serán debidamente notificados. Si no pudieran comparecer con justa causa, deberán hacerlo saber al Tribunal con una antelación de cinco (5) días. La incomparecencia sin justa causa a la audiencia, los hará pasibles de una multa de hasta un JUS, sin perjuicio de que puedan ser obligados a comparecer por la fuerza pública.
 
@@ -2316,7 +2316,7 @@ IV.- En caso de imposibilidad de un testigo, permanente o muy prolongada, para c
 
 Art. 187º CITACIÓN DE TESTIGOS. INDEMNIZACIÓN.
 
-Los testigos serán citados por lo menos dos (2) días antes de la fecha de su declaración, debiendo estar presentes al momento de la audiencia final, haciéndoseles saber que, si no comparecieren sin justa causa, serán conducidos con el auxilio de la fuerza pública, sin perjuicio de las sanciones que el Tribunal considerara aplicables conforme al Art. 47\.
+Los testigos serán citados por lo menos dos (2) días antes de la fecha de su declaración, debiendo estar presentes al momento de la audiencia final, haciéndoseles saber que, si no comparecieren sin justa causa, serán conducidos con el auxilio de la fuerza pública, sin perjuicio de las sanciones que el Tribunal considerara aplicables conforme al artículo 47\.
 
 Si la comparecencia del testigo ocasionase gastos de alojamiento, traslados u otros, serán a cargo de quien lo propuso, sin perjuicio de su restitución, si correspondiere, por el condenado en costas.
 
@@ -2350,9 +2350,9 @@ V.- El testigo deberá justificar su identidad con el documento idóneo correspo
 
 Art. 190º OPOSICIONES Y TACHAS.
 
-I.- Si la persona que comparece, de acuerdo a sus datos personales y demás antecedentes, no fuera la misma que se ofreció como testigo o no reuniera los requisitos exigidos por el Art. 185, el Tribunal, de oficio o a pedido de la contraria, no admitirá su declaración.
+I.- Si la persona que comparece, de acuerdo a sus datos personales y demás antecedentes, no fuera la misma que se ofreció como testigo o no reuniera los requisitos exigidos por el artículo 185, el Tribunal, de oficio o a pedido de la contraria, no admitirá su declaración.
 
-II.- Las preguntas del pliego y ampliaciones; las repreguntas y preguntas de la contraria, que no se ajustaren a lo dispuesto por el Art. 188, serán modificadas o desestimadas, de oficio.
+II.- Las preguntas del pliego y ampliaciones; las repreguntas y preguntas de la contraria, que no se ajustaren a lo dispuesto por el artículo 188, serán modificadas o desestimadas, de oficio.
 
 III.- Antes de la audiencia final podrán las partes oponerse a la declaración de algún testigo debiendo justificarla debidamente.
 
@@ -2368,15 +2368,15 @@ Si fuera admitido, comenzará con la lectura de las declaraciones de quienes han
 
 Art. 192º SANCIONES A LOS TESTIGOS.
 
-Los testigos que sin justa causa se negaran a declarar o a responder a determinadas preguntas o se manifestaran en forma irrespetuosa o de cualquier manera dificultaran el esclarecimiento de la verdad o el desarrollo de la audiencia, podrán ser sancionados de acuerdo a lo dispuesto por el Art. 47\.
+Los testigos que sin justa causa se negaran a declarar o a responder a determinadas preguntas o se manifestaran en forma irrespetuosa o de cualquier manera dificultaran el esclarecimiento de la verdad o el desarrollo de la audiencia, podrán ser sancionados de acuerdo a lo dispuesto por el artículo 47\.
 
 Si la declaración ofreciere indicios graves de falso testimonio o de otro delito, el juzgador podrá decretar, en ese mismo acto, la detención de los culpables, remitiéndolos a disposición de la justicia penal, con testimonio o certificado de las piezas de donde surgieren los indicios. Igual actitud podrá adoptar en el momento de pronunciar sentencia.
 
 Art. 193º INSPECCIÓN Y EXAMEN JUDICIAL.
 
-I.- Cuando haya sido solicitado oportunamente por los litigantes, el examen judicial de personas o inspección de lugares, cosas o circunstancias idóneas y pertinentes, dentro de la circunscripción del Tribunal y el juzgador considerare conveniente admitir esa prueba o decretarla de oficio en el auto al cual se refiere el Art. 172, individualizará lo que haya de ser motivo del examen y el lugar, fecha y hora de su realización. Podrá, si lo creyere conveniente, disponer la concurrencia de peritos.
+I.- Cuando haya sido solicitado oportunamente por los litigantes, el examen judicial de personas o inspección de lugares, cosas o circunstancias idóneas y pertinentes, dentro de la circunscripción del Tribunal y el juzgador considerare conveniente admitir esa prueba o decretarla de oficio en el auto al cual se refiere el artículo 172, individualizará lo que haya de ser motivo del examen y el lugar, fecha y hora de su realización. Podrá, si lo creyere conveniente, disponer la concurrencia de peritos.
 
-II.- En ningún caso el Juez de la causa o el requerido conforme lo dispuesto en el Art. 173, podrá delegar la función encomendada bajo pena de nulidad, sin perjuicio de la responsabilidad que le quepa, pudiendo concurrir a realizar la medida con un funcionario que lo asista. Sin embargo, si la inspección o examen debiera realizarse a más de treinta kilómetros (30km) de la sede del Tribunal, sin que pueda encomendarse a otro Magistrado y su realización en forma personal provocara desajustes en el normal funcionamiento del Juzgado, el Juez podrá, a través de resolución fundada en la que se haga referencia a ambos requisitos, delegar la medida al Oficial de Justicia u otro funcionario idóneo, y disponer la utilización de los medios de documentación del acto correspondiente, en especial, la utilización de filmación en soporte digital, de contar con este medio.
+II.- En ningún caso el Juez de la causa o el requerido conforme lo dispuesto en el artículo 173, podrá delegar la función encomendada bajo pena de nulidad, sin perjuicio de la responsabilidad que le quepa, pudiendo concurrir a realizar la medida con un funcionario que lo asista. Sin embargo, si la inspección o examen debiera realizarse a más de treinta kilómetros (30km) de la sede del Tribunal, sin que pueda encomendarse a otro Magistrado y su realización en forma personal provocara desajustes en el normal funcionamiento del Juzgado, el Juez podrá, a través de resolución fundada en la que se haga referencia a ambos requisitos, delegar la medida al Oficial de Justicia u otro funcionario idóneo, y disponer la utilización de los medios de documentación del acto correspondiente, en especial, la utilización de filmación en soporte digital, de contar con este medio.
 
 III.- Los litigantes podrán comparecer, salvo que el Tribunal resuelva lo contrario; y hacer las observaciones que estimaren necesarias.
 
@@ -2386,7 +2386,7 @@ Art. 194º REPRODUCCIONES.
 
 En el caso de examen judicial o separadamente de él, podrá disponerse de oficio o a petición de litigantes, la reproducción gráfica de personas, lugares, cosas, filmaciones, fotos, grabaciones o medios idóneos y pertinentes como elementos de prueba, usando el medio técnico más fiel y adecuado al fin que se persiguiere.
 
-En el auto previsto en el Art. 172 o en la audiencia final, se tomarán las medidas para la recepción de esta prueba y su agregación al expediente, si fuere ello posible, o su conservación en el Tribunal en caso contrario, como asimismo sobre la designación de perito o experto encargado de su reproducción.
+En el auto previsto en el artículo 172 o en la audiencia final, se tomarán las medidas para la recepción de esta prueba y su agregación al expediente, si fuere ello posible, o su conservación en el Tribunal en caso contrario, como asimismo sobre la designación de perito o experto encargado de su reproducción.
 
 Art. 195º EXPERIENCIAS.
 
@@ -2414,7 +2414,7 @@ Todas y cada una de las pruebas serán apreciadas según las reglas de la sana c
 
 Art. 200º AUDIENCIA FINAL.
 
-I.- Producida la totalidad de la prueba que no pueda recibirse oralmente o acaecida su caducidad, el Juez o Tribunal, fijará audiencia final emplazando a las partes, testigos y peritos cuando correspondiere, a concurrir bajo apercibimiento de realizarse con la parte que se encuentre presente. De no haberse fijado fecha de audiencia final conforme a lo previsto en el inciso h) del Art. 173, la audiencia deberá fijarse para que tenga lugar dentro de un plazo mínimo de diez (10) días y máximo de veinte (20) días.
+I.- Producida la totalidad de la prueba que no pueda recibirse oralmente o acaecida su caducidad, el Juez o Tribunal, fijará audiencia final emplazando a las partes, testigos y peritos cuando correspondiere, a concurrir bajo apercibimiento de realizarse con la parte que se encuentre presente. De no haberse fijado fecha de audiencia final conforme a lo previsto en el inciso h) del artículo 173, la audiencia deberá fijarse para que tenga lugar dentro de un plazo mínimo de diez (10) días y máximo de veinte (20) días.
 
 II.- Será carga de las partes notificar a los testigos y peritos de los que pretendan valerse.
 
@@ -2474,17 +2474,17 @@ La audiencia deberá ser documentada por los medios técnicos que posea el Tribu
 
 Art. 204º BENEFICIO DE JUSTICIA GRATUITA.
 
-I.- Cuando los consumidores o usuarios inicien actuaciones judiciales de conformidad con las normas de fondo que regulan las relaciones de consumo en virtud de un derecho o un interés individual gozarán del beneficio de justicia gratuita, con los efectos previstos en el Art. 97 de este Código, sin necesidad de trámite o declaración alguna. El inicio de la causa deberá ser comunicado a los organismos recaudadores para que en su caso ejerzan la facultad prevista en el inc. III del Art. 97\.
+I.- Cuando los consumidores o usuarios inicien actuaciones judiciales de conformidad con las normas de fondo que regulan las relaciones de consumo en virtud de un derecho o un interés individual gozarán del beneficio de justicia gratuita, con los efectos previstos en el artículo 97 de este Código, sin necesidad de trámite o declaración alguna. El inicio de la causa deberá ser comunicado a los organismos recaudadores para que en su caso ejerzan la facultad prevista en el inc. III del artículo 97\.
 
 Los instrumentos que presentare el consumidor o usuario deberán ser admitidos aún cuando no tuvieren el sellado de ley, sin que ello obste a la sustanciación de la causa y sin perjuicio de lo que disponga el Código Fiscal.
 
 II.- COSTAS En los procesos de consumo, rigen las reglas generales dispuestas en los Arts. 35 y 36\. Por excepción el Tribunal podrá eximirlas, total o parcialmente, cuando el consumidor vencido por circunstancias especiales demuestre haber litigado con razón probable y buena fe.
 
-Asimismo, no será aplicable al consumidor o usuario la limitación del Art. 92 parte final de este Código.
+Asimismo, no será aplicable al consumidor o usuario la limitación del artículo 92 parte final de este Código.
 
 Art. 205º PRINCIPIOS APLICABLES.
 
-El proceso derivado de las relaciones de consumo se regirá por los principios establecidos en el Art. 2° de este Código, así como por el principio de protección para el consumidor o usuario, de conformidad con lo establecido por la Constitución Nacional y las leyes de fondo.
+El proceso derivado de las relaciones de consumo se regirá por los principios establecidos en el artículo 2° de este Código, así como por el principio de protección para el consumidor o usuario, de conformidad con lo establecido por la Constitución Nacional y las leyes de fondo.
 
 Art. 206º NORMAS DEL PROCESO DE CONSUMO.
 
@@ -2526,7 +2526,7 @@ b) Plano de mensura para título supletorio suscripto por profesional matriculad
 
 II.- La resolución que ordene correr traslado de la demanda al titular registral y/ o propietario será notificada por cédula al domicilio que corresponda. Además, se dispondrá:
 
-a) La citación a todos los que se consideren con derecho sobre el inmueble, la que se notificará por edictos debiendo publicarse por cinco (5) días en forma alternada, sin perjuicio de la mayor publicidad que disponga el Juez de conformidad con lo previsto en el Art. 72 inc. III de este Código.
+a) La citación a todos los que se consideren con derecho sobre el inmueble, la que se notificará por edictos debiendo publicarse por cinco (5) días en forma alternada, sin perjuicio de la mayor publicidad que disponga el Juez de conformidad con lo previsto en el artículo 72 inc. III de este Código.
 
 b) La citación a la Municipalidad o a la Provincia, según la ubicación del inmueble, para que se expidan sobre la existencia de interés público comprometido.
 
@@ -2750,11 +2750,11 @@ I.- La acción de amparo podrá ser articulada por toda persona humana o jurídi
 
 En caso de impedimento del titular del derecho constitucional afectado, podrá deducir la acción de amparo un tercero en su nombre, sin perjuicio de la responsabilidad en que incurra si hubiera actuado en forma maliciosa.
 
-II.- En los casos contemplados en el inciso II del Art. 219, sólo podrán articular la acción de amparo las personas que resulten directamente beneficiarias de la ley o norma de carácter general no reglamentada, sin perjuicio de lo dispuesto en el inciso I de este artículo para la legitimación procesal.
+II.- En los casos contemplados en el inciso II del artículo 219, sólo podrán articular la acción de amparo las personas que resulten directamente beneficiarias de la ley o norma de carácter general no reglamentada, sin perjuicio de lo dispuesto en el inciso I de este artículo para la legitimación procesal.
 
 Art. 221º COMPETENCIA.
 
-I.- Serán competentes para entender en las acciones de amparo, el Juez de primera instancia con competencia específica conforme lo establecido el Art. 5 inc. II de este Código, con competencia territorial en el lugar en que el hecho, acto u omisión que se impugne se haya ejecutado o deba ejecutarse.
+I.- Serán competentes para entender en las acciones de amparo, el Juez de primera instancia con competencia específica conforme lo establecido el artículo 5 inc. II de este Código, con competencia territorial en el lugar en que el hecho, acto u omisión que se impugne se haya ejecutado o deba ejecutarse.
 
 II.- Cuando se promuevan varias acciones de amparo en razón de un mismo hecho, acto u omisión, será competente para conocer de ellas el Juez que hubiese prevenido. Se aplicarán, en lo pertinente, las normas sobre acumulación de acciones y procesos previstas en este Código, siempre que no cause grave retardo en la sustanciación de los procedimientos anteriores.
 
@@ -2824,9 +2824,9 @@ II.- Contra las sentencias dictadas en estos procesos, sólo procede el recurso 
 
 Art. 227º ACCIÓN DE INCONSTITUCIONALIDAD.
 
-I.-La acción de inconstitucionalidad que puede promover el Fiscal de Estado, conforme el Art. 177, segundo párrafo de la Constitución Provincial, deberá deducirse dentro del plazo de un (1) mes desde la fecha de la vigencia de la ley, decreto, reglamento u ordenanza o desde que se formalizó el contrato o convenio o se dictó la resolución.
+I.-La acción de inconstitucionalidad que puede promover el Fiscal de Estado, conforme el artículo 177, segundo párrafo de la Constitución Provincial, deberá deducirse dentro del plazo de un (1) mes desde la fecha de la vigencia de la ley, decreto, reglamento u ordenanza o desde que se formalizó el contrato o convenio o se dictó la resolución.
 
-II.- La acción de inconstitucionalidad que pueden deducir los particulares conforme el Art. 48 de la Constitución Provincial, deberá ser promovida dentro del plazo de un (1) mes a contar desde el día en el cual la norma afecte el interés del accionante.
+II.- La acción de inconstitucionalidad que pueden deducir los particulares conforme el artículo 48 de la Constitución Provincial, deberá ser promovida dentro del plazo de un (1) mes a contar desde el día en el cual la norma afecte el interés del accionante.
 
 III.- La demanda mencionará en forma expresa y concreta, la cláusula constitucional violada y la norma en contra de la cual se acciona. Si se tratara de particulares, se expresará si existe lesión actual y en qué consiste y en caso contrario en qué consiste el interés legítimo que se invoca para demandar.
 
@@ -2840,7 +2840,7 @@ I.- Los jueces, magistrados, funcionarios y empleados judiciales, son personalme
 
 II.- En los casos de demanda para hacer efectiva la responsabilidad patrimonial de los magistrados judiciales será competente la Suprema Corte Justicia y se sustanciará con el Juez o Jueces a quienes se atribuye la responsabilidad, debiendo concurrir con patrocinio letrado o por intermedio de mandatario.
 
-III.- Al interponerse la demanda, deberá el actor acompañar el depósito en el banco destinado a tal efecto, del dos por ciento (2%) del valor económico del pleito. El depósito no podrá ser inferior a un (1) JUS. En caso de rechazo de la acción, el depósito tendrá el destino previsto en el Art. 47\. Quedan exentas de este depósito, las instituciones y personas que gocen de beneficio de litigar sin gastos.
+III.- Al interponerse la demanda, deberá el actor acompañar el depósito en el banco destinado a tal efecto, del dos por ciento (2%) del valor económico del pleito. El depósito no podrá ser inferior a un (1) JUS. En caso de rechazo de la acción, el depósito tendrá el destino previsto en el artículo 47\. Quedan exentas de este depósito, las instituciones y personas que gocen de beneficio de litigar sin gastos.
 
 IV.- Se aplicarán las normas del proceso de conocimiento.
 
@@ -2850,7 +2850,7 @@ En el caso previsto en el [Art. 56 de la Constitución de la Provincia](https://
 
 Art. 230º CONFLICTOS DE PODERES.
 
-En los casos de conflictos de competencia entre autoridades o poderes públicos de la Provincia y en los conflictos internos entre las diversas ramas de éstos a los cuales se refiere el Art. 144 inc. 4° de la Constitución Provincial, cualquiera de ellos podrá solicitar a la Suprema Corte de Justicia que dirima el conflicto.
+En los casos de conflictos de competencia entre autoridades o poderes públicos de la Provincia y en los conflictos internos entre las diversas ramas de éstos a los cuales se refiere el artículo 144 inc. 4° de la Constitución Provincial, cualquiera de ellos podrá solicitar a la Suprema Corte de Justicia que dirima el conflicto.
 
 Tramitarán conforme las siguientes reglas:
 
@@ -2878,7 +2878,7 @@ III.- La acción debe ser fundada, estableciendo clara y concretamente cuál de 
 
 IV.- La acción tramitará por el proceso de conocimiento.
 
-V.- La Suprema Corte de Justicia deberá rever la sentencia y en su caso declararla írrita, anulando el proceso originario y, sin solución de continuidad, resolverá sobre el fondo del asunto, ajustando su decisión a lo dispuesto en Art. 90\.
+V.- La Suprema Corte de Justicia deberá rever la sentencia y en su caso declararla írrita, anulando el proceso originario y, sin solución de continuidad, resolverá sobre el fondo del asunto, ajustando su decisión a lo dispuesto en artículo 90\.
 
 ## LIBRO TERCERO
 
@@ -2970,7 +2970,7 @@ Las disposiciones del párrafo anterior no se aplicarán a los procesos de ejecu
 
 IV.- PRUEBA ADMISIBLE. La prueba para fundar la oposición planteada no podrá limitarse, en ninguno de los supuestos, exclusivamente a la declaración de testigos.
 
-En los casos del inciso c) del Art. 232, sólo se admitirá el ofrecimiento de prueba documental y la pericial para fundar la oposición.
+En los casos del inciso c) del artículo 232, sólo se admitirá el ofrecimiento de prueba documental y la pericial para fundar la oposición.
 
 V.- EJECUCIÓN. COSTAS. Vencido el plazo y no existiendo oposición a la sentencia monitoria, se considera firme y se continuará con su ejecución aplicándose en cuanto fuere compatible, las normas correspondientes según la naturaleza de la prestación debida.
 
@@ -3008,7 +3008,7 @@ El oficial notificador deberá identificar a los presentes e informar al Juez el
 
 Aunque existieren sublocatarios u ocupantes ausentes en el acto de la notificación, no se suspenderán los efectos de la sentencia de desalojo. Para el cumplimiento de su cometido, el notificador podrá requerir el auxilio de la fuerza pública, allanar domicilios y exigir la exhibición de documentos de identidad u otros que fueren necesarios.
 
-5\) OCUPANTES MENORES DE EDAD. Si en el inmueble residen niños, niñas o adolescentes, el Juez comunicará al Organismo local de protección de derechos a fin de que disponga las medidas administrativas que estime corresponder. Asimismo dará intervención al Ministerio Público de la Defensa y Pupilar en los términos del Art. 103 del Código Civil y Comercial de la Nación.
+5\) OCUPANTES MENORES DE EDAD. Si en el inmueble residen niños, niñas o adolescentes, el Juez comunicará al Organismo local de protección de derechos a fin de que disponga las medidas administrativas que estime corresponder. Asimismo dará intervención al Ministerio Público de la Defensa y Pupilar en los términos del artículo 103 del Código Civil y Comercial de la Nación.
 
 6\) UBICACIÓN DEL INMUEBLE. Si faltare la chapa indicadora del número del inmueble donde debe practicarse la notificación, el oficial notificador procurará localizarlo inquiriendo a los vecinos. Si obtuviese indicios suficientes, requerirá en el inmueble así localizado, la identificación de los ocupantes, pidiéndoles razón de su relación con el demandado.
 
@@ -3018,11 +3018,11 @@ En este caso, si el notificador hallase al demandado personalmente y lo identifi
 
 8\) OPOSICIÓN. En el plazo otorgado por la sentencia para proceder al desalojo, el locatario, garante y ocupante, podrán oponer defensas, las cuales deberán ser documentadas o surgir expresamente de la instrumental acompañada.
 
-9\) RECHAZO IN LIMINE. Se ajustará a lo establecido por el Art. 235 \- III.
+9\) RECHAZO IN LIMINE. Se ajustará a lo establecido por el artículo 235 \- III.
 
 10\) De ser formalmente procedente la oposición, se correrá traslado por cinco (5) días al actor, quien podrá ofrecer prueba tendiente a desacreditar la misma, quedando suspendida la ejecución de la sentencia monitoria.
 
-11\) PRUEBA ADMISIBLE. La prueba a ofrecer para fundar la oposición planteada se ajustará a lo normado por el Art. 235 \- IV.
+11\) PRUEBA ADMISIBLE. La prueba a ofrecer para fundar la oposición planteada se ajustará a lo normado por el artículo 235 \- IV.
 
 12\) PLAZO PARA RESOLVER LA OPOSICIÓN. El plazo para resolver la oposición será de diez (10) días a partir de que quede firme el decreto que llama auto para resolver.
 
@@ -3036,7 +3036,7 @@ Las costas serán soportadas en el orden causado si el demandado se allanare de 
 
 Art. 238º RECUPERACIÓN DEL INMUEBLE.
 
-Denunciado por parte interesada que el ocupante ha abandonado el inmueble sin dejar quien haga sus veces, el Juez mediante constatación verificará el estado de abandono y dispondrá averiguaciones entre los vecinos para saber de la existencia y paradero de su ocupante. Si no lo obtuviere ordenará la entrega definitiva del inmueble y dará por resuelto el vínculo contractual con la salvedad establecida en la segunda parte del inc. 14 del Art. 237\.
+Denunciado por parte interesada que el ocupante ha abandonado el inmueble sin dejar quien haga sus veces, el Juez mediante constatación verificará el estado de abandono y dispondrá averiguaciones entre los vecinos para saber de la existencia y paradero de su ocupante. Si no lo obtuviere ordenará la entrega definitiva del inmueble y dará por resuelto el vínculo contractual con la salvedad establecida en la segunda parte del inc. 14 del artículo 237\.
 
 Art. 239º PROCESO DE CONOCIMIENTO.
 
@@ -3046,7 +3046,7 @@ Si no se pudiere optar por el procedimiento monitorio, la acción de desalojo de
 
 Art. 240º DE LA EJECUCIÓN HIPOTECARIA.
 
-I.- EXCEPCIONES ESPECIALES ADMISIBLES. \- Además de las excepciones previstas en el Art. 235 podrá invocarse también la caducidad de la inscripción hipotecaria y la nulidad por violación de los principios de especialidad y accesoriedad, con los efectos que determina la ley de fondo.
+I.- EXCEPCIONES ESPECIALES ADMISIBLES. \- Además de las excepciones previstas en el artículo 235 podrá invocarse también la caducidad de la inscripción hipotecaria y la nulidad por violación de los principios de especialidad y accesoriedad, con los efectos que determina la ley de fondo.
 
 II.- Al dictarse la sentencia monitoria se ordenará la anotación del embargo y que los registros informen:
 
@@ -3060,7 +3060,7 @@ IV.- Si por el informe del registro inmobiliario o denuncia del ejecutado, se tu
 
 Si hubiera otra u otras ejecuciones hipotecarias sobre el mismo inmueble, podrán acumularse.
 
-V.- Si la hipoteca hubiere sido constituida por un tercero, o del informe del registro inmobiliario o por denuncia del ejecutado, surgiere que el deudor hubiere transferido el inmueble hipotecado, se ampliará la sentencia monitoria respecto del tercero poseedor quien dentro del plazo del Art. 235 inc. I de este Código, podrá pagar la deuda, abandonar el inmueble o plantear oposición en los términos del Art. 235 inc. II. La sustanciación y resolución de las excepciones tramitarán en la forma y con los efectos previstos en el Art. 236, aunque el deudor no haya deducido oposición.
+V.- Si la hipoteca hubiere sido constituida por un tercero, o del informe del registro inmobiliario o por denuncia del ejecutado, surgiere que el deudor hubiere transferido el inmueble hipotecado, se ampliará la sentencia monitoria respecto del tercero poseedor quien dentro del plazo del artículo 235 inc. I de este Código, podrá pagar la deuda, abandonar el inmueble o plantear oposición en los términos del artículo 235 inc. II. La sustanciación y resolución de las excepciones tramitarán en la forma y con los efectos previstos en el artículo 236, aunque el deudor no haya deducido oposición.
 
 VI. \-Para la ejecución especial de la hipoteca deberá observarse el trámite previsto por la legislación de fondo.
 
@@ -3078,9 +3078,9 @@ En aquellos casos en que el gravamen hipotecario afecte a un inmueble destinado 
 
 Art. 242º DE LA EJECUCIÓN PRENDARIA.
 
-I.- PRENDA SIN DESPLAZAMIENTO. En la ejecución de la prenda sin desplazamiento, sólo serán oponibles las excepciones que se mencionan en el Art. 235 y las sustanciales que derivan de la legislación de fondo.
+I.- PRENDA SIN DESPLAZAMIENTO. En la ejecución de la prenda sin desplazamiento, sólo serán oponibles las excepciones que se mencionan en el artículo 235 y las sustanciales que derivan de la legislación de fondo.
 
-II.- PRENDA CON REGISTRO. En la ejecución de prenda con registro sólo procederán las excepciones previstas en el Art. 235, además de la caducidad de la inscripción y otras defensas derivadas de la legislación de fondo.
+II.- PRENDA CON REGISTRO. En la ejecución de prenda con registro sólo procederán las excepciones previstas en el artículo 235, además de la caducidad de la inscripción y otras defensas derivadas de la legislación de fondo.
 
 III.- EJECUCIÓN PRIVADA DE LA PRENDA CON REGISTRO. Queda excluido el trámite monitorio para la ejecución privada de la prenda con registro en la que deberá observarse el trámite previsto por la legislación de fondo.
 
@@ -3134,7 +3134,7 @@ Art. 248º REPRESENTACIÓN. RECAUDADORES FISCALES. REGISTRO.
 
 I.- La representación en el juicio de apremio será ejercida por los Recaudadores abogados o procuradores nombrados por los entes ejecutantes. Acreditarán su personería con la respectiva resolución de nombramiento o copia íntegra de la misma certificada.
 
-II.- Los recaudadores de entes fiscales no podrán actuar como patrocinantes, defensores o mandatarios en contra del Estado Provincial, sus dependencias y reparticiones descentralizadas o desconcentradas, sus empresas, Sociedades del Estado y/o Municipalidades ya sea en recursos administrativos o acciones judiciales, salvo lo dispuesto en el Art. 29 de la Ley 4976\. Esta limitación no rige para recaudadores de entes no fiscales.
+II.- Los recaudadores de entes fiscales no podrán actuar como patrocinantes, defensores o mandatarios en contra del Estado Provincial, sus dependencias y reparticiones descentralizadas o desconcentradas, sus empresas, Sociedades del Estado y/o Municipalidades ya sea en recursos administrativos o acciones judiciales, salvo lo dispuesto en el artículo 29 de la Ley 4976\. Esta limitación no rige para recaudadores de entes no fiscales.
 
 III.- Créase el Registro de Recaudadores con competencia en materia Tributaria que estará a cargo de la Oficina de Profesionales de la Primera Circunscripción Judicial y en las Delegaciones de la Suprema Corte de Justicia en las restantes circunscripciones. El registro deberá ser público, gratuito y con acceso vía internet. La inscripción vigente en el registro, sin más trámite, acreditará su representación en los procedimientos de apremio en los que actúen.
 
@@ -3158,7 +3158,7 @@ I.- El título para iniciar el juicio de apremio será la boleta de deuda, firma
 
 6\) Plazo para el pago administrativo de la deuda, el cual no podrá ser inferior a cinco (5) días.
 
-II.- La firma inserta al pie de la boleta a que se refiere la primera parte de este Art., podrá ser impresa por medios electrónicos e intervenida mediante el sistema de timbrado. A tal fin se deberán adoptar las medidas de control y seguridad que sean necesarias para garantizar su autenticidad.
+II.- La firma inserta al pie de la boleta a que se refiere la primera parte de este artículo, podrá ser impresa por medios electrónicos e intervenida mediante el sistema de timbrado. A tal fin se deberán adoptar las medidas de control y seguridad que sean necesarias para garantizar su autenticidad.
 
 III.- Cuando se verifiquen cambios en los sujetos pasivos y/o en los domicilios de éstos, insertos en el título, podrán denunciarse los mismos y anotarse las modificaciones que correspondan en la boleta de deuda, la que será avalada con la firma del funcionario competente.
 
@@ -3166,11 +3166,11 @@ Art. 250º PROCEDIMIENTO DE APREMIO. REGISTRO.
 
 I.- Con la boleta de deuda se emplazará al deudor para que haga efectivo el débito y el porcentaje que al recaudador le corresponda en el plazo fijado, bajo apercibimiento de iniciarse la acción judicial con más los gastos que establezca la reglamentación. Este emplazamiento pude ser practicado en el domicilio fiscal electrónico del demandado. No cancelada la deuda en el plazo indicado, el recaudador iniciará el juicio de apremio.
 
-II.- MEDIDAS CAUTELARES: En cualquier momento, y aún antes de iniciarse el procedimiento de apremio, podrá solicitarse cualquier medida cautelar en resguardo del crédito fiscal por la cantidad que adeuden o presumiblemente adeuden los contribuyentes, responsables o sujetos pasivos sobre cualquiera de sus bienes, inclusive cuentas o activos bancarios y financieros. A los efectos del otorgamiento de la medida cautelar preventiva, constituirá prueba suficiente la certificación de deuda emitida por las entidades recaudadoras en la forma que establezca la reglamentación, sin que resulten exigibles los extremos del Art. 112 de este Código. El pedido deberá ser resuelto por el juez dentro de los dos (2) días desde la presentación. Los embargos preventivos o medidas dispuestas por el Juez serán susceptibles de ser sustituidos por garantías reales o seguros de caución suficientes, y caducarán automáticamente si en el término de seis (6) meses de su traba, la parte actora no iniciara el correspondiente procedimiento de apremio. Si el afectado hubiere planteado recursos en sede administrativa, la caducidad del embargo preventivo se extenderá hasta seis (6) meses posteriores a que quede firme la resolución que agote la instancia administrativa. Si la medida precautoria fuera dispuesta sobre activos que el sujeto pasivo tenga, depositados en las entidades financieras regidas por la Ley 21.526, la misma se podrá diligenciar mediante oficio librado por el Juez interviniente al Banco Central de la República Argentina. Asimismo, el ejecutante podrá pedir, desde la iniciación del juicio y en cualquier estado del mismo, sin necesidad de cumplir con los requisitos que prevé el Art. 112 de este Código, la inhibición general de los deudores, siendo suficiente la sola presentación del título ejecutivo en que conste la deuda.
+II.- MEDIDAS CAUTELARES: En cualquier momento, y aún antes de iniciarse el procedimiento de apremio, podrá solicitarse cualquier medida cautelar en resguardo del crédito fiscal por la cantidad que adeuden o presumiblemente adeuden los contribuyentes, responsables o sujetos pasivos sobre cualquiera de sus bienes, inclusive cuentas o activos bancarios y financieros. A los efectos del otorgamiento de la medida cautelar preventiva, constituirá prueba suficiente la certificación de deuda emitida por las entidades recaudadoras en la forma que establezca la reglamentación, sin que resulten exigibles los extremos del artículo 112 de este Código. El pedido deberá ser resuelto por el juez dentro de los dos (2) días desde la presentación. Los embargos preventivos o medidas dispuestas por el Juez serán susceptibles de ser sustituidos por garantías reales o seguros de caución suficientes, y caducarán automáticamente si en el término de seis (6) meses de su traba, la parte actora no iniciara el correspondiente procedimiento de apremio. Si el afectado hubiere planteado recursos en sede administrativa, la caducidad del embargo preventivo se extenderá hasta seis (6) meses posteriores a que quede firme la resolución que agote la instancia administrativa. Si la medida precautoria fuera dispuesta sobre activos que el sujeto pasivo tenga, depositados en las entidades financieras regidas por la Ley 21.526, la misma se podrá diligenciar mediante oficio librado por el Juez interviniente al Banco Central de la República Argentina. Asimismo, el ejecutante podrá pedir, desde la iniciación del juicio y en cualquier estado del mismo, sin necesidad de cumplir con los requisitos que prevé el artículo 112 de este Código, la inhibición general de los deudores, siendo suficiente la sola presentación del título ejecutivo en que conste la deuda.
 
-III.- Los recaudadores podrán proponer la designación de Oficiales de Justicia y Receptores Ad-Hoc, quienes deberán previamente estar inscriptos en un registro que a tal fin llevarán los Tribunales con competencia en materia Tributaria. La inscripción deberá realizarse mediante petición firmada por el Recaudador y el encargado de la oficina de Apremio del ente recaudador o quien cumpla esa función. Podrán inscribirse hasta un máximo de dos Oficiales de Justicia y dos Receptores Ad-Hoc por cada Recaudador. Como condición de la inscripción estos auxiliares deberán prestar caución bajo de alguna de las formas previstas en el Art. 112 inc. III de este Código. La inscripción tendrá una vigencia de dos (2) años, renovable por petición expresa y en las mismas condiciones. El registro deberá ser público y gratuito.
+III.- Los recaudadores podrán proponer la designación de Oficiales de Justicia y Receptores Ad-Hoc, quienes deberán previamente estar inscriptos en un registro que a tal fin llevarán los Tribunales con competencia en materia Tributaria. La inscripción deberá realizarse mediante petición firmada por el Recaudador y el encargado de la oficina de Apremio del ente recaudador o quien cumpla esa función. Podrán inscribirse hasta un máximo de dos Oficiales de Justicia y dos Receptores Ad-Hoc por cada Recaudador. Como condición de la inscripción estos auxiliares deberán prestar caución bajo de alguna de las formas previstas en el artículo 112 inc. III de este Código. La inscripción tendrá una vigencia de dos (2) años, renovable por petición expresa y en las mismas condiciones. El registro deberá ser público y gratuito.
 
-IV.- El Juez examinará cuidadosamente el título y si hallare que éste reúne todos los recaudos de procedibilidad, dictará sentencia monitoria conforme dispone el Art. 235 de este Código.
+IV.- El Juez examinará cuidadosamente el título y si hallare que éste reúne todos los recaudos de procedibilidad, dictará sentencia monitoria conforme dispone el artículo 235 de este Código.
 
 V.- El término para oponerse a la ejecución será de cinco (5) días VI.- EXCEPCIONES ADMISIBLES. Sólo son admisibles como excepciones: a) Incompetencia. b) Pago total o parcial. c) Exención fundada en ley. d) Prórroga. e) Litispendencia. f) Cosa juzgada. g) Pendencia de recurso administrativo. h) Prescripción. i) Inhabilidad extrínseca del título. j) Falta de legitimidad sustancial pasiva.
 
@@ -3194,9 +3194,9 @@ VIII.- RECHAZO SIN MÁS TRÁMITE. TRASLADO. SUSTANCIACIÓN. Si se opusieren otra
 
 En los demás casos, de las excepciones opuestas se correrá traslado a la parte actora por el plazo de cinco (5) días para que las conteste y ofrezca prueba.
 
-Vencido el término del traslado, el Tribunal se pronunciará sobre la admisibilidad de las pruebas ofrecidas y ordenará su recepción, la que deberá producirse totalmente en el plazo de treinta (30) días bajo el apercibimiento previsto en el Art. 179 inc. IV de este Código.
+Vencido el término del traslado, el Tribunal se pronunciará sobre la admisibilidad de las pruebas ofrecidas y ordenará su recepción, la que deberá producirse totalmente en el plazo de treinta (30) días bajo el apercibimiento previsto en el artículo 179 inc. IV de este Código.
 
-IX.- SENTENCIA DE APREMIO: La misma deberá ser dictada conforme lo dispone el Art. 235 inc. III de este Código.
+IX.- SENTENCIA DE APREMIO: La misma deberá ser dictada conforme lo dispone el artículo 235 inc. III de este Código.
 
 X.- EJECUCIÓN DE SENTENCIA. ADJUDICACIÓN ACTORA. Durante la realización de la subasta y a criterio de la actora, ésta podrá adjudicarse los bienes por un monto igual al de la mejor oferta, siempre que dicho monto no supere la liquidación de la deuda que se pretende ejecutar, con más los honorarios y gastos causídicos. No habiendo posturas, el ejecutante podrá pedir que se efectúe una nueva subasta sin base o pedir su adjudicación conforme con los siguientes montos: a) Bienes inmuebles: por el avalúo fiscal. b) Bienes muebles: por la tasación del bien que establezca el martillero.
 
@@ -3216,7 +3216,7 @@ I.- Es apelable la sentencia que resuelve la oposición. El recurso deberá inte
 
 Art. 253º PROCESO DE CONOCIMIENTO POSTERIOR AL MONITORIO DE TÍTULOS EJECUTIVOS.
 
-Lo resuelto en el proceso monitorio, en los supuestos previstos en los incisos e), f), g) h), i), j), y k) del Art. 232 de este Código, podrá ser revisado en proceso de conocimiento posterior. Este proceso sólo podrá promoverse cuando haya quedado ejecutoriada la sentencia pronunciada en el proceso monitorio.
+Lo resuelto en el proceso monitorio, en los supuestos previstos en los incisos e), f), g) h), i), j), y k) del artículo 232 de este Código, podrá ser revisado en proceso de conocimiento posterior. Este proceso sólo podrá promoverse cuando haya quedado ejecutoriada la sentencia pronunciada en el proceso monitorio.
 
 Para conocer en el proceso de conocimiento posterior, cualquiera sea la naturaleza de la demanda que se interponga, será competente el mismo Tribunal que hubiere entendido en la primera instancia del proceso monitorio.
 
@@ -3308,7 +3308,7 @@ Art. 262º VENTA O ADJUDICACIÓN DE BIENES.
 
 I.- Si se hubieren embargado valores negociables o créditos, el acreedor podrá solicitar que se le adjudiquen por su valor nominal, y tratándose de títulos o acciones cotizables por su precio en la Bolsa de Comercio más próxima, a la fecha de la sentencia.
 
-II.- De lo contrario y tratándose de valores negociables, se procederá a su venta por un comisionista o corredor de bolsa designado en la forma prescripta por el Art. 46, inciso 6\.
+II.- De lo contrario y tratándose de valores negociables, se procederá a su venta por un comisionista o corredor de bolsa designado en la forma prescripta por el artículo 46, inciso 6\.
 
 III.- En caso de embargo de créditos, acciones o derechos litigiosos, podrá el ejecutante ejercer la acción subrogatoria.
 
@@ -3452,7 +3452,7 @@ Las subastas judiciales de bienes, de cualquier naturaleza, podrán realizarse a
 
 Dicho portal digital cumplirá con todas las medidas necesarias para garantizar la disponibilidad y accesibilidad permanente al mismo.
 
-Art. 279º REGISTRO DE POSTORES I.- Al efecto previsto en el Art. anterior, deberá crearse dentro del ámbito de la Oficina de Subastas un Registro General de Postores, en el cual cualquier persona humana o jurídica podrá inscribirse para participar en las subastas judiciales electrónicas que se dispongan. Dicha inscripción tendrá una vigencia de dos (2) años, contados a partir de la admisión del postulante, plazo que transcurrido producirá automáticamente la caducidad de la inscripción. Los interesados podrán reinscribirse, debiendo cumplimentar nuevamente el procedimiento de admisión establecido.
+Art. 279º REGISTRO DE POSTORES I.- Al efecto previsto en el artículo anterior, deberá crearse dentro del ámbito de la Oficina de Subastas un Registro General de Postores, en el cual cualquier persona humana o jurídica podrá inscribirse para participar en las subastas judiciales electrónicas que se dispongan. Dicha inscripción tendrá una vigencia de dos (2) años, contados a partir de la admisión del postulante, plazo que transcurrido producirá automáticamente la caducidad de la inscripción. Los interesados podrán reinscribirse, debiendo cumplimentar nuevamente el procedimiento de admisión establecido.
 
 II.- Las solicitudes de inscripción se formalizarán en los formularios previstos al efecto por la Oficina de Subastas, los que revestirán carácter de declaración jurada. Cumplido ello, el sistema generará una constancia de admisión en la que se consignarán los datos personales ingresados por el solicitante, la cual será enviada a la dirección de correo electrónico que aquél denunciara.
 
@@ -3578,7 +3578,7 @@ Podrán imponerse las sanciones conminatorias.
 
 La determinación de los daños y perjuicios tramitará ante el mismo Juez, por vía de incidente, salvo que la sentencia haya fijado su monto o las bases para determinarlo.
 
-Art. 299º CONDENA A NO HACER Si la sentencia condenare a no hacer alguna cosa, y el obligado la quebrantase, el acreedor tendrá opción para pedir que se repongan las cosas al estado en que se hallaban y a costa del deudor, o que se le indemnicen los daños y perjuicios, conforme a lo prescripto en el Art. anterior.
+Art. 299º CONDENA A NO HACER Si la sentencia condenare a no hacer alguna cosa, y el obligado la quebrantase, el acreedor tendrá opción para pedir que se repongan las cosas al estado en que se hallaban y a costa del deudor, o que se le indemnicen los daños y perjuicios, conforme a lo prescripto en el artículo anterior.
 
 Art. 300º CONDENA A ENTREGAR COSAS Cuando la condena fuera de entregar alguna cosa o cantidades de ellas, a pedido de parte se librará mandamiento para desapoderar de ellas al vencido quien podrá deducir excepciones en los términos establecidos en este Capítulo. Si no se dedujeren, los bienes desapoderados se entregarán en carácter de cumplimiento de la sentencia. Si la condena no pudiera cumplirse, se le obligará a la entrega del equivalente de su valor, previa determinación, con los daños y perjuicios a que hubiere lugar. La fijación de su monto se hará ante el mismo Juez.
 
@@ -3630,7 +3630,7 @@ Cuando no hubiese tratados, serán ejecutables si concurriesen los siguientes re
 
 6\) En materia de litispendencia internacional, la situación se regirá por las leyes de fondo.
 
-Art. 305º REQUISITOS FORMALES La sentencia extranjera cuya ejecución se pida, deberá venir íntegramente transcripta, en copia fehaciente, debidamente legalizada. Deberá expresar, además, que existen los requisitos establecidos en el Art. precedente. Para el caso en que dichos requisitos no resulten del texto de la sentencia misma, deberá exigirse las actuaciones que acrediten que se ha cumplido con dichos extremos. En los casos en que el pronunciamiento esté redactado en idioma extranjero, deberá acompañarse traducción suscripta por traductor matriculado.
+Art. 305º REQUISITOS FORMALES La sentencia extranjera cuya ejecución se pida, deberá venir íntegramente transcripta, en copia fehaciente, debidamente legalizada. Deberá expresar, además, que existen los requisitos establecidos en el artículo precedente. Para el caso en que dichos requisitos no resulten del texto de la sentencia misma, deberá exigirse las actuaciones que acrediten que se ha cumplido con dichos extremos. En los casos en que el pronunciamiento esté redactado en idioma extranjero, deberá acompañarse traducción suscripta por traductor matriculado.
 
 Art. 306º COMPETENCIA Y TRÁMITE La sentencia extranjera cuyo reconocimiento o ejecución se solicite, se presentará para su tramitación por ante el Juez de Primera Instancia según la materia que trate. Se dictará un auto homologando la sentencia o denegando su homologación. Este auto será apelable.
 
@@ -3648,7 +3648,7 @@ Art. 309º EJECUCIÓN DE HONORARIOS.- I.- La ejecución procede en contra del pa
 
 Si la ejecución se dirigiera contra el patrocinado, mandante o persona que propuso la medida, y este justificare mediante declaración del ejecutante o recibos, que ha abonado los honorarios, podrá seguirse la ejecución en la misma pieza por quien los abonó, contra el condenado en costas.
 
-II.- En el caso de honorarios devengados en medidas decretadas de oficio, ambos litigantes son responsables del cincuenta por ciento (50%), sin perjuicio del derecho de repetición concedido por este Art. en contra del condenado en costas.
+II.- En el caso de honorarios devengados en medidas decretadas de oficio, ambos litigantes son responsables del cincuenta por ciento (50%), sin perjuicio del derecho de repetición concedido por este artículo en contra del condenado en costas.
 
 III.- Los titulares del honorario regulado judicialmente podrán optar porque se incluyan en la ejecución de la sentencia, haciéndolo saber al Tribunal.
 
@@ -3714,11 +3714,11 @@ Art. 314º COMPROMISO ARBITRAL El compromiso arbitral debe contener:
 
 4\) Nombre y domicilio de los árbitros y si procederán como árbitros de derecho, amigables componedores o peritos árbitros. El Tribunal Arbitral deberá estar constituido por uno (1) o tres (3) árbitros, nombrados de común acuerdo por los interesados, quienes designarán también un Secretario de actuación. A falta de acuerdo hará las designaciones el Juez.
 
-5\) La sede en que actuará el Tribunal y el plazo para laudar. Si se omitieren algunos de estos requisitos y siempre que estuvieren determinadas o pudieren determinarse la cuestión o cuestiones litigiosas, el Juez completará el compromiso en la forma dispuesta en el Art. siguiente, pudiendo previamente disponerse subsanen los defectos.
+5\) La sede en que actuará el Tribunal y el plazo para laudar. Si se omitieren algunos de estos requisitos y siempre que estuvieren determinadas o pudieren determinarse la cuestión o cuestiones litigiosas, el Juez completará el compromiso en la forma dispuesta en el artículo siguiente, pudiendo previamente disponerse subsanen los defectos.
 
 6\) La determinación de una multa, que deberá pagar, a favor de la contraria, el compromitente que no cumpla con los actos indispensables para hacer efectivo el compromiso.
 
-Art. 315º INTERVENCIÓN JUDICIAL PREVIA En el caso previsto en el último apartado del Art. precedente, cuando cualquiera de los compromitentes se resistiere al cumplimiento de lo pactado o a otorgar el compromiso, podrá demandarse por constitución de Tribunal Arbitral.
+Art. 315º INTERVENCIÓN JUDICIAL PREVIA En el caso previsto en el último apartado del artículo precedente, cuando cualquiera de los compromitentes se resistiere al cumplimiento de lo pactado o a otorgar el compromiso, podrá demandarse por constitución de Tribunal Arbitral.
 
 Art. 316º CONSTITUCIÓN DEL TRIBUNAL ARBITRAL I.- Otorgado el compromiso y resueltas en su caso por el Juez las cuestiones suscitadas, se constituirá el Tribunal, debiendo prestar juramento los Árbitros y el Secretario, ante el Juez de Primera Instancia competente para entender en la controversia.
 
@@ -3738,7 +3738,7 @@ III.- El laudo se ajustará a lo dispuesto para las Sentencias por este Código.
 
 IV.- Contra el Laudo solamente procede el Recurso de Apelación, debiendo ser interpuesto en la forma y plazo establecidos para las sentencias dictadas en proceso conocimiento.
 
-V.- Si en el compromiso se hubiera hecho renuncia expresa del recurso de apelación, el Tribunal solo podrá examinar si los Árbitros han laudado sobre cuestiones no comprometidas, fuera del plazo para laudar o con violación de las garantías que asegura el segundo apartado de este Art.; en estos dos últimos casos, siempre que el apelante no hubiera consentido expresa o tácitamente la demora, o el vicio o defecto. Si se hubiera convenido una multa por alzarse, deberá abonarse ésta con carácter previo a la interposición del recurso.
+V.- Si en el compromiso se hubiera hecho renuncia expresa del recurso de apelación, el Tribunal solo podrá examinar si los Árbitros han laudado sobre cuestiones no comprometidas, fuera del plazo para laudar o con violación de las garantías que asegura el segundo apartado de este artículo; en estos dos últimos casos, siempre que el apelante no hubiera consentido expresa o tácitamente la demora, o el vicio o defecto. Si se hubiera convenido una multa por alzarse, deberá abonarse ésta con carácter previo a la interposición del recurso.
 
 Art. 318º AMIGABLES COMPONEDORES I.- Los amigables componedores deben ser personas mayores de edad, en pleno ejercicio de su capacidad jurídica. El Secretario del Tribunal deberá ser abogado, escribano o procurador.
 
@@ -3760,7 +3760,7 @@ Art. 320º PERITOS. ÁRBITROS I.- Procede la Pericia Arbitral cuando las leyes e
 
 II.- Los Peritos Árbitros podrán actuar sin necesidad de Secretario y requieren las mismas condiciones exigidas a los Amigables Componedores y especialidad en la materia. Procederán en la misma forma.
 
-III.- Sólo procede el recurso de apelación en la forma y en los casos establecidos en el apartado IV del Art. 317\.
+III.- Sólo procede el recurso de apelación en la forma y en los casos establecidos en el apartado IV del artículo 317\.
 
 **SECCIÓN PRIMERA TRÁMITES PREVIOS**
 
@@ -3800,11 +3800,11 @@ Presentado testamento ológrafo por interesado o remitido por el Registro de Act
 
 En estos trámites, debe intervenir necesariamente, el Ministerio Público Fiscal.
 
-Remitido el testamento por acto público, el Juez dictará el auto de apertura, conforme las pautas del Art. 326 de este Código.
+Remitido el testamento por acto público, el Juez dictará el auto de apertura, conforme las pautas del artículo 326 de este Código.
 
 **SECCIÓN SEGUNDA SUCESIONES INTESTADAS Y TESTAMENTARIAS**
 
-Art. 325º INICIO DEL PROCESO SUCESORIO I.- Además de los recaudos exigidos en el Art. 323 primer párrafo de este Código, quien promueva el proceso sucesorio, deberá necesariamente denunciar el nombre y domicilio de los herederos conocidos, bajo apercibimiento de cargar con las costas de toda actuación que generare el reconocimiento judicial posterior con más los daños y perjuicios.
+Art. 325º INICIO DEL PROCESO SUCESORIO I.- Además de los recaudos exigidos en el artículo 323 primer párrafo de este Código, quien promueva el proceso sucesorio, deberá necesariamente denunciar el nombre y domicilio de los herederos conocidos, bajo apercibimiento de cargar con las costas de toda actuación que generare el reconocimiento judicial posterior con más los daños y perjuicios.
 
 El Juez, dictará un auto, haciendo lugar o desestimando la apertura del proceso sucesorio. En este último caso, el auto será apelable.
 
@@ -3824,7 +3824,7 @@ I- La fijación de una audiencia, con un intervalo no mayor de treinta (30) día
 
 II- La citación y emplazamiento para concurrir a ella a todos los que se consideren con derecho a los bienes dejados por el causante, quienes deberán ser notificados por cédula, oficio o exhorto, según corresponda, en los domicilios denunciados o constituidos. Se les hará saber que deberán acreditar los derechos que invoquen.
 
-III- La notificación edictal a todos los interesados desconocidos o de ignorado domicilio por una (1) vez en la forma prevista en el Art. 72 de este Código, a los fines de la concurrencia a la audiencia fijada.
+III- La notificación edictal a todos los interesados desconocidos o de ignorado domicilio por una (1) vez en la forma prevista en el artículo 72 de este Código, a los fines de la concurrencia a la audiencia fijada.
 
 IV- La citación al Ministerio Público Fiscal, al Organismo Recaudador de la Provincia y al Ministerio Público de la Defensa y Pupilar en caso de haberse denunciado herederos personas menores de edad, incapaces o con capacidad restringida.
 
@@ -3844,11 +3844,11 @@ V- Los presuntos herederos comparecientes podrán proponer administrador definit
 
 Art. 328º DECLARATORIA DE HEREDEROS. \- I- Acreditado el vínculo de todos o reconocidos por quienes lo acreditaren, previo dictamen del Ministerio Público Fiscal, se dictará sentencia de declaratoria de herederos o de aprobación de testamento si correspondiera.
 
-II- En la declaratoria de herederos se designará administrador definitivo y peritos, conforme lo dispuesto por el Art. 332, en su caso, para que realicen las operaciones de inventario, avalúo y partición, fijándoseles el plazo para la realización de las dos (2) primeras, según lo dispone el Art. 350 de este Código. Además, se fijará el procedimiento para el pago de los acreedores que se hubieren presentado, de acuerdo a las reglas fijadas en el Código Civil y Comercial de la Nación.
+II- En la declaratoria de herederos se designará administrador definitivo y peritos, conforme lo dispuesto por el artículo 332, en su caso, para que realicen las operaciones de inventario, avalúo y partición, fijándoseles el plazo para la realización de las dos (2) primeras, según lo dispone el artículo 350 de este Código. Además, se fijará el procedimiento para el pago de los acreedores que se hubieren presentado, de acuerdo a las reglas fijadas en el Código Civil y Comercial de la Nación.
 
 Art. 329º HEREDEROS AUSENTES O QUE NO JUSTIFIQUEN EL VÍNCULO.
 
-I.- Se dictará declaratoria de herederos a favor de quienes se haya acreditado el vínculo, sin perjuicio del emplazamiento que pudiera dirigirse, a petición de interesado, a los herederos no comparecientes a los términos del Art. 2289 del Código Civil y Comercial de la Nación.
+I.- Se dictará declaratoria de herederos a favor de quienes se haya acreditado el vínculo, sin perjuicio del emplazamiento que pudiera dirigirse, a petición de interesado, a los herederos no comparecientes a los términos del artículo 2289 del Código Civil y Comercial de la Nación.
 
 II.- El heredero omitido o denunciado que no haya justificado el vínculo, podrá pedir con posterioridad la ampliación de la declaratoria de herederos, acreditando su condición.
 
@@ -3872,13 +3872,13 @@ Art. 332º CUESTIONES SOBRE DERECHOS HEREDITARIOS. \- Las acciones judiciales qu
 
 Art. 333º LÍMITES A LA INTERVENCION DE INTERESADOS Y FUNCIONARIOS.- La actuación de las personas y funcionarios que puedan promover el proceso sucesorio o intervenir en él, tendrá las siguientes limitaciones:
 
-1\) El Ministerio Público Fiscal cesará de intervenir una vez aprobado el testamento, dictada la declaratoria de herederos o reputada vacante la herencia, sin perjuicio de la intervención que pueda corresponderle en los procesos que se promuevan conforme al Art. 331\.
+1\) El Ministerio Público Fiscal cesará de intervenir una vez aprobado el testamento, dictada la declaratoria de herederos o reputada vacante la herencia, sin perjuicio de la intervención que pueda corresponderle en los procesos que se promuevan conforme al artículo 331\.
 
 2\) El Ministerio Público Pupilar sólo intervendrá cuando existan personas menores, con capacidad restringida o incapaces y terminará cuando cese la minoría de edad, la restricción de la capacidad o la incapacidad de éstos o se inscriban los bienes.
 
 3\) Los tutores dejarán de intervenir cuando sus pupilos alcancen la mayoría de edad; los tutores especiales cuando cese el conflicto de intereses que dio lugar a su designación; los apoyos y curadores cuando cese la restricción de capacidad o la incapacidad del heredero.
 
-4\) Los defensores de ausentes, en los casos previstos en el Art. 334 de este Código, hasta tanto comparezcan los herederos del fallecido o se forme hijuela a su nombre.
+4\) Los defensores de ausentes, en los casos previstos en el artículo 334 de este Código, hasta tanto comparezcan los herederos del fallecido o se forme hijuela a su nombre.
 
 5\) Los funcionarios encargados de la percepción de la tasa judicial intervendrán hasta que exista declaratoria de herederos ejecutoriada y desde ese momento al solo efecto de vigilar la liquidación y percepción del tributo.
 
@@ -3904,7 +3904,7 @@ Art. 335º INICIACIÓN DEL TRÁMITE Inscripta la sentencia de fallecimiento pres
 
 **SECCIÓN CUARTA HERENCIA VACANTE**
 
-Art. 336º HERENCIA VACANTE Vencido el plazo establecido para aceptar o repudiar la herencia, si no se hubieran presentado herederos, los presentados no hubieran acreditado su calidad de tales o si el causante no ha distribuido la totalidad de los bienes mediante legados, la sucesión se declarará vacante y se designará curador al representante de la Dirección General de Escuelas, quien desde ese momento será parte, atento a lo dispuesto por el Art. 338 de este Código.
+Art. 336º HERENCIA VACANTE Vencido el plazo establecido para aceptar o repudiar la herencia, si no se hubieran presentado herederos, los presentados no hubieran acreditado su calidad de tales o si el causante no ha distribuido la totalidad de los bienes mediante legados, la sucesión se declarará vacante y se designará curador al representante de la Dirección General de Escuelas, quien desde ese momento será parte, atento a lo dispuesto por el artículo 338 de este Código.
 
 Art. 336 bis. Denuncia de Herencia Vacante. La denuncia de herencia vacante debe formularse por escrito ante la Dirección General de Escuelas con la firma del denunciante, dándose prioridad al primero que lo hiciera. La denuncia debe contener: datos personales del denunciante, datos personales del fallecido causante con acreditación de su fallecimiento mediante la correspondiente partida de defunción y los datos necesarios para la individualización de los bienes, Los funcionarios o empleados de los poderes del Estado, en cualquiera de sus niveles, podrán realizar denuncias pero no percibir la remuneración establecida en el artículo 336 ter".
 
@@ -3958,7 +3958,7 @@ III.- Si el administrador no rindiera cuentas en el plazo establecido, el Tribun
 
 Art. 345º PAGO A ACREEDORES.
 
-I.- El Administrador definitivo es el responsable del pago a los acreedores conforme las disposiciones del Código Civil y Comercial de la Nación. A tal fin deberá notificar a los acreedores conocidos y a los que se hayan presentado a la audiencia prevista en el Art. 327 de este Código, para que en un plazo de diez (10) días formulen su pretensión de cobro, presentando las probanzas que acrediten su derecho.
+I.- El Administrador definitivo es el responsable del pago a los acreedores conforme las disposiciones del Código Civil y Comercial de la Nación. A tal fin deberá notificar a los acreedores conocidos y a los que se hayan presentado a la audiencia prevista en el artículo 327 de este Código, para que en un plazo de diez (10) días formulen su pretensión de cobro, presentando las probanzas que acrediten su derecho.
 
 II.- El Administrador deberá presentar un informe al Tribunal en un plazo de diez (10) días, en el que plasme su opinión acerca de las acreencias presentadas. De esta presentación se dará vista a los demás coherederos por un plazo de cinco (5) días para que reconozcan o no el crédito.- III.- Si los herederos en forma expresa y por unanimidad reconocen el crédito, el Juez emitirá a favor del acreedor declaración de legítimo abono.
 
@@ -4058,7 +4058,7 @@ Art. 362º EFECTOS DE LA PRESENTACIÓN.
 
 Cumplida la notificación precedente y ordenada la publicación de los edictos, quedan suspendidos los descuentos que por obligaciones de causa o título anterior a la presentación se efectúen sobre el salario del consumidor, tanto directamente por el empleador como en la cuenta bancaria donde el mismo sea acreditado.
 
-Asimismo, quedan suspendidas todas las acciones de contenido patrimonial contra el deudor, con las exclusiones dispuestas por el Art. 21 de la Ley 24.522.
+Asimismo, quedan suspendidas todas las acciones de contenido patrimonial contra el deudor, con las exclusiones dispuestas por el artículo 21 de la Ley 24.522.
 
 Art. 363º LIBERTAD DE CONTENIDO. FORMA.
 
@@ -4080,7 +4080,7 @@ El acuerdo parcial homologado y los pagos que en consecuencia se efectúen, ser�
 
 Art. 366º OPOSICIÓN.
 
-Podrán oponerse al acuerdo los acreedores denunciados y aquellos que demuestren sumariamente haber sido omitidos en el listado previsto en el inciso 2), del Art. 360 de este Código. La oposición podrá presentarse hasta los diez (10) días posteriores al vencimiento del lapso de negociación, y podrá fundarse solamente en omisiones o exageraciones del activo o pasivo o en la inexistencia de la mayoría exigida por el Art. 364\. De ser necesario se abrirá a prueba por diez (10) días y el Juez resolverá dentro de los diez (10) días posteriores a la finalización del período probatorio.
+Podrán oponerse al acuerdo los acreedores denunciados y aquellos que demuestren sumariamente haber sido omitidos en el listado previsto en el inciso 2), del artículo 360 de este Código. La oposición podrá presentarse hasta los diez (10) días posteriores al vencimiento del lapso de negociación, y podrá fundarse solamente en omisiones o exageraciones del activo o pasivo o en la inexistencia de la mayoría exigida por el artículo 364\. De ser necesario se abrirá a prueba por diez (10) días y el Juez resolverá dentro de los diez (10) días posteriores a la finalización del período probatorio.
 
 Si estuvieren cumplidos los requisitos legales y no mediaran oposiciones, el Juez homologará el acuerdo.
 
