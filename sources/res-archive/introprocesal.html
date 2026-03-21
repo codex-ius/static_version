@@ -8,11 +8,44 @@
     <link rel="stylesheet" href="../../css/theme.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
+
+ :root {
+            
+            --font-mono: 'JetBrains Mono', monospace;
+            
+        }
+
+
         #markdown-content {
             /* ... tus estilos actuales ... */
             word-wrap: break-word;
         }
 
+        #markdown-content p:hover{
+            border-left: solid 5px var(--accent-red);
+            padding-left: 0.5rem;
+            transition: all 1ms;
+        }
+
+        h2, h3{
+    color: var(--accent-red);
+    text-transform: none;
+    margin-top: 2rem;
+
+}
+h2{
+    padding: 1rem 0 0 1rem;
+    border-top: solid 1px var(--accent-red);
+    border-left: solid 1px var(--accent-red);
+}
+h2::before{
+    content: "§ ";
+    
+
+}
+h3::before{
+    content: "¶ ";
+}
         #markdown-content table {
             display: table;
             /* Cambiamos de block a table para el layout fijo */
@@ -37,6 +70,39 @@
             word-break: break-word;
             /* Corta palabras largas para mantener el ancho */
         }
+
+        #markdown-content h1, 
+#markdown-content h2, 
+#markdown-content h3 {
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    color: var(--accent-red);
+    border-left: 4px solid var(--accent-main);
+    padding-left: 15px;
+    margin-top: 1.5em;
+    letter-spacing: -0.5px;
+}
+
+/* Párrafos y Énfasis */
+#markdown-content p { margin-bottom: 1.2em; }
+#markdown-content b, #markdown-content strong { color: var(--accent-main); font-weight: 700; }
+#markdown-content i, #markdown-content em { color: #666; font-style: italic; }
+
+
+/* Citas (Blockquotes) */
+#markdown-content blockquote {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: var(--surface-contrast);
+    border-left: 5px solid var(--accent-red);
+    font-style: italic;    
+}
+blockquote p{
+    color: var(--text-contrast);
+    padding: 0;
+}
+
+
     </style>
 </head>
 
