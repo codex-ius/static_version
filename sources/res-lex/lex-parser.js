@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. UTILIDAD: Extraer rango de artículos para el Summary
     function extraerRangoArticulos(texto) {
-        const regexArt = /\bArt(?:ículo|\.\s*|iculo)?\s*(\d+)/gi;
+        //const regexArt = /\bArt(?:ículo|\.\s*|iculo)?\s*(\d+)/gi;
+       const regexArt = /\bArt\.\s*(\d+)/gi;
         const coincidencias = [...texto.matchAll(regexArt)];
         
         if (coincidencias.length > 0) {
