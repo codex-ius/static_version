@@ -102,7 +102,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const numArt = artInput.value.trim();
         if (!numArt) return;
 
-        const regex = new RegExp(`\\bArt(?:ículo|\\.\\s*|iculo)?\\s*${numArt}\\b`, 'i');
+        //const regex = new RegExp(`\\bArt(?:ículo|\\.\\s*|iculo)?\\s*${numArt}\\b`, 'i');
+       const regex = new RegExp(`\\bArt\\.\\s*${numArt}\\b`, 'i');
         
         // Buscamos en todos los details del renderArea
         const todosLosDetails = Array.from(renderArea.querySelectorAll('details'));
