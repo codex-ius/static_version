@@ -507,29 +507,61 @@ mark {
     font-size: 0.8em;
 }
 
-/* --- LISTAS (Estilo Directorio) --- */
+/* --- LISTAS (Estilo Directorio / Expediente) --- */
+
 ul, ol {
-    margin-left: 1.2rem;
-    margin-bottom: 1.5rem;
-    list-style: none; /* Quitamos los puntos estándar */
+    margin-left: 0.5rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    list-style: none; /* Limpiamos estilos por defecto para control total */
 }
 
 li {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.8rem;
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 1.8rem;
+    line-height: 1.5;
+    color: var(--text-color); /* El texto permanece legible */
 }
 
-/* Viñeta cuadrada personalizada */
-li::before {
+/* Marcador para Listas Desordenadas (Cuadrado tipo Directorio) */
+ul li::before {
     content: "";
     position: absolute;
     left: 0;
-    top: 0.4rem;
-    width: 8px;
-    height: 8px;
+    top: 0.45rem; /* Alineación precisa con la primera línea de texto */
+    width: 10px;
+    height: 10px;
     background: var(--accent-red);
-    border: 1px solid #000;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 0px rgba(0,0,0,0.1); /* Efecto sutil de relieve */
+}
+
+/* Marcador para Listas Ordenadas (Numeración Técnica) */
+ol {
+    counter-reset: folder-counter; /* Inicializamos contador para estilo personalizado */
+}
+
+ol li {
+    counter-increment: folder-counter;
+}
+
+ol li::before {
+    content: counter(folder-counter) ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    color: var(--accent-red);
+    font-family: 'Courier New', monospace; /* Estilo máquina de escribir/legal */
+    font-size: 1.1rem;
+}
+
+/* Indentación para sublistas (Anidamiento) */
+li ul, li ol {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    border-left: 1px solid rgba(0, 0, 0, 0.1); /* Línea guía vertical */
 }
 
 /* Listas de Definición (Glosarios) */
