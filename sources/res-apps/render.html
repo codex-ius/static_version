@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Codex_Ius: MD_Editor</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        /* --- FUENTES Y VARIABLES --- */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap');
+
+        :root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --accent: #3b82f6;
+            --text-ui: #f1f5f9;
+            --f-serif: 'Tinos', serif;
+            --f-sans: 'Inter', sans-serif;
+        }
+
+        /* --- INTERFAZ DEL EDITOR --- */
+        body {
+            margin: 0;
+            font-family: var(--f-sans);            
+            color: var(--text-ui);
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background: var(--card);
+            padding: 30px;
+            border-radius: 8px;            
+        }
+
+        h2.ui-title {
+            color: var(--accent);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #94a3b8;
+        }
+
+        input,
+        textarea {
+            background: #0f172a;
+            border: 1px solid #334155;
+            color: white;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: var(--accent);
+        }
+
+        textarea {
+            height: 150px;
+            font-family: monospace;
+            resize: vertical;
+        }
+
+        .btn-print {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+
+        .btn-print:hover {
+            background: #2563eb;
+        }
+
+        /* --- ESTILOS DE RENDERIZADO (PDF) --- */
+        #print-section {
+            display: none;
+        }
+
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+
+            #print-section,
+            #print-section * {
+                visibility: visible;
+            }
+
+            #print-section {
+                display: block !important;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                background: white;
+                color: #1a1a1a;
+            }
+
+            @page {
+                size: A4;
+                margin: 25.4mm;
+            }
+
+            /* Hoja Base */
+            .hoja-pdf {
+                width: 100%;
+                min-height: 246mm;
+                font-family: var(--f-serif);
+                font-size: 12pt;
+                line-height: 1.5;
+                text-align: justify;
+                page-break-after: always;
+                position: relative;
+            }
+
+            /* Portada con tu estilo original */
+            .portada {
+                padding: 10mm;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                height: 240mm;
+                /* Ajuste para el borde */
+            }
+
+            .portada h1 {
+                font-size: 24pt;
+                margin-bottom: 5mm;
+                text-transform: uppercase;
+            }
+
+            .portada .subtitle {
+                font-size: 14pt;
+                color: #444;
+                margin-bottom: 2cm;
+            }
+
+            /* Contraportada / Licencia */
+            .licencia-container {
+                border: 0.1mm solid #334155;
+                padding: 15pt;
+                font-family: var(--f-sans);
+                font-size: 10pt;
+                color: #334155;
+                background: #f8fafc;
+                border-radius: 4px;
+            }
+
+            /* Tipografía Académica Crítica */
+            .cuerpo h1 {
+                text-align: center;
+                font-family: var(--f-serif);
+                /* Tinos para máxima elegancia */
+                font-size: 18pt;
+                /* Subimos un poco para diferenciar del h2 */
+                margin: 40pt 0 30pt;
+                letter-spacing: 0.5px;
+                color: #0f172a;
+                /* Azul noche casi negro (más moderno que el negro puro) */
+                line-height: 1.2;
+                text-transform: uppercase;
+                /* Opcional: para un look más solemne */
+            }
+
+            .cuerpo h2 {
+                font-family: var(--f-sans);
+                /* Sans para dar un aire técnico/moderno */
+                font-size: 14pt;
+                font-weight: 700;
+                margin: 25pt 0 12pt;
+                border-bottom: none;
+                border-left: 4pt solid #334155;
+                /* Cambiamos el azul por Pizarra Profundo */
+                padding-left: 12pt;
+                color: #1e293b;
+                letter-spacing: 0.3px;
+                display: flex;
+                align-items: center;
+            }
+
+            .cuerpo h3 {
+                /* Color pizarra azulado: profesional y con mejor contraste */
+                color: #1e293b;
+
+                /* Tipografía: Usamos la Serif para títulos internos (estilo libro) */
+                font-family: var(--f-serif);
+                font-size: 18px;
+                font-weight: 700;
+
+                /* Espaciado orgánico */
+                margin: 24pt 0 12pt 0;
+                padding-bottom: 8px;
+
+                /* Borde sutil: estilo institucional */
+                border-bottom: 0.5pt solid #e2e8f0;
+
+                /* Un toque distintivo: un pequeño acento en el borde */
+                position: relative;
+            }
+
+            /* Opcional: Una pequeña marca de color para el toque 'Organic' */
+            .cuerpo h3::before {
+                content: "";
+                position: absolute;
+                bottom: -0.5pt;
+                left: 0;
+                width: 40px;
+                height: 1.5pt;
+                background-color: #334155;
+            }
+
+            .cuerpo p {
+                text-indent: 12.7mm;
+                margin-bottom: 12pt;
+            }
+
+            /* Negritas e Itálicas */
+            strong,
+            b {
+                font-weight: 700 !important;
+                color: #000 !important;
+            }
+
+            em,
+            i {
+                font-style: italic !important;
+            }
+
+            blockquote {
+                /* margin: 15pt 30mm 15pt 15mm;
+            /* Sangría simétrica 
+            padding: 10pt 15pt;*/
+                padding: 1rem;
+                font-size: 11pt;
+                line-height: 1.4;
+                /* Gris azulado muy tenue */
+                /* Fondo mucho más sutil */
+                background: #f1f5f9;
+                border-radius: 2px;
+                color: #334155;
+                border-left: 1pt solid #cbd5e1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="ui-title">Codex_Ius: Panel de Control</h2>
+
+        <div class="grid">
+            <div class="group"><label>Título Principal</label><input type="text" id="m-title" value="Análisis Jurídico">
+            </div>
+            <div class="group"><label>Subtítulo / Expediente</label><input type="text" id="m-subtitle"
+                    value="Expediente N° 2026-MZA"></div>
+        </div>
+
+        <div class="grid">
+            <div class="group"><label>Autor</label><input type="text" id="m-author" value="Rodrigo"></div>
+            <div class="group"><label>Institución</label><input type="text" id="m-inst" value="Mendoza, Argentina">
+            </div>
+        </div>
+
+        <div class="group"><label>Agradecimientos / Cita Final</label><input type="text" id="m-greet"
+                value="A la memoria de los grandes juristas."></div>
+
+        <div class="group">
+            <label>Resumen (Markdown)</label>
+            <textarea
+                id="m-abs"># RESUMEN&#10;Este escrito aborda las **necesidades procesales** de la era digital.</textarea>
+        </div>
+
+        <div class="group">
+            <label>Cuerpo del Trabajo (Markdown)</label>
+            <textarea id="m-md"
+                style="height: 250px;">## 1. INTRODUCCIÓN&#10;El derecho de fondo y forma en el **CPCCyT de Mendoza**...</textarea>
+        </div>
+
+        <button class="btn-print" onclick="generarPDF()">Generar PDF Académico</button>
+    </div>
+
+    <div id="print-section"></div>
+
+    <script>
+        function generarPDF() {
+            const printArea = document.getElementById('print-section');
+
+            const title = document.getElementById('m-title').value;
+            const subtitle = document.getElementById('m-subtitle').value;
+            const author = document.getElementById('m-author').value;
+            const inst = document.getElementById('m-inst').value;
+            const greet = document.getElementById('m-greet').value;
+            const abstract = marked.parse(document.getElementById('m-abs').value);
+            const body = marked.parse(document.getElementById('m-md').value);
+
+            printArea.innerHTML = `
+                <div class="hoja-pdf">
+                    <div class="portada">
+                       <h1 style="margin-bottom:5mm;">${document.getElementById('m-title').value}</h1>
+                <div style="font-size:14pt; color:#444; margin-bottom:20pt;">${document.getElementById('m-subtitle').value}</div>
+                <div style="margin-top:2cm;">
+                    <strong>${document.getElementById('m-author').value}</strong><br>   
+                     <strong>${document.getElementById('m-inst').value}</strong>              
+                    
+                </div>
+                <div style="margin-top:4cm;">
+                   
+                    <span>${new Date().toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}, Mendoza, Argentina</span>
+                </div>
+                        
+                    </div>
+                </div>
+
+                <div class="hoja-pdf" style="color: #334155; font-family: var(--f-sans); line-height: 1.6;">
+    <h2 style="font-family: var(--f-sans); border-bottom: 1px solid #cbd5e1; padding-bottom: 10pt; color: #1e293b; font-size: 18pt;">CRÉDITOS Y LICENCIA</h2>
+    
+    <div class="licencia-container" style="margin-top: 20pt;">
+        
+        <div style="margin-bottom: 15pt;">
+            <strong style="color: #1e293b; text-transform: uppercase; font-size: 9pt; display: block;">Titular de los Derechos</strong>
+            <p style="margin: 4pt 0; font-size: 10.5pt;">© Copyright 2026 <strong>${author}</strong>. <br> Versión actualizada al: ${new Date().toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}, Mendoza, Argentina. 
+    Reservados algunos derechos bajo licencia internacional.</p>
+        </div>
+
+        <div style="margin-bottom: 20pt;">
+            <strong style="color: #1e293b; text-transform: uppercase; font-size: 9pt; display: block;">Licencia de Publicación</strong>
+            <p style="margin: 4pt 0; font-size: 10.5pt;">
+                Este documento se distribuye bajo la licencia <strong>Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)</strong>. 
+                Se permite el uso, copia y modificación, siempre que se otorgue el crédito correspondiente al autor original.
+            </p>
+        </div>
+
+       <div style="margin-bottom: 20pt; background: #f8fafc; padding: 15pt; border-radius: 4px; border: 0.1mm solid #e2e8f0;">
+        <strong style="color: #1e293b; text-transform: uppercase; font-size: 9pt;">Cita sugerida</strong>
+        <p style="text-indent:0; margin: 4pt 0; font-family: var(--f-serif); font-size: 11pt;">
+            ${document.getElementById('m-author').value} (${new Date().getFullYear()}). <em>${document.getElementById('m-title').value}</em>. ${document.getElementById('m-inst').value}. Preprint depositado en Codex_Ius / Zenodo.
+        </p>
+    </div>
+    <div style="margin-top: 30pt; padding-top: 10pt; border-top: 0.5pt solid #cbd5e1; font-size: 8.5pt; color: #64748b;">
+        <p style="text-indent:0;">Este es un <strong>Preprint</strong> y no ha sido sometido a revisión por pares por una revista científica. El autor es responsable de la integridad de los datos y conclusiones presentadas.</p>
+    </div>
+
+        <div style="margin-top: 30pt; border: 1px dashed #cbd5e1; border-radius: 6px; background-color: #fcfdfd; text-align: center;">
+            <p style="margin: 0; font-family: var(--f-serif); font-size: 11pt; font-style: italic; color: #64748b;">
+                "${greet}"
+            </p>
+        </div>
+
+    </div>
+</div>
+
+                <div class="hoja-pdf cuerpo">
+                    ${abstract}
+                </div>
+
+                <div class="cuerpo">
+                    ${body}
+                </div>
+            `;
+
+            window.print();
+        }
+    </script>
+</body>
+
+</html>

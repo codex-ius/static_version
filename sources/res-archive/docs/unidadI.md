@@ -27,7 +27,7 @@ Como contraposición necesaria, encontramos el *derecho natural*. Este se confor
 
 ## Derecho Subjetivo
 
-Al hablar de la faz subjetiva del derecho nos referimos a su interacción con los individuos; con las personas, quienes son titulares o destinatarios de las normas. En otras palabras, el derecho subjetivo no existe en el vacío; siempre requiere de un "otro".
+Al hablar de la faz subjetiva del derecho nos referimos a su interacción con los individuos; con las personas, quienes son titulares o destinatarios de las normas. En otras palabras, el derecho subjetivo no existe en el vacío; siempre requiere de un "otro", ya sea de manera relativa (relación contractual) cómo así también absoluta (frente a toda la comunidad, erga omnes).
 
 Técnicamente, consiste en el conjunto de facultades o prerrogativas asignadas a los sujetos en defensa y garantía de sus bienes e intereses, incluyendo necesariamente la protección y efectivización de sus derechos personalísimos. 
 
@@ -39,13 +39,13 @@ De este modo, podemos decir que el correlato del derecho subjetivo es la acción
 
 ## 2. Derecho Procesal. Fuentes. Orden de Prelación de Normas
 
-### Derecho de Fondo  (Sustancial) y Derecho de Forma (Instrumental)
+### Derecho de Fondo (Sustancial) y Derecho de Forma (Instrumental)
 
-El derecho objetivo puede caracterizarse dependiendo del contenido de las normas. Cuando las normas se dirigen a la generalidad de las personas, definen de manera abstracta situaciones o comportamientos que deben ser observados, entonces estamos frente a normas que pertenecen al derecho sustancial. 
+El derecho objetivo puede caracterizarse dependiendo del contenido de las normas. Cuando estas se dirigen a la generalidad de las personas y definen de manera abstracta situaciones o comportamientos que deben ser observados, estamos ante normas que pertenecen al derecho sustancial.
 
-Sí por el contrario, las normas son concretas, se dirigen a sujetos en concreto y definen la actividad procesal, entonces estamos frente al derecho formal o instrumental.
+Si por el contrario, las normas son concretas, se dirigen a sujetos determinados y definen la actividad procesal, entonces estamos frente al derecho formal o instrumental.
 
-Para no extendernos más, lo importante a considerar es que las normas sustanciales nos sirven para encuadrar jurídicamente la realidad, mientras que las normas formales son empleadas a los fines de garantizar su defensa judicial, por ello se las llaman instrumentales, debido a que solo cobran sentido en el ámbito procesal.
+Para no extendernos más, lo importante a considerar es que las normas sustanciales sirven para encuadrar jurídicamente la realidad, mientras que las normas formales son empleadas a los fines de garantizar su defensa judicial. Por ello se las llama instrumentales, debido a que solo cobran sentido en el ámbito procesal.
 
 ### Derecho Procesal
 
@@ -61,15 +61,11 @@ Es el núcleo de la materia. El Derecho Procesal no estudia cómo el Juez decide
 
 **3. Proceso vs. Procedimiento (La distinción de Género y Especie)**
 
-*Procedimiento*: Es el aspecto exterior y formal; la cáscara. Es la sucesión cronológica de actos (plazos, traslados, notificaciones).
+*Procedimiento*: Es el género y consiste en un sistema de actos secuenciales que se desarrollan de manera lógica con el objetivo de alcanzar un fín administrativo. En el contexto jurídico, sirve de herramienta para canalizar las peticiones únilaterales de los sujetos frente a las autoridades judiciales.
 
-*Proceso*: Es el contenido sustancial y ético-político. Es el procedimiento más el contradictorio.
+*Proceso*: Es una especie de procedimiento que tiene como característica principal el contradictorio. En otras palabras, tiene lugar cuando los sujetos (bilateralidad) se presentan ante los órganos judiciales para dar solución a sus conflictos. De esta manera se canalizan pretensiones.
 
-> Nota: Los "procedimientos voluntarios" (sucesiones, autorizaciones) que figuran en los códigos son técnicamente administración judicial, ya que al ser unilaterales, carecen del método del debate que define al proceso.
-
-**4. La Jurisdicción como Límite**
-
-El Derecho Procesal no se encarga de la "administración" de la justicia (gestión de recursos o expedientes sin conflicto), sino de la Jurisdicción. Esta última sólo existe cuando el Juez debe "decir el derecho" para sustituir la voluntad de las partes en conflicto, produciendo una decisión inmutable (Cosa Juzgada).
+> Nota: Los "procedimientos voluntarios" (sucesiones, autorizaciones) que figuran en los códigos son técnicamente administración judicial, ya que al ser unilaterales, carecen del contradictorio (litis) y del método del debate que define al proceso. Aunque se les llamen procesos deben ser tratados como procedimientos por no haber lítis.
 
 ### Fuentes
 
@@ -161,9 +157,9 @@ A su vez, también se mencionan los presupuestos procesales mínimos para impuls
 
 A modo de síntesis podemos decir que el derecho a peticionar a las autoridades, en el contexto del derecho procesal, consiste en el derecho subjetivo que tienen los sujetos de accionar e impulsar un proceso en el ámbito judicial con el objetivo de lograr defender la pretensión que se presente. Para ello es necesario que el estado disponga de los recursos necesarios para garantizar una respuesta que sea efectiva y eficaz, sin que ello importe el éxito o fracaso de la pretensión. Como bien destaca el artículo el deber del tribunal, como órgano jurisdiccional es el de proveer, es decir, emitir un pronunciamiento jurisdiccional fundado que atienda lo peticionado, independientemente de su sentido.
 
-Algo que resulta importante destacar es que el propio artículo marca el carácter contencioso o contradictorio como un requisito esencial de toda acción que pretenda impulsar el proceso. Como se vió en puntos anteriores, controversia o la litis debe mantenerse durante todo el proceso, dado que es la que le da fundamento y justificación a la respuesta jurisdiccional, caso contrario se estaría frente a una administración judicial de una petición.
+Algo que resulta importante destacar es que el propio artículo marca el carácter contencioso o contradictorio como un requisito esencial de toda acción que pretenda impulsar el proceso. Como se vió en puntos anteriores, la controversia o la litis debe mantenerse durante todo el proceso, ya que constituye el fundamento y la justificación de la respuesta jurisdiccional; de lo contrario, se trataría de una mera gestión administrativa de la petición y no de un acto de justicia.
 
-En otras palabras, el carácter contradictorio es la esencia que transforma el procedimiento en proceso. Sin la posibilidad de oposición y control bilateral, estaríamos ante una mera gestión administrativa judicializada que carecería de la autoridad de cosa juzgada material propia de la jurisdicción.
+En otras palabras, el carácter contradictorio es la esencia que transforma el procedimiento en proceso. Sin la posibilidad de contradicción y control bilateral, estaríamos ante una mera gestión administrativa judicializada, carente de la autoridad de cosa juzgada material propia de la función jurisdiccional.
 
 Avanzando en el comentario, abordaremos las concordancias que pueden explicar y servir para interpretar aún mejor este principio:
 
@@ -204,6 +200,8 @@ El juez no puede tener interés ni ser parte en el proceso, no puede agregar pre
 
 Entonces, ¿Cuál es el rol del juez? En concreto es emitir un pronunciamiento jurisdiccional ajustado a los hechos y pretensiones esgrimidos por las partes en el contexto procesal. Esto puede relacionarse con el principio de congruencia, el cual limita la facultad jurisdiccional al evitar que lo sentenciado se desentienda de lo pretendido, tal como ocurre en resoluciones citra (omisión), supra (en exceso) o extra (diferente) petita (lo pretendido). De este modo, el juez es el director de orquesta que debe asegurar que la obra (el proceso) se ejecute según la partitura escrita por las partes (la demanda y la contestación). 
 
+> Nota: Citra petita: El juez omite decidir sobre algo pedido. Supra petita: El juez da más de lo pedido. Extra petita: El juez da algo distinto a lo pedido.
+
 Ahora bien, el límite excepcional a este principio, en el ámbito civil, lo encontramos en la naturaleza de los derechos implicados en la pretensión, es decir, la indisponibilidad de ciertos derechos o casos donde se ponga en riesgo intereses superiores, como así también casos donde alguna de las partes sea vulnerable (principio de protección). Lo dicho no significa violar el principio de imparcialidad e impartidariedad, sino más bien ajustar el resultado a las condiciones dadas, siempre observando el principio de congruencia que incardina su pronunciamiento (véase casos de derecho de consumo).
 
 Sin embargo, en otros ámbitos la disponibilidad es la excepción y la oficialidad es la regla, tal como ocurre en el derecho penal. Por ello, siempre que nos referimos al principio dispositivo, por su naturaleza debemos encuadrarlo en el proceso civil. Si se quiere buscar un ejemplo del principio dispositivo en el ámbito penal, podemos ver los casos de acciones por delitos de acción privada, ciertos criterios de oportunidad y el juicio abreviado.
@@ -240,13 +238,13 @@ Como se ha visto hasta ahora, el proceso es una secuencia lógica y sistémica d
 
 Ahora bien, puede ocurrir casos donde el hecho de que el tribunal comparta la carga del impulso con las partes pueda generar cierta vulneración al principio de imparcialidad. Por ello, el magistrado, en ejercicio de sus facultades de dirección y en salvaguarda de derechos fundamentales como lo son la tutela efectiva y el plazo razonable del proceso, debe intervenir para darle curso y terminación al proceso por razones jurisdiccionales y no meramente administrativas. El juez frente a un proceso tiene la obligación de conducirlo y emitir una sentencia conclusiva en ejercicio de su jurisdicción, por ello es importante atender el fenómeno del impulso procesal de oficio y su interacción con el impulso compartido.
 
-Tal como se dijo anteriormente, el juez es un director de orquesta al que se le encomienda la ejecución de una obra, por lo que si vé que algunas de las partes se rehúsa en continuar o momentáneamente no puede intervenir, debe buscar la manera de dar por terminada la obra o continuarla pero sin alterar la partitura. 
+Como se ha señalado, puede compararse la labor del magistrado con la de un director de orquesta a quien se le encomienda la ejecución de una obra. En este sentido, si se advierte que alguna de las partes se rehúsa a continuar o se encuentra momentáneamente impedida de intervenir, el juzgador debe arbitrar los medios para conducir el proceso hacia su conclusión o proseguir con el mismo, siempre procurando no alterar la 'partitura' (el debido proceso y la igualdad de las partes).
 
-Esta metáfora que puede parecer simplista grafica situaciones específicamente reguladas por el CPCCT de Mza:
+Esta analogía, que permite ilustrar de forma pedagógica la dirección del proceso, encuentra su correlato en instituciones específicamente reguladas por el CPCCyT de Mendoza:"
 
 - Caso 1 - Caducidad de Instancia: Sin profundizar mucho en lo establecido por los arts. 78 y ss.; la misma ocurre cuando el juez le pone fin (caducidad) al proceso (instancia) en razón del transcurso de 6 meses sin que haya existido actos útiles con la finalidad de impulsar el proceso. Sin embargo, y hay que tenerlo siempre presente, por el principio de disposición, solamente las partes pueden requerirlo y el juez solo se limita a resolver dicho pedido. Esto es sumamente importante debido a que sí el magistrado lo declarase de oficio estaría ejerciendo un acto que defiende los intereses de una de las partes, el demandado generalmente.
 
-Entonces, ¿Qué medida puede adoptar el magistrado frente a procesos paralizados por tiempo indeterminado? Si revisamos las diferentes etapas del proceso podemos ver que no hay margen para que esta situación ocurra, básicamente el principio de legalidad y el rigor formal que manejan ciertas legislaciones lo impiden al establecer plazos de caducidad estrictos y al limitar el ejercicio de prórrogas o suspensiones abusivas. A su vez, el artículo 46 inc. I, 1; 2 11; 12, entre otros, nos dan la pauta del ejercicio regular del impulso procesal por parte del magistrado, el cual debe ser siempre ejercido respetando los principios de bilateralidad, defensa, debido proceso, celeridad, buena fe procesal y en concreto, garantizar el normal desenvolvimiento del proceso. 
+Entonces, ¿Qué medida puede adoptar el magistrado frente a procesos paralizados por tiempo indeterminado? Si revisamos las diferentes etapas del proceso podemos ver que no hay margen para que esta situación ocurra, básicamente el principio de legalidad y el rigor formal que manejan ciertas legislaciones lo impiden al establecer plazos de caducidad estrictos y al limitar el ejercicio de prórrogas o suspensiones abusivas. A su vez, el artículo 46 inc. I, 1; 2 11; 12, entre otros del CPCCT, nos dan la pauta del ejercicio regular del impulso procesal por parte del magistrado, el cual debe ser siempre ejercido respetando los principios de bilateralidad, defensa, debido proceso, celeridad, buena fe procesal y en concreto, garantizar el normal desenvolvimiento del proceso. 
 
 En simples palabras, si una de las partes busca dilatar el proceso por más de 6 meses, por ejemplo, el juez puede intervenir en defensa de estos principios y derechos cardinales, aplicando sanciones procesales o impulsando el trámite hacia la etapa siguiente. Es decir, el principal remedio que debe aplicar el magistrado a un proceso paralizado es el impulso de oficio para reactivarlo, en cumplimiento de su deber de preservación del proceso. A pesar de no poder darle fín de oficio, lo que puede hacer es continuar con las siguientes etapas hasta llegar a su conclusión. Por esto, en el sistema de Mendoza, la paralización del proceso se debe concebir cómo una anomalía que el tribunal debe combatir activamente para cumplir con el servicio de justicia.
 
@@ -256,11 +254,11 @@ Sobre este último punto, uno puede pensar que al no haber una defensa que se op
 
 Esta facultad logra preservar la imparcialidad del magistrado y se encuentra regulada en los siguientes arts.
 
-Art. 46 inc I; 5: "Disponer las medidas idóneas para esclarecer la verdad de los hechos controvertidos, mantener la igualdad de los litigantes, propender a una más rápida y económica tramitación del proceso y asegurar una solución justa."
+Art. 46 inc I; 5 CPCCT: "Disponer las medidas idóneas para esclarecer la verdad de los hechos controvertidos, mantener la igualdad de los litigantes, propender a una más rápida y económica tramitación del proceso y asegurar una solución justa."
 
-Art. 75 inc. II: "...la rebeldía constituye presunción de la verdad de los hechos afirmados por la contraria;  presunción cuya eficacia será apreciada por el Tribunal, quien podrá decretar las medidas de prueba que creyere convenientes."
+Art. 75 inc. II CPCCT: "...la rebeldía constituye presunción de la verdad de los hechos afirmados por la contraria;  presunción cuya eficacia será apreciada por el Tribunal, quien podrá decretar las medidas de prueba que creyere convenientes."
 
-Art. 199: "Todas y cada una de las pruebas serán apreciadas según las reglas de la sana crítica..."
+Art. 199 CPCCT: "Todas y cada una de las pruebas serán apreciadas según las reglas de la sana crítica..."
 
 Siguiendo estas disposiciones, resulta claro que el deber del magistrado es el de formarse una convicción que legitime su decisión, sin que ello importe adoptar una posición o favorecer a una de las partes, ya sea porque decidió no ejercer su defensa como así también porque no aportó elementos suficientes que favorezcan su pretensión.
 
@@ -268,7 +266,7 @@ Siguiendo estas disposiciones, resulta claro que el deber del magistrado es el d
 
 *Deber de los jueces de encontrarse presentes: Tanto las audiencias como las diligencias de prueba en las que así se indique, se realizarán por ante Juez o Tribunal, no pudiendo ser delegadas en otros funcionarios, bajo pena de nulidad, salvo cuando este Código excepcionalmente lo permita. En caso de ausencia justificada, podrán ser subrogados por otro Juez conforme la ley especial o según lo establezca por acordadas la Suprema Corte, salvo que circunstancias excepcionales autoricen a suspender la audiencia.*
 
--Análisis
+- Análisis
 
 La oralidad más que principio se podría decir que es el medio o instrumento que garantiza el principio de inmediación, el cual se le exige al magistrado para dictar una sentencia debidamente fundada. El artículo establece el deber de presenciar actos procesales esenciales por su naturaleza, ya sea porque son irreproducibles (véase ciertas pruebas testimoniales), como así tambien por el impacto que tienen en el desenvolvimiento del proceso (véase audiencia inicial).
 
@@ -288,7 +286,7 @@ La decisión recae en el director del proceso pero solo si asegura la integridad
 
 En conjunto con la oralidad, la celeridad y concentración encuentran su principal manifestación en las diferentes audiencias que se desarrollan durante el proceso. Esta herramienta esta pensada para usarse con el proposito de dotar de la mayor economía procesal posible, sin violar principios y derechos superiores. En una audiencia se pueden resolver múltiples cuestiones en poco tiempo y esto permite un desenvolvimiento del proceso mucho más natural y regular.
 
-Para terminar, siempre se debe tener presente que estos principios deben interpretarse de manera armonica y racional. La celeridad no es una mera acotación de plazos, como así tampoco la concentración es acomodar la mayor cantidad de decisiones, actos y resoluciones en un único momento. Todo debe ser decidido con criterio. Con estos principios se busca mejorar y optimizar el diseño y la articulación del proceso como herramienta de gestión de conflictos. 
+Para terminar, siempre se debe tener presente que estos principios deben interpretarse de manera armónica y racional. La celeridad no es una mera acotación de plazos, como así tampoco la concentración es acomodar la mayor cantidad de decisiones, actos y resoluciones en un único momento. Todo debe ser decidido con criterio. Con estos principios se busca mejorar y optimizar el diseño y la articulación del proceso como herramienta de gestión de conflictos. 
 
 **g) CONTRADICCIÓN**
 
@@ -308,30 +306,30 @@ Por ello, cuando el mismo desaparece o no se dan las condiciones para asegurar s
 
 *Las partes, sus representantes o asistentes y, en general, todos los partícipes del proceso, ajustarán su conducta a la dignidad de la justicia, al respeto que se deben los litigantes y a la lealtad y buena fe conforme lo establecido en el Art. 22 de este Código. El Tribunal deberá impedir el fraude procesal y cualquier otra conducta ilícita o manifiestamente dilatoria.*
 
-El proceso es un instituto al cual todas las partes intervinientes le deben respeto y compromiso. El proceso manifiesta la jurisdicción y más alla de la solución concreta que se logra mediante la sentencia, se busca consolidar la paz social. Podriamos decir que el efecto relativo de la sentencia no debe tapar la función social que cumple el proceso en las sociedades contemporaneas. Por ello, quien acuda a este metodo debe comprometerse con el mismo y honrar lo que representa, deben ajustar su conducta a la dignidad de la justicia. 
+El proceso es un instituto al cual todas las partes intervinientes le deben respeto y compromiso. El proceso manifiesta la jurisdicción y más allá de la solución concreta que se logra mediante la sentencia, se busca consolidar la paz social. Podriamos decir que el efecto relativo de la sentencia no debe tapar la función social que cumple el proceso en las sociedades contemporáneas. Por ello, quien acuda a este método debe comprometerse con el mismo y honrar lo que representa, deben ajustar su conducta a la dignidad de la justicia. 
 
-De este modo, la buena fe actua como precepto que permite interpretar y limitar la voluntad de todos quienes forman parte de algún modo en pos de preservar su legitimidad. Las partes puede que no esten de acuerdo, que se encuentren controvertidas, pero eso no debe intervenir en la gestión del conflicto que ellas mismas han elegido (principio dispositivo). 
+De este modo, la buena fe actúa como precepto que permite interpretar y limitar la voluntad de todos quienes forman parte de algún modo en pos de preservar su legitimidad. Las partes puede que no estén de acuerdo, que se encuentren controvertidas, pero eso no debe intervenir en la gestión del conflicto que ellas mismas han elegido (principio dispositivo). 
 
 En cuanto al magistrado, en su faz de director del proceso, tiene facultades sancionatorias y el deber de velar por un desenvolvimiento comprometido y respetuoso del proceso. 
 
-Podriamos ponernos a debatir sobre la naturaleza de la buena fe y demás, pero prefiero resaltar el impacto de la mala fe en este ambito. El proceso depende de la credibilidad y el prestigio que tiene como mecanismo de solución de conflictos, por ello debe evitarse todo comportamiento que menoscabe su integridad ética, lo torne irrisorio o ilusorio. En simples palabras, si las partes no creen en la lealtad procesal, el proceso deja de ser justicia para convertirse en una guerra de astucia. Puede que existan otros metodos de resolución, pero como ultima ratio, el proceso es lo único que tenemos como repuesta, sin ella solo nos queda el arbitrio irracional del uso de la fuerza o la venganza.
+Podriamos ponernos a debatir sobre la naturaleza de la buena fe y demás, pero prefiero resaltar el impacto de la mala fe en este ámbito. El proceso depende de la credibilidad y el prestigio que tiene como mecanismo de solución de conflictos, por ello debe evitarse todo comportamiento que menoscabe su integridad ética, lo torne irrisorio o ilusorio. En simples palabras, si las partes no creen en la lealtad procesal, el proceso deja de ser justicia para convertirse en una guerra de astucia. Puede que existan otros métodos de resolución, pero como *ultima ratio*, el proceso es lo único que tenemos como repuesta; sin él solo nos queda el arbitrio irracional del uso de la fuerza o la venganza.
 
-Por ello el fraude procesal, es decir, usar el proceso para lograr un fín ílicito, o la temeridad y la malicia (pedir cosas sabiendo que no se tiene razón o mentir descaradamente) es el ataque más grave que puede sufrir esta institución, porque corrompe directamente su caracter de herramienta de paz social. 
+Por ello el fraude procesal, es decir, usar el proceso para lograr un fin ilícito, o la temeridad y la malicia (pedir cosas sabiendo que no se tiene razón o mentir descaradamente) es el ataque más grave que puede sufrir esta institución, porque corrompe directamente su carácter de herramienta de paz social.
 
-En sítesis, la Buena Fe es el estándar ético que "moraliza" el debate judicial, garantiza que el proceso sea un diálogo racional y no un ejercicio de astucia o engaño.
+En síntesis, la Buena Fe es el estándar ético que "moraliza" el debate judicial, garantiza que el proceso sea un diálogo racional y no un ejercicio de astucia o engaño.
 
 **i) IGUALDAD Y DE COOPERACIÓN**
 
 *El Tribunal debe velar por la igualdad de los litigantes y por preservar las garantías del debido proceso. Todos los sujetos del proceso deben cooperar entre sí para que se obtenga, en tiempo razonable, la decisión de mérito efectiva.*
 - Análisis 
 
-El deber de cooperación es una de las manifestaciones de la buena fe y podría decirse que es un límite a caracter dispositivo del proceso. Todo lo actuado beneficia o se incorpora al proceso (principio de adquisición), no es disponible de manera privativa o conveniente. Las partes al presentarse en un proceso no buscan que le den la razón solamente, sino que también quieren gestionar su conflicto, caso contrario no habria litigio, por esto, deben cooperar teniendo siempre en miras la resolución del mismo.
+El deber de cooperación es una de las manifestaciones de la buena fe y podría decirse que es un límite al carácter dispositivo del proceso. Todo lo actuado beneficia o se incorpora al proceso (principio de adquisición), no es disponible de manera privativa o conveniente. Las partes al presentarse en un proceso no buscan que le den la razón solamente, sino que también quieren gestionar su conflicto, caso contrario no habría litigio, por esto, deben cooperar teniendo siempre en miras la resolución del mismo.
 
-En cuanto a la igualdad, podemos decir que está estrechamente relacionado con el principio de bilateralidad, el contradictorio y la imparcialidad del magistrado. Ambas partes deben estar en igualdad de condiciones para ejercer o defender sus posiciones, del mejor modo posible. Por ello, apelando a la buena fe y lealtad procesal, las partes deben cooperar en pos del proceso debido a que el mismo beneficia a ambos, más alla del resultado obtenido.
+En cuanto a la igualdad, podemos decir que está estrechamente relacionado con el principio de bilateralidad, el contradictorio y la imparcialidad del magistrado. Ambas partes deben estar en igualdad de condiciones para ejercer o defender sus posiciones, del mejor modo posible. Por ello, apelando a la buena fe y lealtad procesal, las partes deben cooperar en pos del proceso debido a que el mismo beneficia a ambos, independientemente del resultado obtenido.
 
-Respecto del magistrado, el art. 46 inc I 5 establece expresamente que deben "...disponer las medidas idóneas para esclarecer la verdad de los hechos controvertidos, mantener la igualdad de los litigantes, propender a una más rápida y económica tramitación del proceso y asegurar una solución justa"; es decir, la imparcialidad en el servicio jurisdiccional debe ejercerse de manera activa.
+Respecto del magistrado, el art. 46 inc. I, 5 CPCCT establece expresamente que deben "...disponer las medidas idóneas para esclarecer la verdad de los hechos controvertidos, mantener la igualdad de los litigantes, propender a una más rápida y económica tramitación del proceso y asegurar una solución justa"; es decir, la imparcialidad en el servicio jurisdiccional debe ejercerse de manera activa.
 
-Estos principios consagran lo que se conoce como modelo de justicia colaborativa. La cooperación, derivada de la buena fe, impone a los sujetos el deber de no obstruir la marcha del proceso, entendiendo que la jurisdicción es un servicio público y no un juego de astucias. Aquí opera el Principio de Adquisición: las pruebas y actuaciones se incorporan al proceso en beneficio de la verdad, perdiendo su carácter de "propiedad" de la parte que las aportó. La igualdad, por su parte, trasciende lo formal. El magistrado debe ejercer una imparcialidad activa, utilizando sus facultades (Art. 46) para remover obstáculos que impidan la paridad de los litigantes. Cooperar y mantener la igualdad son los medios necesarios para alcanzar el fin último del proceso: una decisión de mérito efectiva que resuelva el conflicto de manera justa y en un tiempo razonable.
+Estos principios consagran lo que se conoce como modelo de justicia colaborativa. La cooperación, derivada de la buena fe, impone a los sujetos el deber de no obstruir la marcha del proceso, entendiendo que la jurisdicción es un servicio público y no un juego de astucias. Aquí opera el Principio de Adquisición: las pruebas y actuaciones se incorporan al proceso en beneficio de la verdad, perdiendo su carácter de "propiedad" de la parte que las aportó. La igualdad, por su parte, trasciende lo formal. El magistrado debe ejercer una imparcialidad activa, utilizando sus facultades (Art. 46 CPCCT) para remover obstáculos que impidan la paridad de los litigantes. Cooperar y mantener la igualdad son los medios necesarios para alcanzar el fin último del proceso: una decisión de mérito efectiva que resuelva el conflicto de manera justa y en un tiempo razonable.
 
 **j) PLURALIDAD DE FORMAS**
 
@@ -347,7 +345,7 @@ Sin embargo, la pluralidad no es absoluta. La elección del soporte o la vía (o
 
 *Todo proceso será de conocimiento público, salvo que expresamente la ley disponga lo contrario o el Tribunal así lo decida por razones de seguridad, de moral o de protección de la personalidad de alguna de las partes.*
 
-Tal como vimos la importancia de la buena fe como elemento fortalecedor de la legítimidad del proceso, la publicidad también busca reforzarla. El conflicto y su solución puede que solo importe a las partes o interesados, sin embargo el servicio de justicia o el modo en que el estado ejerce la jurisdicción importa a toda la población. Por ello, la publicidad resulta ser una prerrogativa de control que tiene la población para confiar aún más en sus autoridades judiciales.
+Tal como vimos la importancia de la buena fe como elemento fortalecedor de la legitimidad del proceso, la publicidad también busca reforzarla. El conflicto y su solución puede que solo importe a las partes o interesados, sin embargo el servicio de justicia o el modo en que el estado ejerce la jurisdicción importa a toda la población. Por ello, la publicidad resulta ser una prerrogativa de control que tiene la población para confiar aún más en sus autoridades judiciales.
 
 Ahora bien, como todo principio, debe ser interpretado y aplicado de un modo racional y prudente, por ello, el límite se encuentra en la dignidad humana y el derecho a la intimidad. 
 
