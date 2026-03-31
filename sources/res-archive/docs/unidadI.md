@@ -35,8 +35,6 @@ Esta facultad jurídica siempre se materializa frente a la interacción intersub
 
 De este modo, podemos decir que el correlato del derecho subjetivo es la acción judicial o procesal que se interpone en pos de restablecer o evitar vulneraciones ilegítimas a los intereses jurídicamente protegidos.
 
----
-
 ## 2. Derecho Procesal. Fuentes. Orden de Prelación de Normas
 
 ### Derecho de Fondo (Sustancial) y Derecho de Forma (Instrumental)
@@ -51,43 +49,42 @@ Para no extendernos más, lo importante a considerar es que las normas sustancia
 
 El Derecho Procesal es la ciencia jurídica que estudia la función jurisdiccional del Estado y el proceso como su único método legítimo de ejercicio. Se define como el estudio del método de debate dialéctico —caracterizado por la bilateralidad y el contradictorio— que se instrumenta mediante una sucesión de actos (procedimiento) para resolver controversias intersubjetivas o cesar estados de incertidumbre jurídica, mediante una sentencia con autoridad de cosa juzgada dictada por un tercero imparcial e impartidario.
 
-**1. El Método del Debate (El Proceso)**
+#### 1. El Método del Debate (El Proceso)
 
 A diferencia de otros métodos de resolución de conflictos, el proceso no es una simple gestión de intereses. Es una estructura trilateral (Actor - Juez - Demandado) donde la verdad jurídica sólo puede emerger si ambas partes tienen las mismas oportunidades de afirmación, negación y prueba. Sin debate, no hay proceso; hay solo trámite.
 
-**2. Bilateralidad y Contradictorio (La Garantía)**
+#### 2. Bilateralidad y Contradictorio (La Garantía)
 
-Es el núcleo de la materia. El Derecho Procesal no estudia cómo el Juez decide solo, sino cómo el Juez garantiza que nadie sea condenado sin ser oído. El contradictorio es la herramienta que transforma un simple procedimiento en un proceso jurisdiccional.
+Es el núcleo de la materia. El Derecho Procesal no estudia cómo el Juez decide solo, sino cómo el Juez garantiza que nadie sea condenado sin ser oído. El contradictorio es el elemento que transforma un simple procedimiento en un proceso jurisdiccional.
 
-**3. Proceso vs. Procedimiento (La distinción de Género y Especie)**
+#### 3. Proceso vs. Procedimiento (La distinción de Género y Especie)
 
-*Procedimiento*: Es el género y consiste en un sistema de actos secuenciales que se desarrollan de manera lógica con el objetivo de alcanzar un fín administrativo. En el contexto jurídico, sirve de herramienta para canalizar las peticiones únilaterales de los sujetos frente a las autoridades judiciales.
+*Procedimiento*: Es el género y consiste en un sistema de actos secuenciales que se desarrollan de manera lógica con el objetivo de alcanzar un fin administrativo. En el contexto jurídico, sirve de herramienta para canalizar las peticiones unilaterales de los sujetos frente a las autoridades judiciales.
 
 *Proceso*: Es una especie de procedimiento que tiene como característica principal el contradictorio. En otras palabras, tiene lugar cuando los sujetos (bilateralidad) se presentan ante los órganos judiciales para dar solución a sus conflictos. De esta manera se canalizan pretensiones.
 
-> Nota: Los "procedimientos voluntarios" (sucesiones, autorizaciones) que figuran en los códigos son técnicamente administración judicial, ya que al ser unilaterales, carecen del contradictorio (litis) y del método del debate que define al proceso. Aunque se les llamen procesos deben ser tratados como procedimientos por no haber lítis.
+> Nota: Los "procedimientos voluntarios" (sucesiones, autorizaciones) que figuran en los códigos son técnicamente *administración judicial*, ya que al ser unilaterales, carecen del contradictorio (litis) y del método del debate que define al proceso. Aunque se les llamen procesos deben ser tratados como procedimientos.
 
 ### Fuentes
 
-**1. Fuentes Vinculantes**
+#### 1. Fuentes Vinculantes
 
 *A. La Constitución Nacional y Tratados de Derechos Humanos*
 
 Es la fuente primaria y suprema, en ella encontraremos las garantías más importantes del sistema:
 
-Art. 18 CN: Establece el debido proceso, la defensa en juicio y el juez natural. 
-
-Art. 75 inc. 22 (Pacto de San José de Costa Rica): Introduce el derecho a la tutela judicial efectiva y el plazo razonable.
+- Art. 18 CN: Establece el debido proceso, la defensa en juicio y el juez natural. 
+- Art. 75 inc. 22 (Pacto de San José de Costa Rica): Introduce el derecho a la tutela judicial efectiva y el plazo razonable.
 
 *B. La Ley Procesal (Códigos de Rito)*
 
-Es la fuente formal por excelencia. Constitucionalmente se establece que sean en principio provinciales y excepcionalmente federal o nacional. En nuestro caso, el CPCCyT de Mendoza (Ley 9001).
+Es la fuente formal por excelencia. Constitucionalmente se establece que sean en principio provinciales y excepcionalmente federal o nacional.
 
 *C. Los Fallos Plenarios y la Jurisprudencia Obligatoria*
 
-Cuando la Suprema Corte de Mendoza dicta un fallo plenario, esa interpretación de la ley se vuelve obligatoria para todos los jueces inferiores. Es una fuente que busca la unificación de criterios para evitar que el "debate" sea distinto según el juzgado que te toque. El derecho procesal no es ajeno a ello.
+Cuando la Suprema Corte dicta un fallo plenario, esa interpretación de la ley se vuelve obligatoria para todos los jueces inferiores. Es una fuente que busca la unificación de criterios para evitar interpretaciones ambiguas entre juzgados. De ésta manera se busca afianzar la seguridad jurídica de los pronunciamientos judiciales y el derecho procesal no es ajeno a ello.
 
-**2. Fuentes No Vinculantes**
+#### 2. Fuentes No Vinculantes
 
 *D. La Doctrina*
 
@@ -97,41 +94,19 @@ Autores como Alvarado Velloso, nos enseñan a pensar el sistema, pero no obligan
 
 En Derecho Procesal, la costumbre tiene un valor relativo. Sin embargo, es importante aclarar que la costumbre no puede crear normas procesales (principio de legalidad de las formas), pero sirve para interpretar cómo se cumplen ciertos actos (ej. cómo se folia un expediente o cómo se acredita una personería en la práctica diaria).
 
-**1. Orden de Prelación (Art. 1 Inciso I CPCCT Mza)**
+### Orden de Prelación (Art. 1 Inciso I CPCCT Mza)
 
 El CPCCT-Mdz establece un orden de aplicación obligatorio que el Juez no puede alterar. Esto refuerza la idea de que la "ley procesal" está subordinada a la "garantía procesal":
 
 - Nivel 1 (Bloque de Constitucionalidad): CN y Tratados Internacionales. Es la fuente de las garantías (Debido proceso, Juez natural).
-
 - Nivel 2 (Derecho Federal): Leyes y decretos nacionales.
-
 - Nivel 3 (Derecho Local): Constitución de Mendoza, leyes provinciales (incluyendo este Código) y ordenanzas.
 
 *Importancia técnica:* Si una norma del Código de Mendoza choca, por ejemplo, con una garantía del Pacto de San José de Costa Rica, el Juez tiene el deber legal (por prelación) de hacer prevalecer el Tratado.
 
-2. Control de Constitucionalidad y Convencionalidad (Inciso II)
+#### El Orden Público y la Flexibilidad (Art 1 Inciso III CPCCT MZA)
 
-Bilateralidad obligatoria: El inciso II prohíbe al Juez declarar una inconstitucionalidad "entre gallos y medianoche". Exige dar oportunidad a las partes de ser oídas.
-
-Rigor: Incluso cuando el Juez actúa de oficio (por su propia iniciativa), no puede romper la estructura del proceso. Debe generar el debate antes de decidir. Esto confirma que el método del debate es superior incluso a la facultad de control del Juez.
-
-3. El Orden Público y la Flexibilidad (Inciso III)
-Aquí aparece una tensión interesante:
-
-Orden Público: Las reglas del proceso no son sugerencias; son normas de cumplimiento obligatorio porque protegen la seguridad jurídica.
-
-Flexibilización: Permite adaptar las formas siempre que no se afecte el derecho de defensa. Esto significa que el "procedimiento" (la forma) puede ceder, pero el "proceso" (la garantía de defensa) es innegociable.
-
-4. El Límite a la "Administración Judicial" (Inciso IV)
-Este inciso es la respuesta exacta a tu duda sobre la Administración Judicial vs. Jurisdicción:
-
-La Suprema Corte de Mendoza tiene facultades de superintendencia (administración), pero el Art. 1 le pone un freno de mano: sus Acordadas no pueden modificar las normas procesales.
-
-Traducción técnica: Lo administrativo (reglamentos de la Corte) nunca puede estar por encima de lo jurisdiccional (el Código y la Constitución). La gestión no puede devorar a la garantía.
-
- Las fuentes del Derecho Procesal en Mendoza se rigen por un orden de prelación jerárquico (Art. 1 CPCCyT) donde el bloque de constitucionalidad y convencionalidad prima sobre la ley ritual. El sistema se asienta en el control de oficio, pero condicionado inexorablemente al respeto del contradictorio (derecho a ser oído), asegurando que la reglamentación administrativa de la Corte nunca altere la esencia del debate procesal establecido por ley.
-
----
+Al establecer el carácter de orden público de las normas procesales se determina su obligatoriedad con el objetivo de afianzar la seguridad jurídica del proceso. Sin embargo, su límite se encuentra en el cumplimiento de principios cardinales, pudiendo obviar determinadas reglas siempre que se haga en el marco del debido proceso. De esta manera, la forma prevalece siempre y cuando se adapte al proceso (véase principio de libertad de formas, celeridad y concentración).
 
 ## 3. Principios Procesales.
 
@@ -141,13 +116,13 @@ Art. 2º .- I- REGLAS GENERALES.
 
 Sin perjuicio de lo reglado por disposiciones especiales, el presente Código se rige por las siguientes reglas procesales generales:
 
-**a) ACCESO A LA JUSTICIA Y DERECHO AL PROCESO.**
+### a) ACCESO A LA JUSTICIA Y DERECHO AL PROCESO.
 
 *Toda persona tendrá acceso a un proceso de duración razonable que resuelva sus pretensiones en forma definitiva; tiene derecho a acudir ante los Tribunales para exponer un conflicto jurídico concreto u oponerse a la solución pretendida y a ejercer todos los actos procesales concernientes a la defensa de una u otra posición procesal, debiendo en todos los casos invocar un interés jurídico protegido y legitimación. El Tribunal que entienda en la causa tiene el deber de proveer sobre sus peticiones.*
 
 - Análisis
 
-Al desglosar el inc. a), podemos encontrarnos con varios principios y derecho recepcionados tanto por nuestra Constitución Nacional, como así también por Tratados de Derechos Humanos:
+Al desglosar el inc. a), podemos encontrarnos con varios principios y derechos recepcionados tanto por nuestra Constitución Nacional, como así también por Tratados de Derechos Humanos:
 
 1. Tutela Judicial Efectiva
 2. Plazo Razonable
@@ -155,9 +130,9 @@ Al desglosar el inc. a), podemos encontrarnos con varios principios y derecho re
 
 A su vez, también se mencionan los presupuestos procesales mínimos para impulsar un proceso.
 
-A modo de síntesis podemos decir que el derecho a peticionar a las autoridades, en el contexto del derecho procesal, consiste en el derecho subjetivo que tienen los sujetos de accionar e impulsar un proceso en el ámbito judicial con el objetivo de lograr defender la pretensión que se presente. Para ello es necesario que el estado disponga de los recursos necesarios para garantizar una respuesta que sea efectiva y eficaz, sin que ello importe el éxito o fracaso de la pretensión. Como bien destaca el artículo el deber del tribunal, como órgano jurisdiccional es el de proveer, es decir, emitir un pronunciamiento jurisdiccional fundado que atienda lo peticionado, independientemente de su sentido.
+A modo de síntesis podemos decir que el derecho a peticionar a las autoridades, en el contexto del derecho procesal, consiste en el derecho subjetivo que tienen los sujetos de accionar e impulsar un proceso en el ámbito judicial con el objetivo de lograr defender la pretensión que se presente. Para ello es necesario que el Estado disponga de los recursos necesarios para garantizar una respuesta que sea efectiva y eficaz, sin que ello importe el éxito o fracaso de la pretensión. Como bien destaca el artículo el deber del tribunal, como órgano jurisdiccional es el de proveer, es decir, emitir un pronunciamiento jurisdiccional fundado que atienda lo peticionado, independientemente de su sentido.
 
-Algo que resulta importante destacar es que el propio artículo marca el carácter contencioso o contradictorio como un requisito esencial de toda acción que pretenda impulsar el proceso. Como se vió en puntos anteriores, la controversia o la litis debe mantenerse durante todo el proceso, ya que constituye el fundamento y la justificación de la respuesta jurisdiccional; de lo contrario, se trataría de una mera gestión administrativa de la petición y no de un acto de justicia.
+Algo que resulta importante destacar es que el propio artículo marca el carácter **contencioso o contradictorio** como un requisito esencial de toda acción que pretenda impulsar el proceso. Como se vió en puntos anteriores, la controversia o la litis debe mantenerse durante todo el proceso, ya que constituye el fundamento y la justificación de la respuesta jurisdiccional; de lo contrario, se trataría de una mera gestión administrativa de la petición y no de un acto de justicia.
 
 En otras palabras, el carácter contradictorio es la esencia que transforma el procedimiento en proceso. Sin la posibilidad de contradicción y control bilateral, estaríamos ante una mera gestión administrativa judicializada, carente de la autoridad de cosa juzgada material propia de la función jurisdiccional.
 
@@ -185,16 +160,18 @@ Artículo 8: Derecho a un recurso efectivo ante los tribunales nacionales compet
 
 Artículo 10: Derecho, en condiciones de plena igualdad, a ser oído públicamente y con justicia.
 
+En síntesis, en este artículo podemos visualizar los derechos y principios que fundan la actividad jurisdiccional y el servicio de justicia. El proceso es la herramienta que el Estado coordina para que la población resuelva sus conflictos de manera pacífica. Por ello, como toda función pública, requiere que se presente del modo más eficaz posible, sin dilaciones innecesarias, de manera accesible y con disponibilidad para toda la población, en el marco del debido proceso y en protección de derechos fundamentales.
+
 Para terminar, debemos tener presente que estos principios y presupuestos están en cabeza del Estado a través de sus funcionarios y órganos, los cuales serán responsables frente a las partes procesales y terceros interesados (Véase responsabilidad estatal).
 
 
-**b) DISPOSITIVO.**
+### b) DISPOSITIVO.
 
 *La iniciación del proceso incumbe a los interesados, los que podrán disponer de sus derechos y del proceso, salvo aquéllos que este Código u otras leyes expresamente declaren indisponibles. Las partes podrán terminarlo unilateral o bilateralmente conforme lo reglado por este Código.*
 
 - Análisis
 
-El principio dispositivo puede entenderse como el correlato necesario que efectiviza la bilateralidad y la tutela judicial efectiva. Tal como lo menciona el artículo, la iniciación del proceso, en el ámbito civil, incumbe a los interesados, es decir a aquellas personas legitimadas para accionar. Es la manifestación concreta de la libertad en cuanto a la gestión de los asuntos propios. En el proceso necesariamente se disponen de derechos, por lo que los titulares son quienes están en mejor posición de decidir cómo manejar sus asuntos, por ello, resulta importante que el juez mantenga su imparcialidad e impartidariedad en todo momento. 
+El principio dispositivo puede entenderse como el correlato necesario que efectiviza la bilateralidad y la tutela judicial efectiva. Tal como lo menciona el artículo, la iniciación del proceso, en el ámbito civil, incumbe a los interesados, es decir a aquellas personas legitimadas para accionar. Es la manifestación concreta de la libertad en cuanto a la gestión de los asuntos propios. En el proceso necesariamente se disponen de derechos, por lo que los titulares son quienes están en mejor posición de decidir cómo manejar sus asuntos y, como consecuencia de ello, resulta importante que el juez mantenga su imparcialidad e impartialidad en todo momento. 
 
 El juez no puede tener interés ni ser parte en el proceso, no puede agregar pretensiones a la litis ni puede beneficiar arbitrariamente a alguna de las partes o a sí mismo. Justamente esto es lo que preserva la racionalidad y legitimidad del proceso como modo de gestión y solución de conflictos. El resultado del proceso impacta en las partes, es decir actor y demandado, por esta razón, solamente ellos son quienes pueden decidir ejercer sus derechos en resguardo de sus intereses, algo que se cristaliza en lo que llamamos pretensión. Las partes implicadas en el conflicto son las únicas legitimadas en decidir cómo, cuándo y dónde gestionarlo.
 
@@ -206,7 +183,7 @@ Ahora bien, el límite excepcional a este principio, en el ámbito civil, lo enc
 
 Sin embargo, en otros ámbitos la disponibilidad es la excepción y la oficialidad es la regla, tal como ocurre en el derecho penal. Por ello, siempre que nos referimos al principio dispositivo, por su naturaleza debemos encuadrarlo en el proceso civil. Si se quiere buscar un ejemplo del principio dispositivo en el ámbito penal, podemos ver los casos de acciones por delitos de acción privada, ciertos criterios de oportunidad y el juicio abreviado.
 
-**c) FORMAS ALTERNATIVAS DE RESOLUCIÓN DEL CONFLICTO**
+### c) FORMAS ALTERNATIVAS DE RESOLUCIÓN DEL CONFLICTO
 
 *La conciliación, la transacción, la mediación, el arbitraje y otros métodos de solución de conflictos deberán ser estimulados por Jueces, Abogados y miembros del Ministerio Público en el curso del proceso judicial.*
 
@@ -218,15 +195,13 @@ La mención de la conciliación, mediación y arbitraje no debe verse como un in
 
 En el sistema de Mendoza, esto se cristaliza especialmente en la Audiencia Inicial, donde el Juez tiene la carga de proponer fórmulas conciliatorias. Estimular estos métodos permite:
 
-Economía Procesal: Ahorro de tiempo, costos y recursos jurisdiccionales.
-
-Paz Social: Una solución acordada suele ser aceptada con mayor agrado y cumplimiento voluntario que una condena.
-
-Descongestionamiento: Permite que la estructura judicial se concentre en aquellos casos donde el acuerdo es realmente imposible.
+- Economía Procesal: Ahorro de tiempo, costos y recursos jurisdiccionales.
+- Paz Social: Una solución acordada suele ser aceptada con mayor agrado y cumplimiento voluntario que una condena.
+- Descongestión judicial: Permite que la estructura judicial se concentre en aquellos casos donde el acuerdo es realmente imposible.
 
 En definitiva, las formas alternativas no son "ajenas" al proceso, sino que están integradas en él como una válvula de escape necesaria para lograr una justicia más rápida, humana y efectiva.
 
-**d) IMPULSO PROCESAL COMPARTIDO. **
+### d) IMPULSO PROCESAL COMPARTIDO.
 
 *Iniciado un proceso, tanto las partes como el Tribunal podrán impulsarlo evitando su paralización, con el objeto de adelantar el trámite con la mayor celeridad y eficacia posible.*
 
@@ -246,23 +221,21 @@ Esta analogía, que permite ilustrar de forma pedagógica la dirección del proc
 
 Entonces, ¿Qué medida puede adoptar el magistrado frente a procesos paralizados por tiempo indeterminado? Si revisamos las diferentes etapas del proceso podemos ver que no hay margen para que esta situación ocurra, básicamente el principio de legalidad y el rigor formal que manejan ciertas legislaciones lo impiden al establecer plazos de caducidad estrictos y al limitar el ejercicio de prórrogas o suspensiones abusivas. A su vez, el artículo 46 inc. I, 1; 2 11; 12, entre otros del CPCCT, nos dan la pauta del ejercicio regular del impulso procesal por parte del magistrado, el cual debe ser siempre ejercido respetando los principios de bilateralidad, defensa, debido proceso, celeridad, buena fe procesal y en concreto, garantizar el normal desenvolvimiento del proceso. 
 
-En simples palabras, si una de las partes busca dilatar el proceso por más de 6 meses, por ejemplo, el juez puede intervenir en defensa de estos principios y derechos cardinales, aplicando sanciones procesales o impulsando el trámite hacia la etapa siguiente. Es decir, el principal remedio que debe aplicar el magistrado a un proceso paralizado es el impulso de oficio para reactivarlo, en cumplimiento de su deber de preservación del proceso. A pesar de no poder darle fín de oficio, lo que puede hacer es continuar con las siguientes etapas hasta llegar a su conclusión. Por esto, en el sistema de Mendoza, la paralización del proceso se debe concebir cómo una anomalía que el tribunal debe combatir activamente para cumplir con el servicio de justicia.
+En simples palabras, si una de las partes busca dilatar el proceso por más de 6 meses, por ejemplo, el juez puede intervenir en defensa de estos principios y derechos cardinales, aplicando sanciones procesales o impulsando el trámite hacia la etapa siguiente. Es decir, el principal remedio que debe aplicar el magistrado a un proceso paralizado es el impulso de oficio para reactivarlo, en cumplimiento de su deber de preservación del proceso. A pesar de no poder darle fin de oficio, lo que puede hacer es continuar con las siguientes etapas hasta llegar a su conclusión. Por esto, en el sistema de Mendoza, la paralización del proceso se debe concebir como una anomalía que el tribunal debe combatir activamente para cumplir con el servicio de justicia.
 
 - Caso 2 - Rebeldía: Cuando la parte demandada o en casos de reconvención, no comparece ni se constituye domicilio procesal (art. 74 CPCCT), entonces surgen ciertas presunciones y efectos que obligan al magistrado a continuar con el proceso, es decir, impulsarlo solo con una de las partes; sin perjuicio del resguardo del debido proceso e imparcialidad. 
 
-Sobre este último punto, uno puede pensar que al no haber una defensa que se oponga a la pretensión del accionante entonces el juez debería sentenciar a favor de la misma, sin embargo esto no es así debido a que el magistrado debe sentenciar con plena certeza, en otras palabras, si el actor no esgrime argumentos legítimos entonces no puede darse lugar a la acción. Lo dicho no significa que el juez defiende al demandado o busque desestimar la pretensión del actor, sino más bien tiene que ejercer su jurisdicción de acuerdo a la sana crítica racional que se forme en el proceso, con lo actuado en el mismo.
+Sobre este último punto, uno puede pensar que al no haber una defensa que se oponga a la pretensión del accionante, el juez debería sentenciar a favor de la misma, sin embargo esto no es así debido a que el magistrado debe resolver con plena certeza de los hechos, en otras palabras, si el actor no esgrime argumentos legítimos entonces no puede darse lugar a la acción. Lo dicho no significa que el juez defiende al demandado o busque desestimar la pretensión del actor, sino más bien tiene que ejercer su jurisdicción de acuerdo a la sana crítica racional que se forme en el proceso, con lo actuado en el mismo.
 
 Esta facultad logra preservar la imparcialidad del magistrado y se encuentra regulada en los siguientes arts.
 
-Art. 46 inc I; 5 CPCCT: "Disponer las medidas idóneas para esclarecer la verdad de los hechos controvertidos, mantener la igualdad de los litigantes, propender a una más rápida y económica tramitación del proceso y asegurar una solución justa."
-
-Art. 75 inc. II CPCCT: "...la rebeldía constituye presunción de la verdad de los hechos afirmados por la contraria;  presunción cuya eficacia será apreciada por el Tribunal, quien podrá decretar las medidas de prueba que creyere convenientes."
-
-Art. 199 CPCCT: "Todas y cada una de las pruebas serán apreciadas según las reglas de la sana crítica..."
+- Art. 46 inc I; 5 CPCCT: "Disponer las medidas idóneas para esclarecer la verdad de los hechos controvertidos, mantener la igualdad de los litigantes, propender a una más rápida y económica tramitación del proceso y asegurar una solución justa."
+- Art. 75 inc. II CPCCT: "...la rebeldía constituye presunción de la verdad de los hechos afirmados por la contraria;  presunción cuya eficacia será apreciada por el Tribunal, quien podrá decretar las medidas de prueba que creyere convenientes."
+- Art. 199 CPCCT: "Todas y cada una de las pruebas serán apreciadas según las reglas de la sana crítica..."
 
 Siguiendo estas disposiciones, resulta claro que el deber del magistrado es el de formarse una convicción que legitime su decisión, sin que ello importe adoptar una posición o favorecer a una de las partes, ya sea porque decidió no ejercer su defensa como así también porque no aportó elementos suficientes que favorezcan su pretensión.
 
-**e) ORALIDAD.**
+### e) ORALIDAD.
 
 *Deber de los jueces de encontrarse presentes: Tanto las audiencias como las diligencias de prueba en las que así se indique, se realizarán por ante Juez o Tribunal, no pudiendo ser delegadas en otros funcionarios, bajo pena de nulidad, salvo cuando este Código excepcionalmente lo permita. En caso de ausencia justificada, podrán ser subrogados por otro Juez conforme la ley especial o según lo establezca por acordadas la Suprema Corte, salvo que circunstancias excepcionales autoricen a suspender la audiencia.*
 
@@ -274,7 +247,7 @@ En sí, la oralidad en el debate permite ganar celeridad en cuanto a la inmediat
 
 Para terminar es importante tener siempre presente que la oralidad no es pura, sino que se emplea para garantizar la inmediación y celeridad requerida en determinadas etapas del proceso. Por ello, decimos que el sistema del CPCCT es mixto (oral-actuado).
 
-**f) CELERIDAD Y CONCENTRACIÓN**
+### f) CELERIDAD Y CONCENTRACIÓN
 
 *Los actos procesales deberán realizarse sin demora, tratando de abreviar los plazos, cuando a ello se faculte por ley o por acuerdo de partes, y de concentrar en un mismo acto la mayor cantidad de diligencias posibles, así como la colocación de todas las órdenes anticipatorias en resoluciones que el Juez entienda puedan emitirse para una más ordenada y rápida resolución de la causa.*
 
@@ -288,7 +261,7 @@ En conjunto con la oralidad, la celeridad y concentración encuentran su princip
 
 Para terminar, siempre se debe tener presente que estos principios deben interpretarse de manera armónica y racional. La celeridad no es una mera acotación de plazos, como así tampoco la concentración es acomodar la mayor cantidad de decisiones, actos y resoluciones en un único momento. Todo debe ser decidido con criterio. Con estos principios se busca mejorar y optimizar el diseño y la articulación del proceso como herramienta de gestión de conflictos. 
 
-**g) CONTRADICCIÓN**
+### g) CONTRADICCIÓN
 
 *Es deber de los jueces velar por el efectivo contradictorio y asegurar a las partes la igualdad de tratamiento en relación al ejercicio de los derechos y facultades procesales, a los medios de defensa, a los deberes y a la aplicación de sanciones procesales.*
 
@@ -302,7 +275,7 @@ Por ello, cuando el mismo desaparece o no se dan las condiciones para asegurar s
 
 ¿Cómo conocemos el contradictorio? Pues bien, la pretensión del actor y la resistencia a ella traban la litis, por ello, el magistrado, de conformidad con lo establecido por el art. 172 del CPCCT, previo a la audiencia inicial, puede dictar una resolución que concluya el proceso por falta del contradictorio, lo que se llama "mera cuestión abstracta o de puro derecho". En otras plabras, la vigencia de la litis (el conflicto) es el presupuesto de existencia del proceso. Si el contradictorio se extingue por acuerdo de partes o por desaparición del objeto, el proceso pierde su razón de ser, debiendo el Juez declarar la cuestión como abstracta, pues su potestad no es administrar voluntades, sino decidir controversias.
 
-**h) BUENA FE**
+### h) BUENA FE
 
 *Las partes, sus representantes o asistentes y, en general, todos los partícipes del proceso, ajustarán su conducta a la dignidad de la justicia, al respeto que se deben los litigantes y a la lealtad y buena fe conforme lo establecido en el Art. 22 de este Código. El Tribunal deberá impedir el fraude procesal y cualquier otra conducta ilícita o manifiestamente dilatoria.*
 
@@ -312,15 +285,16 @@ De este modo, la buena fe actúa como precepto que permite interpretar y limitar
 
 En cuanto al magistrado, en su faz de director del proceso, tiene facultades sancionatorias y el deber de velar por un desenvolvimiento comprometido y respetuoso del proceso. 
 
-Podriamos ponernos a debatir sobre la naturaleza de la buena fe y demás, pero prefiero resaltar el impacto de la mala fe en este ámbito. El proceso depende de la credibilidad y el prestigio que tiene como mecanismo de solución de conflictos, por ello debe evitarse todo comportamiento que menoscabe su integridad ética, lo torne irrisorio o ilusorio. En simples palabras, si las partes no creen en la lealtad procesal, el proceso deja de ser justicia para convertirse en una guerra de astucia. Puede que existan otros métodos de resolución, pero como *ultima ratio*, el proceso es lo único que tenemos como repuesta; sin él solo nos queda el arbitrio irracional del uso de la fuerza o la venganza.
+Podríamos ponernos a debatir sobre la naturaleza de la buena fe y demás, pero prefiero resaltar el impacto de la mala fe en este ámbito. El proceso depende de la credibilidad y el prestigio que tiene como mecanismo de solución de conflictos, por ello debe evitarse todo comportamiento que menoscabe su integridad ética, lo torne irrisorio o ilusorio. En simples palabras, si las partes no creen en la lealtad procesal, el proceso deja de ser justicia para convertirse en una guerra de astucia. Puede que existan otros métodos de resolución, pero como *ultima ratio*, el proceso es lo único que tenemos como repuesta; sin él solo nos queda el arbitrio irracional del uso de la fuerza o la venganza.
 
 Por ello el fraude procesal, es decir, usar el proceso para lograr un fin ilícito, o la temeridad y la malicia (pedir cosas sabiendo que no se tiene razón o mentir descaradamente) es el ataque más grave que puede sufrir esta institución, porque corrompe directamente su carácter de herramienta de paz social.
 
 En síntesis, la Buena Fe es el estándar ético que "moraliza" el debate judicial, garantiza que el proceso sea un diálogo racional y no un ejercicio de astucia o engaño.
 
-**i) IGUALDAD Y DE COOPERACIÓN**
+### i) IGUALDAD Y DE COOPERACIÓN
 
 *El Tribunal debe velar por la igualdad de los litigantes y por preservar las garantías del debido proceso. Todos los sujetos del proceso deben cooperar entre sí para que se obtenga, en tiempo razonable, la decisión de mérito efectiva.*
+
 - Análisis 
 
 El deber de cooperación es una de las manifestaciones de la buena fe y podría decirse que es un límite al carácter dispositivo del proceso. Todo lo actuado beneficia o se incorpora al proceso (principio de adquisición), no es disponible de manera privativa o conveniente. Las partes al presentarse en un proceso no buscan que le den la razón solamente, sino que también quieren gestionar su conflicto, caso contrario no habría litigio, por esto, deben cooperar teniendo siempre en miras la resolución del mismo.
@@ -329,21 +303,25 @@ En cuanto a la igualdad, podemos decir que está estrechamente relacionado con e
 
 Respecto del magistrado, el art. 46 inc. I, 5 CPCCT establece expresamente que deben "...disponer las medidas idóneas para esclarecer la verdad de los hechos controvertidos, mantener la igualdad de los litigantes, propender a una más rápida y económica tramitación del proceso y asegurar una solución justa"; es decir, la imparcialidad en el servicio jurisdiccional debe ejercerse de manera activa.
 
-Estos principios consagran lo que se conoce como modelo de justicia colaborativa. La cooperación, derivada de la buena fe, impone a los sujetos el deber de no obstruir la marcha del proceso, entendiendo que la jurisdicción es un servicio público y no un juego de astucias. Aquí opera el Principio de Adquisición: las pruebas y actuaciones se incorporan al proceso en beneficio de la verdad, perdiendo su carácter de "propiedad" de la parte que las aportó. La igualdad, por su parte, trasciende lo formal. El magistrado debe ejercer una imparcialidad activa, utilizando sus facultades (Art. 46 CPCCT) para remover obstáculos que impidan la paridad de los litigantes. Cooperar y mantener la igualdad son los medios necesarios para alcanzar el fin último del proceso: una decisión de mérito efectiva que resuelva el conflicto de manera justa y en un tiempo razonable.
+Estos principios consagran lo que se conoce como modelo de justicia colaborativa. La cooperación, derivada de la buena fe, impone a los sujetos el deber de no obstruir la marcha del proceso, entendiendo que la jurisdicción es un servicio público y no un juego de astucias. 
 
-**j) PLURALIDAD DE FORMAS**
+Aquí opera el Principio de Adquisición: las pruebas y actuaciones se incorporan al proceso en beneficio de la verdad, perdiendo su carácter de "propiedad" de la parte que las aportó. La igualdad, por su parte, trasciende lo formal. El magistrado debe ejercer una imparcialidad activa, utilizando sus facultades (Art. 46 CPCCT) para remover obstáculos que impidan la paridad de los litigantes. Cooperar y mantener la igualdad son los medios necesarios para alcanzar el fin último del proceso: una decisión de mérito efectiva que resuelva el conflicto de manera justa y en un tiempo razonable.
+
+### j) PLURALIDAD DE FORMAS
 
 *Los actos procesales y las resoluciones de todo tipo deberán tener las formas que este Código establezca, ya sea en forma oral o escrita, y ésta en soporte papel, electrónico o digital.*
 
--Análisis
+- Análisis
 
 Este principio consagra la libertad de formas supeditada o condicionada a la eficacia del acto. En el proceso moderno, el soporte (papel, digital o audiovisual) es secundario frente a la finalidad procesal. La norma busca terminar con el "formalismo por el formalismo mismo", permitiendo que los actos se adapten a diferentes soportes siempre que garanticen su autenticidad y seguridad jurídica.
 
 Sin embargo, la pluralidad no es absoluta. La elección del soporte o la vía (oral/escrita) debe asegurar siempre la bilateralidad y el derecho de defensa en el marco del debido proceso. Ninguna innovación tecnológica o flexibilidad formal puede ser válida si genera indefensión en alguna de las partes. En definitiva, la forma es un instrumento para la justicia, no un obstáculo para alcanzarla. 
 
-**k) PUBLICIDAD**
+### k) PUBLICIDAD
 
 *Todo proceso será de conocimiento público, salvo que expresamente la ley disponga lo contrario o el Tribunal así lo decida por razones de seguridad, de moral o de protección de la personalidad de alguna de las partes.*
+
+- Análisis 
 
 Tal como vimos la importancia de la buena fe como elemento fortalecedor de la legitimidad del proceso, la publicidad también busca reforzarla. El conflicto y su solución puede que solo importe a las partes o interesados, sin embargo el servicio de justicia o el modo en que el estado ejerce la jurisdicción importa a toda la población. Por ello, la publicidad resulta ser una prerrogativa de control que tiene la población para confiar aún más en sus autoridades judiciales.
 
@@ -351,7 +329,7 @@ Ahora bien, como todo principio, debe ser interpretado y aplicado de un modo rac
 
 En síntesis, la publicidad es la garantía de transparencia del sistema republicano. Mientras que el principio dispositivo protege el interés privado, la publicidad protege el interés público en el correcto funcionamiento de la justicia. Este principio permite el control social sobre los magistrados, evitando la arbitrariedad y fomentando la confianza ciudadana en las instituciones.
 
-**l) COOPERACIÓN INTERNACIONAL.**
+### l) COOPERACIÓN INTERNACIONAL.
 
 *Los Tribunales deberán brindar cooperación jurisdiccional conforme los tratados internacionales celebrados y ratificados de acuerdo a lo establecido por el Código Civil y Comercial de la Nación. Los ciudadanos y residentes permanentes en el extranjero gozan de las mismas condiciones que los ciudadanos residentes permanentes en la Argentina, conforme lo dispone la Constitución Nacional y las leyes de fondo. Estos recibirán igual trato procesal.*
 
@@ -361,15 +339,15 @@ Este principio proyecta las garantías del debido proceso más allá de los lím
 
 En primer lugar, la cooperación internacional se fundamenta en la solidaridad jurídica y en el respeto a los tratados internacionales (Art. 75 inc. 22 CN). Esto implica que los jueces locales tienen el deber de diligenciar exhortos, notificaciones o medidas cautelares provenientes del extranjero, siempre que se respeten las garantías de orden público.
 
-En segundo lugar, este artículo consagra la Igualdad Procesal del Extranjero, eliminando cualquier rastro de la antigua "cautio judicatum solvi" (fianza de arraigo). Conforme al Art. 20 de nuestra Constitución Nacional, los extranjeros gozan en el territorio de la Nación de todos los derechos civiles del ciudadano. Por lo tanto, no se les puede exigir requisitos adicionales ni dar un trato diferenciado por el solo hecho de no residir en el país.
+En segundo lugar, este artículo consagra la Igualdad Procesal del Extranjero, eliminando cualquier rastro de la antigua *"cautio judicatum solvi"* (fianza de arraigo). Conforme al Art. 20 de nuestra Constitución Nacional, los extranjeros gozan en el territorio de la Nación de todos los derechos civiles del ciudadano. Por lo tanto, no se les puede exigir requisitos adicionales ni dar un trato diferenciado por el solo hecho de no residir en el país.
 
 En definitiva, la cooperación y la igualdad de trato garantizan que el proceso sea un método de solución de conflictos universal y humano, donde el acceso a la justicia no dependa de la nacionalidad o el domicilio, sino de la vigencia de los derechos que se reclaman.
 
-**m) IMPARCIALIDAD**
+### m) IMPARCIALIDAD
 
 *El Juez o Tribunal debe carecer de todo interés en la resolución del litigio.*
 
--Análisis
+- Análisis
 
 Como cierre a esta enumeración de principios, nos encontramos con el principio de imparcialidad. A lo largo del desarrollo hemos visto la importancia y presencia que tiene este principio para garantizar el normal funcionamiento del proceso.
 
@@ -382,12 +360,95 @@ Resulta importante tener siempre presente que este principio tiene raigambre con
 Para concluir, es bueno tener presente la siguiente distinción doctrinaria:
 
 - Imparcialidad: No tener interés en el resultado (lo que tú pusiste).
-
 - Impartidariedad: No ser parte en el proceso.
-
 - Independencia: No estar sujeto a órdenes de otros poderes.
 
-## 5. Jurisdicción. Competencia.
-## 6. Clasificación de la Competencia: Materia. Territorial. Valor. Grado.
+## Jurisdicción. 
+
+Cómo base podemos tomar los siguientes conceptos:
+
+- Es la función pública y exclusiva del Estado, ejercida a través de órganos judiciales independientes e imparciales, que mediante un proceso permite aplicar el derecho a un conflicto concreto para dictar una sentencia que goza de autoridad de cosa juzgada y cuya ejecución puede ser garantizada mediante el uso de la fuerza pública.
+- Es la facultad estatal de administrar justicia en casos litigiosos, consistente en declarar el derecho, aplicarlo a hechos probados y hacer cumplir lo juzgado, sustituyendo así la justicia por mano propia
+
+Como se puede apreciar, la jurisdicción es parte del poder judicial, es su manifestación y se desarrolla siempre en el contexto del proceso contencioso. 
+
+Sus características son las siguientes:
+
+- Imparcial
+- Independiente 
+- Sustitutiva de la justicia por mano propia
+
+La función jurisdiccional solo puede ser ejercida por el poder judicial, por lo que ningún otro poder puede ejercerla de algún modo. Esto es importante tenerlo en cuenta principalmente para diferenciar el procedimiento contencioso administrativo del proceso judicial.
+
+Cuando la administración pública, el poder ejecutivo, mediante sus órganos resuelve ciertas controversias, a través de lo que se conoce como procedimiento contencioso administrativo, no hay actividad jurisdiccional, sino actividad administrativa.
+
+Estos “Tribunales Administrativos” actúan y se organizan en forma similar a los tribunales judiciales, pero realizan actividades administrativas del Estado. La gran diferencia con los tribunales judiciales es el carácter de tercero imparcial: un miembro del Poder Judicial (juez) actúa como tercero imparcial en los conflictos que resuelve. En cambio, el tribunal administrativo no actúa como tercero imparcial, sino que actúa como “juez y parte”. Por esta razón, las decisiones emitidas en este procedimiento carecen de fuerza de cosa juzgada, existiendo la posibilidad de solicitar la revisión de dichas decisiones en una ulterior instancia judicial.
+
+Composición de la jurisdicción
+
+La jurisdicción se manifiesta a través de un conjunto de facultades que permiten al Estado cumplir su función de administrar justicia. Estas se agrupan en dos grandes potestades:
+
+1.DECISIÓN: Poder del juez para declarar el derecho aplicable al caso concreto sometido a su conocimiento.
+2. IMPERIUM: Facultad para ordenar el auxilio de la fuerza pública con el fin de asegurar el cumplimiento de las resoluciones.
+
+De estas potestades derivan los cinco elementos clásicos del ejercicio jurisdiccional:
+
+1. Notio: Facultad del juez para conocer y examinar los hechos y pruebas de la causa. Es el presupuesto indispensable para dictar una sentencia fundada.
+2. Vocatio: Facultad para convocar a las partes a comparecer en juicio, sometiéndolas a las consecuencias jurídicas del proceso bajo apercibimiento de ley. Esta facultad se manifiesta principalmente a través de la notificación (traslado), que es lo que realmente "liga" a las partes al proceso y garantiza el derecho de defensa.
+3. Coertio: Poder de emplear la fuerza para asegurar el cumplimiento de medidas dictadas durante el proceso (ej. embargos, secuestros o comparendo de testigos por la fuerza pública).
+4. Iudicium: Facultad de dictar la sentencia definitiva que resuelve el conflicto con autoridad de cosa juzgada, haciendo que la sentencia solo pueda ser revocada por un órgano de alzada, a diferencia de procedimientos administrativos.
+5. Executio: Facultad de hacer cumplir la sentencia definitiva mediante el uso de la fuerza pública (ejercicio pleno del imperium).
+
+> Diferencia clave: Mientras la coertio garantiza la eficacia de las medidas de trámite u ordenatorias durante el litigio, la executio busca la efectividad de la sentencia final que pone fin al proceso.
+
+#### ¿Jurisdicción o administración?
+
+Una duda que debe ser aclarada desde un inicio es si en casos de *"proceso voluntarios"* hay jurisdicción o administración pública judicial.
+
+Como ya lo hemos visto a lo largo del presente trabajo, podemos decir que no hay jurisdicción en sentido estricto en los casos donde no haya una litis (véase sucesiones, autorizaciones judiciales).
+
+La esencia o principal función de la jurisdicción es la de declarar el derecho frente a un conflicto para darle solución y así evitar que las partes acudan a la venganza o violencia como métodos de sumisión de voluntades.
+
+En los casos de administración judicial el juez coopera en la formación de un estado, situación o relación jurídica o integra voluntades. Se actúa como una especie de administrador que garantiza el cumplimiento de formas o exigencias legales.
+
+| Característica | Jurisdicción (Contenciosa) | Proceso Voluntario |
+| :--- | :--- | :--- |
+| **Existencia de Litis** | Hay conflicto entre partes. | No hay conflicto; hay petición. |
+| **Partes** | Actor y Demandado. | Peticionario o Interesado. |
+| **Finalidad** | Sustituir la autodefensa. | Dar certeza o legalidad a un acto. |
+| **Cosa Juzgada** | Inmutable y definitiva. | Generalmente provisional o mutable. |
+
+Ahora bien, por razones didácticas se suele hablar de *jurisdicción voluntaria*, la cual se manifiesta en los diferentes actos:
+
+- Actos de constitución de derechos (inscripción de una sociedad en el Registro Público de Comercio,
+discernimiento de tutor o curador, etc.);
+- Actos de homologación (aprobación del acuerdo propuesto por el deudor en el concurso preventivo;
+aprobación del testamento en cuanto a sus formas, etc.);
+- Actos de constatación (mensura y amojonamiento, reconocimiento de mercaderías, etc.);
+- Actos de autorización (venia para la enajenación de bienes de menores, ausentes e incapaces,
+autorización para comparecer enjuicio, etc.).
+
+## Competencia.
+
+La competencia es la medida, porción o límite de la jurisdicción que la ley asigna a cada órgano judicial. Mientras que la jurisdicción es la potestad genérica de administrar justicia, la competencia es la aptitud o capacidad específica que reconoce la normativa (Constitución, leyes, reglamentos y acordadas) a un juez o tribunal para intervenir en una determinada categoría de asuntos o en una etapa específica del proceso.
+
+Es la aptitud legal que poseen los jueces para ejercer la función jurisdiccional en los casos concretos que les han sido asignados. Representa el límite de la jurisdicción, distribuyendo el trabajo judicial por motivos de orden público y eficacia, según el fuero, el grado o la instancia del proceso. Su distribución busca la especialización del magistrado y la cercanía con el justiciable, basándose en la ley, reglamentos y acordadas
 
 
+
+#### Criterios de Clasificación (Factores)
+
+La competencia no se asigna al azar; se determina mediante factores específicos que permiten organizar el trabajo judicial:
+
+- Materia (Fueros): Se basa en la naturaleza de la pretensión (Civil, Comercial, Penal, Laboral, Familia).
+- Territorio: Es el ámbito geográfico donde el juez ejerce su facultad (por ejemplo, "Jurisdicción de la Provincia de Buenos Aires").
+- Grado o Instancia: Se refiere a la jerarquía del órgano (Jueces de Primera Instancia, Cámaras de Apelaciones, Corte Suprema).
+- Valor o Cuantía: En algunos sistemas, la competencia se divide según el monto económico del reclamo.
+
+#### Caracteres de la Competencia
+
+A diferencia de la jurisdicción, la competencia tiene notas distintivas que regulan su aplicación:
+
+- Improrrogabilidad: Como regla general, la competencia es de orden público y no puede ser modificada por acuerdo de las partes, salvo excepciones específicas como en la competencia territorial en asuntos exclusivamente patrimoniales.
+- Indelegabilidad: Un juez no puede delegar su competencia en otro, aunque puede solicitar auxilio judicial (mediante oficios o exhortos) para actos específicos en otro territorio.
+- Orden Público: Su fundamento es la mejor organización de la administración de justicia, garantizando el derecho al "juez natural".
