@@ -69,18 +69,18 @@ Es el núcleo de la materia. El Derecho Procesal no estudia cómo el Juez decide
 
 #### 1. Fuentes Vinculantes
 
-*A. La Constitución Nacional y Tratados de Derechos Humanos*
+***A. La Constitución Nacional y Tratados de Derechos Humanos***
 
 Es la fuente primaria y suprema, en ella encontraremos las garantías más importantes del sistema:
 
 - Art. 18 CN: Establece el debido proceso, la defensa en juicio y el juez natural. 
 - Art. 75 inc. 22 (Pacto de San José de Costa Rica): Introduce el derecho a la tutela judicial efectiva y el plazo razonable.
 
-*B. La Ley Procesal (Códigos de Rito)*
+***B. La Ley Procesal (Códigos de Rito)***
 
 Es la fuente formal por excelencia. Constitucionalmente se establece que sean en principio provinciales y excepcionalmente federal o nacional.
 
-*C. Los Fallos Plenarios y la Jurisprudencia Obligatoria*
+***C. Los Fallos Plenarios y la Jurisprudencia Obligatoria***
 
 Cuando la Suprema Corte dicta un fallo plenario, esa interpretación de la ley se vuelve obligatoria para todos los jueces inferiores. Es una fuente que busca la unificación de criterios para evitar interpretaciones ambiguas entre juzgados. De ésta manera se busca afianzar la seguridad jurídica de los pronunciamientos judiciales y el derecho procesal no es ajeno a ello.
 
@@ -120,7 +120,7 @@ Sin perjuicio de lo reglado por disposiciones especiales, el presente Código se
 
 *Toda persona tendrá acceso a un proceso de duración razonable que resuelva sus pretensiones en forma definitiva; tiene derecho a acudir ante los Tribunales para exponer un conflicto jurídico concreto u oponerse a la solución pretendida y a ejercer todos los actos procesales concernientes a la defensa de una u otra posición procesal, debiendo en todos los casos invocar un interés jurídico protegido y legitimación. El Tribunal que entienda en la causa tiene el deber de proveer sobre sus peticiones.*
 
-- Análisis
+#### - Análisis
 
 Al desglosar el inc. a), podemos encontrarnos con varios principios y derechos recepcionados tanto por nuestra Constitución Nacional, como así también por Tratados de Derechos Humanos:
 
@@ -169,7 +169,7 @@ Para terminar, debemos tener presente que estos principios y presupuestos están
 
 *La iniciación del proceso incumbe a los interesados, los que podrán disponer de sus derechos y del proceso, salvo aquéllos que este Código u otras leyes expresamente declaren indisponibles. Las partes podrán terminarlo unilateral o bilateralmente conforme lo reglado por este Código.*
 
-- Análisis
+#### - Análisis
 
 El principio dispositivo puede entenderse como el correlato necesario que efectiviza la bilateralidad y la tutela judicial efectiva. Tal como lo menciona el artículo, la iniciación del proceso, en el ámbito civil, incumbe a los interesados, es decir a aquellas personas legitimadas para accionar. Es la manifestación concreta de la libertad en cuanto a la gestión de los asuntos propios. En el proceso necesariamente se disponen de derechos, por lo que los titulares son quienes están en mejor posición de decidir cómo manejar sus asuntos y, como consecuencia de ello, resulta importante que el juez mantenga su imparcialidad e impartialidad en todo momento. 
 
@@ -187,7 +187,7 @@ Sin embargo, en otros ámbitos la disponibilidad es la excepción y la oficialid
 
 *La conciliación, la transacción, la mediación, el arbitraje y otros métodos de solución de conflictos deberán ser estimulados por Jueces, Abogados y miembros del Ministerio Público en el curso del proceso judicial.*
 
-- Análisis
+#### - Análisis
 
 Este principio introduce una visión moderna y menos confrontativa de la justicia. Reconoce que el proceso judicial, con su rigor formal y su estructura de "ganador-perdedor", no siempre es el método más eficiente para pacificar el conflicto social. Por ello, el Código impone a todos los operadores jurídicos el deber ético y profesional de fomentar soluciones consensuadas.
 
@@ -205,7 +205,7 @@ En definitiva, las formas alternativas no son "ajenas" al proceso, sino que est�
 
 *Iniciado un proceso, tanto las partes como el Tribunal podrán impulsarlo evitando su paralización, con el objeto de adelantar el trámite con la mayor celeridad y eficacia posible.*
 
-- Análisis
+#### - Análisis
 
 Este principio es fundamental para garantizar una respuesta judicial eficaz, dentro de un plazo razonable. 
 
@@ -239,7 +239,7 @@ Siguiendo estas disposiciones, resulta claro que el deber del magistrado es el d
 
 *Deber de los jueces de encontrarse presentes: Tanto las audiencias como las diligencias de prueba en las que así se indique, se realizarán por ante Juez o Tribunal, no pudiendo ser delegadas en otros funcionarios, bajo pena de nulidad, salvo cuando este Código excepcionalmente lo permita. En caso de ausencia justificada, podrán ser subrogados por otro Juez conforme la ley especial o según lo establezca por acordadas la Suprema Corte, salvo que circunstancias excepcionales autoricen a suspender la audiencia.*
 
-- Análisis
+#### - Análisis
 
 La oralidad más que principio se podría decir que es el medio o instrumento que garantiza el principio de inmediación, el cual se le exige al magistrado para dictar una sentencia debidamente fundada. El artículo establece el deber de presenciar actos procesales esenciales por su naturaleza, ya sea porque son irreproducibles (véase ciertas pruebas testimoniales), como así tambien por el impacto que tienen en el desenvolvimiento del proceso (véase audiencia inicial).
 
@@ -251,7 +251,7 @@ Para terminar es importante tener siempre presente que la oralidad no es pura, s
 
 *Los actos procesales deberán realizarse sin demora, tratando de abreviar los plazos, cuando a ello se faculte por ley o por acuerdo de partes, y de concentrar en un mismo acto la mayor cantidad de diligencias posibles, así como la colocación de todas las órdenes anticipatorias en resoluciones que el Juez entienda puedan emitirse para una más ordenada y rápida resolución de la causa.*
 
-- Análisis
+#### - Análisis
 
 Una vez más nos encontramos con principios que buscan garantizar una respuesta judicial pronta, eficiente y eficaz. Al estudiar la celeridad y la concentración debemos hacer foco en la necesidad y finalidad que tiene por si mismo cada acto y sus correspondientes plazos establecidos para cada una de las etapas del proceso. Si partimos de la base de que un proceso es un sistema lógico y secuencial de actos, entonces resulta admisible la idea de prescindir de toda regulación que se comporten como obstáculos para el desenvolvimiento regular del mismo. 
 
@@ -265,7 +265,7 @@ Para terminar, siempre se debe tener presente que estos principios deben interpr
 
 *Es deber de los jueces velar por el efectivo contradictorio y asegurar a las partes la igualdad de tratamiento en relación al ejercicio de los derechos y facultades procesales, a los medios de defensa, a los deberes y a la aplicación de sanciones procesales.*
 
-- Análisis
+#### - Análisis
 
 El proceso es la herramienta institucional que mediante el debate judicial y el monopolio de la fuerza, busca brindar a la población un método de resolución de conflictos. Dicho esto, el conflicto es esencial en todo proceso, caso contrario estariamos frente a un procedimiento de administración judicial. 
 
@@ -295,7 +295,7 @@ En síntesis, la Buena Fe es el estándar ético que "moraliza" el debate judici
 
 *El Tribunal debe velar por la igualdad de los litigantes y por preservar las garantías del debido proceso. Todos los sujetos del proceso deben cooperar entre sí para que se obtenga, en tiempo razonable, la decisión de mérito efectiva.*
 
-- Análisis 
+#### - Análisis 
 
 El deber de cooperación es una de las manifestaciones de la buena fe y podría decirse que es un límite al carácter dispositivo del proceso. Todo lo actuado beneficia o se incorpora al proceso (principio de adquisición), no es disponible de manera privativa o conveniente. Las partes al presentarse en un proceso no buscan que le den la razón solamente, sino que también quieren gestionar su conflicto, caso contrario no habría litigio, por esto, deben cooperar teniendo siempre en miras la resolución del mismo.
 
@@ -311,7 +311,7 @@ Aquí opera el Principio de Adquisición: las pruebas y actuaciones se incorpora
 
 *Los actos procesales y las resoluciones de todo tipo deberán tener las formas que este Código establezca, ya sea en forma oral o escrita, y ésta en soporte papel, electrónico o digital.*
 
-- Análisis
+#### - Análisis
 
 Este principio consagra la libertad de formas supeditada o condicionada a la eficacia del acto. En el proceso moderno, el soporte (papel, digital o audiovisual) es secundario frente a la finalidad procesal. La norma busca terminar con el "formalismo por el formalismo mismo", permitiendo que los actos se adapten a diferentes soportes siempre que garanticen su autenticidad y seguridad jurídica.
 
@@ -321,7 +321,7 @@ Sin embargo, la pluralidad no es absoluta. La elección del soporte o la vía (o
 
 *Todo proceso será de conocimiento público, salvo que expresamente la ley disponga lo contrario o el Tribunal así lo decida por razones de seguridad, de moral o de protección de la personalidad de alguna de las partes.*
 
-- Análisis 
+#### - Análisis 
 
 Tal como vimos la importancia de la buena fe como elemento fortalecedor de la legitimidad del proceso, la publicidad también busca reforzarla. El conflicto y su solución puede que solo importe a las partes o interesados, sin embargo el servicio de justicia o el modo en que el estado ejerce la jurisdicción importa a toda la población. Por ello, la publicidad resulta ser una prerrogativa de control que tiene la población para confiar aún más en sus autoridades judiciales.
 
@@ -333,7 +333,7 @@ En síntesis, la publicidad es la garantía de transparencia del sistema republi
 
 *Los Tribunales deberán brindar cooperación jurisdiccional conforme los tratados internacionales celebrados y ratificados de acuerdo a lo establecido por el Código Civil y Comercial de la Nación. Los ciudadanos y residentes permanentes en el extranjero gozan de las mismas condiciones que los ciudadanos residentes permanentes en la Argentina, conforme lo dispone la Constitución Nacional y las leyes de fondo. Estos recibirán igual trato procesal.*
 
-- Análisis
+#### - Análisis
 
 Este principio proyecta las garantías del debido proceso más allá de los límites territoriales de la jurisdicción. En un mundo globalizado, el proceso no puede ser una isla; requiere de mecanismos de auxilio y colaboración entre distintos Estados para que la tutela judicial sea realmente efectiva.
 
@@ -347,7 +347,7 @@ En definitiva, la cooperación y la igualdad de trato garantizan que el proceso 
 
 *El Juez o Tribunal debe carecer de todo interés en la resolución del litigio.*
 
-- Análisis
+#### - Análisis
 
 Como cierre a esta enumeración de principios, nos encontramos con el principio de imparcialidad. A lo largo del desarrollo hemos visto la importancia y presencia que tiene este principio para garantizar el normal funcionamiento del proceso.
 

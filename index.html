@@ -35,9 +35,10 @@
         article {
             background: var(--surface);
             border: 1px solid var(--border);
-            padding: 2.5rem;
+            padding: 1rem;
             position: relative;
             transition: all 0.3s ease;
+            margin: 0.5rem;
         }
 
         article:hover {
@@ -61,11 +62,12 @@
         .metadata-block dl {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 1.5rem;
+            gap: 1rem;
             background: rgba(0, 0, 0, 0.2);
             padding: 1.5rem;
             border: 1px solid var(--border);
             margin: 1.5rem 0;
+            font-size: 0.8rem;
         }
 
         .integrity-block,
@@ -295,6 +297,78 @@
             color: var(--accent-alt);
             opacity: 0.6;
         }
+
+        /* --- ESTILOS PARA DETAILS Y SUMMARY (MODO ACORDEÓN TÉCNICO) --- */
+
+details {
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+    
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+details[open] {
+    border-color: var(--accent);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+summary {
+    padding: 1rem 1.5rem;
+    list-style: none; /* Quita el triángulo por defecto */
+    cursor: pointer;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    position: relative;
+    user-select: none;
+    background: var(--surface);
+}
+
+/* Indicador personalizado de estado (Pseudo-triángulo) */
+summary::before {
+    content: "[+]";
+    margin-right: 12px;
+    font-size: 0.7rem;
+    color: var(--accent-alt);
+    transition: transform 0.2s ease;
+}
+
+details[open] > summary::before {
+    content: "[-]";
+    color: var(--accent);
+}
+
+/* Hover en el encabezado */
+summary:hover {
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* Contenido interno del details */
+details > div, 
+details > p,
+details > ul {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid var(--border);
+    background: var(--bg);
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+/* Efecto de borde izquierdo activo al abrir */
+details[open] {
+    border-left: 4px solid var(--accent);
+}
+
+/* Compatibilidad para navegadores que no soportan flex en summary */
+summary::-webkit-details-marker {
+    display: none;
+}
     </style>
 </head>
 
@@ -317,9 +391,7 @@
             <p>Repositorio de derecho procesal y técnica jurídica. Documentos íntegros, verificables y de acceso
                 local-first.</p>
         </section>
-        <a href="sources/res-lex/viewer-lex.html?file=legislacion/ccyc.md" class="btn-main">
-            ACCEDER_DOCUMENTO
-        </a>
+        
         <section id="catalog">
             <h2>DOCTRINA</h2>
             <hr>
@@ -481,357 +553,559 @@
         <section id="catalog">
             <h2>LEGISLACIÓN</h2>
             <hr>
-            <h3>CONSTITUCIONES y TRATADOS</h3>
+            <h3>CONSTITUCIONES || TRATADOS</h3>
 
-            <article data-pub-id="LEX-24.430" data-status="[vigente]">
-                <div class="header-article">
-                    <div class="top-meta">
-                        <span>ID: LEX-24.430</span>
-                        <span>[VIGENTE]</span>
+            <details>
+                <summary>Update: 03.04.26</summary>
+                <article data-pub-id="LEX-24.430" data-status="[vigente]">
+                    <div class="header-article">
+                        <div class="top-meta">
+                            <span>ID: LEX-24.430</span>
+                            <span>[VIGENTE]</span>
+                        </div>
+                        <h4>CONSTITUCIÓN DE LA NACIÓN ARGENTINA</h4>
+                        <p>SISTEMA DINÁMICO DE CONSULTA JURÍDICA</p>
                     </div>
-                    <h4>CONSTITUCIÓN DE LA NACIÓN ARGENTINA</h4>
-                    <p>SISTEMA DINÁMICO DE CONSULTA JURÍDICA</p>
-                </div>
 
-                <div class="metadata-block">
-                    <dl>
-                        <div>
-                            <dt>Juris</dt>
-                            <dd>[Nacional (AR)]</dd>
-                        </div>
-                        <div>
-                            <dt>Actualización</dt>
-                            <dd>Abr 2026</dd>
-                        </div>
-                        <div>
-                            <dt>Software</dt>
-                            <dd>CODEX_IUS_V1</dd>
-                        </div>
-                        <div>
-                            <dt>Tokens</dt>
-                            <dd>21155</dd>
-                        </div>
-                        <div>
-                            <dt>Peso</dt>
-                            <dd>80.18 KB</dd>
-                        </div>
-                        <div>
-                            <dt>Interfaz</dt>
-                            <dd>HTML5/JS/MD</dd>
-                        </div>
-                        <div>
-                            <dt>Sello_Digital</dt>
-                            <dd>2026-04-03 14:04:13 UTC-3</dd>
-                        </div>
-                        <div>
-                            <dt>Formato</dt>
-                            <dd>UTF-8 / RawText</dd>
-                        </div>
-                    </dl>
-                </div>
-
-                <section class="integrity-block">
-                    <dt>Hash_Integridad (SHA-256)</dt>
-                    <dd><code>62e70db77c8522fff4a0bc3dab5431dfc3a4e8be89eaf7fbf2a1a4bebed83cda</code></dd>
-                </section>
-
-                <section class="citation-block">
-                    <dt>Referencia_del_Sistema</dt>
-                    <dd>[NACIONAL (AR)] | Ley N° 24.430 | 'CONSTITUCIÓN DE LA NACIÓN ARGENTINA'. Procesado por Motor
-                        CODEX_IUS.</dd>
-                </section>
-
-                <section class="tags-block">
-                    <dt>Descriptores_Indexados</dt>
-                    <dd>Constitución Nacional, carta magna</dd>
-                </section>
-
-                <div class="footer-article">
-                    <a href="sources/res-lex/viewer-lex.html?file=lex/cn.md" class="btn-main">[
-                        EJECUTAR_VISOR_INTELIGENTE ]</a>
-                    <div class="file-data">
-                        <p><strong>Curaduría y Sistemas:</strong> dev://QUIROGA, Rodrigo Alberto</p>
-                        <p style="font-size: 0.85em; opacity: 0.8;">
-                            © 2026. Derechos sobre la edición, estructura y motor de búsqueda.
-                            El contenido normativo es de dominio público.
-                        </p>
+                    <div class="metadata-block">
+                        <dl>
+                            <div>
+                                <dt>Juris</dt>
+                                <dd>[Nacional (AR)]</dd>
+                            </div>
+                            <div>
+                                <dt>Actualización</dt>
+                                <dd>Abr 2026</dd>
+                            </div>
+                            <div>
+                                <dt>Software</dt>
+                                <dd>CODEX_IUS_V1</dd>
+                            </div>
+                            <div>
+                                <dt>Tokens</dt>
+                                <dd>21155</dd>
+                            </div>
+                            <div>
+                                <dt>Peso</dt>
+                                <dd>80.18 KB</dd>
+                            </div>
+                            <div>
+                                <dt>Interfaz</dt>
+                                <dd>HTML5/JS/MD</dd>
+                            </div>
+                            <div>
+                                <dt>Sello_Digital</dt>
+                                <dd>2026-04-03 14:04:13 UTC-3</dd>
+                            </div>
+                            <div>
+                                <dt>Formato</dt>
+                                <dd>UTF-8 / RawText</dd>
+                            </div>
+                        </dl>
                     </div>
-                </div>
-            </article>
-<article data-pub-id="LEX--" data-status="[vigente]">
-    <div class="header-article">
-        <div class="top-meta">
-            <span>ID: LEX--</span>
-            <span>[VIGENTE]</span>
-        </div>
-        <h4>CONSTITUCIÓN DE LA PROVINCIA DE MENDOZA</h4>
-        <p>SISTEMA DINÁMICO DE CONSULTA JURÍDICA</p>
-    </div>
 
-    <div class="metadata-block">
-        <dl>
-            <div><dt>Juris</dt><dd>[Provincial (MDZ)]</dd></div>
-            <div><dt>Actualización</dt><dd>Abr 2026</dd></div>
-            <div><dt>Software</dt><dd>CODEX_IUS_V1</dd></div>
-            <div><dt>Tokens</dt><dd>28925</dd></div>
-            <div><dt>Peso</dt><dd>106.0 KB</dd></div>
-            <div><dt>Interfaz</dt><dd>HTML5/JS/MD</dd></div>
-            <div><dt>Sello_Digital</dt><dd>2026-04-03 14:25:57 UTC-3</dd></div>
-            <div><dt>Formato</dt><dd>UTF-8 / RawText</dd></div>
-        </dl>
-    </div>
+                    <section class="integrity-block">
+                        <dt>Hash_Integridad (SHA-256)</dt>
+                        <dd><code>62e70db77c8522fff4a0bc3dab5431dfc3a4e8be89eaf7fbf2a1a4bebed83cda</code></dd>
+                    </section>
 
-    <section class="integrity-block">
-        <dt>Hash_Integridad (SHA-256)</dt>
-        <dd><code>554a9ff1a75eb1cd1c883a58d2c2ce52eb07f42ee540ac81606762e4418aa761</code></dd>
-    </section>
+                    <section class="citation-block">
+                        <dt>Referencia_del_Sistema</dt>
+                        <dd>[NACIONAL (AR)] | Ley N° 24.430 | 'CONSTITUCIÓN DE LA NACIÓN ARGENTINA'. Procesado por Motor
+                            CODEX_IUS.</dd>
+                    </section>
 
-    <section class="citation-block">
-        <dt>Referencia_del_Sistema</dt>
-        <dd>[PROVINCIAL (MDZ)] | Ley N° - | 'CONSTITUCIÓN DE LA PROVINCIA DE MENDOZA'. Procesado por Motor CODEX_IUS.</dd>
-    </section>
+                    <section class="tags-block">
+                        <dt>Descriptores_Indexados</dt>
+                        <dd>Constitución Nacional, carta magna</dd>
+                    </section>
 
-    <section class="tags-block">
-        <dt>Descriptores_Indexados</dt>
-        <dd>Constitución provincial, Mendoza</dd>
-    </section>
-
-    <div class="footer-article">
-        <a href="sources/res-lex/viewer-lex.html?file=lex/cmdz.md" class="btn-main">[ EJECUTAR_VISOR_INTELIGENTE ]</a>
-        <div class="file-data">
-            <p><strong>Curaduría y Sistemas:</strong> dev://QUIROGA, Rodrigo Alberto</p>
-            <p style="font-size: 0.85em; opacity: 0.8;">
-                © 2026. Derechos sobre la edición, estructura y motor de búsqueda.
-                El contenido normativo es de dominio público.
-            </p>
-        </div>
-    </div>
-</article>
-            <article data-pub-id="LEX-23.054 [Aprob. AR]" data-status="[vigente]">
-                <div class="header-article">
-                    <div class="top-meta">
-                        <span>ID: LEX-23.054 [Aprob. AR]</span>
-                        <span>[VIGENTE]</span>
+                    <div class="footer-article">
+                        <a href="sources/res-lex/viewer-lex.html?file=lex/cn.md" class="btn-main">[
+                            EJECUTAR_VISOR_INTELIGENTE ]</a>
+                        <div class="file-data">
+                            <p><strong>Curaduría y Sistemas:</strong> dev://QUIROGA, Rodrigo Alberto</p>
+                            <p style="font-size: 0.85em; opacity: 0.8;">
+                                © 2026. Derechos sobre la edición, estructura y motor de búsqueda.
+                                El contenido normativo es de dominio público.
+                            </p>
+                        </div>
                     </div>
-                    <h4>CONVENCIÓN AMERICANA SOBRE DERECHOS HUMANOS - PACTO DE SAN JOSÉ DE COSTA RICA [OEA]</h4>
-                    <p>SISTEMA DINÁMICO DE CONSULTA JURÍDICA</p>
-                </div>
-
-                <div class="metadata-block">
-                    <dl>
-                        <div>
-                            <dt>Juris</dt>
-                            <dd>[NACIONAL]</dd>
+                </article>
+                <article data-pub-id="LEX--" data-status="[vigente]">
+                    <div class="header-article">
+                        <div class="top-meta">
+                            <span>ID: LEX--</span>
+                            <span>[VIGENTE]</span>
                         </div>
-                        <div>
-                            <dt>Actualización</dt>
-                            <dd>Abr 2026</dd>
-                        </div>
-                        <div>
-                            <dt>Software</dt>
-                            <dd>CODEX_IUS_V1</dd>
-                        </div>
-                        <div>
-                            <dt>Tokens</dt>
-                            <dd>14215</dd>
-                        </div>
-                        <div>
-                            <dt>Peso</dt>
-                            <dd>55.12 KB</dd>
-                        </div>
-                        <div>
-                            <dt>Interfaz</dt>
-                            <dd>HTML5/JS/MD</dd>
-                        </div>
-                        <div>
-                            <dt>Sello_Digital</dt>
-                            <dd>2026-04-03 14:18:31 UTC-3</dd>
-                        </div>
-                        <div>
-                            <dt>Formato</dt>
-                            <dd>UTF-8 / RawText</dd>
-                        </div>
-                    </dl>
-                </div>
-
-                <section class="integrity-block">
-                    <dt>Hash_Integridad (SHA-256)</dt>
-                    <dd><code>fc91f5f5aa5f978c44342a321d7c4f2a9998af751e5f9313cdef25f6b2d3869b</code></dd>
-                </section>
-
-                <section class="citation-block">
-                    <dt>Referencia_del_Sistema</dt>
-                    <dd>[NACIONAL] | Ley N° 23.054 [Aprob. AR] | 'CONVENCIÓN AMERICANA SOBRE DERECHOS HUMANOS - PACTO DE
-                        SAN JOSÉ DE COSTA RICA [OEA]'. Procesado por Motor CODEX_IUS.</dd>
-                </section>
-
-                <section class="tags-block">
-                    <dt>Descriptores_Indexados</dt>
-                    <dd>Convención internacional, OEA, derechos humanos</dd>
-                </section>
-
-                <div class="footer-article">
-                    <a href="sources/res-lex/viewer-lex.html?file=lex/cadh.md" class="btn-main">[
-                        EJECUTAR_VISOR_INTELIGENTE ]</a>
-                    <div class="file-data">
-                        <p><strong>Curaduría y Sistemas:</strong> dev://QUIROGA, Rodrigo Alberto</p>
-                        <p style="font-size: 0.85em; opacity: 0.8;">
-                            © 2026. Derechos sobre la edición, estructura y motor de búsqueda.
-                            El contenido normativo es de dominio público.
-                        </p>
+                        <h4>CONSTITUCIÓN DE LA PROVINCIA DE MENDOZA</h4>
+                        <p>SISTEMA DINÁMICO DE CONSULTA JURÍDICA</p>
                     </div>
-                </div>
-            </article>
-            <hr>
+
+                    <div class="metadata-block">
+                        <dl>
+                            <div>
+                                <dt>Juris</dt>
+                                <dd>[Provincial (MDZ)]</dd>
+                            </div>
+                            <div>
+                                <dt>Actualización</dt>
+                                <dd>Abr 2026</dd>
+                            </div>
+                            <div>
+                                <dt>Software</dt>
+                                <dd>CODEX_IUS_V1</dd>
+                            </div>
+                            <div>
+                                <dt>Tokens</dt>
+                                <dd>28925</dd>
+                            </div>
+                            <div>
+                                <dt>Peso</dt>
+                                <dd>106.0 KB</dd>
+                            </div>
+                            <div>
+                                <dt>Interfaz</dt>
+                                <dd>HTML5/JS/MD</dd>
+                            </div>
+                            <div>
+                                <dt>Sello_Digital</dt>
+                                <dd>2026-04-03 14:25:57 UTC-3</dd>
+                            </div>
+                            <div>
+                                <dt>Formato</dt>
+                                <dd>UTF-8 / RawText</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <section class="integrity-block">
+                        <dt>Hash_Integridad (SHA-256)</dt>
+                        <dd><code>554a9ff1a75eb1cd1c883a58d2c2ce52eb07f42ee540ac81606762e4418aa761</code></dd>
+                    </section>
+
+                    <section class="citation-block">
+                        <dt>Referencia_del_Sistema</dt>
+                        <dd>[PROVINCIAL (MDZ)] | Ley N° - | 'CONSTITUCIÓN DE LA PROVINCIA DE MENDOZA'. Procesado por
+                            Motor
+                            CODEX_IUS.</dd>
+                    </section>
+
+                    <section class="tags-block">
+                        <dt>Descriptores_Indexados</dt>
+                        <dd>Constitución provincial, Mendoza</dd>
+                    </section>
+
+                    <div class="footer-article">
+                        <a href="sources/res-lex/viewer-lex.html?file=lex/cmdz.md" class="btn-main">[
+                            EJECUTAR_VISOR_INTELIGENTE ]</a>
+                        <div class="file-data">
+                            <p><strong>Curaduría y Sistemas:</strong> dev://QUIROGA, Rodrigo Alberto</p>
+                            <p style="font-size: 0.85em; opacity: 0.8;">
+                                © 2026. Derechos sobre la edición, estructura y motor de búsqueda.
+                                El contenido normativo es de dominio público.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article data-pub-id="LEX-23.054 [Aprob. AR]" data-status="[vigente]">
+                    <div class="header-article">
+                        <div class="top-meta">
+                            <span>ID: LEX-23.054 [Aprob. AR]</span>
+                            <span>[VIGENTE]</span>
+                        </div>
+                        <h4>CONVENCIÓN AMERICANA SOBRE DERECHOS HUMANOS - PACTO DE SAN JOSÉ DE COSTA RICA [OEA]</h4>
+                        <p>SISTEMA DINÁMICO DE CONSULTA JURÍDICA</p>
+                    </div>
+
+                    <div class="metadata-block">
+                        <dl>
+                            <div>
+                                <dt>Juris</dt>
+                                <dd>[NACIONAL]</dd>
+                            </div>
+                            <div>
+                                <dt>Actualización</dt>
+                                <dd>Abr 2026</dd>
+                            </div>
+                            <div>
+                                <dt>Software</dt>
+                                <dd>CODEX_IUS_V1</dd>
+                            </div>
+                            <div>
+                                <dt>Tokens</dt>
+                                <dd>14215</dd>
+                            </div>
+                            <div>
+                                <dt>Peso</dt>
+                                <dd>55.12 KB</dd>
+                            </div>
+                            <div>
+                                <dt>Interfaz</dt>
+                                <dd>HTML5/JS/MD</dd>
+                            </div>
+                            <div>
+                                <dt>Sello_Digital</dt>
+                                <dd>2026-04-03 14:18:31 UTC-3</dd>
+                            </div>
+                            <div>
+                                <dt>Formato</dt>
+                                <dd>UTF-8 / RawText</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <section class="integrity-block">
+                        <dt>Hash_Integridad (SHA-256)</dt>
+                        <dd><code>fc91f5f5aa5f978c44342a321d7c4f2a9998af751e5f9313cdef25f6b2d3869b</code></dd>
+                    </section>
+
+                    <section class="citation-block">
+                        <dt>Referencia_del_Sistema</dt>
+                        <dd>[NACIONAL] | Ley N° 23.054 [Aprob. AR] | 'CONVENCIÓN AMERICANA SOBRE DERECHOS HUMANOS -
+                            PACTO DE
+                            SAN JOSÉ DE COSTA RICA [OEA]'. Procesado por Motor CODEX_IUS.</dd>
+                    </section>
+
+                    <section class="tags-block">
+                        <dt>Descriptores_Indexados</dt>
+                        <dd>Convención internacional, OEA, derechos humanos</dd>
+                    </section>
+
+                    <div class="footer-article">
+                        <a href="sources/res-lex/viewer-lex.html?file=lex/cadh.md" class="btn-main">[
+                            EJECUTAR_VISOR_INTELIGENTE ]</a>
+                        <div class="file-data">
+                            <p><strong>Curaduría y Sistemas:</strong> dev://QUIROGA, Rodrigo Alberto</p>
+                            <p style="font-size: 0.85em; opacity: 0.8;">
+                                © 2026. Derechos sobre la edición, estructura y motor de búsqueda.
+                                El contenido normativo es de dominio público.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </details>
+
             <h3>NACIONAL</h3>
 
-            <article data-pub-id="LEX-26.994" data-status="[vigente]">
-                <div class="header-article">
-                    <div class="top-meta">
-                        <span>ID: LEX-26.994</span>
-                        <span>[VIGENTE]</span>
+            <details>
+                <summary>Update: 03.04.26</summary>
+                <article data-pub-id="LEX-26.994" data-status="[vigente]">
+                    <div class="header-article">
+                        <div class="top-meta">
+                            <span>ID: LEX-26.994</span>
+                            <span>[VIGENTE]</span>
+                        </div>
+                        <h4>CÓDIGO CIVIL Y COMERCIAL DE LA NACIÓN [AR]</h4>
+                        <p>SISTEMA DINÁMICO DE CONSULTA JURÍDICA</p>
                     </div>
-                    <h4>CÓDIGO CIVIL Y COMERCIAL DE LA NACIÓN [AR]</h4>
-                    <p>SISTEMA DINÁMICO DE CONSULTA JURÍDICA</p>
-                </div>
 
-                <div class="metadata-block">
-                    <dl>
-                        <div>
-                            <dt>Juris</dt>
-                            <dd>[Nacional (AR)]</dd>
-                        </div>
-                        <div>
-                            <dt>Actualización</dt>
-                            <dd>Abr 2026</dd>
-                        </div>
-                        <div>
-                            <dt>Software</dt>
-                            <dd>CODEX_IUS_V1</dd>
-                        </div>
-                        <div>
-                            <dt>Tokens</dt>
-                            <dd>313021</dd>
-                        </div>
-                        <div>
-                            <dt>Peso</dt>
-                            <dd>1168.82 KB</dd>
-                        </div>
-                        <div>
-                            <dt>Interfaz</dt>
-                            <dd>HTML5/JS/MD</dd>
-                        </div>
-                        <div>
-                            <dt>Sello_Digital</dt>
-                            <dd>2026-04-03 13:47:39 UTC-3</dd>
-                        </div>
-                        <div>
-                            <dt>Formato</dt>
-                            <dd>UTF-8 / RawText</dd>
-                        </div>
-                    </dl>
-                </div>
-
-                <section class="integrity-block">
-                    <dt>Hash_Integridad (SHA-256)</dt>
-                    <dd><code>d20554f893e3c068968286489bd7bedc7dcc88d6e9d1d311d5d9d44d5c49fd6a</code></dd>
-                </section>
-
-                <section class="citation-block">
-                    <dt>Referencia_del_Sistema</dt>
-                    <dd>[NACIONAL (AR)] | Ley N° 26.994 | 'CÓDIGO CIVIL Y COMERCIAL DE LA NACIÓN [AR]'. Procesado por
-                        Motor CODEX_IUS.</dd>
-                </section>
-
-                <section class="tags-block">
-                    <dt>Descriptores_Indexados</dt>
-                    <dd>Código de fondo, código sustancial, código civil</dd>
-                </section>
-
-                <div class="footer-article">
-                    <a href="sources/res-lex/viewer-lex.html?file=lex/ccyc.md" class="btn-main">[
-                        EJECUTAR_VISOR_INTELIGENTE ]</a>
-                    <div class="file-data">
-                        <p><strong>Curaduría y Sistemas:</strong> dev://QUIROGA, Rodrigo Alberto</p>
-                        <p style="font-size: 0.85em; opacity: 0.8;">
-                            © 2026. Derechos sobre la edición, estructura y motor de búsqueda.
-                            El contenido normativo es de dominio público.
-                        </p>
+                    <div class="metadata-block">
+                        <dl>
+                            <div>
+                                <dt>Juris</dt>
+                                <dd>[Nacional (AR)]</dd>
+                            </div>
+                            <div>
+                                <dt>Actualización</dt>
+                                <dd>Abr 2026</dd>
+                            </div>
+                            <div>
+                                <dt>Software</dt>
+                                <dd>CODEX_IUS_V1</dd>
+                            </div>
+                            <div>
+                                <dt>Tokens</dt>
+                                <dd>313021</dd>
+                            </div>
+                            <div>
+                                <dt>Peso</dt>
+                                <dd>1168.82 KB</dd>
+                            </div>
+                            <div>
+                                <dt>Interfaz</dt>
+                                <dd>HTML5/JS/MD</dd>
+                            </div>
+                            <div>
+                                <dt>Sello_Digital</dt>
+                                <dd>2026-04-03 13:47:39 UTC-3</dd>
+                            </div>
+                            <div>
+                                <dt>Formato</dt>
+                                <dd>UTF-8 / RawText</dd>
+                            </div>
+                        </dl>
                     </div>
-                </div>
-            </article>
+
+                    <section class="integrity-block">
+                        <dt>Hash_Integridad (SHA-256)</dt>
+                        <dd><code>d20554f893e3c068968286489bd7bedc7dcc88d6e9d1d311d5d9d44d5c49fd6a</code></dd>
+                    </section>
+
+                    <section class="citation-block">
+                        <dt>Referencia_del_Sistema</dt>
+                        <dd>[NACIONAL (AR)] | Ley N° 26.994 | 'CÓDIGO CIVIL Y COMERCIAL DE LA NACIÓN [AR]'. Procesado
+                            por
+                            Motor CODEX_IUS.</dd>
+                    </section>
+
+                    <section class="tags-block">
+                        <dt>Descriptores_Indexados</dt>
+                        <dd>Código de fondo, código sustancial, código civil</dd>
+                    </section>
+
+                    <div class="footer-article">
+                        <a href="sources/res-lex/viewer-lex.html?file=lex/ccyc.md" class="btn-main">[
+                            EJECUTAR_VISOR_INTELIGENTE ]</a>
+                        <div class="file-data">
+                            <p><strong>Curaduría y Sistemas:</strong> dev://QUIROGA, Rodrigo Alberto</p>
+                            <p style="font-size: 0.85em; opacity: 0.8;">
+                                © 2026. Derechos sobre la edición, estructura y motor de búsqueda.
+                                El contenido normativo es de dominio público.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article data-pub-id="LEX-11.179" data-status="[vigente]">
+                    <div class="header-article">
+                        <div class="top-meta">
+                            <span>ID: LEX-11.179</span>
+                            <span>[VIGENTE]</span>
+                        </div>
+                        <h4>CÓDIGO PENAL DE LA NACION ARGENTINA</h4>
+                        <p>SISTEMA DINÁMICO DE CONSULTA JURÍDICA</p>
+                    </div>
+
+                    <div class="metadata-block">
+                        <dl>
+                            <div>
+                                <dt>Juris</dt>
+                                <dd>[Nacional (AR)]</dd>
+                            </div>
+                            <div>
+                                <dt>Actualización</dt>
+                                <dd>Abr 2026</dd>
+                            </div>
+                            <div>
+                                <dt>Software</dt>
+                                <dd>CODEX_IUS_V1</dd>
+                            </div>
+                            <div>
+                                <dt>Tokens</dt>
+                                <dd>68741</dd>
+                            </div>
+                            <div>
+                                <dt>Peso</dt>
+                                <dd>238.81 KB</dd>
+                            </div>
+                            <div>
+                                <dt>Interfaz</dt>
+                                <dd>HTML5/JS/MD</dd>
+                            </div>
+                            <div>
+                                <dt>Sello_Digital</dt>
+                                <dd>2026-04-03 20:04:31 UTC-3</dd>
+                            </div>
+                            <div>
+                                <dt>Formato</dt>
+                                <dd>UTF-8 / RawText</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <section class="integrity-block">
+                        <dt>Hash_Integridad (SHA-256)</dt>
+                        <dd><code>dbca0024afb061aa0adc613dd392f609bbd92a5eea0ac23a45ce7ba2b28890f5</code></dd>
+                    </section>
+
+                    <section class="citation-block">
+                        <dt>Referencia_del_Sistema</dt>
+                        <dd>[NACIONAL (AR)] | Ley N° 11.179 | 'CÓDIGO PENAL DE LA NACION ARGENTINA'. Procesado por Motor
+                            CODEX_IUS.</dd>
+                    </section>
+
+                    <section class="tags-block">
+                        <dt>Descriptores_Indexados</dt>
+                        <dd>Código de fondo, código sustancial, Nacional, deerecho penal</dd>
+                    </section>
+
+                    <div class="footer-article">
+                        <a href="sources/res-lex/viewer-lex.html?file=lex/cpn.md" class="btn-main">[
+                            EJECUTAR_VISOR_INTELIGENTE ]</a>
+                        <div class="file-data">
+                            <p><strong>Curaduría y Sistemas:</strong> dev://QUIROGA, Rodrigo Alberto</p>
+                            <p style="font-size: 0.85em; opacity: 0.8;">
+                                © 2026. Derechos sobre la edición, estructura y motor de búsqueda.
+                                El contenido normativo es de dominio público.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </details>
+
+            <h3>PROVINCIAL</h3>
+            <details>
+                <summary>Update: 03.04.26</summary>
+                <article data-pub-id="LEX-9.001" data-status="[vigente]">
+                    <div class="header-article">
+                        <div class="top-meta">
+                            <span>ID: LEX-9.001</span>
+                            <span>[VIGENTE]</span>
+                        </div>
+                        <h4>CÓDIGO PROCESAL CIVIL, COMERCIAL Y TRIBUTARIO DE MENDOZA</h4>
+                        <p>SISTEMA DINÁMICO DE CONSULTA JURÍDICA</p>
+                    </div>
+
+                    <div class="metadata-block">
+                        <dl>
+                            <div>
+                                <dt>Juris</dt>
+                                <dd>[PROVINCIA (MDZ)]</dd>
+                            </div>
+                            <div>
+                                <dt>Actualización</dt>
+                                <dd>Abr 2026</dd>
+                            </div>
+                            <div>
+                                <dt>Software</dt>
+                                <dd>CODEX_IUS_V1</dd>
+                            </div>
+                            <div>
+                                <dt>Tokens</dt>
+                                <dd>113957</dd>
+                            </div>
+                            <div>
+                                <dt>Peso</dt>
+                                <dd>419.42 KB</dd>
+                            </div>
+                            <div>
+                                <dt>Interfaz</dt>
+                                <dd>HTML5/JS/MD</dd>
+                            </div>
+                            <div>
+                                <dt>Sello_Digital</dt>
+                                <dd>2026-04-03 17:48:31 UTC-3</dd>
+                            </div>
+                            <div>
+                                <dt>Formato</dt>
+                                <dd>UTF-8 / RawText</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <section class="integrity-block">
+                        <dt>Hash_Integridad (SHA-256)</dt>
+                        <dd><code>14e2ba370cdc16eac579f77bf31a5758f1f6523e889501a10993e83b3580cc8d</code></dd>
+                    </section>
+
+                    <section class="citation-block">
+                        <dt>Referencia_del_Sistema</dt>
+                        <dd>[PROVINCIA (MDZ)] | Ley N° 9.001 | 'CÓDIGO PROCESAL CIVIL, COMERCIAL Y TRIBUTARIO DE
+                            MENDOZA'.
+                            Procesado por Motor CODEX_IUS.</dd>
+                    </section>
+
+                    <section class="tags-block">
+                        <dt>Descriptores_Indexados</dt>
+                        <dd>Código procesal, Mendoza, procesal civil</dd>
+                    </section>
+
+                    <div class="footer-article">
+                        <a href="sources/res-lex/viewer-lex.html?file=lex/cpcmdz.mdz" class="btn-main">[
+                            EJECUTAR_VISOR_INTELIGENTE ]</a>
+                        <div class="file-data">
+                            <p><strong>Curaduría y Sistemas:</strong> dev://QUIROGA, Rodrigo Alberto</p>
+                            <p style="font-size: 0.85em; opacity: 0.8;">
+                                © 2026. Derechos sobre la edición, estructura y motor de búsqueda.
+                                El contenido normativo es de dominio público.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article data-pub-id="LEX-6730" data-status="[vigente]">
+                    <div class="header-article">
+                        <div class="top-meta">
+                            <span>ID: LEX-6730</span>
+                            <span>[VIGENTE]</span>
+                        </div>
+                        <h4>CÓDIGO PROCESAL PENAL DE MENDOZA</h4>
+                        <p>SISTEMA DINÁMICO DE CONSULTA JURÍDICA</p>
+                    </div>
+
+                    <div class="metadata-block">
+                        <dl>
+                            <div>
+                                <dt>Juris</dt>
+                                <dd>[Provincial (MZA)]</dd>
+                            </div>
+                            <div>
+                                <dt>Actualización</dt>
+                                <dd>Abr 2026</dd>
+                            </div>
+                            <div>
+                                <dt>Software</dt>
+                                <dd>CODEX_IUS_V1</dd>
+                            </div>
+                            <div>
+                                <dt>Tokens</dt>
+                                <dd>83056</dd>
+                            </div>
+                            <div>
+                                <dt>Peso</dt>
+                                <dd>308.67 KB</dd>
+                            </div>
+                            <div>
+                                <dt>Interfaz</dt>
+                                <dd>HTML5/JS/MD</dd>
+                            </div>
+                            <div>
+                                <dt>Sello_Digital</dt>
+                                <dd>2026-04-03 19:30:09 UTC-3</dd>
+                            </div>
+                            <div>
+                                <dt>Formato</dt>
+                                <dd>UTF-8 / RawText</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <section class="integrity-block">
+                        <dt>Hash_Integridad (SHA-256)</dt>
+                        <dd><code>8a0b89019bbca2e47d81de9d9e5c56673cb9e77ae308d9218a5070343e3261c0</code></dd>
+                    </section>
+
+                    <section class="citation-block">
+                        <dt>Referencia_del_Sistema</dt>
+                        <dd>[PROVINCIAL (MZA)] | Ley N° 6730 | 'CÓDIGO PROCESAL PENAL DE MENDOZA'. Procesado por Motor
+                            CODEX_IUS.</dd>
+                    </section>
+
+                    <section class="tags-block">
+                        <dt>Descriptores_Indexados</dt>
+                        <dd>Código procesal, procesal penal, Mendoza</dd>
+                    </section>
+
+                    <div class="footer-article">
+                        <a href="sources/res-lex/viewer-lex.html?file=lex/cppmdz.md" class="btn-main">[
+                            EJECUTAR_VISOR_INTELIGENTE ]</a>
+                        <div class="file-data">
+                            <p><strong>Curaduría y Sistemas:</strong> dev://QUIROGA, Rodrigo Alberto</p>
+                            <p style="font-size: 0.85em; opacity: 0.8;">
+                                © 2026. Derechos sobre la edición, estructura y motor de búsqueda.
+                                El contenido normativo es de dominio público.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </details>
+
 
         </section>
-        <section>
-            <h3>Apps</h3>
-            <div class="header-article">
-                <div class="top-meta">
-                    <span>Codex-2026-01</span>
-                    <span>Ver. 10.4</span>
-                </div>
-                <h4>Editor</h4>
-                <p>Es un ejemplo</p>
-            </div>
 
-            <div class="metadata-block">
-                <dl>
-                    <div>
-                        <dt>Tema</dt>
-                        <dd>Derecho Procesal</dd>
-                    </div>
-                    <div>
-                        <dt>Juris</dt>
-                        <dd>Mendoza [AR]</dd>
-                    </div>
-                    <div>
-                        <dt>Type</dt>
-                        <dd>PDF</dd>
-                    </div>
-                    <div>
-                        <dt>Tokens</dt>
-                        <dd>18</dd>
-                    </div>
-                    <div>
-                        <dt>Size</dt>
-                        <dd>0.07 KB</dd>
-                    </div>
-                    <div>
-                        <dt>Read</dt>
-                        <dd>~1 min</dd>
-                    </div>
-                    <div>
-                        <dt>Seal</dt>
-                        <dd>2026-04-02 13:58:25 UTC-3</dd>
-                    </div>
-                    <div>
-                        <dt>Encoding</dt>
-                        <dd>UTF-8</dd>
-                    </div>
-                </dl>
-            </div>
-
-            <section class="integrity-block">
-                <dt>Integrity_Hash (SHA-256)</dt>
-                <dd><code>2f9500f4b44fb9c8e32f88ff671ffdd95ed584bccc160aeedda1ac3f169eadfc</code></dd>
-            </section>
-
-            <section class="tags-block">
-                <dt>Tags_Keywords</dt>
-                <dd>INTELIGNA IA DJILDWA,</dd>
-            </section>
-
-            <footer>
-                <a href="/sources/res-apps/render.html" class="btn-main">ACCEDER_APP</a>
-                <div class="file-data">
-                    <span>Autor: Rodrigo Alberto Quiroga</span>
-                    <span>Copyright: CC</span>
-                </div>
-            </footer>
-            </article>
-            <article>
-
-            </article>
-        </section>
     </main>
 
     <footer>

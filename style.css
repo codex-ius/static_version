@@ -652,3 +652,34 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
     
+
+        /* --- ESTILO PARA ÉNFASIS (EM) --- */
+
+#markdown-content em {
+    font-style: normal; /* Evitamos la cursiva estándar para mayor legibilidad */
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: var(--accent);
+    background: rgba(74, 222, 128, 0.1); /* Color de acento con opacidad baja */
+    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+   
+    transition: all 0.2s ease;
+}
+
+/* Ajuste de color de fondo según el tema activo para mantener contraste */
+[data-theme="bw"] #markdown-content em {
+    background: var(--surface);
+    
+}
+
+[data-theme="amber"] #markdown-content em {
+    background: rgba(251, 191, 36, 0.15);
+}
+
+/* Efecto al pasar el mouse: "Iluminación" del concepto */
+#markdown-content em:hover {
+    background: var(--accent);
+    color: var(--bg);
+    cursor: help; /* Indica que es un término relevante */
+}
