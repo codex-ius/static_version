@@ -380,6 +380,9 @@
             line-height: 1.8;
             /* Más aire entre líneas para leyes largas */
             letter-spacing: -0.011em;
+            display: flex;
+            flex-direction: column;
+            
         }
 
         /* --- JERARQUÍA DE CONTENIDO --- */

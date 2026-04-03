@@ -7,10 +7,10 @@
     <title>CODEX_IUS // Editorial Técnica</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto+Mono&display=swap"
         rel="stylesheet">
-   <link rel="stylesheet" href="style.css">
-<style>
+    <link rel="stylesheet" href="style.css">
+    <style>
         /* Solo estilos específicos de la estructura de la LANDING */
-        
+
         main {
             flex: 1;
             display: flex;
@@ -43,15 +43,17 @@
         article:hover {
             border-color: var(--accent);
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
         /* Marcador de esquina superior para la Card (Vibe H3) */
         article::before {
             content: "";
             position: absolute;
-            top: -1px; left: -1px;
-            width: 20px; height: 20px;
+            top: -1px;
+            left: -1px;
+            width: 20px;
+            height: 20px;
             border-top: 2px solid var(--accent);
             border-left: 2px solid var(--accent);
         }
@@ -60,13 +62,15 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
             gap: 1.5rem;
-            background: rgba(0,0,0,0.2);
+            background: rgba(0, 0, 0, 0.2);
             padding: 1.5rem;
             border: 1px solid var(--border);
             margin: 1.5rem 0;
         }
 
-        .integrity-block, .citation-block, .tags-block {
+        .integrity-block,
+        .citation-block,
+        .tags-block {
             margin-top: 1rem;
             font-size: 0.7rem;
             font-family: var(--font-mono);
@@ -74,7 +78,7 @@
 
         .integrity-block code {
             display: block;
-            
+
             padding: 0.8rem;
             color: var(--accent-alt);
             border: 1px solid var(--border);
@@ -82,252 +86,283 @@
         }
 
         /* Ajuste de Footer de Card */
-        article footer {
+        .footer-article {
             margin-top: 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
             border-top: 1px solid var(--border);
             padding-top: 1.5rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
         }
 
         /* --- HEADER & NAVEGACIÓN SISTÉMICA --- */
-header {
-    border-bottom: 1px solid var(--border);
-    background: var(--bg);
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+        header {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-.header-article {
-    border-bottom: 1px solid var(--border);
-    background: var(--bg);
-    padding: 1rem 2rem;   
-}
+        .header-article {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+            padding: 1rem 2rem;
+        }
 
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 900px;
-    margin: 0 auto;
-}
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
 
-header h1 {
-    font-family: var(--font-mono);
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--accent);
-    letter-spacing: 2px;
-}
+        header h1 {
+            font-family: var(--font-mono);
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--accent);
+            letter-spacing: 2px;
+        }
 
-header ul {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-}
+        header ul {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
 
-dt{
-    font-weight: bold;
-    color: var(--accent-alt);
-    font-family: var(--font-mono);
-}
+        dt {
+            font-weight: bold;
+            color: var(--accent-alt);
+            font-family: var(--font-mono);
+        }
 
-dd{
-    font-size: smaller;
-    font-style: italic;
-}
+        dd {
+            font-size: smaller;
+            font-style: italic;
+        }
 
-code{   
-    overflow: auto;
-}
+        code {
+            overflow: auto;
+        }
 
-header a {
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    color: var(--text);
-    text-decoration: none;
-    opacity: 0.7;
-    transition: 0.2s;
-}
+        header a {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--text);
+            text-decoration: none;
+            opacity: 0.7;
+            transition: 0.2s;
+        }
 
-header a:hover {
-    opacity: 1;
-    color: var(--accent);
-}
+        header a:hover {
+            opacity: 1;
+            color: var(--accent);
+        }
 
-/* --- SECCIÓN HERO (Soberanía) --- */
-#hero {
-    padding: 4rem 0;
-    border-left: 3px solid var(--accent); /* Marca de autoridad */
-    padding-left: 2rem;
-}
+        /* --- SECCIÓN HERO (Soberanía) --- */
+        #hero {
+            padding: 4rem 0;
+            border-left: 3px solid var(--accent);
+            /* Marca de autoridad */
+            padding-left: 2rem;
+        }
 
-#hero h2 {
-    font-family: var(--font-mono);
-    font-size: 3rem;
-    color: var(--text);
-    line-height: 0.9;
-    margin-bottom: 1rem;
-    letter-spacing: -2px;
-}
+        #hero h2 {
+            font-family: var(--font-mono);
+            font-size: 3rem;
+            color: var(--text);
+            line-height: 0.9;
+            margin-bottom: 1rem;
+            letter-spacing: -2px;
+        }
 
-#hero p {
-    font-family: var(--font-main);
-    font-size: 1.1rem;
-    max-width: 600px;
-    opacity: 0.8;
-}
-
-
-
-/* --- FOOTER DE SISTEMA --- */
-footer {
-    margin-top: auto;
-    padding: 3rem 2rem;
-    border-top: 1px solid var(--border);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    background: var(--bg);
-}
-
-footer p {
-    font-family: var(--font-mono);
-    font-size: 0.6rem;
-    line-height: 1.6;
-    opacity: 0.5;
-    text-transform: uppercase;
-}
-
-.time-stamp {
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    color: var(--accent-alt);
-    background: var(--surface);
-    padding: 6px 12px;
-    border: 1px solid var(--border);
-    border-radius: 2px;
-}
-h4{
-    margin: 0;
-    font-family: var(--font-mono);
-    font-size: larger;
-    font-style: italic;   
-    color: var(--accent); 
-}
-h4::before{
-    content: 'Title: ';
-    color: var(--accent-alt);
-}
-
-h4::after {
-  content: "_";
-  
- font-style: italic;
-  animation: blink 1s step-end infinite;
-}
-
-.header-article p{
-    font-family: var(--font-mono);
-    font-style: italic;    
-}
-.header-article p::before{
-    content: "Subtitle: ";
-
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
-}
+        #hero p {
+            font-family: var(--font-main);
+            font-size: 1.1rem;
+            max-width: 600px;
+            opacity: 0.8;
+        }
 
 
-/* Responsivo para móviles */
-@media (max-width: 768px) {
-    header nav { flex-direction: column; gap: 1rem; }
-    #hero h2 { font-size: 2rem; }
-    footer { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
-}
 
-.btn-main{
-    z-index: 0;
-}
+        /* --- FOOTER DE SISTEMA --- */
+        footer {
+            margin-top: auto;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            background: var(--bg);
+        }
 
-.top-meta{
-    font-family: var(--font-mono);
-    font-size: 0.8rem;
-    color: var(--accent-alt);
-    opacity: 0.6;
-}
+        footer p,
+        .footer-article {
+            font-family: var(--font-mono);
+            font-size: 0.6rem;
+            line-height: 1.6;
+            opacity: 0.5;
+            text-transform: uppercase;
+        }
+
+        .footer-article {
+            opacity: 100;
+        }
+
+        .time-stamp {
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            color: var(--accent-alt);
+            background: var(--surface);
+            padding: 6px 12px;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+        }
+
+        h4 {
+            margin: 0;
+            font-family: var(--font-mono);
+            font-size: larger;
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        h4::before {
+            content: 'Title: ';
+            color: var(--accent-alt);
+        }
+
+        h4::after {
+            content: "_";
+
+            font-style: italic;
+            animation: blink 1s step-end infinite;
+        }
+
+        .header-article p {
+            font-family: var(--font-mono);
+            font-style: italic;
+        }
+
+        .header-article p::before {
+            content: "Subtitle: ";
+
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+
+        /* Responsivo para móviles */
+        @media (max-width: 768px) {
+            header nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            #hero h2 {
+                font-size: 2rem;
+            }
+
+            footer {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.5rem;
+            }
+        }
+
+        .btn-main {
+            z-index: 0;
+        }
+
+        .top-meta {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--accent-alt);
+            opacity: 0.6;
+        }
     </style>
 </head>
 
 <body>
- <nav>
+    <nav>
         <div class="brand">CODEX<span>_IUS</span></div>
         <div class="nav-controls">
             <a class="home-btn" href="#">[CATÁLOGO]</a>
-                <a class="home-btn" href="#">[MISIÓN]</a>
-                <a class="home-btn" href="#">[GIT_REPO]</a>
+            <a class="home-btn" href="#">[MISIÓN]</a>
+            <a class="home-btn" href="#">[GIT_REPO]</a>
         </div>
-    </nav>   
-        
-           
-    
+    </nav>
 
-    <main>    
+
+
+
+    <main>
         <section id="hero">
             <h2>CODEX_IUS:</h2>
             <p>Repositorio de derecho procesal y técnica jurídica. Documentos íntegros, verificables y de acceso
                 local-first.</p>
         </section>
-
+        <a href="sources/res-lex/viewer-lex.html?file=legislacion/ccyc.md" class="btn-main">
+            ACCEDER_DOCUMENTO
+        </a>
         <section id="catalog">
-            <h3>[ÚLTIMAS_PUBLICACIONES]</h3>
-
-
-            <article data-pub-id="Codex-2026-01" data-status="final">
+            <h2>DOCTRINA</h2>
+            <hr>
+            <h3>DERECHO PROCESAL</h3>
+            <article data-pub-id="CODEX_IUS-2026-001" data-status="[preprint ver.01]">
                 <div class="header-article">
                     <div class="top-meta">
-                        <span>Codex-2026-01</span>
-                        <span>Final</span>
+                        <span>CODEX_IUS-2026-001</span>
+                        <span>[PREPRINT VER.01]</span>
                     </div>
-                    <h4>Ejemplo</h4>
-                    <p>Es un ejemplo</p>
+                    <h4>INTRODUCCIÓN AL DERECHO PROCESAL</h4>
+                    <p>Nociones básicas según CPCCT de Mendoza</p>
                 </div>
 
                 <div class="metadata-block">
                     <dl>
                         <div>
                             <dt>Tema</dt>
-                            <dd>Derecho Procesal</dd>
+                            <dd>[Derecho Procesal]</dd>
                         </div>
                         <div>
                             <dt>Juris</dt>
-                            <dd>Mendoza [AR]</dd>
+                            <dd>[Mendoza (AR)]</dd>
                         </div>
                         <div>
                             <dt>Type</dt>
-                            <dd>PDF</dd>
+                            <dd>[HTML5 / MD]</dd>
                         </div>
                         <div>
                             <dt>Tokens</dt>
-                            <dd>18</dd>
+                            <dd>13481</dd>
                         </div>
                         <div>
                             <dt>Size</dt>
-                            <dd>0.07 KB</dd>
+                            <dd>52.62 KB</dd>
                         </div>
                         <div>
                             <dt>Read</dt>
-                            <dd>~1 min</dd>
+                            <dd>~41 min</dd>
                         </div>
                         <div>
                             <dt>Seal</dt>
-                            <dd>2026-04-02 13:58:25 UTC-3</dd>
+                            <dd>2026-04-03 10:59:06 UTC-3</dd>
                         </div>
                         <div>
                             <dt>Encoding</dt>
@@ -338,69 +373,73 @@ h4::after {
 
                 <section class="integrity-block">
                     <dt>Integrity_Hash (SHA-256)</dt>
-                    <dd><code>2f9500f4b44fb9c8e32f88ff671ffdd95ed584bccc160aeedda1ac3f169eadfc</code></dd>
+                    <dd><code>d55ade713e978ad7f7ee7bf999683f8e70125dc02f945e0083eb2eecd72fb6b9</code></dd>
                 </section>
 
                 <section class="citation-block">
                     <dt>Cita_Sugerida</dt>
-                    <dd>QUIROGA, Rodrigo (2026). Ejemplo. [Codex-2026-01]. Mendoza [AR]. Editorial Codex_Ius.</dd>
+                    <dd>QUIROGA Rodrigo Alberto, Dev. (2026). INTRODUCCIÓN AL DERECHO. [CODEX_IUS-2026-001]. [Mendoza
+                        (AR)]. Editorial Codex_Ius.</dd>
                 </section>
 
                 <section class="tags-block">
                     <dt>Tags_Keywords</dt>
-                    <dd>INTELIGNA IA DJILDWA,</dd>
+                    <dd>Derecho, derecho objetivo, derecho subjetivo, derecho procesal, fuentes, orden de prelación,
+                        principios procesales, jurisdicción
+
+                        Competencia</dd>
                 </section>
 
-                <footer>
-                    <a href="sources/res-archive/viewer.html?file=docs/unidadI.md" class="btn-main">ACCEDER_DOCUMENTO</a>
+                <div class="footer-article">
+                    <a href="sources/res-archive/viewer.html?file=docs/procesal/doc_I.md"
+                        class="btn-main">ACCEDER_DOCUMENTO</a>
                     <div class="file-data">
-                        <span>Autor: Rodrigo Alberto Quiroga</span>
-                        <span>Copyright: CC</span>
+                        <span>Autor: Dev: Quiroga Rodrigo Alberto</span>
+                        <span>Copyright: [CC BY-NC-SA 4.0] | © 2026 Todos los derechos reservados</span>
                     </div>
-                </footer>
+                </div>
             </article>
-        </section>
 
-        <section>
-            <h3>Apps</h3>
-            <div class="header-article">
+
+            <article data-pub-id="CODEX_IUS-2026-002" data-status="[preprint ver.01]">
+                <div class="header-article">
                     <div class="top-meta">
-                        <span>Codex-2026-01</span>
-                        <span>Ver. 10.4</span>
+                        <span>CODEX_IUS-2026-002</span>
+                        <span>[PREPRINT Ver.01]</span>
                     </div>
-                    <h4>Editor</h4>
-                    <p>Es un ejemplo</p>
+                    <h4>MODOS ANORMALES DE CONCLUSIÓN DEL PROCESO</h4>
+                    <p>Nociones básicas según CPCCT de Mendoza</p>
                 </div>
 
                 <div class="metadata-block">
                     <dl>
                         <div>
                             <dt>Tema</dt>
-                            <dd>Derecho Procesal</dd>
+                            <dd>[Derecho Procesal]</dd>
                         </div>
                         <div>
                             <dt>Juris</dt>
-                            <dd>Mendoza [AR]</dd>
+                            <dd>[Mendoza (AR)]</dd>
                         </div>
                         <div>
                             <dt>Type</dt>
-                            <dd>PDF</dd>
+                            <dd>[HTML5 | MD]</dd>
                         </div>
                         <div>
                             <dt>Tokens</dt>
-                            <dd>18</dd>
+                            <dd>9274</dd>
                         </div>
                         <div>
                             <dt>Size</dt>
-                            <dd>0.07 KB</dd>
+                            <dd>35.15 KB</dd>
                         </div>
                         <div>
                             <dt>Read</dt>
-                            <dd>~1 min</dd>
+                            <dd>~28 min</dd>
                         </div>
                         <div>
                             <dt>Seal</dt>
-                            <dd>2026-04-02 13:58:25 UTC-3</dd>
+                            <dd>2026-04-03 11:19:10 UTC-3</dd>
                         </div>
                         <div>
                             <dt>Encoding</dt>
@@ -411,21 +450,259 @@ h4::after {
 
                 <section class="integrity-block">
                     <dt>Integrity_Hash (SHA-256)</dt>
-                    <dd><code>2f9500f4b44fb9c8e32f88ff671ffdd95ed584bccc160aeedda1ac3f169eadfc</code></dd>
-                </section>            
+                    <dd><code>318925859cdfa0d19e69ae2cb2b4354e36870c59d6495c479f6ba67899d99647</code></dd>
+                </section>
+
+                <section class="citation-block">
+                    <dt>Cita_Sugerida</dt>
+                    <dd>QUIROGA Rodrigo Alberto, Dev. (2026). MODOS ANORMALES DE CONCLUSIÓN DEL PROCESO.
+                        [CODEX_IUS-2026-002]. [Mendoza (AR)]. Editorial Codex_Ius.</dd>
+                </section>
 
                 <section class="tags-block">
                     <dt>Tags_Keywords</dt>
-                    <dd>INTELIGNA IA DJILDWA,</dd>
+                    <dd>Modos anormales de conclusión del proceso, estructura del proceso civil, caducidad de instancia,
+                        allanamiento, desistimiento, conciliación, mediación, transacción</dd>
                 </section>
 
-                <footer>
-                    <a href="/sources/res-apps/render.html" class="btn-main">ACCEDER_APP</a>
+                <div class="footer-article">
+                    <a href="sources/viewer.html?file=res-archive/docs/procesal/doc_II.md"
+                        class="btn-main">ACCEDER_DOCUMENTO</a>
                     <div class="file-data">
-                        <span>Autor: Rodrigo Alberto Quiroga</span>
-                        <span>Copyright: CC</span>
+                        <p>Autor: Dev. Quiroga Rodrigo Alberto</p>
+                        <p>Copyright: [CC BY-NC-SA 4.0] | © 2026 Todos los derechos reservados</p>
                     </div>
-                </footer>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section id="catalog">
+            <h2>LEGISLACIÓN</h2>
+            <hr>
+            <h3>CONSTITUCIONES</h3>
+
+            <article data-pub-id="LEX-24.430" data-status="[vigente]">
+                <div class="header-article">
+                    <div class="top-meta">
+                        <span>ID: LEX-24.430</span>
+                        <span>[VIGENTE]</span>
+                    </div>
+                    <h4>CONSTITUCIÓN DE LA NACIÓN ARGENTINA</h4>
+                    <p>SISTEMA DINÁMICO DE CONSULTA JURÍDICA</p>
+                </div>
+
+                <div class="metadata-block">
+                    <dl>
+                        <div>
+                            <dt>Juris</dt>
+                            <dd>[Nacional (AR)]</dd>
+                        </div>
+                        <div>
+                            <dt>Actualización</dt>
+                            <dd>Abr 2026</dd>
+                        </div>
+                        <div>
+                            <dt>Software</dt>
+                            <dd>CODEX_IUS_V1</dd>
+                        </div>
+                        <div>
+                            <dt>Tokens</dt>
+                            <dd>21155</dd>
+                        </div>
+                        <div>
+                            <dt>Peso</dt>
+                            <dd>80.18 KB</dd>
+                        </div>
+                        <div>
+                            <dt>Interfaz</dt>
+                            <dd>HTML5/JS/MD</dd>
+                        </div>
+                        <div>
+                            <dt>Sello_Digital</dt>
+                            <dd>2026-04-03 14:04:13 UTC-3</dd>
+                        </div>
+                        <div>
+                            <dt>Formato</dt>
+                            <dd>UTF-8 / RawText</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <section class="integrity-block">
+                    <dt>Hash_Integridad (SHA-256)</dt>
+                    <dd><code>62e70db77c8522fff4a0bc3dab5431dfc3a4e8be89eaf7fbf2a1a4bebed83cda</code></dd>
+                </section>
+
+                <section class="citation-block">
+                    <dt>Referencia_del_Sistema</dt>
+                    <dd>[NACIONAL (AR)] | Ley N° 24.430 | 'CONSTITUCIÓN DE LA NACIÓN ARGENTINA'. Procesado por Motor
+                        CODEX_IUS.</dd>
+                </section>
+
+                <section class="tags-block">
+                    <dt>Descriptores_Indexados</dt>
+                    <dd>Constitución Nacional, carta magna</dd>
+                </section>
+
+                <div class="footer-article">
+                    <a href="sources/res-lex/viewer-lex.html?file=lex/cn.md" class="btn-main">[
+                        EJECUTAR_VISOR_INTELIGENTE ]</a>
+                    <div class="file-data">
+                        <p><strong>Curaduría y Sistemas:</strong> dev://QUIROGA, Rodrigo Alberto</p>
+                        <p style="font-size: 0.85em; opacity: 0.8;">
+                            © 2026. Derechos sobre la edición, estructura y motor de búsqueda.
+                            El contenido normativo es de dominio público.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <hr>
+            <h3>NACIONAL</h3>
+
+            <article data-pub-id="LEX-26.994" data-status="[vigente]">
+                <div class="header-article">
+                    <div class="top-meta">
+                        <span>ID: LEX-26.994</span>
+                        <span>[VIGENTE]</span>
+                    </div>
+                    <h4>CÓDIGO CIVIL Y COMERCIAL DE LA NACIÓN [AR]</h4>
+                    <p>SISTEMA DINÁMICO DE CONSULTA JURÍDICA</p>
+                </div>
+
+                <div class="metadata-block">
+                    <dl>
+                        <div>
+                            <dt>Juris</dt>
+                            <dd>[Nacional (AR)]</dd>
+                        </div>
+                        <div>
+                            <dt>Actualización</dt>
+                            <dd>Abr 2026</dd>
+                        </div>
+                        <div>
+                            <dt>Software</dt>
+                            <dd>CODEX_IUS_V1</dd>
+                        </div>
+                        <div>
+                            <dt>Tokens</dt>
+                            <dd>313021</dd>
+                        </div>
+                        <div>
+                            <dt>Peso</dt>
+                            <dd>1168.82 KB</dd>
+                        </div>
+                        <div>
+                            <dt>Interfaz</dt>
+                            <dd>HTML5/JS/MD</dd>
+                        </div>
+                        <div>
+                            <dt>Sello_Digital</dt>
+                            <dd>2026-04-03 13:47:39 UTC-3</dd>
+                        </div>
+                        <div>
+                            <dt>Formato</dt>
+                            <dd>UTF-8 / RawText</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <section class="integrity-block">
+                    <dt>Hash_Integridad (SHA-256)</dt>
+                    <dd><code>d20554f893e3c068968286489bd7bedc7dcc88d6e9d1d311d5d9d44d5c49fd6a</code></dd>
+                </section>
+
+                <section class="citation-block">
+                    <dt>Referencia_del_Sistema</dt>
+                    <dd>[NACIONAL (AR)] | Ley N° 26.994 | 'CÓDIGO CIVIL Y COMERCIAL DE LA NACIÓN [AR]'. Procesado por
+                        Motor CODEX_IUS.</dd>
+                </section>
+
+                <section class="tags-block">
+                    <dt>Descriptores_Indexados</dt>
+                    <dd>Código de fondo, código sustancial, código civil</dd>
+                </section>
+
+                <div class="footer-article">
+                    <a href="sources/res-lex/viewer-lex.html?file=lex/ccyc.md" class="btn-main">[
+                        EJECUTAR_VISOR_INTELIGENTE ]</a>
+                    <div class="file-data">
+                        <p><strong>Curaduría y Sistemas:</strong> dev://QUIROGA, Rodrigo Alberto</p>
+                        <p style="font-size: 0.85em; opacity: 0.8;">
+                            © 2026. Derechos sobre la edición, estructura y motor de búsqueda.
+                            El contenido normativo es de dominio público.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+        <section>
+            <h3>Apps</h3>
+            <div class="header-article">
+                <div class="top-meta">
+                    <span>Codex-2026-01</span>
+                    <span>Ver. 10.4</span>
+                </div>
+                <h4>Editor</h4>
+                <p>Es un ejemplo</p>
+            </div>
+
+            <div class="metadata-block">
+                <dl>
+                    <div>
+                        <dt>Tema</dt>
+                        <dd>Derecho Procesal</dd>
+                    </div>
+                    <div>
+                        <dt>Juris</dt>
+                        <dd>Mendoza [AR]</dd>
+                    </div>
+                    <div>
+                        <dt>Type</dt>
+                        <dd>PDF</dd>
+                    </div>
+                    <div>
+                        <dt>Tokens</dt>
+                        <dd>18</dd>
+                    </div>
+                    <div>
+                        <dt>Size</dt>
+                        <dd>0.07 KB</dd>
+                    </div>
+                    <div>
+                        <dt>Read</dt>
+                        <dd>~1 min</dd>
+                    </div>
+                    <div>
+                        <dt>Seal</dt>
+                        <dd>2026-04-02 13:58:25 UTC-3</dd>
+                    </div>
+                    <div>
+                        <dt>Encoding</dt>
+                        <dd>UTF-8</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <section class="integrity-block">
+                <dt>Integrity_Hash (SHA-256)</dt>
+                <dd><code>2f9500f4b44fb9c8e32f88ff671ffdd95ed584bccc160aeedda1ac3f169eadfc</code></dd>
+            </section>
+
+            <section class="tags-block">
+                <dt>Tags_Keywords</dt>
+                <dd>INTELIGNA IA DJILDWA,</dd>
+            </section>
+
+            <footer>
+                <a href="/sources/res-apps/render.html" class="btn-main">ACCEDER_APP</a>
+                <div class="file-data">
+                    <span>Autor: Rodrigo Alberto Quiroga</span>
+                    <span>Copyright: CC</span>
+                </div>
+            </footer>
             </article>
             <article>
 
@@ -442,12 +719,12 @@ h4::after {
             2026-04-02_13:02_UTC
         </div>
     </footer>
-<button id="theme-toggle" onclick="toggleTheme()">[ MODE: DARK ]</button>
+    <button id="theme-toggle" onclick="toggleTheme()">[ MODE: DARK ]</button>
 
-<script>
-    // 1. INICIALIZACIÓN Y CARGA DINÁMICA
+    <script>
+        // 1. INICIALIZACIÓN Y CARGA DINÁMICA
         window.onload = () => {
-           
+
             // Aplicar tema guardado
             const savedTheme = localStorage.getItem('theme') || 'dark';
             applyTheme(savedTheme);
@@ -462,7 +739,7 @@ h4::after {
             window.addEventListener('resize', updateNavHeight); // Re-calcula si giras el celu o achicas la ventana
         };
 
-          // 3. GESTIÓN DE TEMAS (CICLO DE PALETAS)
+        // 3. GESTIÓN DE TEMAS (CICLO DE PALETAS)
         const themes = [
             'dark', 'bw', 'amber', 'steel',
             'blueprint', 'ghost', 'olive', 'radar'
@@ -496,7 +773,7 @@ h4::after {
                 themeBtn.textContent = `[ SOURCE_VISOR: ${themeNames[theme] || theme.toUpperCase()} ]`;
             }
         }
-</script>
+    </script>
 </body>
 
 </html>

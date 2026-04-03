@@ -1,12 +1,13 @@
 # CONSTITUCION DE LA NACION ARGENTINA
 
-## PREÁMBULO
+# PREÁMBULO
 
 ***Nos los representantes del pueblo de la Nación Argentina, reunidos en Congreso General Constituyente por voluntad y elección de las provincias que la componen, en cumplimiento de pactos preexistentes, con el objeto de constituir la unión nacional, afianzar la justicia, consolidar la paz interior, proveer a la defensa común, promover el bienestar general, y asegurar los beneficios de la libertad, para nosotros, para nuestra posteridad, y para todos los hombres del mundo que quieran habitar en el suelo argentino: invocando la protección de Dios, fuente de toda razón y justicia: ordenamos, decretamos y establecemos esta Constitución, para la Nación Argentina.***
 
-## PRIMERA PARTE
 
-### CAPÍTULO PRIMERO \- Declaraciones, derechos y garantías
+# PRIMERA PARTE
+
+## CAPÍTULO PRIMERO \- Declaraciones, derechos y garantías
 
 **Art. 1.-** La Nación Argentina adopta para su gobierno la forma representativa republicana federal, según la establece la presente Constitución.
 
@@ -84,7 +85,7 @@ El Estado otorgará los beneficios de la seguridad social, que tendrá carácter
 
 **Art. 35.-** Las denominaciones adoptadas sucesivamente desde 1810 hasta el presente, a saber: Provincias Unidas del Río de la Plata, República Argentina, Confederación Argentina, serán en adelante nombres oficiales indistintamente para la designación del Gobierno y territorio de las provincias, empleándose las palabras 'Nación Argentina' en la formación y sanción de las leyes.
 
-### CAPÍTULO SEGUNDO \- Nuevos derechos y garantías
+## CAPÍTULO SEGUNDO \- Nuevos derechos y garantías
 
 **Art. 36.-** Esta Constitución mantendrá su imperio aun cuando se interrumpiere su observancia por actos de fuerza contra el orden institucional y el sistema democrático. Estos actos serán insanablemente nulos.
 
@@ -144,15 +145,15 @@ Toda persona podrá interponer esta acción para tomar conocimiento de los datos
 
 Cuando el derecho lesionado, restringido, alterado o amenazado fuera la libertad física, o en caso de agravamiento ilegítimo en la forma o condiciones de detención, o en el de desaparición forzada de personas, la acción de hábeas corpus podrá ser interpuesta por el afectado o por cualquiera en su favor y el juez resolverá de inmediato, aun durante la vigencia del estado de sitio.
 
-##  SEGUNDA PARTE \- AUTORIDADES DE LA NACION
+#  SEGUNDA PARTE \- AUTORIDADES DE LA NACION
 
 ##  TITULO PRIMERO \- GOBIERNO FEDERAL
 
-##  SECCION PRIMERA \- DEL PODER LEGISLATIVO
+###  SECCIÓN PRIMERA \- DEL PODER LEGISLATIVO
 
 **Art. 44.-** Un Congreso compuesto de dos Cámaras, una de Diputados de la Nación y otra de Senadores de las provincias y de la ciudad de Buenos Aires, será investido del Poder Legislativo de la Nación.
 
-### CAPÍTULO PRIMERO \- De la Cámara de Diputados
+#### CAPÍTULO PRIMERO \- De la Cámara de Diputados
 
 **Art. 45.-** La Cámara de Diputados se compondrá de representantes elegidos directamente por el pueblo de las provincias, de la ciudad de Buenos Aires, y de la Capital en caso de traslado, que se consideran a este fin como distritos electorales de un solo Estado y a simple pluralidad de sufragios. El número de representantes será de uno por cada treinta y tres mil habitantes o fracción que no baje de dieciséis mil quinientos. Después de la realización de cada censo, el Congreso fijará la representación con arreglo al mismo, pudiendo aumentar pero no disminuir la base expresada para cada diputado.
 
@@ -172,7 +173,7 @@ Cuando el derecho lesionado, restringido, alterado o amenazado fuera la libertad
 
 **Art. 53.-** Sólo ella ejerce el derecho de acusar ante el Senado al presidente, vicepresidente, al jefe de gabinete de ministros, a los ministros y a los miembros de la Corte Suprema, en las causas de responsabilidad que se intenten contra ellos, por mal desempeño o por delito en el ejercicio de sus funciones; o por crímenes comunes, después de haber conocido de ellos y declarado haber lugar a la formación de causa por la mayoría de dos terceras partes de sus miembros presentes.
 
-### CAPÍTULO SEGUNDO \- Del Senado
+#### CAPÍTULO SEGUNDO \- Del Senado
 
 **Art. 54.-** El Senado se compondrá de tres senadores por cada provincia y tres por la ciudad de Buenos Aires, elegidos en forma directa y conjunta, correspondiendo dos bancas al partido político que obtenga el mayor número de votos, y la restante al partido político que le siga en número de votos. Cada senador tendrá un voto.
 
@@ -192,7 +193,7 @@ Cuando el derecho lesionado, restringido, alterado o amenazado fuera la libertad
 
 **Art. 62.-** Cuando vacase alguna plaza de senador por muerte, renuncia u otra causa, el Gobierno a que corresponda la vacante hace proceder inmediatamente a la elección de un nuevo miembro.
 
-### CAPÍTULO TERCERO \- Disposiciones comunes a ambas Cámaras
+#### CAPÍTULO TERCERO \- Disposiciones comunes a ambas Cámaras
 
 **Art. 63.-** Ambas Cámaras se reunirán por sí mismas en sesiones ordinarias todos los años desde el primero de marzo hasta el treinta de noviembre. Pueden también ser convocadas extraordinariamente por el Presidente de la Nación o prorrogadas sus sesiones.
 
@@ -218,7 +219,7 @@ Cuando el derecho lesionado, restringido, alterado o amenazado fuera la libertad
 
 **Art. 74.-** Los servicios de los senadores y diputados son remunerados por el Tesoro de la Nación, con una dotación que señalará la ley.
 
-### CAPÍTULO CUARTO \- Atribuciones del Congreso
+#### CAPÍTULO CUARTO \- Atribuciones del Congreso
 
 **Art. 75.-** Corresponde al Congreso:
 
@@ -320,7 +321,7 @@ Aprobar o revocar la intervención decretada, durante su receso, por el Poder Ej
 
 La caducidad resultante del transcurso del plazo previsto en el párrafo anterior no importará revisión de las relaciones jurídicas nacidas al amparo de las normas dictadas en consecuencia de la delegación legislativa.
 
-### CAPÍTULO QUINTO \- De la formación y sanción de las leyes
+#### CAPÍTULO QUINTO \- De la formación y sanción de las leyes
 
 **Art. 77.-** Las leyes pueden tener principio en cualquiera de las Cámaras del Congreso, por proyectos presentados por sus miembros o por el Poder Ejecutivo, salvo las excepciones que establece esta Constitución.
 
@@ -340,7 +341,7 @@ Los proyectos de ley que modifiquen el régimen electoral y de partidos polític
 
 **Art. 84.-** En la sanción de las leyes se usará de esta fórmula: El Senado y Cámara de Diputados de la Nación Argentina, reunidos en Congreso, ... decretan o sancionan con fuerza de ley.
 
-### CAPÍTULO SEXTO \- De la Auditoría General de la Nación
+#### CAPÍTULO SEXTO \- De la Auditoría General de la Nación
 
 **Art. 85.-** El control externo del sector público nacional en sus aspectos patrimoniales, económicos, financieros y operativos, será una atribución propia del Poder Legislativo.
 
@@ -350,7 +351,7 @@ Este organismo de asistencia técnica del Congreso, con autonomía funcional, se
 
 Tendrá a su cargo el control de legalidad, gestión y auditoría de toda la actividad de la administración pública centralizada y descentralizada, cualquiera fuera su modalidad de organización, y las demás funciones que la ley le otorgue. Intervendrá necesariamente en el trámite de aprobación o rechazo de las cuentas de percepción e inversión de los fondos públicos.
 
-### CAPÍTULO SEPTIMO \- Del Defensor del Pueblo
+#### CAPÍTULO SEPTIMO \- Del Defensor del Pueblo
 
 **Art. 86.-** El Defensor del Pueblo es un órgano independiente instituido en el ámbito del Congreso de la Nación, que actuará con plena autonomía funcional, sin recibir instrucciones de ninguna autoridad. Su misión es la defensa y protección de los derechos humanos y demás derechos, garantías e intereses tutelados en esta Constitución y las leyes, ante hechos, actos u omisiones de la Administración; y el control del ejercicio de las funciones administrativas públicas.
 
@@ -358,9 +359,9 @@ El Defensor del Pueblo tiene legitimación procesal. Es designado y removido por
 
 La organización y el funcionamiento de esta institución serán regulados por una ley especial.
 
-##  SECCIÓN SEGUNDA \- DEL PODER EJECUTIVO
+###  SECCIÓN SEGUNDA \- DEL PODER EJECUTIVO
 
-### CAPÍTULO PRIMERO \- De su naturaleza y duración
+#### CAPÍTULO PRIMERO \- De su naturaleza y duración
 
 **Art. 87.-** El Poder Ejecutivo de la Nación será desempeñado por un ciudadano con el título de 'Presidente de la Nación Argentina'.
 
@@ -376,7 +377,7 @@ La organización y el funcionamiento de esta institución serán regulados por u
 
 **Art. 93.-** Al tomar posesión de su cargo el presidente y vicepresidente prestarán juramento, en manos del presidente del Senado y ante el Congreso reunido en Asamblea, respetando sus creencias religiosas, de 'desempeñar con lealtad y patriotismo el cargo de Presidente (o vicepresidente) de la Nación y observar y hacer observar fielmente la Constitución de la Nación Argentina'.
 
-### CAPÍTULO SEGUNDO \- De la forma y tiempo de la elección del Presidente y vicepresidente de la Nación
+#### CAPÍTULO SEGUNDO \- De la forma y tiempo de la elección del Presidente y vicepresidente de la Nación
 
 **Art. 94.-** El Presidente y el vicepresidente de la Nación serán elegidos directamente por el Pueblo, en doble vuelta, según lo establece esta Constitución. A este fin el territorio nacional conformará un distrito único.
 
@@ -388,7 +389,7 @@ La organización y el funcionamiento de esta institución serán regulados por u
 
 **Art. 98.-** Cuando la fórmula que resultare más votada en la primera vuelta hubiere obtenido el cuarenta por ciento por lo menos de los votos afirmativos válidamente emitidos y, además, existiere una diferencia mayor de diez puntos porcentuales respecto del total de los votos afirmativos válidamente emitidos sobre la fórmula que le sigue en número de votos, sus integrantes serán proclamados como Presidente y vicepresidente de la Nación.
 
-### CAPÍTULO TERCERO \- Atribuciones del Poder Ejecutivo
+#### CAPÍTULO TERCERO \- Atribuciones del Poder Ejecutivo
 
 **Art. 99.-** El Presidente de la Nación tiene las siguientes atribuciones:
 
@@ -442,7 +443,7 @@ Un nuevo nombramiento, precedido de igual acuerdo, será necesario para mantener
 
 20\. Decreta la intervención federal a una provincia o a la ciudad de Buenos Aires en caso de receso del Congreso, y debe convocarlo simultáneamente para su tratamiento.
 
-### CAPÍTULO CUARTO \- Del jefe de gabinete y demás ministros del Poder Ejecutivo
+#### CAPÍTULO CUARTO \- Del jefe de gabinete y demás ministros del Poder Ejecutivo
 
 **Art. 100.-** El jefe de gabinete de ministros y los demás ministros secretarios cuyo número y competencia será establecida por una ley especial, tendrán a su cargo el despacho de los negocios de la Nación, y refrendarán y legalizarán los actos del presidente por medio de su firma, sin cuyo requisito carecen de eficacia.
 
@@ -490,9 +491,9 @@ El jefe de gabinete de ministros no podrá desempeñar simultáneamente otro min
 
 **Art. 107.-** Gozarán por sus servicios de un sueldo establecido por la ley, que no podrá ser aumentado ni disminuido en favor o perjuicio de los que se hallen en ejercicio.
 
-##  SECCIÓN TERCERA \- DEL PODER JUDICIAL
+###  SECCIÓN TERCERA \- DEL PODER JUDICIAL
 
-### CAPÍTULO PRIMERO \- De su naturaleza y duración
+#### CAPÍTULO PRIMERO \- De su naturaleza y duración
 
 **Art. 108.-** El Poder Judicial de la Nación será ejercido por una Corte Suprema de Justicia, y por los demás tribunales inferiores que el Congreso estableciere en el territorio de la Nación.
 
@@ -532,7 +533,7 @@ Corresponderá archivar las actuaciones y, en su caso, reponer al juez suspendid
 
 En la ley especial a que se refiere el Artículo 114, se determinará la integración y procedimiento de este jurado.
 
-### CAPÍTULO SEGUNDO \- Atribuciones del Poder Judicial
+#### CAPÍTULO SEGUNDO \- Atribuciones del Poder Judicial
 
 **Art. 116.-** Corresponde a la Corte Suprema y a los tribunales inferiores de la Nación, el conocimiento y decisión de todas las causas que versen sobre puntos regidos por la Constitución, y por las leyes de la Nación, con la reserva hecha en el inc. 12 del Artículo 75: y por los tratados con las naciones extranjeras: de las causas concernientes a embajadores, ministros públicos y cónsules extranjeros: de las causas de almirantazgo y jurisdicción marítima: de los asuntos en que la Nación sea parte: de las causas que se susciten entre dos o más provincias; entre una provincia y los vecinos de otra; entre los vecinos de diferentes provincias; y entre una provincia o sus vecinos, contra un Estado o ciudadano extranjero.
 
@@ -542,7 +543,7 @@ En la ley especial a que se refiere el Artículo 114, se determinará la integra
 
 **Art. 119.-** La traición contra la Nación consistirá únicamente en tomar las armas contra ella, o en unirse a sus enemigos prestándoles ayuda y socorro. El Congreso fijará por una ley especial la pena de este delito; pero ella no pasará de la persona del delincuente, ni la infamia del reo se transmitirá a sus parientes de cualquier grado.
 
-##  SECCIÓN CUARTA \- Del ministerio público
+###  SECCIÓN CUARTA \- Del ministerio público
 
 **Art. 120.-** El Ministerio Público es un órgano independiente con autonomía funcional y autarquía financiera que tiene por función promover la actuación de la justicia en defensa de la legalidad de los intereses generales de la sociedad en coordinación con las demás autoridades de la República.
 

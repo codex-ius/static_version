@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX_IUS // VISOR_DOCUMENTAL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=JetBrains+Mono&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="../../style.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="brand">CODEX<span>_IUS</span></div>
+
+        <div class="search-group" style="display: flex; gap: 5px; align-items: center;">
+            <input type="number" id="art-input" placeholder="Ir al Art. N°"
+                style="background: var(--bg-dark); border: 1px solid var(--accent); color: white; padding: 5px; font-family: 'JetBrains Mono'; width: 100px;">
+            <button id="art-btn" class="home-btn" onclick="buscarArticulo()">[ SALTAR ]</button>
+        </div>
+
+        <div class="nav-controls">
+            <button id="toc-toggle" class="home-btn" onclick="toggleTOC()">[ INDICE ]</button>
+            <a href="../../index.html" class="home-btn">[ INICIO ]</a>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <aside id="document-index">
+            <div class="index-header">
+                <h3>[ CONTENIDO ]</h3>
+                <hr>
+            </div>
+            <nav id="toc-container">
+            </nav>
+        </aside>
+
+        <main class="viewer-area">
+            <div id="markdown-content">
+            </div>
+
+            <div id="fallback-container">
+                <a id="download-link" href="#" target="_blank">[ VER_CÓDIGO_FUENTE_MD ]</a>
+            </div>
+        </main>
+    </div>
+
+    <button id="theme-toggle" onclick="toggleTheme()">[ MODE: DARK ]</button>
+
+    <script>
+        window.onload = () => {
+            // Inicializar Overlay
+            if (!document.getElementById('toc-overlay')) {
+                const overlay = document.createElement('div');
+                overlay.id = 'toc-overlay';
+                document.body.appendChild(overlay);
+                overlay.onclick = toggleTOC;
+            }
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const fileToLoad = urlParams.get('file');
+
+            if (fileToLoad) {
+                loadMarkdown(fileToLoad);
+            } else {
+                document.getElementById('markdown-content').innerHTML =
+                    "<p style='color:var(--accent-red)'>[ ERROR ]: SOURCE_FILE_NOT_SPECIFIED.</p>";
+            }
+
+            applyTheme(localStorage.getItem('theme') || 'dark');
+
+            // Medir Nav
+            const updateNavHeight = () => {
+                document.documentElement.style.setProperty('--nav-height', `${document.querySelector('nav').offsetHeight}px`);
+            };
+            updateNavHeight();
+            window.addEventListener('resize', updateNavHeight);
+
+            // Evento Enter para el buscador
+            document.getElementById('art-input').addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') buscarArticulo();
+            });
+        };
+
+        // --- MOTOR DE CARGA Y RANGOS ---
+
+        async function loadMarkdown(url) {
+            const contentDiv = document.getElementById('markdown-content');
+            const tocContainer = document.getElementById('toc-container');
+            const downloadLink = document.getElementById('download-link');
+
+            contentDiv.innerHTML = "<p>[ SISTEMA ]: Iniciando protocolo de lectura...</p>";
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("Recurso no localizado.");
+                const text = await response.text();
+
+                // 1. Renderizado directo (Sin details)
+                contentDiv.innerHTML = marked.parse(text);
+
+                // 2. Generar Índice con detección de rangos
+                generateTOC(contentDiv, tocContainer, text);
+
+                downloadLink.href = url;
+            } catch (error) {
+                contentDiv.innerHTML = `<p style="color:var(--accent-red)">[ ERROR_SISTEMA ]: Fallo en la ruta: ${url}</p>`;
+            }
+        }
+
+        function extraerRangoArticulos(texto) {
+            const regexArt = /\bArt\.\s*(\d+)/gi;
+            const coincidencias = [...texto.matchAll(regexArt)];
+            if (coincidencias.length > 0) {
+                const inicio = coincidencias[0][1];
+                const fin = coincidencias[coincidencias.length - 1][1];
+                return inicio === fin ? `Art. ${inicio}` : `A. ${inicio}-${fin}`;
+            }
+            return "";
+        }
+
+        function generateTOC(contentArea, tocContainer, rawText) {
+            tocContainer.innerHTML = "";
+            const headings = contentArea.querySelectorAll("h1, h2, h3");
+
+            // Dividimos el texto raw por encabezados para analizar rangos por sección
+            const seccionesRaw = rawText.split(/(?=^##+\s)/m);
+
+            headings.forEach((heading, index) => {
+                const id = `ref-${index}`;
+                heading.setAttribute("id", id);
+
+                const link = document.createElement("a");
+                link.href = `#${id}`;
+                link.className = `toc-${heading.tagName.toLowerCase()}`;
+
+                // Buscar rango en la sección correspondiente del texto original
+                let badgeHtml = "";
+                if (index < seccionesRaw.length) {
+                    const rango = extraerRangoArticulos(seccionesRaw[index]);
+                    if (rango) badgeHtml = `<small style="color:var(--accent); margin-left:8px; font-size:0.7em;">[${rango}]</small>`;
+                }
+
+                link.innerHTML = `<span>${heading.textContent.replace(/[§¶]/g, "").trim()}</span>${badgeHtml}`;
+
+                link.onclick = (e) => {
+                    e.preventDefault();
+                    document.getElementById(id).scrollIntoView({ behavior: "smooth", block: "start" });
+                    if (document.body.classList.contains('toc-active')) toggleTOC();
+                };
+
+                tocContainer.appendChild(link);
+            });
+        }
+
+        // --- BUSCADOR DE ARTÍCULOS ---
+
+        function buscarArticulo() {
+            const numArt = document.getElementById('art-input').value.trim();
+            if (!numArt) return;
+
+            // Regex exacta para "Art. X"
+            // Buscamos: "Art." + espacio opcional + número + "." + "-"
+            const regex = new RegExp(`Art\\.\\s*${numArt}\\.-`, 'i');
+            const contentArea = document.getElementById('markdown-content');
+
+            // Buscamos en elementos de texto comunes
+            const elementos = contentArea.querySelectorAll('p, b, strong, li, h1, h2, h3');
+            const target = Array.from(elementos).find(el => regex.test(el.innerText));
+
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                // Feedback visual
+                const originalBg = target.style.background;
+                target.style.transition = "background 0.3s";
+                target.style.background = "rgba(255, 0, 0, 0.3)";
+                setTimeout(() => target.style.background = originalBg, 2000);
+            } else {
+                alert(`Artículo ${numArt} no encontrado en este documento.`);
+            }
+        }
+
+/*        function buscarArticulo() {
+    const numArt = document.getElementById('art-input').value.trim();
+    if (!numArt) return;
+
+    // Nueva Regex con formato exacto Art. X.-
+    const regex = new RegExp(`Art\\.\\s*${numArt}\\.-`, 'i');
+    
+    const contentArea = document.getElementById('markdown-content');
+    const elementos = contentArea.querySelectorAll('p, b, strong, li, h1, h2, h3');
+    
+    // Buscamos el elemento que contenga exactamente ese patrón
+    const target = Array.from(elementos).find(el => regex.test(el.innerText));
+
+    if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        
+        // Feedback visual tipo "Terminal"
+        target.style.transition = "background 0.3s";
+        target.style.background = "var(--accent-red)"; 
+        setTimeout(() => target.style.background = "transparent", 2000);
+    } else {
+        alert(`PROTOCOLO_FALLIDO: El Art. ${numArt}.- no existe en este registro.`);
+    }
+}*/
+        // --- CONTROLES DE INTERFAZ (Originales) ---
+
+        function toggleTOC() {
+            const body = document.body;
+            const btn = document.getElementById('toc-toggle');
+            const isActive = body.classList.toggle('toc-active');
+            if (btn) btn.textContent = isActive ? "[ CERRAR_INDICE ]" : "[ INDICE ]";
+        }
+
+        const themes = ['dark', 'bw', 'amber', 'steel', 'blueprint', 'ghost', 'olive', 'radar'];
+
+        function toggleTheme() {
+            let current = document.documentElement.getAttribute('data-theme') || 'dark';
+            applyTheme(themes[(themes.indexOf(current) + 1) % themes.length]);
+        }
+
+        function applyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            const themeBtn = document.getElementById('theme-toggle');
+            if (themeBtn) themeBtn.textContent = `[ SOURCE_VISOR: ${theme.toUpperCase()} ]`;
+        }
+    </script>
+</body>
+
+</html>
