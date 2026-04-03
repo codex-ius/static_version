@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX_IUS // VISOR_DOCUMENTAL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=JetBrains+Mono&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<link rel="stylesheet" href="../../style.css">
+    
+</head>
+
+<body>
+
+    <nav>
+        <div class="brand">CODEX<span>_IUS</span></div>
+        <div class="nav-controls">
+            <button id="toc-toggle" class="home-btn" onclick="toggleTOC()">[ INDICE ]</button>
+            <a href="../../index.html" class="home-btn">[ INICIO ]</a>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <aside id="document-index">
+            <div class="index-header">
+                <h3>[ CONTENIDO ]</h3>
+                <hr>
+            </div>
+            <nav id="toc-container">
+            </nav>
+        </aside>
+
+        <main class="viewer-area">
+            <div id="markdown-content">
+            </div>
+
+            <div id="fallback-container">
+                <a id="download-link" href="#" target="_blank">[ VER_CÓDIGO_FUENTE_MD ]</a>
+            </div>
+        </main>
+    </div>
+
+    <button id="theme-toggle" onclick="toggleTheme()">[ MODE: DARK ]</button>
+
+    <script>
+        // 1. INICIALIZACIÓN Y CARGA DINÁMICA
+        window.onload = () => {
+            // Crear Overlay dinámicamente si no existe
+            if (!document.getElementById('toc-overlay')) {
+                const overlay = document.createElement('div');
+                overlay.id = 'toc-overlay';
+                document.body.appendChild(overlay);
+                overlay.onclick = toggleTOC;
+            }
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const fileToLoad = urlParams.get('file');
+
+            if (fileToLoad) {
+                loadMarkdown(fileToLoad);
+            } else {
+                document.getElementById('markdown-content').innerHTML =
+                    "<p style='color:var(--accent-red)'>[ ERROR ]: SOURCE_FILE_NOT_SPECIFIED. Regrese al catálogo.</p>";
+            }
+
+            // Aplicar tema guardado
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            applyTheme(savedTheme);
+            // MEDIR EL NAV DINÁMICAMENTE
+            const nav = document.querySelector('nav');
+            const updateNavHeight = () => {
+                const height = nav.offsetHeight;
+                document.documentElement.style.setProperty('--nav-height', `${height}px`);
+            };
+
+            updateNavHeight();
+            window.addEventListener('resize', updateNavHeight); // Re-calcula si giras el celu o achicas la ventana
+        };
+
+        async function loadMarkdown(url) {
+            const contentDiv = document.getElementById('markdown-content');
+            const tocContainer = document.getElementById('toc-container');
+            const downloadLink = document.getElementById('download-link');
+
+            contentDiv.innerHTML = "<p>[ SISTEMA ]: Iniciando protocolo de lectura...</p>";
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("Recurso no localizado.");
+
+                const text = await response.text();
+
+                // Renderizar Markdown
+                contentDiv.innerHTML = marked.parse(text);
+
+                // Generar Índice dinámico
+                generateTOC(contentDiv, tocContainer);
+
+                // Actualizar link de código fuente
+                downloadLink.href = url;
+
+            } catch (error) {
+                contentDiv.innerHTML = `<p style="color:var(--accent-red)">[ ERROR_SISTEMA ]: Fallo en la integridad de la ruta: ${url}</p>`;
+            }
+        }
+
+        // 2. MOTOR DEL ÍNDICE (TOC)
+        function generateTOC(contentArea, tocContainer) {
+            tocContainer.innerHTML = "";
+            const headings = contentArea.querySelectorAll("h1, h2, h3");
+
+            headings.forEach((heading, index) => {
+                const id = `ref-${index}`;
+                heading.setAttribute("id", id);
+
+                const link = document.createElement("a");
+                link.href = `#${id}`;
+                // Limpiamos los prefijos legales si el MD ya los trae para no duplicar en el índice
+                link.textContent = heading.textContent.replace(/[§¶]/g, "").trim();
+                link.className = `toc-${heading.tagName.toLowerCase()}`;
+
+                link.onclick = (e) => {
+                    e.preventDefault();
+                    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+
+                    // Cierre automático al seleccionar (Mejora flujo en móvil)
+                    if (document.body.classList.contains('toc-active')) {
+                        toggleTOC();
+                    }
+                };
+
+                tocContainer.appendChild(link);
+            });
+        }
+
+        // 3. CONTROLES DE INTERFAZ (TOC & THEME)
+        function toggleTOC() {
+            const body = document.body;
+            const btn = document.getElementById('toc-toggle');
+
+            const isActive = body.classList.toggle('toc-active');
+
+            if (btn) {
+                btn.classList.toggle('active');
+                btn.textContent = isActive ? "[ CERRAR_INDICE ]" : "[ INDICE ]";
+            }
+        }
+
+        // 3. GESTIÓN DE TEMAS (CICLO DE PALETAS)
+        const themes = [
+            'dark', 'bw', 'amber', 'steel',
+            'blueprint', 'ghost', 'olive', 'radar'
+        ];
+
+        function toggleTheme() {
+            let current = document.documentElement.getAttribute('data-theme') || 'dark';
+            let nextIndex = (themes.indexOf(current) + 1) % themes.length;
+            let nextTheme = themes[nextIndex];
+
+            applyTheme(nextTheme);
+        }
+
+        function applyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+
+            const themeBtn = document.getElementById('theme-toggle');
+            if (themeBtn) {
+                // Nombres amigables para el botón
+                const themeNames = {
+                    'dark': 'SWAMP',
+                    'bw': 'PAPER',
+                    'amber': 'VISOR: AMBER',
+                    'steel': 'OCEAN',
+                    'blueprint': 'BLUEPRINT',
+                    'ghost': 'GHOST',
+                    'olive': 'OLIVE',
+                    'radar': 'RADAR'
+                };
+                themeBtn.textContent = `[ SOURCE_VISOR: ${themeNames[theme] || theme.toUpperCase()} ]`;
+            }
+        }
+    </script>
+</body>
+
+</html>
