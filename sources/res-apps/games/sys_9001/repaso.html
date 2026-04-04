@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTOCOLO 01: SESIÓN DE REPASO</title>
+    <style>
+        :root {
+            --bg: #000;
+            --panel: #050505;
+            --accent: #ffffff;
+            --safe: #00d4ff;
+            /* Cian - Estabilidad */
+            --warning: #ff9800;
+            /* Naranja - Degradación */
+            --critical: #ff0000;
+            /* Rojo - Fallo */
+            --text: #fff;
+            --dim: #333;
+        }
+
+        * {
+            box-sizing: border-box;
+            cursor: crosshair;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            border: 2px solid var(--dim);
+            transition: border-color 0.4s ease;
+        }
+
+        /* Escáner Biométrico */
+        body::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: rgba(0, 212, 255, 0.05);
+            animation: scan 4s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes scan {
+            0% {
+                top: 0;
+            }
+
+            100% {
+                top: 100%;
+            }
+        }
+
+        header {
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            background: var(--panel);
+            border-bottom: 1px solid var(--dim);
+            align-items: center;
+        }
+
+        .sys-info {
+            font-size: 0.7rem;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        .session-timer {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--safe);
+        }
+
+        #ia-console {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            background: #080808;
+            border-bottom: 1px solid #111;
+            letter-spacing: 1px;
+        }
+
+        .main-display {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            text-align: center;
+        }
+
+        #prompt {
+            font-size: 1.6rem;
+            color: #fff;
+            margin-bottom: 40px;
+            max-width: 850px;
+            font-weight: bold;
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .btn {
+            background: transparent;
+            border: 1px solid var(--dim);
+            color: var(--text);
+            padding: 22px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: 0.1s;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background: var(--text);
+            color: #000;
+        }
+
+        /* Barra de Estabilidad de Núcleo */
+        .stability-footer {
+            height: 8px;
+            background: #111;
+            width: 100%;
+            position: relative;
+        }
+
+        #stability-bar {
+            height: 100%;
+            background: var(--safe);
+            width: 100%;
+            transition: width 0.3s linear;
+        }
+
+        /* Estados de Borde Dinámicos */
+        .state-warning {
+            border-color: var(--warning);
+        }
+
+        .state-critical {
+            border-color: var(--critical);
+        }
+
+        #result-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .result-box {
+            width: 100%;
+            max-width: 450px;
+            background: #050505;
+            border: 1px solid var(--dim);
+        }
+
+        .result-header {
+            background: #111;
+            padding: 10px;
+            font-size: 0.6rem;
+            color: var(--dim);
+            border-bottom: 1px solid var(--dim);
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .result-content {
+            padding: 30px;
+            text-align: center;
+        }
+
+        #res-status {
+            font-size: 1.1rem;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .res-data {
+            text-align: left;
+            font-size: 0.7rem;
+            background: #080808;
+            padding: 15px;
+            border: 1px solid #111;
+            margin-bottom: 20px;
+            line-height: 2;
+        }
+
+        .res-msg-text {
+            font-size: 0.8rem;
+            color: #777;
+            margin-bottom: 25px;
+        }
+
+        .btn-terminal {
+            background: #fff;
+            color: #000;
+            border: none;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="sys-info">SESIÓN_REPASO // NÚCLEO_9001</div>
+        <div id="timer" class="session-timer">25:00</div>
+        <div id="status-text" style="font-size: 0.6rem; color: var(--safe);">ESTADO: ESTABLE</div>
+    </header>
+
+    <div id="ia-console">SISTEMA INICIADO. MANTENGA FLUJO DE RESPUESTA CONSTANTE.</div>
+
+    <main class="main-display">
+        <div id="prompt">INICIALIZANDO UNIDAD...</div>
+        <div id="options-grid" class="options"></div>
+    </main>
+
+    <div class="stability-footer">
+        <div id="stability-bar"></div>
+    </div>
+    <div id="result-overlay">
+        <div class="result-box">
+            <div class="result-header">REPORTE_DE_ESTABILIZACIÓN_DE_NÚCLEO</div>
+            <div class="result-content">
+                <h1 id="res-status">SESIÓN COMPLETADA</h1>
+                <div class="res-data">
+                    <p>NÚCLEO: <span id="res-core">9001_MENDOZA</span></p>
+                    <p>EFICIENCIA DE SESIÓN: <span id="res-efficiency">0%</span></p>
+                    <p>ESTADO FINAL: <span id="res-sync">ESTABLE</span></p>
+                </div>
+                <div id="res-msg" class="res-msg-text">
+                    Los datos han sido persistidos en la memoria local.
+                </div>
+                <button class="btn-terminal" onclick="location.href='index.html'">RETORNAR_AL_NODO_CENTRAL</button>
+            </div>
+        </div>
+    </div>
+ <script>
+    const DB_LEGAL = {
+        circunscripciones: {
+            "1RA CIRCUNSCRIPCIÓN (CAPITAL)": ["Ciudad", "Las Heras", "Guaymallén", "Godoy Cruz", "Luján", "Lavalle"],
+            "2DA CIRCUNSCRIPCIÓN (SUR)": ["San Rafael", "General Alvear", "Malargüe"],
+            "3RA CIRCUNSCRIPCIÓN (ESTE)": ["San Martín", "Rivadavia", "Junín", "Santa Rosa", "La Paz"],
+            "4TA CIRCUNSCRIPCIÓN (UCO)": ["Tunuyán", "Tupungato", "San Carlos"]
+        },
+        competencias: {
+            "PAZ LETRADA": ["Desalojo por falta de pago", "Cobro de alquileres", "Causas hasta 3 JURISTAS"],
+            "CIVIL Y MINAS": ["Concursos y Quiebras", "Derechos Reales", "Amparos", "Prescripción Adquisitiva"],
+            "FAMILIA": ["Divorcios", "Adopciones", "Tutelas", "Violencia Familiar"]
+        }
+    };
+
+    const Motores = {
+        circunscripcionInversa() {
+            const cats = Object.keys(DB_LEGAL.circunscripciones);
+            const catC = cats[Math.floor(Math.random() * cats.length)];
+            const deptos = DB_LEGAL.circunscripciones[catC];
+            const depto = deptos[Math.floor(Math.random() * deptos.length)];
+            const catI = cats.find(c => c !== catC);
+            return this.estructurar(`El departamento de ${depto.toUpperCase()} pertenece a:`, catC, catI, 'CIRCUNSCRIPCIÓN');
+        },
+        circunscripcionDirecta() {
+            const cats = Object.keys(DB_LEGAL.circunscripciones);
+            const catQ = cats[Math.floor(Math.random() * cats.length)];
+            const correctos = DB_LEGAL.circunscripciones[catQ];
+            const incorrectos = DB_LEGAL.circunscripciones[cats.find(c => c !== catQ)];
+            return this.generarLogicaCompleja(`¿Qué departamento pertenece a la ${catQ}?`, correctos, incorrectos, 'CIRCUNSCRIPCIÓN');
+        },
+        competenciaMaterial() {
+            const tribunales = Object.keys(DB_LEGAL.competencias);
+            const tribunalC = tribunales[Math.floor(Math.random() * tribunales.length)];
+            const procesos = DB_LEGAL.competencias[tribunalC];
+            const item = procesos[Math.floor(Math.random() * procesos.length)];
+            const tribunalI = tribunales.find(t => t !== tribunalC);
+            return {
+                q: `Los procesos de ${item.toUpperCase()} son competencia de:`,
+                a: tribunalC,
+                opts: [tribunalC, tribunalI, "NINGUNO ES CORRECTO", "AMBOS SON CORRECTOS"].sort(() => Math.random() - 0.5),
+                tipo: 'COMPETENCIA'
+            };
+        },
+        generarLogicaCompleja(pregunta, correctos, incorrectos, tipo) {
+            const modo = Math.floor(Math.random() * 3); 
+            let opciones = [], respuesta = "";
+            if (modo === 0) { opciones = [correctos[0], incorrectos[0]]; respuesta = correctos[0]; }
+            else if (modo === 1) { opciones = [incorrectos[0], incorrectos[1]]; respuesta = "NINGUNO ES CORRECTO"; }
+            else { opciones = [correctos[0], correctos[1]]; respuesta = "AMBOS SON CORRECTOS"; }
+            return { q: pregunta, a: respuesta, opts: [...opciones, "NINGUNO ES CORRECTO", "AMBOS SON CORRECTOS"].sort(() => Math.random() - 0.5), tipo: tipo };
+        },
+        estructurar(pregunta, correcta, incorrecta, tipo) {
+            return { q: pregunta, a: correcta, opts: [correcta, incorrecta, "NINGUNO ES CORRECTO", "AMBOS SON CORRECTOS"].sort(() => Math.random() - 0.5), tipo: tipo };
+        }
+    };
+
+    const Protocolo = {
+        concentracion: 100,
+        errores: 0,
+        tiempoSesion: 25 * 60,
+        fallos: { "CIRCUNSCRIPCIÓN": 0, "COMPETENCIA": 0 },
+
+        init() {
+            this.render();
+            this.startTicker();
+        },
+
+        render() {
+            // BALANCE 50/50 para asegurar diversidad en el repaso
+            let desafio;
+            if (Math.random() > 0.5) {
+                desafio = Motores.competenciaMaterial();
+            } else {
+                desafio = Math.random() > 0.5 ? Motores.circunscripcionDirecta() : Motores.circunscripcionInversa();
+            }
+            
+            this.current = desafio;
+            document.getElementById('prompt').innerText = desafio.q;
+            document.getElementById('options-grid').innerHTML = desafio.opts.map(o =>
+                `<button class="btn" onclick="Protocolo.check('${o}')">${o}</button>`
+            ).join('');
+        },
+
+        check(val) {
+            if (val === this.current.a) {
+                this.errores = 0;
+                this.concentracion = Math.min(100, this.concentracion + 8);
+                this.logIA("ESTABILIDAD REFORZADA.", "var(--safe)");
+            } else {
+                this.fallos[this.current.tipo]++;
+                this.errores++;
+                this.concentracion -= 15;
+                this.logIA(`ERROR DETECTADO. NÚCLEO EN ${Math.max(0, Math.floor(this.concentracion))}%`, "var(--critical)");
+            }
+            this.updateUI();
+            if (this.errores < 3 && this.concentracion > 0) this.render();
+        },
+
+        updateUI() {
+            const bar = document.getElementById('stability-bar');
+            if (bar) bar.style.width = `${Math.max(0, this.concentracion)}%`;
+
+            if (this.concentracion <= 0 || this.errores >= 3) {
+                this.showResult(false);
+                return;
+            }
+
+            const body = document.body;
+            const statusLabel = document.getElementById('status-text');
+            if (this.concentracion < 30) {
+                body.className = 'state-critical';
+                if (statusLabel) statusLabel.innerText = "ESTADO: CRÍTICO";
+            } else if (this.concentracion < 60) {
+                body.className = 'state-warning';
+                if (statusLabel) statusLabel.innerText = "ESTADO: DEGRADADO";
+            } else {
+                body.className = '';
+                if (statusLabel) statusLabel.innerText = "ESTADO: ESTABLE";
+            }
+        },
+
+        showResult(success) {
+            clearInterval(this.ticker);
+            const overlay = document.getElementById('result-overlay');
+            const efficiency = document.getElementById('res-efficiency');
+            const finalEff = Math.max(0, Math.floor(this.concentracion));
+            
+            overlay.style.display = 'flex';
+            if (efficiency) efficiency.innerText = finalEff + "%";
+            
+            // Persistencia del puntaje de repaso
+            if (window.SistemaPersistencia) window.SistemaPersistencia.guardarPuntaje('repaso', finalEff);
+
+            // Cálculo de área de degradación
+            let debilidad = "ESTABLE";
+            if (this.fallos["CIRCUNSCRIPCIÓN"] > this.fallos["COMPETENCIA"]) debilidad = "CIRCUNSCRIPCIÓN";
+            else if (this.fallos["COMPETENCIA"] > this.fallos["CIRCUNSCRIPCIÓN"]) debilidad = "COMPETENCIA_MATERIAL";
+
+            const msgArea = document.getElementById('res-msg');
+            if (msgArea) {
+                msgArea.innerHTML = `Sesión finalizada. <br><span style="font-size:0.7rem; color:var(--dim)">VECTOR_DE_FALLO: <span style="color:var(--critical)">${debilidad}</span></span>`;
+            }
+
+            const status = document.getElementById('res-status');
+            if (status) {
+                status.innerText = success ? "SESIÓN_OPTIMIZADA" : "SESIÓN_ABORTADA";
+                status.style.color = success ? "var(--safe)" : "var(--critical)";
+            }
+        },
+
+        startTicker() {
+            this.ticker = setInterval(() => {
+                this.concentracion -= 0.3;
+                this.tiempoSesion--;
+                const min = Math.floor(this.tiempoSesion / 60);
+                const sec = this.tiempoSesion % 60;
+                const timerLabel = document.getElementById('timer');
+                if (timerLabel) timerLabel.innerText = `${min}:${sec < 10 ? '0' : ''}${sec}`;
+                if (this.tiempoSesion <= 0) this.showResult(true);
+                this.updateUI();
+            }, 1000);
+        },
+
+        logIA(msg, color) {
+            const consoleBox = document.getElementById('ia-console');
+            if (consoleBox) { consoleBox.innerText = msg; consoleBox.style.color = color; }
+        }
+    };
+
+    window.onload = () => Protocolo.init();
+</script>
+</body>
+
+</html>

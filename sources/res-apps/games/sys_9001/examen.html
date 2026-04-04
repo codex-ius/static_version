@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA 9001 - JUICIO FINAL</title>
+    <style>
+        :root {
+            --bg: #000;
+            --panel: #050505;
+            --accent: #ffffff; 
+            --critical: #ff0000;
+            --text: #fff;
+            --dim: #333;
+        }
+
+        * { box-sizing: border-box; cursor: crosshair; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            border: 2px solid var(--dim);
+            transition: border-color 0.5s;
+        }
+
+        /* Efecto Escáner */
+        body::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 2px;
+            background: rgba(255, 255, 255, 0.05);
+            animation: scan 4s linear infinite;
+            pointer-events: none;
+        }
+        @keyframes scan { 0% { top: 0; } 100% { top: 100%; } }
+
+        header {
+            padding: 15px 30px;
+            background: var(--panel);
+            border-bottom: 1px solid var(--dim);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .score-panel {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding: 15px;
+            background: #080808;
+            border-bottom: 1px solid var(--dim);
+        }
+
+        .stat-label { font-size: 0.6rem; color: var(--dim); text-transform: uppercase; margin-bottom: 5px; }
+        .stat-value { font-size: 1.4rem; font-weight: bold; text-align: center; }
+
+        .timer-container { width: 100%; height: 4px; background: #111; }
+        #timer-bar { height: 100%; background: var(--accent); width: 100%; transition: width 1s linear; }
+
+        .main-display {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            text-align: center;
+        }
+
+        #ia-status { font-size: 0.75rem; color: var(--accent); margin-bottom: 20px; letter-spacing: 2px; }
+        #question-text { font-size: 1.6rem; max-width: 850px; margin-bottom: 40px; font-weight: bold; }
+
+        .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; width: 100%; max-width: 750px; }
+
+        .btn {
+            background: transparent;
+            border: 1px solid var(--dim);
+            color: var(--text);
+            padding: 22px;
+            font-size: 0.9rem;
+            transition: 0.1s;
+            text-transform: uppercase;
+        }
+        .btn:hover { background: var(--text); color: #000; }
+
+        /* --- ESTILOS DEL RESULTADO (EL CARTEL QUE FALTA) --- */
+        #result-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.98);
+            display: none; 
+            justify-content: center; align-items: center;
+            z-index: 9999;
+        }
+
+        .result-box {
+            width: 100%; max-width: 500px;
+            background: #050505;
+            border: 1px solid var(--dim);
+        }
+
+        .result-header {
+            background: #111; padding: 10px;
+            font-size: 0.6rem; color: var(--dim);
+            border-bottom: 1px solid var(--dim);
+            text-align: center; letter-spacing: 2px;
+        }
+
+        .result-content { padding: 30px; text-align: center; }
+        .res-data {
+            text-align: left; font-size: 0.75rem; 
+            background: #080808; padding: 15px;
+            border: 1px solid #111; margin: 20px 0;
+            line-height: 1.8;
+        }
+        .text-success { color: #00ff00; }
+        .text-fail { color: #ff0000; }
+
+        .btn-terminal {
+            background: #fff; color: #000;
+            border: none; padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold; width: 100%;
+        }
+
+        .body-success { border-color: #00ff00; }
+        .body-fail { border-color: var(--critical); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div style="letter-spacing: 5px; font-size: 0.7rem; font-weight: bold;">TRIBUNAL_IA // EXAMEN_9001</div>
+        <div id="q-count" style="font-size: 0.8rem;">PREGUNTA: 01/10</div>
+    </header>
+
+    <div class="score-panel">
+        <div class="score-item">
+            <div class="stat-label">PUNTUACIÓN</div>
+            <div id="current-score" class="stat-value">00</div>
+        </div>
+        <div class="score-item">
+            <div class="stat-label">TIEMPO</div>
+            <div id="seconds" class="stat-value">10</div>
+        </div>
+    </div>
+
+    <div class="timer-container"><div id="timer-bar"></div></div>
+
+    <main class="main-display">
+        <div id="ia-status">ESPERANDO RESPUESTA...</div>
+        <div id="question-text">Cargando...</div>
+        <div id="options-container" class="options-grid"></div>
+    </main>
+
+    <div id="result-overlay">
+        <div class="result-box">
+            <div class="result-header">REPORTE_FINAL_SISTEMA_9001</div>
+            <div class="result-content">
+                <h1 id="res-status">ANALIZANDO...</h1>
+                <div class="res-data">
+                    <p>IDENTIFICACIÓN: <span id="res-id">POSTULANTE_9001</span></p>
+                    <p>CALIFICACIÓN FINAL: <span id="res-score-value">00</span></p>
+                    <p>ESTADO: <span id="res-sync">ERROR</span></p>
+                </div>
+                <div id="res-msg" style="font-size: 0.85rem; color: #888; margin-bottom: 25px;"></div>
+                <button class="btn-terminal" onclick="location.href='index.html'">SALIR_DEL_SISTEMA</button>
+            </div>
+        </div>
+    </div>
+
+    
+  <script>
+    const DB_LEGAL = {
+        circunscripciones: {
+            "1RA CIRCUNSCRIPCIÓN (CAPITAL)": ["Ciudad", "Las Heras", "Guaymallén", "Godoy Cruz", "Luján", "Lavalle"],
+            "2DA CIRCUNSCRIPCIÓN (SUR)": ["San Rafael", "General Alvear", "Malargüe"],
+            "3RA CIRCUNSCRIPCIÓN (ESTE)": ["San Martín", "Rivadavia", "Junín", "Santa Rosa", "La Paz"],
+            "4TA CIRCUNSCRIPCIÓN (UCO)": ["Tunuyán", "Tupungato", "San Carlos"]
+        },
+        competencias: {
+            "PAZ LETRADA": ["Desalojo por falta de pago", "Cobro de alquileres", "Causas hasta 3 JURISTAS"],
+            "CIVIL Y MINAS": ["Concursos y Quiebras", "Derechos Reales", "Amparos", "Prescripción Adquisitiva"],
+            "FAMILIA": ["Divorcios", "Adopciones", "Tutelas", "Violencia Familiar"]
+        }
+    };
+
+   const Motores = {
+    circunscripcionInversa() {
+        const cats = Object.keys(DB_LEGAL.circunscripciones); // ["1RA...", "2DA...", etc]
+        const catC = cats[Math.floor(Math.random() * cats.length)];
+        const opcionesDepto = DB_LEGAL.circunscripciones[catC];
+        const depto = opcionesDepto[Math.floor(Math.random() * opcionesDepto.length)];
+        const catI = cats.find(c => c !== catC);
+        
+        return this.estructurar(`El departamento de ${depto.toUpperCase()} pertenece a:`, catC, catI, 'CIRCUNSCRIPCIÓN');
+    },
+
+    circunscripcionDirecta() {
+        const cats = Object.keys(DB_LEGAL.circunscripciones);
+        const catQ = cats[Math.floor(Math.random() * cats.length)];
+        const correctos = DB_LEGAL.circunscripciones[catQ];
+        const catOtro = cats.find(c => c !== catQ);
+        const incorrectos = DB_LEGAL.circunscripciones[catOtro];
+
+        return this.generarLogicaCompleja(`¿Qué departamento pertenece a la ${catQ}?`, correctos, incorrectos, 'CIRCUNSCRIPCIÓN');
+    },
+
+    competenciaMaterial() {
+        const tribunales = Object.keys(DB_LEGAL.competencias); // ["PAZ LETRADA", "CIVIL Y MINAS", "FAMILIA"]
+        const tribunalC = tribunales[Math.floor(Math.random() * tribunales.length)];
+        const procesosCorrectos = DB_LEGAL.competencias[tribunalC];
+        
+        // Seleccionamos un proceso al azar para la pregunta
+        const itemPregunta = procesosCorrectos[Math.floor(Math.random() * procesosCorrectos.length)];
+        
+        const tribunalI = tribunales.find(t => t !== tribunalC);
+        const procesosIncorrectos = DB_LEGAL.competencias[tribunalI];
+
+        // Cambiamos la lógica: La pregunta es el proceso, las opciones son los tribunales
+        return {
+            q: `Los procesos de ${itemPregunta.toUpperCase()} son competencia de:`,
+            a: tribunalC,
+            opts: [tribunalC, tribunalI, "NINGUNO ES CORRECTO", "AMBOS SON CORRECTOS"].sort(() => Math.random() - 0.5),
+            tipo: 'COMPETENCIA'
+        };
+    },
+
+    generarLogicaCompleja(pregunta, correctos, incorrectos, tipo) {
+        const modo = Math.floor(Math.random() * 3); 
+        let opciones = [], respuesta = "";
+        
+        if (modo === 0) { 
+            opciones = [correctos[0], incorrectos[0]]; 
+            respuesta = correctos[0]; 
+        } else if (modo === 1) { 
+            opciones = [incorrectos[0], incorrectos[1]]; 
+            respuesta = "NINGUNO ES CORRECTO"; 
+        } else { 
+            opciones = [correctos[0], correctos[1]]; 
+            respuesta = "AMBOS SON CORRECTOS"; 
+        }
+
+        return { 
+            q: pregunta, 
+            a: respuesta, 
+            opts: [...opciones, "NINGUNO ES CORRECTO", "AMBOS SON CORRECTOS"].sort(() => Math.random() - 0.5), 
+            tipo: tipo 
+        };
+    },
+
+    estructurar(pregunta, correcta, incorrecta, tipo) {
+        return { 
+            q: pregunta, 
+            a: correcta, 
+            opts: [correcta, incorrecta, "NINGUNO ES CORRECTO", "AMBOS SON CORRECTOS"].sort(() => Math.random() - 0.5), 
+            tipo: tipo 
+        };
+    }
+};
+
+    const Examen = {
+        score: 0,
+        qIndex: 0,
+        timeLeft: 10,
+        timerInt: null,
+        fallos: { "CIRCUNSCRIPCIÓN": 0, "COMPETENCIA": 0 },
+
+        init() { this.render(); },
+
+        render() {
+            if (this.qIndex >= 10) { this.finish(); return; }
+            this.timeLeft = 10;
+            this.updateTimerUI();
+            
+            // BALANCE: 50% Competencia, 50% Circunscripción
+            let desafio;
+            if (Math.random() > 0.5) {
+                desafio = Motores.competenciaMaterial();
+            } else {
+                desafio = Math.random() > 0.5 ? Motores.circunscripcionDirecta() : Motores.circunscripcionInversa();
+            }
+            
+            this.current = desafio;
+            document.getElementById('q-count').innerText = `PREGUNTA: ${String(this.qIndex + 1).padStart(2, '0')}/10`;
+            document.getElementById('question-text').innerText = desafio.q;
+            document.getElementById('options-container').innerHTML = desafio.opts.map(o => 
+                `<button class="btn" onclick="Examen.answer('${o}')">${o}</button>`
+            ).join('');
+            this.startTimer();
+        },
+
+        answer(val) {
+            clearInterval(this.timerInt);
+            if (val === null) {
+                this.score -= 3;
+                this.fallos[this.current.tipo]++;
+                this.status("TIEMPO AGOTADO (-3)", "var(--critical)");
+            } else if (val === this.current.a) {
+                this.score += 1;
+                this.status("CORRECTO (+1)", "#00ff00");
+            } else {
+                this.score -= 2;
+                this.fallos[this.current.tipo]++;
+                this.status("INCORRECTO (-2)", "var(--critical)");
+            }
+            document.getElementById('current-score').innerText = this.score;
+            this.qIndex++;
+            setTimeout(() => this.render(), 800);
+        },
+
+        startTimer() {
+            clearInterval(this.timerInt);
+            this.timerInt = setInterval(() => {
+                this.timeLeft--;
+                this.updateTimerUI();
+                if (this.timeLeft <= 0) this.answer(null);
+            }, 1000);
+        },
+
+        updateTimerUI() {
+            document.getElementById('seconds').innerText = this.timeLeft;
+            const bar = document.getElementById('timer-bar');
+            if (bar) {
+                bar.style.width = (this.timeLeft * 10) + "%";
+                bar.style.backgroundColor = this.timeLeft < 4 ? "var(--critical)" : "var(--accent)";
+            }
+        },
+
+        status(msg, color) {
+            const s = document.getElementById('ia-status');
+            if (s) { s.innerText = msg; s.style.color = color; }
+        },
+
+        finish() {
+            const isApto = this.score >= 8;
+            let debilidad = "NINGUNA";
+            if (this.fallos["CIRCUNSCRIPCIÓN"] > this.fallos["COMPETENCIA"]) debilidad = "CIRCUNSCRIPCIÓN";
+            else if (this.fallos["COMPETENCIA"] > this.fallos["CIRCUNSCRIPCIÓN"]) debilidad = "COMPETENCIA_MATERIAL";
+            else if (this.fallos["CIRCUNSCRIPCIÓN"] > 0) debilidad = "AMBAS ÁREAS";
+
+            this.showResult(this.score, isApto, debilidad);
+        },
+
+        showResult(finalScore, isApto, debilidad) {
+            const overlay = document.getElementById('result-overlay');
+            overlay.style.display = 'flex';
+            document.getElementById('res-score-value').innerText = finalScore;
+            
+            const msgArea = document.getElementById('res-msg');
+            if(msgArea) {
+                msgArea.innerHTML = `Análisis de vectores finalizado. <br><span style="font-size:0.7rem; color:var(--dim)">ÁREA_DE_DEGRADACIÓN: <span style="color:var(--critical)">${debilidad}</span></span>`;
+            }
+
+            SistemaPersistencia.guardarPuntaje('examen', finalScore);
+            const status = document.getElementById('res-status');
+            status.innerText = isApto ? "SINCRO_EXITOSA" : "EVALUACIÓN_FALLIDA";
+            status.style.color = isApto ? "var(--safe)" : "var(--critical)";
+            document.body.className = isApto ? 'body-success' : 'body-fail';
+        }
+    };
+
+    window.onload = () => Examen.init();
+</script>
+</body>
+</html>
