@@ -323,319 +323,214 @@
         </div>
     </div>
 
-    <script>
-        // 1. OBJETO ANALISTA (GESTIÓN DE HEATMAP Y REPORTE PEDAGÓGICO)
-        const Analista = {
-            registrar(macro, micro, esCorrecto) {
-                let stats = JSON.parse(localStorage.getItem('9001_HEATMAP')) || {};
-                if (!stats[macro]) stats[macro] = {};
-                if (!stats[macro][micro]) stats[macro][micro] = { ok: 0, err: 0 };
+   <script>
+    // 1. OBJETO ANALISTA (GESTIÓN HÍBRIDA: HISTÓRICO + SESIÓN ACTUAL)
+    const Analista = {
+        sesionActual: { ok: 0, err: 0, detalles: [] },
 
-                if (esCorrecto) stats[macro][micro].ok++;
-                else stats[macro][micro].err++;
+        registrar(macro, micro, esCorrecto) {
+            // A. REGISTRO HISTÓRICO (LocalStorage)
+            let stats = JSON.parse(localStorage.getItem('9001_HEATMAP')) || {};
+            if (!stats[macro]) stats[macro] = {};
+            if (!stats[macro][micro]) stats[macro][micro] = { ok: 0, err: 0 };
 
-                localStorage.setItem('9001_HEATMAP', JSON.stringify(stats));
-            },
+            if (esCorrecto) stats[macro][micro].ok++;
+            else stats[macro][micro].err++;
+            localStorage.setItem('9001_HEATMAP', JSON.stringify(stats));
 
-            obtenerReporte() {
-                const stats = JSON.parse(localStorage.getItem('9001_HEATMAP')) || {};
-                let secciones = [];
-
-                for (const [macro, micros] of Object.entries(stats)) {
-                    let persistentes = [];
-                    let confort = [];
-
-                    for (const [nombre, data] of Object.entries(micros)) {
-                        if (data.err >= 3) persistentes.push(nombre);
-                        if (data.ok >= 5 && data.err === 0) confort.push(nombre);
-                    }
-
-                    secciones.push(`${macro.toUpperCase()} | PERSISTENTE: ${persistentes.join(', ') || 'Ninguno'} | CONFORT: ${confort.join(', ') || 'Ninguno'}`);
+            // B. REGISTRO DE INSTANCIA (Para el Sheet)
+            if (esCorrecto) {
+                this.sesionActual.ok++;
+            } else {
+                this.sesionActual.err++;
+                const errorID = `${macro}: ${micro}`;
+                if (!this.sesionActual.detalles.includes(errorID)) {
+                    this.sesionActual.detalles.push(errorID);
                 }
-                return secciones.join(' || ') || "DATOS_INSUFICIENTES";
             }
-        };
-        const SistemaPersistencia = {
-            guardarPuntaje(categoria, puntaje) {
-                try {
-                    let historial = JSON.parse(localStorage.getItem(`9001_${categoria}`)) || [];
-                    historial.push({
-                        puntos: puntaje,
-                        fecha: new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
-                    });
-                    historial.sort((a, b) => b.puntos - a.puntos);
-                    historial = historial.slice(0, 5);
-                    localStorage.setItem(`9001_${categoria}`, JSON.stringify(historial));
-                } catch (e) { console.error("Error en persistencia:", e); }
+        },
+
+        obtenerReporteSesion() {
+            const fallos = this.sesionActual.detalles.join(' | ') || 'NINGUNO';
+            return `ERRORES_PREX: [${fallos}] || TOTAL_ERR: ${this.sesionActual.err} || ACERTADOS: ${this.sesionActual.ok}`;
+        }
+    };
+
+    const SistemaPersistencia = {
+        guardarPuntaje(categoria, puntaje) {
+            try {
+                let historial = JSON.parse(localStorage.getItem(`9001_${categoria}`)) || [];
+                historial.push({
+                    puntos: puntaje,
+                    fecha: new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+                });
+                historial.sort((a, b) => b.puntos - a.puntos);
+                localStorage.setItem(`9001_${categoria}`, JSON.stringify(historial.slice(0, 5)));
+            } catch (e) { console.error("Error persistencia:", e); }
+        }
+    };
+
+    const DB_LEGAL = {
+        circunscripciones: {
+            "1RA CIRCUNSCRIPCIÓN": ["Ciudad", "Maipú", "Las Heras", "Guaymallén", "Godoy Cruz", "Luján", "Lavalle"],
+            "2DA CIRCUNSCRIPCIÓN": ["San Rafael", "General Alvear", "Malargüe"],
+            "3RA CIRCUNSCRIPCIÓN": ["San Martín", "Rivadavia", "Junín", "Santa Rosa", "La Paz"],
+            "4TA CIRCUNSCRIPCIÓN": ["Tunuyán", "Tupungato", "San Carlos"]
+        },
+        competencias: {
+            "CIVIL Y COMERCIAL": ["Responsabilidad civil (excede 20 JUS)", "Acciones reales y posesorias", "Contratos civiles y comerciales", "Sucesiones", "Amparos", "Ejecución de resoluciones judiciales", "Consumo (excede 5 JUS)"],
+            "PAZ LETRADO": ["Desalojos (locación, comodato, usufructo)", "Procesos de estructura monitoria", "Responsabilidad civil (hasta 20 JUS)", "Consumo (hasta 5 JUS)", "Pequeñas causas (hasta 5 JUS)"]
+        }
+    };
+
+    const Motores = {
+        mazoCircun: [], mazosFuero: {}, fuerosOrden: ["CIVIL Y COMERCIAL", "PAZ LETRADO"],
+        prepararMazos() {
+            if (this.mazoCircun.length === 0) {
+                Object.entries(DB_LEGAL.circunscripciones).forEach(([llave, valores]) => {
+                    valores.forEach(v => this.mazoCircun.push({ valor: v, llave: llave }));
+                });
+                this.mazoCircun.sort(() => Math.random() - 0.5);
             }
-        };
-
-        const DB_LEGAL = {
-            circunscripciones: {
-                "1RA CIRCUNSCRIPCIÓN (CAPITAL)": ["Ciudad", "Las Heras", "Guaymallén", "Godoy Cruz", "Luján", "Lavalle"],
-                "2DA CIRCUNSCRIPCIÓN (SUR)": ["San Rafael", "General Alvear", "Malargüe"],
-                "3RA CIRCUNSCRIPCIÓN (ESTE)": ["San Martín", "Rivadavia", "Junín", "Santa Rosa", "La Paz"],
-                "4TA CIRCUNSCRIPCIÓN (UCO)": ["Tunuyán", "Tupungato", "San Carlos"]
-            },
-            competencias: {
-                "CIVIL Y COMERCIAL": [
-                    "Responsabilidad civil (excede monto Art. 7)",
-                    "Acciones reales y posesorias",
-                    "Contratos civiles y comerciales (sin importar monto)",
-                    "Sucesiones",
-                    "Amparos",
-                    "Consumo (excede monto Art. 7)"
-                ],
-                "PAZ LETRADO": [
-                    "Desalojos (locación, comodato, usufructo)",
-                    "Procesos de estructura monitoria",
-                    "Responsabilidad civil (hasta monto Art. 7)",
-                    "Consumo (hasta monto Art. 7)",
-                    "Pequeñas causas (conflictos entre vecinos)"
-                ]
-            }
-        };
-
-     const Motores = {
-    mazoCircun: [],
-    mazosFuero: {},
-    fuerosOrden: ["CIVIL Y COMERCIAL", "PAZ LETRADO"],
-
-    prepararMazos() {
-        if (this.mazoCircun.length === 0) {
-            Object.entries(DB_LEGAL.circunscripciones).forEach(([llave, valores]) => {
-                valores.forEach(v => this.mazoCircun.push({ valor: v, llave: llave }));
+            this.fuerosOrden.forEach(f => {
+                if (!this.mazosFuero[f] || this.mazosFuero[f].length === 0) {
+                    this.mazosFuero[f] = [...DB_LEGAL.competencias[f]].sort(() => Math.random() - 0.5);
+                }
             });
-            this.mazoCircun.sort(() => Math.random() - 0.5);
+        },
+        shuffle(array) { return array.sort(() => Math.random() - 0.5); },
+        circunscripcion() {
+            this.prepararMazos();
+            const p = this.mazoCircun.pop() || {valor: "Ciudad", llave: "1RA CIRCUNSCRIPCIÓN"};
+            const llaves = Object.keys(DB_LEGAL.circunscripciones);
+            const qLlave = llaves[Math.floor(Math.random() * llaves.length)];
+            const s = this.mazoCircun[Math.floor(Math.random() * this.mazoCircun.length)] || p;
+            
+            const v1Ok = (p.llave === qLlave), v2Ok = (s.llave === qLlave);
+            const a = (v1Ok && v2Ok) ? "AMBOS SON CORRECTOS" : (!v1Ok && !v2Ok) ? "NINGUNO ES CORRECTO" : (v1Ok && !v2Ok) ? "SÓLO EL PRIMERO ES CORRECTO" : "SÓLO EL SEGUNDO ES CORRECTO";
+
+            return {
+                q: `¿Pertenecen ${p.valor.toUpperCase()} y ${s.valor.toUpperCase()} a la ${qLlave}?`,
+                a: a, opts: ["AMBOS SON CORRECTOS", "NINGUNO ES CORRECTO", "SÓLO EL PRIMERO ES CORRECTO", "SÓLO EL SEGUNDO ES CORRECTO"],
+                tipo: 'CIRCUNSCRIPCIÓN', subtipo: p.valor
+            };
+        },
+        competenciaMaterial() {
+            this.prepararMazos();
+            const fuero = this.fuerosOrden[Math.floor(Math.random() * this.fuerosOrden.length)];
+            const proceso = this.mazosFuero[fuero].pop();
+            return {
+                q: `El proceso de ${proceso.toUpperCase()} es competencia de:`,
+                a: fuero, opts: this.shuffle(["CIVIL Y COMERCIAL", "PAZ LETRADO", "JUSTICIA DE FAMILIA", "TRIBUTARIO Y CONCURSAL"]),
+                tipo: 'COMPETENCIA', subtipo: proceso
+            };
         }
-        this.fuerosOrden.forEach(fuero => {
-            if (!this.mazosFuero[fuero] || this.mazosFuero[fuero].length === 0) {
-                this.mazosFuero[fuero] = [...DB_LEGAL.competencias[fuero]].sort(() => Math.random() - 0.5);
-            }
-        });
-    },
+    };
 
-    shuffle(array) { return array.sort(() => Math.random() - 0.5); },
+    const Validador = {
+        streak: 0, intentos: 3, qIndex: 0, timestampStart: null, logPendiente: null,
 
-    circunscripcion() {
-        this.prepararMazos();
-        if (this.mazoCircun.length < 2) this.mazoCircun = []; // Reinicio de seguridad
+        init() {
+            this.timestampStart = new Date().toISOString();
+            this.createDots();
+            this.render();
+            this.updateUI();
+        },
 
-        const principal = this.mazoCircun.pop();
-        const valor1 = principal.valor;
-        const llaveC = principal.llave;
-        const llavesTodas = Object.keys(DB_LEGAL.circunscripciones);
-
-        const llavePregunta = llavesTodas[Math.floor(Math.random() * llavesTodas.length)];
-        const secundario = this.mazoCircun[Math.floor(Math.random() * this.mazoCircun.length)] || principal;
-        const valor2 = secundario.valor;
-        const llaveV2 = secundario.llave;
-
-        const v1Ok = (llaveC === llavePregunta);
-        const v2Ok = (llaveV2 === llavePregunta);
-
-        let a;
-        if (v1Ok && v2Ok) a = "AMBOS SON CORRECTOS";
-        else if (!v1Ok && !v2Ok) a = "NINGUNO ES CORRECTO";
-        else if (v1Ok && !v2Ok) a = "SÓLO EL PRIMERO ES CORRECTO";
-        else a = "SÓLO EL SEGUNDO ES CORRECTO";
-
-        return {
-            q: `¿Pertenecen ${valor1.toUpperCase()} y ${valor2.toUpperCase()} a la ${llavePregunta}?`,
-            a: a,
-            opts: ["AMBOS SON CORRECTOS", "NINGUNO ES CORRECTO", "SÓLO EL PRIMERO ES CORRECTO", "SÓLO EL SEGUNDO ES CORRECTO"],
-            tipo: 'CIRCUNSCRIPCIÓN',
-            subtipo: valor1
-        };
-    },
-
-    competenciaMaterial() {
-        this.prepararMazos();
-        // En examen/preexamen, el fuero es aleatorio, no cíclico, para mayor dificultad
-        const fueroActual = this.fuerosOrden[Math.floor(Math.random() * this.fuerosOrden.length)];
-        
-        if (this.mazosFuero[fueroActual].length === 0) {
-            this.mazosFuero[fueroActual] = [...DB_LEGAL.competencias[fueroActual]].sort(() => Math.random() - 0.5);
-        }
-
-        const procesoCorrecto = this.mazosFuero[fueroActual].pop();
-        
-        const opts = this.shuffle([
-            "CIVIL Y COMERCIAL", 
-            "PAZ LETRADO", 
-            "JUSTICIA DE FAMILIA", 
-            "TRIBUTARIO Y CONCURSAL" // Se mantiene como distractor aunque no sea evaluado
-        ]);
-
-        return {
-            q: `El proceso de ${procesoCorrecto.toUpperCase()} es competencia de:`,
-            a: fueroActual,
-            opts: opts,
-            tipo: 'COMPETENCIA',
-            subtipo: procesoCorrecto
-        };
-    }
-};
-
-const Validador = {
-            streak: 0,
-            intentos: 3,
-            qIndex: 0, // <-- NUEVO: Contador para alternancia secuencial
-            fallos: { "CIRCUNSCRIPCIÓN": 0, "COMPETENCIA": 0 },
-            timestampStart: null,
-            logPendiente: null,
-
-            init() {
-                this.timestampStart = new Date().toISOString();
-                this.createDots();
-                this.render();
-                this.updateUI();
-            },
-
-            createDots() {
-                const sCont = document.getElementById('streak-container');
-                const aCont = document.getElementById('attempts-container');
-                if (sCont) sCont.innerHTML = Array(6).fill('<div class="dot dot-streak"></div>').join('');
-                if (aCont) aCont.innerHTML = Array(3).fill('<div class="dot dot-attempt"></div>').join('');
-            },
+        createDots() {
+            document.getElementById('streak-container').innerHTML = Array(6).fill('<div class="dot dot-streak"></div>').join('');
+            document.getElementById('attempts-container').innerHTML = Array(3).fill('<div class="dot dot-attempt"></div>').join('');
+        },
 
         render() {
-    // 1. Selección de Desafío Unificado
-    // qIndex 0, 2, 4... -> Circunscripción (Validación de Conjuntos)
-    // qIndex 1, 3, 5... -> Competencia (Identificación Pura por Ciclo)
-    let desafio;
-    if (this.qIndex % 2 === 0) {
-        desafio = Motores.circunscripcion();
-    } else {
-        desafio = Motores.competenciaMaterial();
-    }
+            const desafio = (this.qIndex % 2 === 0) ? Motores.circunscripcion() : Motores.competenciaMaterial();
+            this.current = desafio;
+            document.getElementById('question-text').innerText = desafio.q;
+            document.getElementById('options-container').innerHTML = desafio.opts.map(o =>
+                `<button class="btn" onclick="Validador.check('${o}')">${o}</button>`
+            ).join('');
+        },
 
-    // 2. Carga de Estado Actual
-    this.current = desafio;
+        check(val) {
+            const esCorrecto = (val === this.current.a);
+            Analista.registrar(this.current.tipo, this.current.subtipo, esCorrecto);
 
-    // 3. Inyección en el DOM (Interfaz de Usuario)
-    // Asegúrate de que los IDs coincidan con tu estructura de preexamen
-    document.getElementById('question-text').innerText = desafio.q;
-    
-    document.getElementById('options-container').innerHTML = desafio.opts.map(o =>
-        `<button class="btn" onclick="Validador.check('${o}')">${o}</button>`
-    ).join('');
-    
-    // Opcional: Si tienes un contador de progreso en el preexamen
-    if (document.getElementById('q-progress')) {
-        document.getElementById('q-progress').innerText = `DESAFÍO N°: ${this.qIndex + 1}`;
-    }
-},
+            if (esCorrecto) {
+                this.streak++;
+                this.feedback("SINCRONÍA VALIDADA.", "var(--safe)");
+            } else {
+                this.streak = 0;
+                this.intentos--;
+                this.feedback("ERROR DETECTADO.", "var(--critical)");
+            }
+            this.qIndex++;
+            this.updateUI();
+            if (this.streak >= 6) this.success();
+            else if (this.intentos <= 0) this.fail();
+            else setTimeout(() => this.render(), 400);
+        },
 
+        feedback(msg, color) {
+            const f = document.getElementById('ia-feedback');
+            if (f) { f.innerText = msg; f.style.color = color; }
+        },
 
-    check(val) {
-        const esCorrecto = (val === this.current.a);
-        
-        // REGISTRO DE ANALÍTICA MICRO/MACRO
-        Analista.registrar(this.current.tipo, this.current.subtipo, esCorrecto);
+        updateUI() {
+            const sDots = document.querySelectorAll('.dot-streak');
+            sDots.forEach((d, i) => i < this.streak ? d.classList.add('active') : d.classList.remove('active'));
+            const aDots = document.querySelectorAll('.dot-attempt');
+            aDots.forEach((d, i) => i >= this.intentos ? d.classList.add('spent') : d.classList.remove('spent'));
+        },
 
-        if (esCorrecto) {
-            this.streak++;
-            this.feedback("SINCRONÍA VALIDADA.", "var(--safe)");
-        } else {
-            this.fallos[this.current.tipo]++;
-            this.streak = 0;
-            this.intentos--;
-            this.feedback("VICIO PROCESAL DETECTADO.", "var(--critical)");
+        success() { document.body.className = 'body-success'; this.showResult(6, true); },
+        fail() { document.body.className = 'body-fail'; this.showResult(this.streak, false); },
+
+        showResult(score, isApto) {
+            const overlay = document.getElementById('result-overlay');
+            overlay.style.display = 'flex';
+            
+            const session = localStorage.getItem('meg_session') || "NO_SESSION";
+
+            this.logPendiente = {
+                uid_hash: localStorage.getItem('meg_uid') || "ANON_USER",
+                session_token: session,
+                timestamp_start: this.timestampStart,
+                protocolo: 'VALIDADOR_9001',
+                score: score,
+                error_vector: Analista.obtenerReporteSesion(),
+                ua_client: navigator.userAgent
+            };
+
+            document.getElementById('res-id').innerText = session;
+            document.getElementById('res-score-value').innerText = score;
+            document.getElementById('res-sync').innerText = isApto ? "COMPLETA" : "FALLIDA";
+
+            SistemaPersistencia.guardarPuntaje('validador', score);
+            const btn = document.querySelector('.btn-terminal');
+            btn.onclick = () => this.finalizarYEnviar();
+        },
+
+        finalizarYEnviar() {
+            const btn = document.querySelector('.btn-terminal');
+            btn.innerText = "⚡ REGISTRANDO...";
+            btn.disabled = true;
+
+            if (this.logPendiente) {
+                const API_URL = "https://script.google.com/macros/s/AKfycbz35P_r0wzGNWt6HnbwfiKwrT8rB4smorJhaWA5ixt8qAu25-UKtfRkzFXbEnlhLqKWkQ/exec";
+                const blob = new Blob([JSON.stringify(this.logPendiente)], { type: 'text/plain;charset=UTF-8' });
+
+                if (navigator.sendBeacon) {
+                    navigator.sendBeacon(API_URL, blob);
+                } else {
+                    fetch(API_URL, { method: 'POST', body: blob, mode: 'no-cors', keepalive: true });
+                }
+            }
+            setTimeout(() => { window.location.href = "index.html"; }, 400);
         }
+    };
 
-        this.qIndex++;
-        this.updateUI();
-
-        if (this.streak >= 6) this.success();
-        else if (this.intentos <= 0) this.fail();
-        else setTimeout(() => this.render(), 400);
-    },
-
-    feedback(msg, color) {
-        const f = document.getElementById('ia-feedback');
-        if (f) { f.innerText = msg; f.style.color = color; }
-    },
-
-    updateUI() {
-        const sDots = document.querySelectorAll('.dot-streak');
-        sDots.forEach((d, i) => i < this.streak ? d.classList.add('active') : d.classList.remove('active'));
-        const aDots = document.querySelectorAll('.dot-attempt');
-        aDots.forEach((d, i) => i >= this.intentos ? d.classList.add('spent') : d.classList.remove('spent'));
-    },
-
-    success() { document.body.className = 'body-success'; this.showResult(6, true); },
-    fail() { document.body.className = 'body-fail'; this.showResult(this.streak, false); },
-
-    showResult(score, isApto) {
-        const overlay = document.getElementById('result-overlay');
-        overlay.style.display = 'flex';
-        
-        const reporteFull = Analista.obtenerReporte();
-        const uid = localStorage.getItem('meg_uid') || "ANON_USER";
-        const session = localStorage.getItem('meg_session') || "NO_SESSION";
-
-        // MEMORIA PARA EL INDEX (MEG)
-        const memMEG = {
-            fecha: new Date().toISOString(),
-            score: score,
-            debilidad: reporteFull, // Enviamos el mapa de calor completo
-            protocolo: 'PREEXAMEN',
-            apto: isApto
-        };
-        localStorage.setItem('9001_MEG_MEMORY', JSON.stringify(memMEG));
-
-        document.getElementById('res-id').innerText = session;
-        document.getElementById('res-score-value').innerText = score;
-        document.getElementById('res-sync').innerText = isApto ? "COMPLETA" : "FALLIDA";
-
-        // Mensaje dinámico basado en el vector predominante
-        let vectorPrincipal = this.fallos["CIRCUNSCRIPCIÓN"] >= this.fallos["COMPETENCIA"] ? "CIRCUNSCRIPCIÓN" : "COMPETENCIA";
-        document.getElementById('res-msg').innerHTML = isApto ? 
-            "Aptitud técnica validada. Acceso a EXAMEN_FINAL autorizado." : 
-            `Sincronía insuficiente. Revisar vector: <span style="color:var(--critical)">${vectorPrincipal}</span>`;
-
-        SistemaPersistencia.guardarPuntaje('validador', score);
-
-        this.logPendiente = {
-            uid_hash: uid,
-            session_token: session,
-            timestamp_start: this.timestampStart,
-            protocolo: 'VALIDADOR_9001',
-            score: score,
-            integridad: isApto ? 'ALTA' : 'COMPROMETIDA',
-            error_vector: reporteFull, // ANALÍTICA COMPLEJA PARA EL ESTUDIO
-            ua_client: navigator.userAgent
-        };
-
-        const btn = document.querySelector('.btn-terminal');
-        btn.innerText = "RETORNAR_AL_NODO";
-        btn.onclick = () => this.finalizarYEnviar();
-    },
-
-    async finalizarYEnviar() {
-        const btn = document.querySelector('.btn-terminal');
-        btn.innerText = "⚡ SINCRONIZANDO...";
-        btn.disabled = true;
-
-        if (this.logPendiente) {
-            const API_URL = "https://script.google.com/macros/s/AKfycbz35P_r0wzGNWt6HnbwfiKwrT8rB4smorJhaWA5ixt8qAu25-UKtfRkzFXbEnlhLqKWkQ/exec";
-            try {
-                await fetch(API_URL, {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    keepalive: true,
-                    headers: { 'Content-Type': 'text/plain' },
-                    body: JSON.stringify(this.logPendiente)
-                });
-            } catch (e) { console.warn("Fallo de red"); }
-        }
-        setTimeout(() => { window.location.href = "index.html"; }, 800);
-    }
-};
-
-        window.onload = () => Validador.init();
-    </script>
+    window.onload = () => Validador.init();
+</script>
 </body>
 
 </html>

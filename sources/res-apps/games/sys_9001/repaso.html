@@ -92,19 +92,17 @@
         }
 
         .main-display {
-            flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 40px;
             text-align: center;
             padding: 20px;
             /* Reducido para mejor escala en móvil */
             text-align: center;
             /* El borde ahora vive aquí */
             border: 8px solid var(--dim);
-            margin: 10px;
+            margin: 1rem;
             transition: border-color 0.4s ease;
             overflow-y: auto;
             /* Permite scroll interno si el contenido crece */
@@ -287,13 +285,13 @@
 
     <div id="result-overlay">
         <div class="result-box">
-            <div class="result-header">REPORTE_DE_ESTABILIZACIÓN_DE_NÚCLEO</div>
+            <div class="result-header">REPORTE_DE_SINCRONIZACIÓN</div>
             <div class="result-content">
                 <h1 id="res-status">SESIÓN COMPLETADA</h1>
                 <div class="res-data">
-                    <p>NÚCLEO: <span id="res-core">9001_MENDOZA</span></p>
+                    <p>USUARIO: <span id="res-core">9001_MENDOZA</span></p>
                     <p>EFICIENCIA DE SESIÓN: <span id="res-efficiency">0%</span></p>
-                    <p>ESTADO FINAL: <span id="res-sync">ESTABLE</span></p>
+                    <p>ESTADO FINAL: <span id="res-sync">DESCONECTADO</span></p>
                 </div>
                 <div id="res-msg" class="res-msg-text">
                     Los datos han sido persistidos en la memoria local.
@@ -304,36 +302,38 @@
     </div>
 
     <script>
-        // --- SUSTITUYE TODO EL BLOQUE DE SCRIPT POR ESTE ---
-        // 1. OBJETO ANALISTA (GESTIÓN DE HEATMAP Y REPORTE PEDAGÓGICO)
+        // 1. OBJETO ANALISTA (GESTIÓN HÍBRIDA: HISTÓRICO + SESIÓN ACTUAL)
         const Analista = {
+            // Memoria volátil: Solo dura lo que dure la pestaña abierta
+            sesionActual: { ok: 0, err: 0, detalles: [] },
+
             registrar(macro, micro, esCorrecto) {
+                // A. REGISTRO HISTÓRICO (LocalStorage)
                 let stats = JSON.parse(localStorage.getItem('9001_HEATMAP')) || {};
                 if (!stats[macro]) stats[macro] = {};
                 if (!stats[macro][micro]) stats[macro][micro] = { ok: 0, err: 0 };
 
                 if (esCorrecto) stats[macro][micro].ok++;
                 else stats[macro][micro].err++;
-
                 localStorage.setItem('9001_HEATMAP', JSON.stringify(stats));
+
+                // B. REGISTRO DE INSTANCIA (Para el Sheet - Inmune a borrados de caché)
+                if (esCorrecto) {
+                    this.sesionActual.ok++;
+                } else {
+                    this.sesionActual.err++;
+                    // Guardamos el nombre del error si no estaba ya en la lista de esta sesión
+                    const errorID = `${macro}: ${micro}`;
+                    if (!this.sesionActual.detalles.includes(errorID)) {
+                        this.sesionActual.detalles.push(errorID);
+                    }
+                }
             },
 
-            obtenerReporte() {
-                const stats = JSON.parse(localStorage.getItem('9001_HEATMAP')) || {};
-                let secciones = [];
-
-                for (const [macro, micros] of Object.entries(stats)) {
-                    let persistentes = [];
-                    let confort = [];
-
-                    for (const [nombre, data] of Object.entries(micros)) {
-                        if (data.err >= 3) persistentes.push(nombre);
-                        if (data.ok >= 5 && data.err === 0) confort.push(nombre);
-                    }
-
-                    secciones.push(`${macro.toUpperCase()} | PERSISTENTE: ${persistentes.join(', ') || 'Ninguno'} | CONFORT: ${confort.join(', ') || 'Ninguno'}`);
-                }
-                return secciones.join(' || ') || "SIN DATOS SUFICIENTES";
+            obtenerReporteSesion() {
+                // Este es el dato que irá al Sheet: puro, fresco y de hoy.
+                const fallos = this.sesionActual.detalles.join(' | ') || 'NINGUNO';
+                return `ERRORES_SESION: [${fallos}] || TOTAL_ERR: ${this.sesionActual.err} || ACERTADOS: ${this.sesionActual.ok}`;
             }
         };
 
@@ -346,217 +346,75 @@
                         fecha: new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
                     });
                     historial.sort((a, b) => b.puntos - a.puntos);
-                    historial = historial.slice(0, 5);
-                    localStorage.setItem(`9001_${categoria}`, JSON.stringify(historial));
-                } catch (e) {
-                    console.error("Error en persistencia:", e);
-                }
+                    localStorage.setItem(`9001_${categoria}`, JSON.stringify(historial.slice(0, 5)));
+                } catch (e) { console.error("Error persistencia:", e); }
             }
         };
 
         const DB_LEGAL = {
             circunscripciones: {
-                "1RA CIRCUNSCRIPCIÓN (CAPITAL)": ["Ciudad", "Las Heras", "Guaymallén", "Godoy Cruz", "Luján", "Lavalle"],
-                "2DA CIRCUNSCRIPCIÓN (SUR)": ["San Rafael", "General Alvear", "Malargüe"],
-                "3RA CIRCUNSCRIPCIÓN (ESTE)": ["San Martín", "Rivadavia", "Junín", "Santa Rosa", "La Paz"],
-                "4TA CIRCUNSCRIPCIÓN (UCO)": ["Tunuyán", "Tupungato", "San Carlos"]
+                "1RA CIRCUNSCRIPCIÓN": ["Ciudad", "Maipú", "Las Heras", "Guaymallén", "Godoy Cruz", "Luján", "Lavalle"],
+                "2DA CIRCUNSCRIPCIÓN": ["San Rafael", "General Alvear", "Malargüe"],
+                "3RA CIRCUNSCRIPCIÓN": ["San Martín", "Rivadavia", "Junín", "Santa Rosa", "La Paz"],
+                "4TA CIRCUNSCRIPCIÓN": ["Tunuyán", "Tupungato", "San Carlos"]
             },
             competencias: {
-                "CIVIL Y COMERCIAL": [
-                    "Responsabilidad civil (excede monto Art. 7)",
-                    "Acciones reales y posesorias",
-                    "Contratos civiles y comerciales (sin importar monto)",
-                    "Sucesiones",
-                    "Amparos",
-                    "Consumo (excede monto Art. 7)"
-                ],
-                "PAZ LETRADO": [
-                    "Desalojos (locación, comodato, usufructo)",
-                    "Procesos de estructura monitoria",
-                    "Responsabilidad civil (hasta monto Art. 7)",
-                    "Consumo (hasta monto Art. 7)",
-                    "Pequeñas causas (conflictos entre vecinos)"
-                ]
+                "CIVIL Y COMERCIAL": ["Responsabilidad civil (excede 20 JUS)", "Acciones reales y posesorias", "Contratos civiles y comerciales", "Sucesiones", "Amparos", "Ejecución de resoluciones judiciales", "Consumo (excede 5 JUS)"],
+                "PAZ LETRADO": ["Desalojos (locación, comodato, usufructo)", "Procesos de estructura monitoria", "Responsabilidad civil (hasta 20 JUS)", "Consumo (hasta 5 JUS)", "Pequeñas causas (hasta 5 JUS)"]
             }
         };
-const Motores = {
-    mazoCircun: [],
-    mazosFuero: {},
-    indiceFuero: 0,
-    fuerosOrden: ["CIVIL Y COMERCIAL", "PAZ LETRADO"],
 
-    prepararMazos() {
-        if (this.mazoCircun.length === 0) {
-            Object.entries(DB_LEGAL.circunscripciones).forEach(([llave, valores]) => {
-                valores.forEach(v => this.mazoCircun.push({ valor: v, llave: llave }));
-            });
-            this.mazoCircun.sort(() => Math.random() - 0.5);
-        }
-        this.fuerosOrden.forEach(fuero => {
-            if (!this.mazosFuero[fuero] || this.mazosFuero[fuero].length === 0) {
-                this.mazosFuero[fuero] = [...DB_LEGAL.competencias[fuero]].sort(() => Math.random() - 0.5);
-            }
-        });
-    },
-
-    shuffle(array) { return array.sort(() => Math.random() - 0.5); },
-
-    obtenerCircunscripcion() {
-        this.prepararMazos();
-        const principal = this.mazoCircun.pop();
-        const valor1 = principal.valor;
-        const llaveC = principal.llave;
-        const llavesTodas = Object.keys(DB_LEGAL.circunscripciones);
-
-        const llavePregunta = llavesTodas[Math.floor(Math.random() * llavesTodas.length)];
-        // Tomamos un depto aleatorio del mazo para comparar (sin sacarlo del mazo para que pueda ser principal luego)
-        const comparador = this.mazoCircun[Math.floor(Math.random() * this.mazoCircun.length)] || principal;
-        const valor2 = comparador.valor;
-        const llaveV2 = comparador.llave;
-
-        const v1Ok = (llaveC === llavePregunta);
-        const v2Ok = (llaveV2 === llavePregunta);
-
-        let a;
-        if (v1Ok && v2Ok) a = "AMBOS SON CORRECTOS";
-        else if (!v1Ok && !v2Ok) a = "NINGUNO ES CORRECTO";
-        else if (v1Ok && !v2Ok) a = "SÓLO EL PRIMERO ES CORRECTO";
-        else a = "SÓLO EL SEGUNDO ES CORRECTO";
-
-        return {
-            q: `¿Se encuentran ${valor1.toUpperCase()} y ${valor2.toUpperCase()} comprendidos en la ${llavePregunta}?`,
-            a: a,
-            opts: ["AMBOS SON CORRECTOS", "NINGUNO ES CORRECTO", "SÓLO EL PRIMERO ES CORRECTO", "SÓLO EL SEGUNDO ES CORRECTO"],
-            tipo: 'CIRCUNSCRIPCIÓN',
-            subtipo: valor1
-        };
-    },
-
-    obtenerCompetencia() {
-        this.prepararMazos();
-        const fueroActual = this.fuerosOrden[this.indiceFuero];
-        this.indiceFuero = (this.indiceFuero + 1) % this.fuerosOrden.length;
-
-        const procesoCorrecto = this.mazosFuero[fueroActual].pop();
-        
-        // Las opciones ahora son simplemente los dos fueros disponibles
-        // Puedes agregar opciones como "JUSTICIA DE PAZ" o "FEDERAL" si quieres rellenar a 4,
-        // pero para sobriedad, dos opciones directas son más eficientes.
-        // Aquí forzamos 4 opciones para mantener la estética de la cuadrícula:
-        const opts = this.shuffle([
-            "CIVIL Y COMERCIAL", 
-            "PAZ LETRADO", 
-            "TRIBUTARIO", // Distractor fijo
-            "CONCURSOS Y QUIEBRAS"  // Distractor fijo
-        ]);
-
-        return {
-            q: `¿A qué competencia material corresponde el proceso: ${procesoCorrecto.toUpperCase()}?`,
-            a: fueroActual,
-            opts: opts,
-            tipo: 'COMPETENCIA',
-            subtipo: procesoCorrecto
-        };
-    }
-};
-       
-        /*const Motores = {
-            // Mazo de circunscripción (se mantiene igual, es eficiente)
-            mazoCircun: [],
-            // Mazo de competencia transformado en un Mapa de Colas por Fuero
-            mazosFuero: {},
-            indiceFuero: 0,
-            fuerosOrden: ["CIVIL Y COMERCIAL", "PAZ LETRADO"],
-
+        const Motores = {
+            mazoCircun: [], mazosFuero: {}, indiceFuero: 0, fuerosOrden: ["CIVIL Y COMERCIAL", "PAZ LETRADO"],
             prepararMazos() {
-                // Preparar Circunscripciones si está vacío
                 if (this.mazoCircun.length === 0) {
                     Object.entries(DB_LEGAL.circunscripciones).forEach(([llave, valores]) => {
                         valores.forEach(v => this.mazoCircun.push({ valor: v, llave: llave }));
                     });
                     this.mazoCircun.sort(() => Math.random() - 0.5);
                 }
-                // Preparar Fueros (Uno por uno para el ciclo)
-                this.fuerosOrden.forEach(fuero => {
-                    if (!this.mazosFuero[fuero] || this.mazosFuero[fuero].length === 0) {
-                        this.mazosFuero[fuero] = [...DB_LEGAL.competencias[fuero]].sort(() => Math.random() - 0.5);
+                this.fuerosOrden.forEach(f => {
+                    if (!this.mazosFuero[f] || this.mazosFuero[f].length === 0) {
+                        this.mazosFuero[f] = [...DB_LEGAL.competencias[f]].sort(() => Math.random() - 0.5);
                     }
                 });
             },
-
             shuffle(array) { return array.sort(() => Math.random() - 0.5); },
-
-            // Categoría: Circunscripción (Mantiene tu lógica de Validación/Ambos/Ninguno)
             obtenerCircunscripcion() {
                 this.prepararMazos();
                 const principal = this.mazoCircun.pop();
-                const valor1 = principal.valor;
-                const llaveC = principal.llave;
                 const llavesTodas = Object.keys(DB_LEGAL.circunscripciones);
-                const llaveF = llavesTodas.find(l => l !== llaveC);
-
-                // Lógica de Validación de 2 valores para Circunscripción
                 const llavePregunta = llavesTodas[Math.floor(Math.random() * llavesTodas.length)];
-                const depto2Obj = this.mazoCircun[Math.floor(Math.random() * this.mazoCircun.length)] || principal;
-                const valor2 = depto2Obj.valor;
-                const llaveV2 = depto2Obj.llave;
+                const comparador = this.mazoCircun[Math.floor(Math.random() * this.mazoCircun.length)] || principal;
 
-                const v1Ok = (llaveC === llavePregunta);
-                const v2Ok = (llaveV2 === llavePregunta);
-
-                let a;
-                if (v1Ok && v2Ok) a = "AMBOS SON CORRECTOS";
-                else if (!v1Ok && !v2Ok) a = "NINGUNO ES CORRECTO";
-                else if (v1Ok && !v2Ok) a = "SÓLO EL PRIMERO ES CORRECTO";
-                else a = "SÓLO EL SEGUNDO ES CORRECTO";
+                const v1Ok = (principal.llave === llavePregunta);
+                const v2Ok = (comparador.llave === llavePregunta);
+                let a = (v1Ok && v2Ok) ? "AMBOS SON CORRECTOS" : (!v1Ok && !v2Ok) ? "NINGUNO ES CORRECTO" : (v1Ok && !v2Ok) ? "SÓLO EL PRIMERO ES CORRECTO" : "SÓLO EL SEGUNDO ES CORRECTO";
 
                 return {
-                    q: `¿Se encuentran ${valor1.toUpperCase()} y ${valor2.toUpperCase()} comprendidos en la ${llavePregunta}?`,
+                    q: `¿Se encuentran ${principal.valor.toUpperCase()} y ${comparador.valor.toUpperCase()} en la ${llavePregunta}?`,
                     a: a,
                     opts: ["AMBOS SON CORRECTOS", "NINGUNO ES CORRECTO", "SÓLO EL PRIMERO ES CORRECTO", "SÓLO EL SEGUNDO ES CORRECTO"],
-                    tipo: 'CIRCUNSCRIPCIÓN',
-                    subtipo: valor1
+                    tipo: 'CIRCUNSCRIPCIÓN', subtipo: principal.valor
                 };
             },
-
-            // Categoría: Competencia (Identificación Pura y Ciclo de Fueros)
             obtenerCompetencia() {
                 this.prepararMazos();
-
-                // Seleccionamos el fuero según el turno del ciclo
-                const fueroActual = this.fuerosOrden[this.indiceFuero];
-                this.indiceFuero = (this.indiceFuero + 1) % this.fuerosOrden.length; // Avanzar ciclo
-
-                // Extraemos el proceso (valor) del fuero de turno
-                const procesoCorrecto = this.mazosFuero[fueroActual].pop();
-
-                // Buscamos 3 distractores: procesos de OTROS fueros (Unicidad)
-                let distractores = [];
-                this.fuerosOrden.filter(f => f !== fueroActual).forEach(f => {
-                    distractores.push(DB_LEGAL.competencias[f][Math.floor(Math.random() * DB_LEGAL.competencias[f].length)]);
-                });
-
+                const fuero = this.fuerosOrden[this.indiceFuero];
+                this.indiceFuero = (this.indiceFuero + 1) % this.fuerosOrden.length;
+                const proceso = this.mazosFuero[fuero].pop();
                 return {
-                    q: `¿A qué competencia material corresponde el proceso: ${procesoCorrecto.toUpperCase()}?`,
-                    a: fueroActual,
-                    opts: this.shuffle([fueroActual, ...this.fuerosOrden.filter(f => f !== fueroActual)]),
-                    tipo: 'COMPETENCIA',
-                    subtipo: procesoCorrecto
+                    q: `¿Competencia material para: ${proceso.toUpperCase()}?`,
+                    a: fuero,
+                    opts: this.shuffle(["CIVIL Y COMERCIAL", "PAZ LETRADO", "TRIBUTARIO", "CONCURSOS Y QUIEBRAS"]),
+                    tipo: 'COMPETENCIA', subtipo: proceso
                 };
             }
         };
 
-*/
-
-
         const Protocolo = {
-            vigencia: 100,
-            vicios: 0,
-            qIndex: 0,
-            tiempoSesion: 25 * 60,
-            timestampStart: null,
-            fallos: { "CIRCUNSCRIPCIÓN": 0, "COMPETENCIA": 0 },
-            logPendiente: null,
+            vigencia: 100, vicios: 0, qIndex: 0, tiempoSesion: 25 * 60,
+            timestampStart: null, logPendiente: null,
 
             init() {
                 this.timestampStart = new Date().toISOString();
@@ -564,17 +422,8 @@ const Motores = {
                 this.startTicker();
             },
 
-            // Dentro del objeto Protocolo
             render() {
-                let desafio;
-                // qIndex 0, 2, 4... son Circunscripciones
-                // qIndex 1, 3, 5... son Competencias (que internamente rotan de fuero)
-                if (this.qIndex % 2 === 0) {
-                    desafio = Motores.obtenerCircunscripcion();
-                } else {
-                    desafio = Motores.obtenerCompetencia();
-                }
-
+                const desafio = (this.qIndex % 2 === 0) ? Motores.obtenerCircunscripcion() : Motores.obtenerCompetencia();
                 this.current = desafio;
                 document.getElementById('prompt').innerText = desafio.q;
                 document.getElementById('options-grid').innerHTML = desafio.opts.map(o =>
@@ -584,8 +433,6 @@ const Motores = {
 
             check(val) {
                 const esCorrecto = (val === this.current.a);
-
-                // REGISTRO EN EL HEATMAP (MICRO Y MACRO)
                 Analista.registrar(this.current.tipo, this.current.subtipo, esCorrecto);
 
                 if (esCorrecto) {
@@ -593,30 +440,24 @@ const Motores = {
                     this.vigencia = Math.min(100, this.vigencia + 8);
                     this.logIA("PROCEDIMIENTO VÁLIDO.", "var(--safe)");
                 } else {
-                    this.fallos[this.current.tipo]++;
                     this.vicios++;
                     this.vigencia -= 15;
-                    this.logIA(`VICIO DETECTADO. VIGENCIA AL ${Math.max(0, Math.floor(this.vigencia))}%`, "var(--critical)");
+                    this.logIA(`ERROR DETECTADO. SINCRONIZACIÓN AL ${Math.max(0, Math.floor(this.vigencia))}%`, "var(--critical)");
                 }
-
                 this.qIndex++;
                 this.updateUI();
                 if (this.vicios < 3 && this.vigencia > 0) setTimeout(() => this.render(), 300);
             },
 
-
             updateUI() {
                 const bar = document.getElementById('stability-bar');
                 if (bar) bar.style.width = `${Math.max(0, this.vigencia)}%`;
                 if (this.vigencia <= 0 || this.vicios >= 3) { this.showResult(false); return; }
-                const mainDisplay = document.querySelector('.main-display');
                 const statusLabel = document.getElementById('status-text');
-                if (this.vigencia < 30) {
+                const mainDisplay = document.querySelector('.main-display');
+                if (this.vigencia < 35) {
                     mainDisplay.className = 'main-display state-critical';
-                    statusLabel.innerText = "ESTADO: CRÍTICO";
-                } else if (this.vigencia < 60) {
-                    mainDisplay.className = 'main-display state-warning';
-                    statusLabel.innerText = "ESTADO: DEGRADADO";
+                    statusLabel.innerText = "ESTADO: DESINCRONIZADO";
                 } else {
                     mainDisplay.className = 'main-display state-stable';
                     statusLabel.innerText = "ESTADO: VIGENTE";
@@ -627,59 +468,48 @@ const Motores = {
                 clearInterval(this.ticker);
                 const finalEff = Math.max(0, Math.floor(this.vigencia));
 
-                // GENERACIÓN DEL REPORTE COMPLEJO PARA TU INVESTIGACIÓN
-                const reporteFull = Analista.obtenerReporte();
-
-                const memMEG = {
-                    fecha: new Date().toISOString(),
-                    score: finalEff,
-                    debilidad: reporteFull, // MEG ahora ve el mapa completo
-                    protocolo: 'REPASO'
-                };
-                localStorage.setItem('9001_MEG_MEMORY', JSON.stringify(memMEG));
-
+                // PREPARACIÓN DE LOG PARA EL SHEET (Solo esta sesión)
                 this.logPendiente = {
                     uid_hash: localStorage.getItem('meg_uid') || "ANON_USER",
                     session_token: localStorage.getItem('meg_session') || "NO_SESSION",
                     timestamp_start: this.timestampStart,
                     protocolo: 'REPASO_9001',
                     score: finalEff,
-                    error_vector: reporteFull, // Se envía el string complejo al Sheets
+                    error_vector: Analista.obtenerReporteSesion(), // REPORTE DE SESIÓN PURA
                     ua_client: navigator.userAgent
                 };
 
-                const overlay = document.getElementById('result-overlay');
-                overlay.style.display = 'flex';
+                SistemaPersistencia.guardarPuntaje('repaso', finalEff);
+                document.getElementById('result-overlay').style.display = 'flex';
+                document.getElementById('res-core').innerText = this.logPendiente.session_token;
                 document.getElementById('res-efficiency').innerText = finalEff + "%";
-                document.getElementById('res-status').innerText = success ? "SESIÓN_OPTIMIZADA" : "CADUCIDAD_DE_INSTANCIA";
+                document.getElementById('res-status').innerText = success ? "SINCRONIZADO" : "DESINCRONIZADO";
             },
 
-
-            async finalizarYEnviar() {
+            finalizarYEnviar() {
                 const btn = document.querySelector('.btn-final');
-                btn.innerText = "SINCRONIZANDO...";
+                btn.innerText = "⚡ REGISTRANDO...";
                 btn.disabled = true;
 
                 if (this.logPendiente) {
                     const API_URL = "https://script.google.com/macros/s/AKfycbz35P_r0wzGNWt6HnbwfiKwrT8rB4smorJhaWA5ixt8qAu25-UKtfRkzFXbEnlhLqKWkQ/exec";
-                    try {
-                        // El secreto es usar text/plain para evitar que el navegador envíe OPTIONS (CORS)
-                        await fetch(API_URL, {
-                            method: 'POST',
-                            mode: 'no-cors',
-                            keepalive: true,
-                            headers: { 'Content-Type': 'text/plain' },
-                            body: JSON.stringify(this.logPendiente)
-                        });
-                    } catch (e) { console.warn("Fallo de enlace"); }
-                }
+                    const payload = JSON.stringify(this.logPendiente);
 
-                setTimeout(() => { window.location.href = "index.html"; }, 800);
+                    // El secreto del sendBeacon: Usar el constructor de Blob explícito
+                    const blob = new Blob([payload], { type: 'text/plain;charset=UTF-8' });
+
+                    if (navigator.sendBeacon) {
+                        navigator.sendBeacon(API_URL, blob);
+                    } else {
+                        fetch(API_URL, { method: 'POST', body: blob, mode: 'no-cors', keepalive: true });
+                    }
+                }
+                setTimeout(() => { window.location.href = "index.html"; }, 400);
             },
 
             startTicker() {
                 this.ticker = setInterval(() => {
-                    this.vigencia -= 0.3;
+                    this.vigencia -= 0.25;
                     this.tiempoSesion--;
                     const min = Math.floor(this.tiempoSesion / 60);
                     const sec = this.tiempoSesion % 60;
@@ -698,7 +528,6 @@ const Motores = {
 
         window.onload = () => Protocolo.init();
     </script>
-
 </body>
 
 </html>
