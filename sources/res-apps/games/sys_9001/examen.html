@@ -267,7 +267,7 @@
                 transform: translate3d(4px, 0, 0);
             }
         }
-        
+
         body {
             padding: 0;
             /* Eliminamos el padding para ganar espacio */
@@ -436,7 +436,34 @@
     </div>
 
     <script>
-        // 1. OBJETO DE PERSISTENCIA (Aseguramos su existencia global en el script)
+        // 1. OBJETO ANALISTA (PARA EL REPORTE FINAL DE INVESTIGACIÓN)
+        const Analista = {
+            registrar(macro, micro, esCorrecto) {
+                let stats = JSON.parse(localStorage.getItem('9001_HEATMAP')) || {};
+                if (!stats[macro]) stats[macro] = {};
+                if (!stats[macro][micro]) stats[macro][micro] = { ok: 0, err: 0 };
+
+                if (esCorrecto) stats[macro][micro].ok++;
+                else stats[macro][micro].err++;
+
+                localStorage.setItem('9001_HEATMAP', JSON.stringify(stats));
+            },
+
+            obtenerReporte() {
+                const stats = JSON.parse(localStorage.getItem('9001_HEATMAP')) || {};
+                let secciones = [];
+                for (const [macro, micros] of Object.entries(stats)) {
+                    let persistentes = [];
+                    let confort = [];
+                    for (const [nombre, data] of Object.entries(micros)) {
+                        if (data.err >= 3) persistentes.push(nombre);
+                        if (data.ok >= 5 && data.err === 0) confort.push(nombre);
+                    }
+                    secciones.push(`${macro.toUpperCase()} | PERSISTENTE: ${persistentes.join(', ') || 'Ninguno'} | CONFORT: ${confort.join(', ') || 'Ninguno'}`);
+                }
+                return secciones.join(' || ') || "RESULTADO_UNICO";
+            }
+        };
         const SistemaPersistencia = {
             guardarPuntaje(categoria, puntaje) {
                 try {
@@ -462,126 +489,189 @@
                 "4TA CIRCUNSCRIPCIÓN (UCO)": ["Tunuyán", "Tupungato", "San Carlos"]
             },
             competencias: {
-                "PAZ LETRADA": ["Desalojo por falta de pago", "Cobro de alquileres", "Causas hasta 3 JURISTAS"],
-                "CIVIL Y MINAS": ["Concursos y Quiebras", "Derechos Reales", "Amparos", "Prescripción Adquisitiva"],
-                "FAMILIA": ["Divorcios", "Adopciones", "Tutelas", "Violencia Familiar"]
+                "CIVIL Y COMERCIAL": [
+                    "Responsabilidad civil (excede monto Art. 7)",
+                    "Acciones reales y posesorias",
+                    "Contratos civiles y comerciales (sin importar monto)",
+                    "Sucesiones",
+                    "Amparos",
+                    "Consumo (excede monto Art. 7)"
+                ],
+                "PAZ LETRADO": [
+                    "Desalojos (locación, comodato, usufructo)",
+                    "Procesos de estructura monitoria",
+                    "Responsabilidad civil (hasta monto Art. 7)",
+                    "Consumo (hasta monto Art. 7)",
+                    "Pequeñas causas (conflictos entre vecinos)"
+                ]
             }
         };
 
-        const Motores = {
-            circunscripcionInversa() {
-                const cats = Object.keys(DB_LEGAL.circunscripciones);
-                const catC = cats[Math.floor(Math.random() * cats.length)];
-                const deptos = DB_LEGAL.circunscripciones[catC];
-                const depto = deptos[Math.floor(Math.random() * deptos.length)];
-                const catI = cats.find(c => c !== catC);
-                return this.estructurar(`El departamento de ${depto.toUpperCase()} pertenece a:`, catC, catI, 'CIRCUNSCRIPCIÓN');
-            },
-            circunscripcionDirecta() {
-                const cats = Object.keys(DB_LEGAL.circunscripciones);
-                const catQ = cats[Math.floor(Math.random() * cats.length)];
-                const correctos = DB_LEGAL.circunscripciones[catQ];
-                const catI = cats.find(c => c !== catQ);
-                const incorrectos = DB_LEGAL.circunscripciones[catI];
-                return this.generarLogicaCompleja(`¿Qué departamento pertenece a la ${catQ}?`, correctos, incorrectos, 'CIRCUNSCRIPCIÓN');
-            },
-            competenciaMaterial() {
-                const tribunales = Object.keys(DB_LEGAL.competencias);
-                const tribunalC = tribunales[Math.floor(Math.random() * tribunales.length)];
-                const procesos = DB_LEGAL.competencias[tribunalC];
-                const item = procesos[Math.floor(Math.random() * procesos.length)];
-                const tribunalI = tribunales.find(t => t !== tribunalC);
-                return {
-                    q: `Los procesos de ${item.toUpperCase()} son competencia de:`,
-                    a: tribunalC,
-                    opts: [tribunalC, tribunalI, "NINGUNO ES CORRECTO", "AMBOS SON CORRECTOS"].sort(() => Math.random() - 0.5),
-                    tipo: 'COMPETENCIA'
-                };
-            },
-            generarLogicaCompleja(pregunta, correctos, incorrectos, tipo) {
-                const modo = Math.floor(Math.random() * 3);
-                let opciones = [], respuesta = "";
-                if (modo === 0) { opciones = [correctos[0], incorrectos[0]]; respuesta = correctos[0]; }
-                else if (modo === 1) { opciones = [incorrectos[0], incorrectos[1]]; respuesta = "NINGUNO ES CORRECTO"; }
-                else { opciones = [correctos[0], correctos[1]]; respuesta = "AMBOS SON CORRECTOS"; }
-                return { q: pregunta, a: respuesta, opts: [...opciones, "NINGUNO ES CORRECTO", "AMBOS SON CORRECTOS"].sort(() => Math.random() - 0.5), tipo: tipo };
-            },
-            estructurar(pregunta, correcta, incorrecta, tipo) {
-                return { q: pregunta, a: correcta, opts: [correcta, incorrecta, "NINGUNO ES CORRECTO", "AMBOS SON CORRECTOS"].sort(() => Math.random() - 0.5), tipo: tipo };
-            }
-        };
+      const Motores = {
+    mazoCircun: [],
+    mazosFuero: {},
+    fuerosOrden: ["CIVIL Y COMERCIAL", "PAZ LETRADO"],
 
-        const Examen = {
+    prepararMazos() {
+        if (this.mazoCircun.length === 0) {
+            Object.entries(DB_LEGAL.circunscripciones).forEach(([llave, valores]) => {
+                valores.forEach(v => this.mazoCircun.push({ valor: v, llave: llave }));
+            });
+            this.mazoCircun.sort(() => Math.random() - 0.5);
+        }
+        this.fuerosOrden.forEach(fuero => {
+            if (!this.mazosFuero[fuero] || this.mazosFuero[fuero].length === 0) {
+                this.mazosFuero[fuero] = [...DB_LEGAL.competencias[fuero]].sort(() => Math.random() - 0.5);
+            }
+        });
+    },
+
+    shuffle(array) { return array.sort(() => Math.random() - 0.5); },
+
+    circunscripcion() {
+        this.prepararMazos();
+        if (this.mazoCircun.length < 2) this.mazoCircun = []; // Reinicio de seguridad
+
+        const principal = this.mazoCircun.pop();
+        const valor1 = principal.valor;
+        const llaveC = principal.llave;
+        const llavesTodas = Object.keys(DB_LEGAL.circunscripciones);
+
+        const llavePregunta = llavesTodas[Math.floor(Math.random() * llavesTodas.length)];
+        const secundario = this.mazoCircun[Math.floor(Math.random() * this.mazoCircun.length)] || principal;
+        const valor2 = secundario.valor;
+        const llaveV2 = secundario.llave;
+
+        const v1Ok = (llaveC === llavePregunta);
+        const v2Ok = (llaveV2 === llavePregunta);
+
+        let a;
+        if (v1Ok && v2Ok) a = "AMBOS SON CORRECTOS";
+        else if (!v1Ok && !v2Ok) a = "NINGUNO ES CORRECTO";
+        else if (v1Ok && !v2Ok) a = "SÓLO EL PRIMERO ES CORRECTO";
+        else a = "SÓLO EL SEGUNDO ES CORRECTO";
+
+        return {
+            q: `¿Pertenecen ${valor1.toUpperCase()} y ${valor2.toUpperCase()} a la ${llavePregunta}?`,
+            a: a,
+            opts: ["AMBOS SON CORRECTOS", "NINGUNO ES CORRECTO", "SÓLO EL PRIMERO ES CORRECTO", "SÓLO EL SEGUNDO ES CORRECTO"],
+            tipo: 'CIRCUNSCRIPCIÓN',
+            subtipo: valor1
+        };
+    },
+
+    competenciaMaterial() {
+        this.prepararMazos();
+        // En examen/preexamen, el fuero es aleatorio, no cíclico, para mayor dificultad
+        const fueroActual = this.fuerosOrden[Math.floor(Math.random() * this.fuerosOrden.length)];
+        
+        if (this.mazosFuero[fueroActual].length === 0) {
+            this.mazosFuero[fueroActual] = [...DB_LEGAL.competencias[fueroActual]].sort(() => Math.random() - 0.5);
+        }
+
+        const procesoCorrecto = this.mazosFuero[fueroActual].pop();
+        
+        const opts = this.shuffle([
+            "CIVIL Y COMERCIAL", 
+            "PAZ LETRADO", 
+            "JUSTICIA DE FAMILIA", 
+            "TRIBUTARIO Y CONCURSAL" // Se mantiene como distractor aunque no sea evaluado
+        ]);
+
+        return {
+            q: `El proceso de ${procesoCorrecto.toUpperCase()} es competencia de:`,
+            a: fueroActual,
+            opts: opts,
+            tipo: 'COMPETENCIA',
+            subtipo: procesoCorrecto
+        };
+    }
+};
+
+
+
+
+const Examen = {
             score: 0,
             qIndex: 0,
             timeLeft: 10,
             timerInt: null,
             fallos: { "CIRCUNSCRIPCIÓN": 0, "COMPETENCIA": 0 },
+            timestampStart: null,
+            logPendiente: null,
 
-            init() { this.render(); },
-
-            render() {
-                if (this.qIndex >= 20) { this.finish(); return; }
-                this.timeLeft = 10;
-                this.updateTimerUI();
-
-                let desafio;
-                if (Math.random() > 0.5) {
-                    desafio = Motores.competenciaMaterial();
-                } else {
-                    desafio = Math.random() > 0.5 ? Motores.circunscripcionDirecta() : Motores.circunscripcionInversa();
-                }
-
-                this.current = desafio;
-                document.getElementById('q-count').innerText = `PREGUNTA: ${String(this.qIndex + 1).padStart(2, '0')}/20`;
-                document.getElementById('question-text').innerText = desafio.q;
-                document.getElementById('options-container').innerHTML = desafio.opts.map(o =>
-                    `<button class="btn" onclick="Examen.answer('${o}')">${o}</button>`
-                ).join('');
-                this.startTimer();
+            init() {
+                this.timestampStart = new Date().toISOString();
+                this.render();
             },
 
+          render() {
+    // 1. Control de finalización (Límite de 20 reactivos)
+    if (this.qIndex >= 20) { this.finish(); return; }
+    
+    // 2. Reset del Timer de presión (10 segundos por pregunta)
+    clearInterval(this.timerInt);
+    this.timeLeft = 10;
+    this.updateTimerUI();
+
+    // 3. Selección de Desafío: Altera entre Circunscripción y Competencia
+    // El motor interno ya gestiona la aleatoriedad de los modos (Ambos, Ninguno, Identificación)
+    let desafio;
+    if (this.qIndex % 2 === 0) {
+        desafio = Motores.circunscripcion();
+    } else {
+        desafio = Motores.competenciaMaterial();
+    }
+
+    this.current = desafio;
+
+    // 4. Actualización de Interfaz (DOM)
+    document.getElementById('q-count').innerText = `PREGUNTA: ${String(this.qIndex + 1).padStart(2, '0')}/20`;
+    document.getElementById('question-text').innerText = desafio.q;
+    
+    // Generación de botones dinámica
+    document.getElementById('options-container').innerHTML = desafio.opts.map(o =>
+        `<button class="btn" onclick="Examen.answer('${o}')">${o}</button>`
+    ).join('');
+
+    // 5. Reinicio de la cuenta regresiva
+    this.startTimer();
+},
             answer(val) {
                 clearInterval(this.timerInt);
+                const esCorrecto = (val === this.current.a);
                 const body = document.body;
-
-                // Limpieza de estados previos (Aleta de tiempo y efectos anteriores)
                 body.classList.remove('state-critical', 'fx-shake', 'state-success');
+
+                // REGISTRO SILENCIOSO DE ANALÍTICA
+                if (val !== null) Analista.registrar(this.current.tipo, this.current.subtipo, esCorrecto);
 
                 if (val === null) {
                     this.score -= 3;
                     this.fallos[this.current.tipo]++;
                     this.status("SILENCIO PENALIZADO (-3)", "var(--critical)");
-                    body.classList.add('state-critical', 'fx-shake'); // Rojo + Shake
-                } else if (val === this.current.a) {
+                    body.classList.add('state-critical', 'fx-shake');
+                } else if (esCorrecto) {
                     this.score += 1;
                     this.status("CORRECTO (+1)", "#00ff00");
-                    body.classList.add('state-success'); // Verde (Sin shake, el éxito es sólido)
+                    body.classList.add('state-success');
                 } else {
                     this.score -= 2;
                     this.fallos[this.current.tipo]++;
                     this.status("ERROR (-2)", "var(--critical)");
-                    body.classList.add('state-critical', 'fx-shake'); // Rojo + Shake
+                    body.classList.add('state-critical', 'fx-shake');
                 }
 
                 document.getElementById('current-score').innerText = this.score;
-
-                // Feedback de transición
                 document.getElementById('options-container').innerHTML = "";
-                document.getElementById('question-text').innerText = "ACTUALIZANDO...";
-
                 this.qIndex++;
-
-                // Al renderizar la siguiente pregunta, limpiaremos los efectos
                 setTimeout(() => {
                     body.classList.remove('fx-shake', 'state-success', 'state-critical');
                     this.render();
-                }, 700); // Un pelín más para que se luzca el efecto
+                }, 600);
             },
 
-
             startTimer() {
-                clearInterval(this.timerInt);
                 this.timerInt = setInterval(() => {
                     this.timeLeft--;
                     this.updateTimerUI();
@@ -594,19 +684,14 @@
                 if (secondsLabel) secondsLabel.innerText = this.timeLeft;
 
                 const bar = document.getElementById('timer-bar');
-                const body = document.body;
-
                 if (bar) {
                     bar.style.width = (this.timeLeft * 10) + "%";
-
                     if (this.timeLeft < 4) {
-                        // ESTADO DE ALERTA: Tiempo crítico
                         bar.style.backgroundColor = "var(--critical)";
-                        body.classList.add('state-critical');
+                        document.body.classList.add('state-critical');
                     } else {
-                        // ESTADO NORMAL: Operación estable
                         bar.style.backgroundColor = "var(--accent)";
-                        body.classList.remove('state-critical');
+                        document.body.classList.remove('state-critical');
                     }
                 }
             },
@@ -617,36 +702,76 @@
             },
 
             finish() {
+                clearInterval(this.timerInt);
                 const isApto = this.score >= 8;
-                let debilidad = "ESTABLE";
-                if (this.fallos["CIRCUNSCRIPCIÓN"] > this.fallos["COMPETENCIA"]) debilidad = "CIRCUNSCRIPCIÓN";
-                else if (this.fallos["COMPETENCIA"] > this.fallos["CIRCUNSCRIPCIÓN"]) debilidad = "COMPETENCIA_MATERIAL";
-                else if (this.fallos["CIRCUNSCRIPCIÓN"] > 0) debilidad = "MÚLTIPLES VECTORES";
+                const reporteFull = Analista.obtenerReporte();
 
-                this.showResult(this.score, isApto, debilidad);
+                // MEMORIA PARA MEG
+                const memMEG = {
+                    fecha: new Date().toISOString(),
+                    score: this.score,
+                    debilidad: reporteFull,
+                    protocolo: 'EXAMEN_FINAL',
+                    apto: isApto
+                };
+                localStorage.setItem('9001_MEG_MEMORY', JSON.stringify(memMEG));
+
+                // LOG PARA INVESTIGACIÓN
+                this.logPendiente = {
+                    uid_hash: localStorage.getItem('meg_uid') || "ANON_USER",
+                    session_token: localStorage.getItem('meg_session') || "NO_SESSION",
+                    timestamp_start: this.timestampStart,
+                    protocolo: 'EXAMEN_FINAL_9001',
+                    score: this.score,
+                    integridad: isApto ? 'ALTA' : 'INSUFICIENTE',
+                    error_vector: reporteFull,
+                    ua_client: navigator.userAgent
+                };
+
+                this.showResult(this.score, isApto, (this.fallos["CIRCUNSCRIPCIÓN"] >= this.fallos["COMPETENCIA"] ? "CIRCUNSCRIPCIÓN" : "COMPETENCIA"));
             },
-
-            showResult(finalScore, isApto, debilidad) {
+            showResult(score, isApto, vector, session) {
                 const overlay = document.getElementById('result-overlay');
-                if (overlay) overlay.style.display = 'flex';
+                overlay.style.display = 'flex';
+                document.getElementById('res-id').innerText = session;
+                document.getElementById('res-score-value').innerText = score;
+                document.getElementById('res-sync').innerText = isApto ? "APROBADO" : "REPROBADO";
 
-                const scoreDisp = document.getElementById('res-score-value');
-                if (scoreDisp) scoreDisp.innerText = finalScore;
-
-                const msgArea = document.getElementById('res-msg');
-                if (msgArea) {
-                    msgArea.innerHTML = `Evaluación finalizada. <br><span style="font-size:0.7rem; color:var(--dim)">VECTOR_DE_ERROR: <span style="color:var(--critical)">${debilidad}</span></span>`;
-                }
-
-                // GUARDADO DE DATOS
-                SistemaPersistencia.guardarPuntaje('examen', finalScore);
+                document.getElementById('res-msg').innerHTML = isApto ?
+                    "Competencia legal acreditada. Sincronía con la Matriz exitosa." :
+                    `Fallo en la resolución. Principal vector de error: <span style="color:var(--critical)">${vector}</span>`;
 
                 const status = document.getElementById('res-status');
-                if (status) {
-                    status.innerText = isApto ? "RESOLUCIÓN_FIRME" : "INSUFICIENCIA_PROCESAL";
-                    status.style.color = isApto ? "var(--safe)" : "var(--critical)";
+                status.innerText = isApto ? "RESOLUCIÓN_FIRME" : "INSUFICIENCIA_PROCESAL";
+                status.style.color = isApto ? "#00ff00" : "var(--critical)";
+
+                document.body.className = isApto ? 'state-success' : 'state-critical';
+
+                // Configurar botón de salida
+                const btn = document.querySelector('.btn-terminal');
+                btn.innerText = "REGISTRAR_Y_SALIR";
+                btn.onclick = () => this.finalizarYEnviar();
+            },
+
+            async finalizarYEnviar() {
+                const btn = document.querySelector('.btn-terminal');
+                btn.innerText = "⚡ SINCRONIZANDO...";
+                btn.disabled = true;
+
+                if (this.logPendiente) {
+                    const API_URL = "https://script.google.com/macros/s/AKfycbz35P_r0wzGNWt6HnbwfiKwrT8rB4smorJhaWA5ixt8qAu25-UKtfRkzFXbEnlhLqKWkQ/exec";
+                    try {
+                        await fetch(API_URL, {
+                            method: 'POST',
+                            mode: 'no-cors',
+                            keepalive: true,
+                            headers: { 'Content-Type': 'text/plain' },
+                            body: JSON.stringify(this.logPendiente)
+                        });
+                    } catch (e) { console.warn("Error de enlace"); }
                 }
-                document.body.className = isApto ? 'body-success' : 'body-fail';
+
+                setTimeout(() => { window.location.href = "index.html"; }, 800);
             }
         };
 

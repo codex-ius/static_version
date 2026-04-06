@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,17 +16,20 @@
             --critical: #ff0000;
         }
 
-        * { box-sizing: border-box; cursor: crosshair; }
+        * {
+            box-sizing: border-box;
+            cursor: crosshair;
+        }
 
         body {
             background-color: var(--bg);
             color: var(--text);
             font-family: 'Courier New', Courier, monospace;
             margin: 0;
-            height: 100vh; 
+            height: 100vh;
             display: flex;
             flex-direction: column;
-            overflow: hidden; 
+            overflow: hidden;
             transition: opacity 0.5s ease;
         }
 
@@ -33,13 +37,25 @@
         body::after {
             content: "";
             position: absolute;
-            top: 0; left: 0; width: 100%; height: 2px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
             background: rgba(0, 212, 255, 0.05);
             animation: scan 4s linear infinite;
             pointer-events: none;
             z-index: 1000;
         }
-        @keyframes scan { 0% { top: 0; } 100% { top: 100%; } }
+
+        @keyframes scan {
+            0% {
+                top: 0;
+            }
+
+            100% {
+                top: 100%;
+            }
+        }
 
         /* --- BARRA SUPERIOR --- */
         .sys-header {
@@ -51,8 +67,17 @@
             align-items: center;
         }
 
-        .sys-id { font-size: 0.7rem; color: var(--accent); letter-spacing: 3px; font-weight: bold; }
-        .sys-status { font-size: 0.6rem; color: #00ff00; }
+        .sys-id {
+            font-size: 0.7rem;
+            color: var(--accent);
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        .sys-status {
+            font-size: 0.6rem;
+            color: #00ff00;
+        }
 
         /* --- CONTENIDO PRINCIPAL --- */
         .main-wrapper {
@@ -69,8 +94,17 @@
             padding-left: 25px;
         }
 
-        h1 { font-size: 1.8rem; letter-spacing: 5px; margin: 0 0 10px 0; }
-        .description { color: #666; font-size: 0.8rem; letter-spacing: 1px; }
+        h1 {
+            font-size: 1.8rem;
+            letter-spacing: 5px;
+            margin: 0 0 10px 0;
+        }
+
+        .description {
+            color: var(--critical);
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
 
         /* --- GRID DE PROTOCOLOS --- */
         .protocol-container {
@@ -97,8 +131,19 @@
             box-shadow: inset 0 0 15px rgba(0, 212, 255, 0.05);
         }
 
-        .protocol-card h3 { color: var(--accent); margin: 0 0 15px 0; font-size: 0.85rem; letter-spacing: 2px; }
-        .protocol-card p { color: #888; font-size: 0.75rem; line-height: 1.6; margin: 0; }
+        .protocol-card h3 {
+            color: var(--accent);
+            margin: 0 0 15px 0;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+        }
+
+        .protocol-card p {
+            color: #fff;
+            font-size: 0.75rem;
+            line-height: 1.6;
+            margin: 0;
+        }
 
         /* --- DASHBOARD DE LOGS (TABLAS) --- */
         .dashboard-terminal {
@@ -110,25 +155,37 @@
             border-top: 1px solid var(--border);
         }
 
-        .log-column h3 { 
-            font-size: 0.65rem; 
+        .log-column h3 {
+            font-size: 0.65rem;
             /*color: #444; */
-            border-bottom: 1px solid #111; 
-            padding-bottom: 10px; 
+            border-bottom: 1px solid #111;
+            padding-bottom: 10px;
             margin-bottom: 15px;
             letter-spacing: 2px;
         }
 
-        .log-list { list-style: none; padding: 0; font-size: 0.7rem; margin: 0; }
-        .log-list li { 
-            display: flex; 
-            justify-content: space-between; 
-            padding: 8px 0; 
-            border-bottom: 1px solid #080808; 
+        .log-list {
+            list-style: none;
+            padding: 0;
+            font-size: 0.7rem;
+            margin: 0;
         }
 
-        .log-date { color: #333; }
-        .log-score { color: var(--accent); font-weight: bold; }
+        .log-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #080808;
+        }
+
+        .log-date {
+            color: #fff;
+        }
+
+        .log-score {
+            color: var(--accent);
+            font-weight: bold;
+        }
 
         /* --- CONTROLES --- */
         .system-controls {
@@ -157,12 +214,162 @@
         }
 
         @media (max-width: 900px) {
-            .dashboard-terminal { grid-template-columns: 1fr; }
+            .dashboard-terminal {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* --- INTERFAZ MEG --- */
+        .meg-panel {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            background: rgba(0, 212, 255, 0.02);
+            border: 1px solid var(--border);
+            padding: 20px;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .meg-avatar {
+            width: 60px;
+            height: 60px;
+            border: 1px solid var(--accent);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+        }
+
+        .meg-pulse {
+            width: 20px;
+            height: 20px;
+            background: var(--accent);
+            border-radius: 50%;
+            box-shadow: 0 0 15px var(--accent);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.9);
+                opacity: 0.5;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(0.9);
+                opacity: 0.5;
+            }
+        }
+
+        .meg-id {
+            font-size: 0.5rem;
+            margin-top: 5px;
+            color: var(--accent);
+        }
+
+        .meg-dialog {
+            flex: 1;
+        }
+
+        #meg-status {
+            font-size: 0.6rem;
+            color: var(--accent);
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        #meg-message {
+            font-size: 0.8rem;
+            line-height: 1.4;
+            color: #888;
+        }
+
+        .meg-blink {
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* --- OVERLAY DE AUTENTICACIÓN --- */
+        #auth-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .auth-box {
+            width: 350px;
+            padding: 30px;
+            border: 1px solid var(--dim);
+            background: #030303;
+            text-align: center;
+        }
+
+        .auth-box h2 {
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        .auth-input {
+            width: 100%;
+            background: #000;
+            border: 1px solid var(--border);
+            color: var(--accent);
+            padding: 10px;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            outline: none;
+            margin-bottom: 15px;
+        }
+
+        .auth-input:focus {
+            border-color: var(--accent);
+        }
+
+        #auth-status {
+            font-size: 0.6rem;
+            height: 20px;
+            margin-top: 10px;
+        }
+
+        .hidden {
+            display: none !important;
         }
     </style>
 </head>
-<body>
 
+<body>
+    <div id="auth-overlay">
+        <div class="auth-box">
+            <h2>IDENTIFICACIÓN_REQUERIDA</h2>
+            <p style="font-size: 0.6rem; color: #444; margin-bottom: 20px;">MATRIZ DE EVALUACIÓN DE GRADO v1.0</p>
+            <input type="password" id="legajo-input" class="auth-input" placeholder="INGRESE LEGAJO" maxlength="10">
+            <button class="btn-danger" style="width: 100%;" onclick="AuthMEG.validar()">ESTABLECER_VÍNCULO</button>
+            <div id="auth-status"></div>
+        </div>
+    </div>
     <header class="sys-header">
         <div class="sys-id">SISTEMA_9001 // NODO_CENTRAL</div>
         <div class="sys-status">ESTADO: OPERATIVO</div>
@@ -171,7 +378,18 @@
     <main class="main-wrapper">
         <section class="welcome-section">
             <h1>SYS_9001</h1>
-            <p class="description">Validación de aptitud técnica y reflejos legales. Mendoza, AR.</p>
+            <p class="description">Validación de aptitud técnica y reflejos legales.</p>
+            <section id="meg-interface" class="meg-panel">
+                <div class="meg-avatar">
+                    <div class="meg-pulse"></div>
+                    <span class="meg-id">MEG_v1.0</span>
+                </div>
+                <div class="meg-dialog">
+                    <div id="meg-status" class="meg-blink">ESTADO: ANALIZANDO HISTORIAL...</div>
+                    <div id="meg-message">Iniciando protocolo de supervisión de terminal. Esperando actividad del
+                        operador.</div>
+                </div>
+            </section>
         </section>
 
         <nav class="protocol-container">
@@ -188,23 +406,23 @@
                 <p>Evaluación terminal. Sistema de puntuación asimétrica. Umbral de aprobación: 8.0</p>
             </a>
         </nav>
-         <section class="dashboard-terminal">
-        <div class="log-column">
-            <h3>REGISTROS_REPASO</h3>
-            <ul id="log-repaso" class="log-list"></ul>
-        </div>
-        <div class="log-column">
-            <h3>REGISTROS_VALIDADOR</h3>
-            <ul id="log-validador" class="log-list"></ul>
-        </div>
-        <div class="log-column">
-            <h3>REGISTROS_EXAMEN</h3>
-            <ul id="log-examen" class="log-list"></ul>
-        </div>
-    </section>
+        <section class="dashboard-terminal">
+            <div class="log-column">
+                <h3>REGISTROS_REPASO</h3>
+                <ul id="log-repaso" class="log-list"></ul>
+            </div>
+            <div class="log-column">
+                <h3>REGISTROS_VALIDADOR</h3>
+                <ul id="log-validador" class="log-list"></ul>
+            </div>
+            <div class="log-column">
+                <h3>REGISTROS_EXAMEN</h3>
+                <ul id="log-examen" class="log-list"></ul>
+            </div>
+        </section>
     </main>
 
-   
+
 
     <footer class="system-controls">
         <div style="font-size: 0.55rem; color: #222;">ID_UNIDAD: POSITIVO_BGH_I5</div>
@@ -212,40 +430,133 @@
     </footer>
 
     <script>
-        const SistemaPersistencia = {
-            cargarDashboard() {
-                const categorias = ['repaso', 'validador', 'examen'];
-                categorias.forEach(cat => {
-                    const container = document.getElementById(`log-${cat}`);
-                    const datos = JSON.parse(localStorage.getItem(`9001_${cat}`)) || [];
-                    if (datos.length === 0) {
-                        container.innerHTML = "<li style='color:#222'>[ SIN_DATOS ]</li>";
-                        return;
-                    }
-                    container.innerHTML = datos.map(reg => `
-                        <li>
-                            <span class="log-date">${reg.fecha}</span>
-                            <span class="log-score">${reg.puntos}${cat === 'repaso' ? '%' : ' PTS'}</span>
-                        </li>
-                    `).join('');
-                });
-            },
+        const SALT = "MZA_CODEX_2026";
+const API_URL = "https://script.google.com/macros/s/AKfycbz35P_r0wzGNWt6HnbwfiKwrT8rB4smorJhaWA5ixt8qAu25-UKtfRkzFXbEnlhLqKWkQ/exec";
 
-            purgarMemoria() {
-                if (confirm("ADVERTENCIA: ¿Proceder con el borrado de registros?")) {
-                    localStorage.removeItem('9001_repaso');
-                    localStorage.removeItem('9001_validador');
-                    localStorage.removeItem('9001_examen');
-                    document.body.style.opacity = "0";
-                    setTimeout(() => {
-                        this.cargarDashboard();
-                        document.body.style.opacity = "1";
-                    }, 500);
+const AuthMEG = {
+    async generarHash(legajo) {
+        const cleanLegajo = legajo.trim().toLowerCase();
+        const msgUint8 = new TextEncoder().encode(cleanLegajo + SALT);
+        const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    },
+
+   async validar() {
+        const input = document.getElementById('legajo-input');
+        const status = document.getElementById('auth-status');
+        if (!input.value) return;
+
+        status.innerText = "GENERANDO LLAVE CRIPTOGRÁFICA...";
+        const uid = await this.generarHash(input.value);
+        
+        localStorage.setItem('meg_uid', uid);
+        localStorage.setItem('meg_session', `U-${uid.substring(0,4)}`.toUpperCase());
+        
+        status.innerText = "VÍNCULO ESTABLECIDO.";
+        setTimeout(() => this.finalizar(), 600);
+    },
+
+    finalizar() {
+        document.getElementById('auth-overlay').classList.add('hidden');
+        MEG.analizarProgreso();
+        SistemaPersistencia.cargarDashboard();
+    }
+};
+
+
+const SistemaPersistencia = {
+    cargarDashboard() {
+        const categorias = ['repaso', 'validador', 'examen'];
+        categorias.forEach(cat => {
+            const container = document.getElementById(`log-${cat}`);
+            if (!container) return;
+            const datos = JSON.parse(localStorage.getItem(`9001_${cat}`)) || [];
+            const logsRecientes = [...datos].reverse().slice(0, 5);
+            container.innerHTML = logsRecientes.length === 0 
+                ? "<li style='color:#444'>[ SIN_DATOS ]</li>"
+                : logsRecientes.map(reg => `<li><span class="log-date">${reg.fecha}</span><span class="log-score">${reg.puntos}${cat === 'repaso' ? '%' : ' PTS'}</span></li>`).join('');
+        });
+    },
+
+    purgarMemoria() {
+        if (confirm("ADVERTENCIA: ¿Proceder con el borrado de registros?")) {
+            localStorage.clear();
+            location.reload();
+        }
+    }
+};
+const MEG = {
+    analizarProgreso() {
+        const msgElement = document.getElementById('meg-message');
+        const statusElement = document.getElementById('meg-status');
+        const sessionID = localStorage.getItem('meg_session') || "NO_AUTH";
+        const heatmap = JSON.parse(localStorage.getItem('9001_HEATMAP')) || {};
+
+        statusElement.innerText = `OPERADOR: ${sessionID}`;
+        
+        // --- PROCESAMIENTO DE DIAGNÓSTICO FRÍO ---
+        let diagnostico = "ESTADO: IDENTIDAD CONFIRMADA.\n";
+        
+        if (Object.keys(heatmap).length === 0) {
+            diagnostico += "ANÁLISIS: Sin datos previos de calibración. Inicie PROTOCOLO_REPASO para generar mapa cognitivo.";
+        } else {
+            let persistentes = [];
+            let confort = [];
+
+            // Recorremos el Heatmap para extraer la información técnica
+            for (const macro in heatmap) {
+                for (const micro in heatmap[macro]) {
+                    const data = heatmap[macro][micro];
+                    if (data.err >= 3) persistentes.push(micro);
+                    if (data.ok >= 5 && data.err === 0) confort.push(micro);
                 }
             }
-        };
 
-        window.onload = () => SistemaPersistencia.cargarDashboard();
+            diagnostico += "RESULTADOS DEL ÚLTIMO ANÁLISIS:\n";
+            
+            if (persistentes.length > 0) {
+                diagnostico += `• FALLAS RECURRENTES: ${persistentes.join(', ').toUpperCase()}.\n`;
+                diagnostico += `• SUGERENCIA: Reforzar módulos de ${persistentes[0].toUpperCase()} antes de nueva evaluación.\n`;
+            } else {
+                diagnostico += "• VECTORES DE ERROR: No se detectan patrones de falla crítica.\n";
+            }
+
+            if (confort.length > 0) {
+                diagnostico += `• ZONAS DE ESTABILIDAD: ${confort.slice(0, 3).join(', ').toUpperCase()}.\n`;
+            }
+            
+            diagnostico += "SISTEMA: EN ESPERA DE INSTRUCCIONES.";
+        }
+
+        this.escribir(msgElement, diagnostico);
+    },
+
+    escribir(elemento, texto) {
+        if (!elemento) return;
+        elemento.innerHTML = ""; // Usamos innerHTML para respetar saltos de línea
+        let i = 0;
+        const interval = setInterval(() => {
+            if (i < texto.length) {
+                // Traducimos saltos de línea a <br>
+                if (texto[i] === "\n") elemento.innerHTML += "<br>";
+                else elemento.innerHTML += texto[i];
+                i++;
+            } else {
+                clearInterval(interval);
+            }
+        }, 15); // Un poco más rápido para dar sensación de procesamiento eficiente
+    }
+};
+
+window.onload = () => {
+    if (localStorage.getItem('meg_uid')) {
+        AuthMEG.finalizar();
+    } else {
+        SistemaPersistencia.cargarDashboard();
+    }
+};
     </script>
 </body>
+
 </html>

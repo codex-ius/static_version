@@ -34,9 +34,6 @@
             display: flex;
             flex-direction: column;
             overflow: hidden;
-            border: 8px solid var(--dim);
-            transition: border-color 0.4s ease;
-            padding: 1rem;
         }
 
         /* Escáner Biométrico */
@@ -63,10 +60,10 @@
         }
 
         header {
-            padding: 15px 25px;           
+            padding: 15px 25px;
             background: var(--panel);
             border-bottom: 1px solid var(--dim);
-           
+
         }
 
         .sys-info {
@@ -102,12 +99,21 @@
             align-items: center;
             padding: 40px;
             text-align: center;
+            padding: 20px;
+            /* Reducido para mejor escala en móvil */
+            text-align: center;
+            /* El borde ahora vive aquí */
+            border: 8px solid var(--dim);
+            margin: 10px;
+            transition: border-color 0.4s ease;
+            overflow-y: auto;
+            /* Permite scroll interno si el contenido crece */
         }
 
         #prompt {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             color: #fff;
-            margin-bottom: 40px;
+            margin-bottom: 1rem;
             max-width: 850px;
             font-weight: bold;
         }
@@ -229,14 +235,35 @@
         }
 
         /* Colores dinámicos basados en la clase del body */
-.state-stable #status-text { color: var(--safe); }
+        /*.state-stable #status-text { color: var(--safe); }
 .state-warning #status-text { color: var(--warning); }
-.state-critical #status-text { color: var(--critical); }
+.state-critical #status-text { color: var(--critical); }*/
 
-/* Opcional: Que la barra de vigencia también cambie de color automáticamente */
-.state-stable #stability-bar { background: var(--safe); }
-.state-warning #stability-bar { background: var(--warning); }
-.state-critical #stability-bar { background: var(--critical); }
+        /* Estados de Borde Dinámicos aplicados al main */
+        .main-display.state-warning {
+            border-color: var(--warning);
+        }
+
+        .main-display.state-critical {
+            border-color: var(--critical);
+        }
+
+        .main-display.state-stable {
+            border-color: var(--dim);
+        }
+
+        /* Opcional: Que la barra de vigencia también cambie de color automáticamente */
+        .state-stable #stability-bar {
+            background: var(--safe);
+        }
+
+        .state-warning #stability-bar {
+            background: var(--warning);
+        }
+
+        .state-critical #stability-bar {
+            background: var(--critical);
+        }
     </style>
 </head>
 
@@ -249,15 +276,15 @@
     </header>
 
     <div id="ia-console">SISTEMA INICIADO. MANTENGA FLUJO DE RESPUESTA CONSTANTE.</div>
-
+    <div class="stability-footer">
+        <div id="stability-bar"></div>
+    </div>
     <main class="main-display">
         <div id="prompt">INICIALIZANDO UNIDAD...</div>
         <div id="options-grid" class="options"></div>
     </main>
 
-    <div class="stability-footer">
-        <div id="stability-bar"></div>
-    </div>
+
     <div id="result-overlay">
         <div class="result-box">
             <div class="result-header">REPORTE_DE_ESTABILIZACIÓN_DE_NÚCLEO</div>
@@ -271,13 +298,45 @@
                 <div id="res-msg" class="res-msg-text">
                     Los datos han sido persistidos en la memoria local.
                 </div>
-                <button class="btn-terminal" onclick="location.href='index.html'">RETORNAR_AL_NODO_CENTRAL</button>
+                <button class="btn-final" onclick="Protocolo.finalizarYEnviar()">RETORNAR AL NODO CENTRAL</button>
             </div>
         </div>
     </div>
 
     <script>
-        // 1. SISTEMA DE PERSISTENCIA
+        // --- SUSTITUYE TODO EL BLOQUE DE SCRIPT POR ESTE ---
+        // 1. OBJETO ANALISTA (GESTIÓN DE HEATMAP Y REPORTE PEDAGÓGICO)
+        const Analista = {
+            registrar(macro, micro, esCorrecto) {
+                let stats = JSON.parse(localStorage.getItem('9001_HEATMAP')) || {};
+                if (!stats[macro]) stats[macro] = {};
+                if (!stats[macro][micro]) stats[macro][micro] = { ok: 0, err: 0 };
+
+                if (esCorrecto) stats[macro][micro].ok++;
+                else stats[macro][micro].err++;
+
+                localStorage.setItem('9001_HEATMAP', JSON.stringify(stats));
+            },
+
+            obtenerReporte() {
+                const stats = JSON.parse(localStorage.getItem('9001_HEATMAP')) || {};
+                let secciones = [];
+
+                for (const [macro, micros] of Object.entries(stats)) {
+                    let persistentes = [];
+                    let confort = [];
+
+                    for (const [nombre, data] of Object.entries(micros)) {
+                        if (data.err >= 3) persistentes.push(nombre);
+                        if (data.ok >= 5 && data.err === 0) confort.push(nombre);
+                    }
+
+                    secciones.push(`${macro.toUpperCase()} | PERSISTENTE: ${persistentes.join(', ') || 'Ninguno'} | CONFORT: ${confort.join(', ') || 'Ninguno'}`);
+                }
+                return secciones.join(' || ') || "SIN DATOS SUFICIENTES";
+            }
+        };
+
         const SistemaPersistencia = {
             guardarPuntaje(categoria, puntaje) {
                 try {
@@ -303,70 +362,217 @@
                 "4TA CIRCUNSCRIPCIÓN (UCO)": ["Tunuyán", "Tupungato", "San Carlos"]
             },
             competencias: {
-                "PAZ LETRADA": ["Desalojo por falta de pago", "Cobro de alquileres", "Causas hasta 3 JURISTAS"],
-                "CIVIL Y MINAS": ["Concursos y Quiebras", "Derechos Reales", "Amparos", "Prescripción Adquisitiva"],
-                "FAMILIA": ["Divorcios", "Adopciones", "Tutelas", "Violencia Familiar"]
+                "CIVIL Y COMERCIAL": [
+                    "Responsabilidad civil (excede monto Art. 7)",
+                    "Acciones reales y posesorias",
+                    "Contratos civiles y comerciales (sin importar monto)",
+                    "Sucesiones",
+                    "Amparos",
+                    "Consumo (excede monto Art. 7)"
+                ],
+                "PAZ LETRADO": [
+                    "Desalojos (locación, comodato, usufructo)",
+                    "Procesos de estructura monitoria",
+                    "Responsabilidad civil (hasta monto Art. 7)",
+                    "Consumo (hasta monto Art. 7)",
+                    "Pequeñas causas (conflictos entre vecinos)"
+                ]
+            }
+        };
+const Motores = {
+    mazoCircun: [],
+    mazosFuero: {},
+    indiceFuero: 0,
+    fuerosOrden: ["CIVIL Y COMERCIAL", "PAZ LETRADO"],
+
+    prepararMazos() {
+        if (this.mazoCircun.length === 0) {
+            Object.entries(DB_LEGAL.circunscripciones).forEach(([llave, valores]) => {
+                valores.forEach(v => this.mazoCircun.push({ valor: v, llave: llave }));
+            });
+            this.mazoCircun.sort(() => Math.random() - 0.5);
+        }
+        this.fuerosOrden.forEach(fuero => {
+            if (!this.mazosFuero[fuero] || this.mazosFuero[fuero].length === 0) {
+                this.mazosFuero[fuero] = [...DB_LEGAL.competencias[fuero]].sort(() => Math.random() - 0.5);
+            }
+        });
+    },
+
+    shuffle(array) { return array.sort(() => Math.random() - 0.5); },
+
+    obtenerCircunscripcion() {
+        this.prepararMazos();
+        const principal = this.mazoCircun.pop();
+        const valor1 = principal.valor;
+        const llaveC = principal.llave;
+        const llavesTodas = Object.keys(DB_LEGAL.circunscripciones);
+
+        const llavePregunta = llavesTodas[Math.floor(Math.random() * llavesTodas.length)];
+        // Tomamos un depto aleatorio del mazo para comparar (sin sacarlo del mazo para que pueda ser principal luego)
+        const comparador = this.mazoCircun[Math.floor(Math.random() * this.mazoCircun.length)] || principal;
+        const valor2 = comparador.valor;
+        const llaveV2 = comparador.llave;
+
+        const v1Ok = (llaveC === llavePregunta);
+        const v2Ok = (llaveV2 === llavePregunta);
+
+        let a;
+        if (v1Ok && v2Ok) a = "AMBOS SON CORRECTOS";
+        else if (!v1Ok && !v2Ok) a = "NINGUNO ES CORRECTO";
+        else if (v1Ok && !v2Ok) a = "SÓLO EL PRIMERO ES CORRECTO";
+        else a = "SÓLO EL SEGUNDO ES CORRECTO";
+
+        return {
+            q: `¿Se encuentran ${valor1.toUpperCase()} y ${valor2.toUpperCase()} comprendidos en la ${llavePregunta}?`,
+            a: a,
+            opts: ["AMBOS SON CORRECTOS", "NINGUNO ES CORRECTO", "SÓLO EL PRIMERO ES CORRECTO", "SÓLO EL SEGUNDO ES CORRECTO"],
+            tipo: 'CIRCUNSCRIPCIÓN',
+            subtipo: valor1
+        };
+    },
+
+    obtenerCompetencia() {
+        this.prepararMazos();
+        const fueroActual = this.fuerosOrden[this.indiceFuero];
+        this.indiceFuero = (this.indiceFuero + 1) % this.fuerosOrden.length;
+
+        const procesoCorrecto = this.mazosFuero[fueroActual].pop();
+        
+        // Las opciones ahora son simplemente los dos fueros disponibles
+        // Puedes agregar opciones como "JUSTICIA DE PAZ" o "FEDERAL" si quieres rellenar a 4,
+        // pero para sobriedad, dos opciones directas son más eficientes.
+        // Aquí forzamos 4 opciones para mantener la estética de la cuadrícula:
+        const opts = this.shuffle([
+            "CIVIL Y COMERCIAL", 
+            "PAZ LETRADO", 
+            "TRIBUTARIO", // Distractor fijo
+            "CONCURSOS Y QUIEBRAS"  // Distractor fijo
+        ]);
+
+        return {
+            q: `¿A qué competencia material corresponde el proceso: ${procesoCorrecto.toUpperCase()}?`,
+            a: fueroActual,
+            opts: opts,
+            tipo: 'COMPETENCIA',
+            subtipo: procesoCorrecto
+        };
+    }
+};
+       
+        /*const Motores = {
+            // Mazo de circunscripción (se mantiene igual, es eficiente)
+            mazoCircun: [],
+            // Mazo de competencia transformado en un Mapa de Colas por Fuero
+            mazosFuero: {},
+            indiceFuero: 0,
+            fuerosOrden: ["CIVIL Y COMERCIAL", "PAZ LETRADO"],
+
+            prepararMazos() {
+                // Preparar Circunscripciones si está vacío
+                if (this.mazoCircun.length === 0) {
+                    Object.entries(DB_LEGAL.circunscripciones).forEach(([llave, valores]) => {
+                        valores.forEach(v => this.mazoCircun.push({ valor: v, llave: llave }));
+                    });
+                    this.mazoCircun.sort(() => Math.random() - 0.5);
+                }
+                // Preparar Fueros (Uno por uno para el ciclo)
+                this.fuerosOrden.forEach(fuero => {
+                    if (!this.mazosFuero[fuero] || this.mazosFuero[fuero].length === 0) {
+                        this.mazosFuero[fuero] = [...DB_LEGAL.competencias[fuero]].sort(() => Math.random() - 0.5);
+                    }
+                });
+            },
+
+            shuffle(array) { return array.sort(() => Math.random() - 0.5); },
+
+            // Categoría: Circunscripción (Mantiene tu lógica de Validación/Ambos/Ninguno)
+            obtenerCircunscripcion() {
+                this.prepararMazos();
+                const principal = this.mazoCircun.pop();
+                const valor1 = principal.valor;
+                const llaveC = principal.llave;
+                const llavesTodas = Object.keys(DB_LEGAL.circunscripciones);
+                const llaveF = llavesTodas.find(l => l !== llaveC);
+
+                // Lógica de Validación de 2 valores para Circunscripción
+                const llavePregunta = llavesTodas[Math.floor(Math.random() * llavesTodas.length)];
+                const depto2Obj = this.mazoCircun[Math.floor(Math.random() * this.mazoCircun.length)] || principal;
+                const valor2 = depto2Obj.valor;
+                const llaveV2 = depto2Obj.llave;
+
+                const v1Ok = (llaveC === llavePregunta);
+                const v2Ok = (llaveV2 === llavePregunta);
+
+                let a;
+                if (v1Ok && v2Ok) a = "AMBOS SON CORRECTOS";
+                else if (!v1Ok && !v2Ok) a = "NINGUNO ES CORRECTO";
+                else if (v1Ok && !v2Ok) a = "SÓLO EL PRIMERO ES CORRECTO";
+                else a = "SÓLO EL SEGUNDO ES CORRECTO";
+
+                return {
+                    q: `¿Se encuentran ${valor1.toUpperCase()} y ${valor2.toUpperCase()} comprendidos en la ${llavePregunta}?`,
+                    a: a,
+                    opts: ["AMBOS SON CORRECTOS", "NINGUNO ES CORRECTO", "SÓLO EL PRIMERO ES CORRECTO", "SÓLO EL SEGUNDO ES CORRECTO"],
+                    tipo: 'CIRCUNSCRIPCIÓN',
+                    subtipo: valor1
+                };
+            },
+
+            // Categoría: Competencia (Identificación Pura y Ciclo de Fueros)
+            obtenerCompetencia() {
+                this.prepararMazos();
+
+                // Seleccionamos el fuero según el turno del ciclo
+                const fueroActual = this.fuerosOrden[this.indiceFuero];
+                this.indiceFuero = (this.indiceFuero + 1) % this.fuerosOrden.length; // Avanzar ciclo
+
+                // Extraemos el proceso (valor) del fuero de turno
+                const procesoCorrecto = this.mazosFuero[fueroActual].pop();
+
+                // Buscamos 3 distractores: procesos de OTROS fueros (Unicidad)
+                let distractores = [];
+                this.fuerosOrden.filter(f => f !== fueroActual).forEach(f => {
+                    distractores.push(DB_LEGAL.competencias[f][Math.floor(Math.random() * DB_LEGAL.competencias[f].length)]);
+                });
+
+                return {
+                    q: `¿A qué competencia material corresponde el proceso: ${procesoCorrecto.toUpperCase()}?`,
+                    a: fueroActual,
+                    opts: this.shuffle([fueroActual, ...this.fuerosOrden.filter(f => f !== fueroActual)]),
+                    tipo: 'COMPETENCIA',
+                    subtipo: procesoCorrecto
+                };
             }
         };
 
-        const Motores = {
-            circunscripcionInversa() {
-                const cats = Object.keys(DB_LEGAL.circunscripciones);
-                const catC = cats[Math.floor(Math.random() * cats.length)];
-                const depto = DB_LEGAL.circunscripciones[catC][Math.floor(Math.random() * DB_LEGAL.circunscripciones[catC].length)];
-                const catI = cats.find(c => c !== catC);
-                return this.estructurar(`El departamento de ${depto.toUpperCase()} pertenece a:`, catC, catI, 'CIRCUNSCRIPCIÓN');
-            },
-            circunscripcionDirecta() {
-                const cats = Object.keys(DB_LEGAL.circunscripciones);
-                const catQ = cats[Math.floor(Math.random() * cats.length)];
-                const correctos = DB_LEGAL.circunscripciones[catQ];
-                const incorrectos = DB_LEGAL.circunscripciones[cats.find(c => c !== catQ)];
-                return this.generarLogicaCompleja(`¿Qué departamento pertenece a la ${catQ}?`, correctos, incorrectos, 'CIRCUNSCRIPCIÓN');
-            },
-            competenciaMaterial() {
-                const tribunales = Object.keys(DB_LEGAL.competencias);
-                const tribunalC = tribunales[Math.floor(Math.random() * tribunales.length)];
-                const procesos = DB_LEGAL.competencias[tribunalC];
-                const item = procesos[Math.floor(Math.random() * procesos.length)];
-                const tribunalI = tribunales.find(t => t !== tribunalC);
-                return {
-                    q: `Los procesos de ${item.toUpperCase()} son competencia de:`,
-                    a: tribunalC,
-                    opts: [tribunalC, tribunalI, "NINGUNO ES CORRECTO", "AMBOS SON CORRECTOS"].sort(() => Math.random() - 0.5),
-                    tipo: 'COMPETENCIA'
-                };
-            },
-            generarLogicaCompleja(pregunta, correctos, incorrectos, tipo) {
-                const modo = Math.floor(Math.random() * 3);
-                let opciones = [], respuesta = "";
-                if (modo === 0) { opciones = [correctos[0], incorrectos[0]]; respuesta = correctos[0]; }
-                else if (modo === 1) { opciones = [incorrectos[0], incorrectos[1]]; respuesta = "NINGUNO ES CORRECTO"; }
-                else { opciones = [correctos[0], correctos[1]]; respuesta = "AMBOS SON CORRECTOS"; }
-                return { q: pregunta, a: respuesta, opts: [...opciones, "NINGUNO ES CORRECTO", "AMBOS SON CORRECTOS"].sort(() => Math.random() - 0.5), tipo: tipo };
-            },
-            estructurar(pregunta, correcta, incorrecta, tipo) {
-                return { q: pregunta, a: correcta, opts: [correcta, incorrecta, "NINGUNO ES CORRECTO", "AMBOS SON CORRECTOS"].sort(() => Math.random() - 0.5), tipo: tipo };
-            }
-        };
+*/
+
 
         const Protocolo = {
             vigencia: 100,
             vicios: 0,
+            qIndex: 0,
             tiempoSesion: 25 * 60,
+            timestampStart: null,
             fallos: { "CIRCUNSCRIPCIÓN": 0, "COMPETENCIA": 0 },
+            logPendiente: null,
 
             init() {
+                this.timestampStart = new Date().toISOString();
                 this.render();
                 this.startTicker();
             },
 
+            // Dentro del objeto Protocolo
             render() {
                 let desafio;
-                if (Math.random() > 0.5) {
-                    desafio = Motores.competenciaMaterial();
+                // qIndex 0, 2, 4... son Circunscripciones
+                // qIndex 1, 3, 5... son Competencias (que internamente rotan de fuero)
+                if (this.qIndex % 2 === 0) {
+                    desafio = Motores.obtenerCircunscripcion();
                 } else {
-                    desafio = Math.random() > 0.5 ? Motores.circunscripcionDirecta() : Motores.circunscripcionInversa();
+                    desafio = Motores.obtenerCompetencia();
                 }
 
                 this.current = desafio;
@@ -377,7 +583,12 @@
             },
 
             check(val) {
-                if (val === this.current.a) {
+                const esCorrecto = (val === this.current.a);
+
+                // REGISTRO EN EL HEATMAP (MICRO Y MACRO)
+                Analista.registrar(this.current.tipo, this.current.subtipo, esCorrecto);
+
+                if (esCorrecto) {
                     this.vicios = 0;
                     this.vigencia = Math.min(100, this.vigencia + 8);
                     this.logIA("PROCEDIMIENTO VÁLIDO.", "var(--safe)");
@@ -387,60 +598,83 @@
                     this.vigencia -= 15;
                     this.logIA(`VICIO DETECTADO. VIGENCIA AL ${Math.max(0, Math.floor(this.vigencia))}%`, "var(--critical)");
                 }
+
+                this.qIndex++;
                 this.updateUI();
-                if (this.vicios < 3 && this.vigencia > 0) this.render();
+                if (this.vicios < 3 && this.vigencia > 0) setTimeout(() => this.render(), 300);
             },
+
 
             updateUI() {
                 const bar = document.getElementById('stability-bar');
                 if (bar) bar.style.width = `${Math.max(0, this.vigencia)}%`;
-
-                if (this.vigencia <= 0 || this.vicios >= 3) {
-                    this.showResult(false);
-                    return;
-                }
-
-                const body = document.body;
+                if (this.vigencia <= 0 || this.vicios >= 3) { this.showResult(false); return; }
+                const mainDisplay = document.querySelector('.main-display');
                 const statusLabel = document.getElementById('status-text');
-
                 if (this.vigencia < 30) {
-                    body.className = 'state-critical';
-                    if (statusLabel) statusLabel.innerText = "ESTADO: CRÍTICO";
+                    mainDisplay.className = 'main-display state-critical';
+                    statusLabel.innerText = "ESTADO: CRÍTICO";
                 } else if (this.vigencia < 60) {
-                    body.className = 'state-warning';
-                    if (statusLabel) statusLabel.innerText = "ESTADO: DEGRADADO";
+                    mainDisplay.className = 'main-display state-warning';
+                    statusLabel.innerText = "ESTADO: DEGRADADO";
                 } else {
-                    body.className = 'state-stable'; // Clase explícita para estado normal
-                    if (statusLabel) statusLabel.innerText = "ESTADO: VIGENTE";
+                    mainDisplay.className = 'main-display state-stable';
+                    statusLabel.innerText = "ESTADO: VIGENTE";
                 }
             },
 
             showResult(success) {
                 clearInterval(this.ticker);
-                const overlay = document.getElementById('result-overlay');
-                const efficiency = document.getElementById('res-efficiency');
                 const finalEff = Math.max(0, Math.floor(this.vigencia));
 
+                // GENERACIÓN DEL REPORTE COMPLEJO PARA TU INVESTIGACIÓN
+                const reporteFull = Analista.obtenerReporte();
+
+                const memMEG = {
+                    fecha: new Date().toISOString(),
+                    score: finalEff,
+                    debilidad: reporteFull, // MEG ahora ve el mapa completo
+                    protocolo: 'REPASO'
+                };
+                localStorage.setItem('9001_MEG_MEMORY', JSON.stringify(memMEG));
+
+                this.logPendiente = {
+                    uid_hash: localStorage.getItem('meg_uid') || "ANON_USER",
+                    session_token: localStorage.getItem('meg_session') || "NO_SESSION",
+                    timestamp_start: this.timestampStart,
+                    protocolo: 'REPASO_9001',
+                    score: finalEff,
+                    error_vector: reporteFull, // Se envía el string complejo al Sheets
+                    ua_client: navigator.userAgent
+                };
+
+                const overlay = document.getElementById('result-overlay');
                 overlay.style.display = 'flex';
-                if (efficiency) efficiency.innerText = finalEff + "%";
+                document.getElementById('res-efficiency').innerText = finalEff + "%";
+                document.getElementById('res-status').innerText = success ? "SESIÓN_OPTIMIZADA" : "CADUCIDAD_DE_INSTANCIA";
+            },
 
-                // Persistencia
-                SistemaPersistencia.guardarPuntaje('repaso', finalEff);
 
-                let debilidad = "ESTABLE";
-                if (this.fallos["CIRCUNSCRIPCIÓN"] > this.fallos["COMPETENCIA"]) debilidad = "CIRCUNSCRIPCIÓN";
-                else if (this.fallos["COMPETENCIA"] > this.fallos["CIRCUNSCRIPCIÓN"]) debilidad = "COMPETENCIA_MATERIAL";
+            async finalizarYEnviar() {
+                const btn = document.querySelector('.btn-final');
+                btn.innerText = "SINCRONIZANDO...";
+                btn.disabled = true;
 
-                const msgArea = document.getElementById('res-msg');
-                if (msgArea) {
-                    msgArea.innerHTML = `Sesión finalizada. <br><span style="font-size:0.7rem; color:var(--dim)">VECTOR_DE_FALLO: <span style="color:var(--critical)">${debilidad}</span></span>`;
+                if (this.logPendiente) {
+                    const API_URL = "https://script.google.com/macros/s/AKfycbz35P_r0wzGNWt6HnbwfiKwrT8rB4smorJhaWA5ixt8qAu25-UKtfRkzFXbEnlhLqKWkQ/exec";
+                    try {
+                        // El secreto es usar text/plain para evitar que el navegador envíe OPTIONS (CORS)
+                        await fetch(API_URL, {
+                            method: 'POST',
+                            mode: 'no-cors',
+                            keepalive: true,
+                            headers: { 'Content-Type': 'text/plain' },
+                            body: JSON.stringify(this.logPendiente)
+                        });
+                    } catch (e) { console.warn("Fallo de enlace"); }
                 }
 
-                const status = document.getElementById('res-status');
-                if (status) {
-                    status.innerText = success ? "SESIÓN_OPTIMIZADA" : "CADUCIDAD_DE_INSTANCIA";
-                    status.style.color = success ? "var(--safe)" : "var(--critical)";
-                }
+                setTimeout(() => { window.location.href = "index.html"; }, 800);
             },
 
             startTicker() {
